@@ -1,0 +1,612 @@
+@import 'tailwindcss';
+
+@theme {
+  --container-3xs: 25.6rem;
+  --container-2xs: 28.8rem;
+  --container-xs: 32rem;
+  --container-sm: 38.4rem;
+  --container-md: 44.8rem;
+  --container-lg: 51.2rem;
+  --container-xl: 57.6rem;
+  --container-2xl: 67.2rem;
+  --container-3xl: 76.8rem;
+  --container-4xl: 86.6rem;
+  --container-5xl: 102.4rem;
+  --container-6xl: 115.2rem;
+  --container-7xl: 128rem;
+}
+
+@layer base {
+  html {
+    font-size:10px;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/PretendardVariable.woff2') format('woff2-variations');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-display: swap;
+    src: local("Pretendard Black"), url("./fonts/Pretendard-Black.subset.woff2") format("woff2"), url("./fonts/Pretendard-Black.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-display: swap;
+    src: local("Pretendard ExtraBold"), url("./fonts/Pretendard-ExtraBold.subset.woff2") format("woff2"), url("./fonts/Pretendard-ExtraBold.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"), url("./fonts/Pretendard-Bold.subset.woff2") format("woff2"), url("./fonts/Pretendard-Bold.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local("Pretendard SemiBold"), url("./fonts/Pretendard-SemiBold.subset.woff2") format("woff2"), url("./fonts/Pretendard-SemiBold.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"), url("./fonts/Pretendard-Medium.subset.woff2") format("woff2"), url("./fonts/Pretendard-Medium.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"), url("./fonts/Pretendard-Regular.subset.woff2") format("woff2"), url("./fonts/Pretendard-Regular.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local("Pretendard Light"), url("./fonts/Pretendard-Light.subset.woff2") format("woff2"), url("./fonts/Pretendard-Light.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-display: swap;
+    src: local("Pretendard ExtraLight"), url("./fonts/Pretendard-ExtraLight.subset.woff2") format("woff2"), url("./fonts/Pretendard-ExtraLight.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-display: swap;
+    src: local("Pretendard Thin"), url("./fonts/Pretendard-Thin.subset.woff2") format("woff2"), url("./fonts/Pretendard-Thin.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-display: swap;
+    src: local("GmarketSans Bold"), url("./fonts/GmarketSansBold.woff2") format("woff2"), url("./fonts/GmarketSansBold.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-display: swap;
+    src: local("GmarketSans Medium"), url("./fonts/GmarketSansMedium.woff2") format("woff2"), url("./fonts/GmarketSansMedium.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-display: swap;
+    src: local("GmarketSans Light"), url("./fonts/GmarketSansLight.woff2") format("woff2"), url("./fonts/GmarketSansLight.woff") format("woff");
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-variation-settings: 'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
+    line-height: 1;
+  }
+
+  .material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-variation-settings: 'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
+    line-height: 1;
+  }
+
+  body {
+    font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';    
+    line-height: 1;
+  }
+
+  caption,
+  legend {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+
+  .cdf-scrollbar {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 0px;
+  }
+  .cdf-scrollbar.horizontal {
+    width: auto;
+    min-height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  @media (min-width: 1280px) {
+    .cdf-scrollbar.horizontal::-webkit-scrollbar {
+      height: 6px;
+    }
+    .cdf-scrollbar2.horizontal::-webkit-scrollbar {
+      height: 6px;
+    }
+    /* 스크롤바의 폭 너비 */
+    .cdf-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .cdf-scrollbar2::-webkit-scrollbar {
+      width: 4px;
+    }
+    .cdf-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      /* 스크롤바 색상 */
+      border-radius: 10px;
+      /* 스크롤바 둥근 테두리 */
+    }
+    .cdf-scrollbar2::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      /* 스크롤바 색상 */
+      border-radius: 10px;
+      /* 스크롤바 둥근 테두리 */
+    }
+    .cdf-scrollbar::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+      /*스크롤바 뒷 배경 색상*/
+    }
+    .cdf-scrollbar2::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+      /*스크롤바 뒷 배경 색상*/
+    }
+  }
+
+  /*
+  **************************************
+  information text
+  **************************************
+  */
+  .cdf-information-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: .4rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--tertiary-900-color);
+    line-height: 1.4em;
+  }
+
+  .cdf-information-text::before {
+    content: '!';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    font-weight: 700;
+    background-color: var(--primary-500-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-max);
+    flex-shrink: 0;
+  }
+
+  .cdf-information-text.center {
+    justify-content: center;
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  label,
+  button {
+    cursor: pointer;
+  }
+
+  /*
+  **************************************
+  radius
+  **************************************
+  */
+  .radius-pill {
+    border-radius: var(--radius-pill) !important;
+  }
+
+  .radius-max {
+    border-radius: var(--radius-max) !important;
+  }
+
+  :root {
+    --spacing: 0.4rem;
+
+    --background-color: #f5f5f5;
+    --surface-color: #ffffff;
+
+    /*primary*/
+    --primary-950-color: #2f1e4d;
+    --primary-900-color: #4a366d;
+    --primary-800-color: #563C87;
+    --primary-700-color: #694ca4;
+    --primary-600-color: #7e60bd;
+    --primary-500-color: #967dcf;
+    --primary-400-color: #b4a1df;
+    --primary-300-color: #d0c6ec;
+    --primary-200-color: #e5dff5;
+    --primary-100-color: #f1eef9;
+    --primary-50-color: #f9f7fd;
+
+    /*secondary*/
+    --secondary-950-color: #232145;
+    --secondary-900-color: #3b3877;
+    --secondary-800-color: #423c90;
+    --secondary-700-color: #534ab8;
+    --secondary-600-color: #6B64D3;
+    --secondary-500-color: #8082E7;
+    --secondary-400-color: #9FA5EB;
+    --secondary-300-color: #BEC6F3;
+    --secondary-200-color: #D9DFF9;
+    --secondary-100-color: #EBEFFD;
+    --secondary-50-color: #F3F6FF;
+
+    /*tertiary, gray*/
+    --tertiary-950-color: #38363f;
+    --tertiary-900-color: #565260;
+    --tertiary-800-color: #686374;
+    --tertiary-700-color: #7b778a;
+    --tertiary-600-color: #9793a5;
+    --tertiary-500-color: #a4a1b1;
+    --tertiary-400-color: #bdbcc9;
+    --tertiary-300-color: #d6d5dd;
+    --tertiary-200-color: #e8e8ec;
+    --tertiary-100-color: #f3f2f5;
+    --tertiary-50-color: #f9f8fa;
+
+    /*text*/
+    --text-950-color: #161617;
+    --text-900-color: #2F2F31;
+    --text-800-color: #3C3C3F;
+    --text-700-color: #4F4F53;
+    --text-600-color: #69696D;
+    --text-500-color: #7E7F84;
+    --text-400-color: #97989D;
+    --text-300-color: #b9b9c0;
+    --text-200-color: #dadadd;
+    --text-100-color: #eeeef0;
+    --text-50-color: #f7f7f8;
+
+    /*pad+*/
+    --pad-950-color: #141250;
+    --pad-900-color: #27247A;
+    --pad-800-color: #3733AA;
+    --pad-700-color: #4B45E0;
+    --pad-600-color: #5A67FA;
+    --pad-500-color: #738DFD;
+    --pad-400-color: #9CAFFF;
+    --pad-300-color: #BDCDFF;
+    --pad-200-color: #D7E1FF;
+    --pad-100-color: #ECF3FF;
+    --pad-50-color: #F4F8FF;
+
+    /*경고*/
+    --warning-950-color: #420d0d;
+    --warning-900-color: #7a2222;
+    --warning-800-color: #932121;
+    --warning-700-color: #b12424;
+    --warning-600-color: #d53939;
+    --warning-500-color: #e64d4d;
+    --warning-400-color: #f17878;
+    --warning-300-color: #f8a9a9;
+    --warning-200-color: #fbcdcd;
+    --warning-100-color: #fde3e3;
+    --warning-50-color: #fdf3f3;
+
+    /*주의*/
+    --caution-950-color: #441904;
+    --caution-900-color: #763411;
+    --caution-800-color: #903e10;
+    --caution-700-color: #b1500c;
+    --caution-600-color: #d5730a;
+    --caution-500-color: #f1980f;
+    --caution-400-color: #f7b928;
+    --caution-300-color: #f9ce50;
+    --caution-200-color: #fbe38e;
+    --caution-100-color: #fdf1c8;
+    --caution-50-color: #fffbeb;
+
+    /*성공*/
+    --success-950-color: #0b281a;
+    --success-900-color: #1d4a34;
+    --success-800-color: #215a3e;
+    --success-700-color: #24714a;
+    --success-600-color: #278655;
+    --success-500-color: #39ae72;
+    --success-400-color: #5fc992;
+    --success-300-color: #95e0b9;
+    --success-200-color: #c3efd8;
+    --success-100-color: #e0f8eb;
+    --success-50-color: #f2fbf6;
+
+    /*안내*/
+    --info-950-color: #0f2a42;
+    --info-900-color: #174163;
+    --info-800-color: #154e77;
+    --info-700-color: #155b8f;
+    --info-600-color: #1872b1;
+    --info-500-color: #2791d3;
+    --info-400-color: #4eaae2;
+    --info-300-color: #8bc7ee;
+    --info-200-color: #c2e0f5;
+    --info-100-color: #e3effb;
+    --info-50-color: #f2f8fd;
+
+    /*idea color*/
+    --eureca-color: #E54848;
+    --simulator-color: #FBC42F;
+    --pad-color: #3733AA;
+    --gaia-color: #7BC717;
+    --cairos-color: #1FAE70;
+
+    /*bkack*/
+    --black-color: #000;
+
+    /*white*/
+    --white-color: #ffffff;
+
+    /*border radius*/
+    --radius-circle: 50%;
+    --radius-xl: 20px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-xs: 10px;
+
+    /*box shadow*/
+    --shadow-xl: 4px 4px 20px 0 rgba(0, 0, 0, 0.12);
+    --shadow-lg: 4px 4px 16px 0 rgba(0, 0, 0, 0.16);
+    --shadow-md: 4px 4px 12px 0 rgba(0, 0, 0, 0.16);
+    --shadow-xs: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+    /*border radius*/
+    --radius-0: 0;
+    --radius-1: 0.4rem;
+    --radius-2: 0.6rem;
+    --radius-3: 0.8rem;
+    --radius-4: 1.6rem;
+    --radius-5: 3.2rem;
+    --radius-max: 100rem;
+    --radius-pill: 50rem;
+
+    /*gap*/
+    --cdf-gap-1: 0.2rem;
+    --cdf-gap-2: 0.4rem;
+    --cdf-gap-3: 0.8rem;
+    --cdf-gap-4: 1.2rem;
+    --cdf-gap-5: 1.6rem;
+    --cdf-gap-6: 2.0rem;
+    --cdf-gap-7: 2.4rem;
+    --cdf-gap-8: 2.8rem;
+    --cdf-gap-9: 3.2rem;
+    --cdf-gap-10: 3.6rem;
+    --cdf-gap-11: 4.0rem;
+    --cdf-gap-12: 4.4rem;
+    --cdf-gap-13: 4.8rem;
+    --cdf-gap-14: 5.2rem;
+    --cdf-gap-15: 5.6rem;
+    --cdf-gap-16: 6rem;
+    --cdf-gap-17: 6.4rem;
+    --cdf-gap-18: 6.8rem;
+    --cdf-gap-19: 7.2rem;
+    --cdf-gap-20: 7.6rem;
+    --cdf-gap-21: 8rem;
+    /*number*/
+    --cdf-number-0: 0rem;
+    --cdf-number-1: 0.1rem;
+    --cdf-number-2: 0.2rem;
+    --cdf-number-3: 0.4rem;
+    --cdf-number-4: 0.6rem;
+    --cdf-number-5: 0.8rem;
+    --cdf-number-6: 1rem;
+    --cdf-number-7: 1.2rem;
+    --cdf-number-8: 1.6rem;
+    --cdf-number-9: 2rem;
+    --cdf-number-10: 2.4rem;
+    --cdf-number-11: 2.8rem;
+    --cdf-number-12: 3.2rem;
+    --cdf-number-13: 3.6rem;
+    --cdf-number-14: 4rem;
+    --cdf-number-15: 4.4rem;
+    --cdf-number-16: 4.8rem;
+    --cdf-number-17: 5.6rem;
+    --cdf-number-18: 6.4rem;
+    --cdf-number-19: 7.2rem;
+    --cdf-number-20: 8rem;
+    --cdf-number-21: 9.6rem;
+    --cdf-number-max: 100rem;
+  }
+
+  /*vortal 테마*/
+  html[data-theme='vortal'] {
+    --primary-950-color: #38363f;
+    --primary-900-color: #565260;
+    --primary-800-color: #686374;
+    --primary-700-color: #7b778a;
+    --primary-600-color: #9793a5;
+    --primary-500-color: #a4a1b1;
+    --primary-400-color: #bdbcc9;
+    --primary-300-color: #d6d5dd;
+    --primary-200-color: #e8e8ec;
+    --primary-100-color: #f3f2f5;
+    --primary-50-color: #f9f8fa;
+  }
+
+  /*istation 테마*/
+  html[data-theme='istation'] {
+    --primary-950-color: #232145;
+    --primary-900-color: #3b3877;
+    --primary-800-color: #423c90;
+    --primary-700-color: #534ab8;
+    --primary-600-color: #6B64D3;
+    --primary-500-color: #8082E7;
+    --primary-400-color: #9FA5EB;
+    --primary-300-color: #BEC6F3;
+    --primary-200-color: #D9DFF9;
+    --primary-100-color: #EBEFFD;
+    --primary-50-color: #F3F6FF;
+  }
+
+  /*pad 테마*/
+  html[data-theme='pad'] {
+    --primary-950-color: #141250;
+    --primary-900-color: #27247A;
+    --primary-800-color: #3733AA;
+    --primary-700-color: #4B45E0;
+    --primary-600-color: #5A67FA;
+    --primary-500-color: #738DFD;
+    --primary-400-color: #9CAFFF;
+    --primary-300-color: #BDCDFF;
+    --primary-200-color: #D7E1FF;
+    --primary-100-color: #ECF3FF;
+    --primary-50-color: #F4F8FF;
+  }
+
+  /*dark 테마*/
+  html[data-theme='dark'] {
+    --primary-950-color: #3d3d3d;
+    --primary-900-color: #4a4a4a;
+    --primary-800-color: #575757;
+    --primary-700-color: #646464;
+    --primary-600-color: #717171;
+    --primary-500-color: #7e7e7e;
+    --primary-400-color: #8b8b8b;
+    --primary-300-color: #989898;
+    --primary-200-color: #a5a5a5;
+    --primary-100-color: #b2b2b2;
+    --primary-50-color: #bfbfbf;
+
+    --text-950-color: #f0f0f0;
+    --text-900-color: #d9d9d9;
+    --text-800-color: #c4c4c4;
+    --text-700-color: #ababab;
+    --text-600-color: #929292;
+    --text-500-color: #7a7a7a;
+    --text-400-color: #626262;
+    --text-300-color: #4b4b4b;
+    --text-200-color: #333333;
+    --text-100-color: #1a1a1a;
+    --text-50-color: #0d0d0d;
+
+    --tertiary-950-color: #d9d9d9;
+    --tertiary-900-color: #bfbfbf;
+    --tertiary-800-color: #a6a6a6;
+    --tertiary-700-color: #8c8c8c;
+    --tertiary-600-color: #737373;
+    --tertiary-500-color: #5c5c5c;
+    --tertiary-400-color: #4b4b4b;
+    --tertiary-300-color: #363636;
+    --tertiary-200-color: #2a2a2a;
+    --tertiary-100-color: #1e1e1e;
+    --tertiary-50-color: #121212;
+
+    --caution-950-color: #fffbeb;
+    --caution-900-color: #fdf1c8;
+    --caution-800-color: #fbe38e;
+    --caution-700-color: #f9ce50;
+    --caution-600-color: #f7b928;
+    --caution-500-color: #f1980f;
+    --caution-400-color: #d5730a;
+    --caution-300-color: #b1500c;
+    --caution-200-color: #903e10;
+    --caution-100-color: #763411;
+    --caution-50-color: #441904;
+
+    --background-color: #333333;
+    --surface-color: #1e1e1e;
+  }
+
+  html[data-layout='center'] {
+    .style-guide-wrap {
+      position: relative;
+      max-width: 160rem;
+      margin: 0 auto;
+    }
+    .style-guide-wrap .left-menu-zone .logo {
+      position:fixed !important;
+      left:50% !important;
+      transform: translateX(-50%);
+      width:160rem !important;
+    }
+    .style-guide-wrap .left-menu-zone {
+      left: -28rem !important;
+      z-index: 10;
+      transition: .3s;
+    }
+    .style-guide-wrap .left-menu-zone.on {
+      left: 0 !important;
+    }
+    .style-guide-wrap .right-cont-zone {
+      margin-left:0 !important;
+    }
+    .style-guide-wrap .btn-setting {
+      top: .8rem !important;
+      left:50% !important;
+      transform: translateX(1680%) !important;
+    }
+    .style-guide-wrap .btn-menu {
+      display: block !important;
+    }
+  }
+  
+}
+
+
+
+
+
+@import './components/form.css';
+@import './components/text.css';
+@import './components/button.css';
+@import './components/select.css';
+@import './components/input.css';
+@import './components/radio.css';
+@import './components/paging.css';
+@import './components/switch.css';
+@import './components/label.css';
+@import './components/tooltip.css';
+@import './components/accordion.css';
+@import './components/table.css';
+
