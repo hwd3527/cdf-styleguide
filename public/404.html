@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0;url=/cdf-styleguide/" />
+    <script>
+      // GitHub Pages SPA fallback: redirect 404s to index with path in hash
+      (function() {
+        var redirectPath = window.location.pathname.replace(/^\/cdf-styleguide\//, "");
+        // Preserve query string
+        var query = window.location.search || "";
+        // If already at the base path, do nothing
+        if (!redirectPath || redirectPath === "index.html") return;
+        // Redirect to index with hash so Vue Router (hash mode) can handle it
+        window.location.replace("/cdf-styleguide/" + query + "#" + redirectPath);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
