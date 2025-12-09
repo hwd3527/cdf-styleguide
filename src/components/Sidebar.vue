@@ -10,9 +10,9 @@
       <details open="">
         <summary class="group">Flexbox & Grid</summary>
         <ul>
-          <li><a href="/tailwind/flexBasisGuide" class="">Flex Basis</a></li>
-          <li><a href="/tailwind/flexDirectionGuide" class="">Flex Direction</a></li>
-          <li><a href="/tailwind/flexWrapGuide" class="">Flex Wrap</a></li>
+          <li><router-link to="/flexBasisGuide" class="">Flex Basis</router-link></li>
+          <li><router-link to="/flexDirectionGuide" class="">Flex Direction</router-link></li>
+          <li><router-link to="/flexWrapGuide" class="">Flex Wrap</router-link></li>
         </ul>
       </details>
       <!-- <details open="">

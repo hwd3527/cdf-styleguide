@@ -70,17 +70,17 @@ const router = createRouter({
       component: () => import('../views/tableGuide.vue'),
     },
     {
-      path: '/tailwind/flexBasisGuide',
+      path: '/flexBasisGuide',
       name: 'flexBasisGuide',
       component: () => import('../views/tailwind/flexBasisGuide.vue'),
     },
     {
-      path: '/tailwind/flexDirectionGuide',
+      path: '/flexDirectionGuide',
       name: 'flexDirectionGuide',
       component: () => import('../views/tailwind/flexDirectionGuide.vue'),
     },
     {
-      path: '/tailwind/flexWrapGuide',
+      path: '/flexWrapGuide',
       name: 'flexWrapGuide',
       component: () => import('../views/tailwind/flexWrapGuide.vue'),
     }
