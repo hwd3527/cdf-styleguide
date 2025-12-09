@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex-wrap</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex-wrap" target="_blank">
+    <h2 class="cdf-h1">flex-grow</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">wrap이 없을 때</h3>
-      <p class="cdf-information-text mt-5">'flex-nowrap'은 정해진 플렉스 사이즈를 넘쳐도 플렉스 아이템이 한 줄에 모두 배치되도록 합니다.</p>
+      <h3 class="cdf-h3">아이템 성장 허용</h3>
+      <p class="cdf-information-text mt-5">'grow' 플렉스 아이템이 사용 가능한 공간을 채우기 위해 아이템이 커지도록 허용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -19,10 +19,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex flex-nowrap gap-2 p-3 bg-gray-100 w-full md:w-3xl overflow-x-auto">
-                <div class="box-border w-2/5 flex-none">Item 1</div>
-                <div class="box-border w-2/5 flex-none">Item 2</div>
-                <div class="box-border w-2/5 flex-none">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+                <div class="box-border w-16 flex-none">Item 1</div>
+                <div class="box-border w-16 grow">Item 2</div>
+                <div class="box-border w-16 flex-none">Item 3</div>
               </div>
             </div>
           </div>
@@ -35,8 +35,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Wrap이 있을 때</h3>
-      <p class="cdf-information-text mt-5">'flex-wrap' 플렉스 아이템을 래핑해서 플렉스의 사이즈를 넘칠 때 다음 줄로 넘기도록 합니다.</p>
+      <h3 class="cdf-h3">성장 요인에 따른 성장</h3>
+      <p class="cdf-information-text mt-5">성장 요인에 따라 플렉스 아이템이 비례적으로 커지도록 하는 유틸리티를 사용하면 각 아이템이 상대적으로 사용 가능한 공간을 채웁니다.
+        'grow-&lt;number&gt;', 'grow-3'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -47,10 +48,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex flex-wrap gap-2 p-3 bg-gray-100  w-full md:w-3xl">
-                <div class="box-border w-2/5 flex-none">Item 1</div>
-                <div class="box-border w-2/5 flex-none">Item 2</div>
-                <div class="box-border w-2/5 flex-none">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+                <div class="box-border w-16 grow-3">Item 1</div>
+                <div class="box-border w-16 grow-7">Item 2</div>
+                <div class="box-border w-16 grow-4">Item 3</div>
               </div>
             </div>
           </div>
@@ -63,8 +64,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Wrap이 반대 반향일 때</h3>
-      <p class="cdf-information-text mt-5">'flex-wrap-reverse' 플렉스 아이템을 반대 방향으로 래핑하는 데 사용합니다.</p>
+      <h3 class="cdf-h3">아이템 성장 방지</h3>
+      <p class="cdf-information-text mt-5">'grow-0' 플렉스 아이템이 커지는 것을 방지합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -75,10 +76,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex flex-wrap-reverse gap-2 p-3 bg-gray-100  w-full md:w-3xl">
-                <div class="box-border w-2/5 flex-none">Item 1</div>
-                <div class="box-border w-2/5 flex-none">Item 2</div>
-                <div class="box-border w-2/5 flex-none">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+                <div class="box-border w-16 grow">Item 1</div>
+                <div class="box-border w-16 grow-0">Item 2</div>
+                <div class="box-border w-16 grow">Item 3</div>
               </div>
             </div>
           </div>
@@ -90,9 +91,10 @@
       </div>
     </div>
 
+
     <div class="conts-area">
       <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 플렉스의 방향을 설정합니다.</p>
+      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 성장을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -103,16 +105,16 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex flex-wrap md:flex-wrap-reverse gap-2 p-3 bg-gray-100  w-full md:w-3xl">
-                <div class="box-border w-2/5 flex-none">Item 1</div>
-                <div class="box-border w-2/5 flex-none">Item 2</div>
-                <div class="box-border w-2/5 flex-none">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+                <div class="box-border w-16 grow md:grow-0">Item 1</div>
+                <div class="box-border w-16 grow md:grow-0">Item 2</div>
+                <div class="box-border w-16 grow md:grow-0">Item 3</div>
               </div>
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value04" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value04')">코드 복사</button>
+            <code-mirror v-model="value05" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value05')">코드 복사</button>
           </div>
         </div>
       </div>
@@ -135,16 +137,22 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">flex-nowrap</td>
-              <td data-header="style">flex-wrap: nowrap;</td>
+              <td data-header="class">grow
+              </td>
+              <td data-header="style">flex-grow: 1;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-wrap</td>
-              <td data-header="style">flex-wrap: wrap;</td>
+              <td data-header="class">grow-&lt;number&gt;
+              </td>
+              <td data-header="style">flex-grow: &lt;number&gt;;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-wrap-reverse</td>
-              <td data-header="style">flex-wrap: wrap-reverse;</td>
+              <td data-header="class">grow-[&lt;value&gt;]</td>
+              <td data-header="style">flex-grow: &lt;value&gt;;</td>
+            </tr>
+            <tr>
+              <td data-header="class">grow-(&lt;custom-property&gt;)</td>
+              <td data-header="style">flex-grow: var(&lt;custom-property&gt;);</td>
             </tr>
           </tbody>
         </table>
@@ -158,25 +166,25 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex flex-nowrap gap-2 p-3 bg-gray-100 w-full md:w-3xl overflow-x-auto">
-  <div class="w-2/5 flex-none">Item 1</div>
-  <div class="w-2/5 flex-none">Item 2</div>
-  <div class="w-2/5 flex-none">Item 3</div>
+const value01 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+  <div class="box-border w-16 flex-none">Item 1</div>
+  <div class="box-border w-16 grow">Item 2</div>
+  <div class="box-border w-16 flex-none">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex flex-wrap gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-2/5 flex-none">Item 1</div>
-  <div class="w-2/5 flex-none">Item 2</div>
-  <div class="w-2/5 flex-none">Item 3</div>
+const value02 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+  <div class="box-border w-16 grow-3">Item 1</div>
+  <div class="box-border w-16 grow-7">Item 2</div>
+  <div class="box-border w-16 grow-4">Item 3</div>
 </div>`);
-const value03 = ref(`<div class="flex flex-wrap-reverse gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-2/5 flex-none">Item 1</div>
-  <div class="w-2/5 flex-none">Item 2</div>
-  <div class="w-2/5 flex-none">Item 3</div>
+const value03 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+  <div class="box-border w-16 grow">Item 1</div>
+  <div class="box-border w-16 grow-0">Item 2</div>
+  <div class="box-border w-16 grow">Item 3</div>
 </div>`);
-const value04 = ref(`<div class="flex flex-wrap md:flex-wrap-reverse gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-2/5 flex-none">Item 1</div>
-  <div class="w-2/5 flex-none">Item 2</div>
-  <div class="w-2/5 flex-none">Item 3</div>
+const value04 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+  <div class="w-14 flex-none">Item 1</div>
+  <div class="w-32 flex-none">Item 2</div>
+  <div class="flex-1">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사

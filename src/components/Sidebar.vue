@@ -13,6 +13,10 @@
           <li><router-link to="/flexBasisGuide" class="">Flex Basis</router-link></li>
           <li><router-link to="/flexDirectionGuide" class="">Flex Direction</router-link></li>
           <li><router-link to="/flexWrapGuide" class="">Flex Wrap</router-link></li>
+          <li><router-link to="/flexGuide" class="">Flex</router-link></li>
+          <li><router-link to="/flexGrowGuide" class="">Flex Grow</router-link></li>
+          <li><router-link to="/flexShrinkGuide" class="">Flex Shrink</router-link></li>
+          <li><router-link to="/orderGuide" class="">Order</router-link></li>
         </ul>
       </details>
       <!-- <details open="">

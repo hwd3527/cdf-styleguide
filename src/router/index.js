@@ -83,7 +83,27 @@ const router = createRouter({
       path: '/flexWrapGuide',
       name: 'flexWrapGuide',
       component: () => import('../views/tailwind/flexWrapGuide.vue'),
-    }
+    },
+    {
+      path: '/flexGuide',
+      name: 'flexGuide',
+      component: () => import('../views/tailwind/flexGuide.vue'),
+    },
+    {
+      path: '/flexGrowGuide',
+      name: 'flexGrowGuide',
+      component: () => import('../views/tailwind/flexGrowGuide.vue'),
+    },
+    {
+      path: '/flexShrinkGuide',
+      name: 'flexShrinkGuide',
+      component: () => import('../views/tailwind/flexShrinkGuide.vue'),
+    },
+    {
+      path: '/orderGuide',
+      name: 'orderGuide',
+      component: () => import('../views/tailwind/orderGuide.vue'),
+    },
   ],
 })
 
