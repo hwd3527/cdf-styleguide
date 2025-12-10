@@ -1,15 +1,15 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex" target="_blank">
+    <h2 class="cdf-h1">grid-auto-columns</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/grid-auto-columns" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
-      <p class="cdf-information-text mt-5">'flex'안의 자식 엘리먼트가 가지고 있는 크기를 무시하고 부모 컨테이너의 크기에 맞게 배치됩니다.
-        'flex&lt;number&gt;', 'flex-1'</p>
+      <h3 class="cdf-h3">auto-cols-max</h3>
+      <p class="cdf-information-text mt-5">'auto-cols-max'를 사용하여 암묵적으로 생성되는 그리드 열의 최대 크기를 제어합니다.
+      </p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -20,10 +20,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-1">Item 2</div>
-                <div class="box-border w-32 flex-1">Item 3</div>
+              <div class="grid auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
               </div>
             </div>
           </div>
@@ -36,8 +36,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Initial</h3>
-      <p class="cdf-information-text mt-5">'flex-initial' 플렉스 아이템의 크기가 줄어들지만 초기 크기보다 늘어나지는 않습니다.</p>
+      <h3 class="cdf-h3">auto-cols-min</h3>
+      <p class="cdf-information-text mt-5">'auto-cols-min'를 사용하여 암묵적으로 생성되는 그리드 열의 최소 크기를 제어합니다.
+      </p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -48,10 +49,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-initial">Item 2</div>
-                <div class="box-border w-32 flex-initial">Item 3</div>
+              <div class="grid auto-cols-min grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
               </div>
             </div>
           </div>
@@ -64,8 +65,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Auto</h3>
-      <p class="cdf-information-text mt-5">'flex-auto' 플렉스 아이템의 초기 크기에 비례하여 커지거나 작아집니다.</p>
+      <h3 class="cdf-h3">auto-cols-auto</h3>
+      <p class="cdf-information-text mt-5">'auto-cols-auto'를 사용하여 암묵적으로 생성되는 그리드 열의 자동 크기를 제어합니다.
+      </p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -76,10 +78,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-auto">Item 2</div>
-                <div class="box-border w-32 flex-auto">Item 3</div>
+              <div class="grid auto-cols-auto grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
               </div>
             </div>
           </div>
@@ -92,8 +94,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">none</h3>
-      <p class="cdf-information-text mt-5">'flex-none' 플렉스 아이템의 크기가 고정됩니다.</p>
+      <h3 class="cdf-h3">auto-cols-fr</h3>
+      <p class="cdf-information-text mt-5">'auto-cols-fr'를 사용하여 암묵적으로 생성되는 그리드 열의 자동 크기를 제어합니다.
+      </p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -104,10 +107,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-32 flex-none">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid auto-cols-fr grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
               </div>
             </div>
           </div>
@@ -119,9 +122,10 @@
       </div>
     </div>
 
+
     <div class="conts-area">
       <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 플렉스의 방향을 설정합니다.</p>
+      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 그리드 자동 흐름을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -132,10 +136,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none md:flex-1">Item 1</div>
-                <div class="box-border w-32 flex-none md:flex-1">Item 2</div>
-                <div class="box-border w-64 flex-none md:flex-1">Item 3</div>
+              <div class="grid auto-cols-auto md:auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
               </div>
             </div>
           </div>
@@ -164,34 +168,28 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">flex-&lt;number&gt;
-              </td>
-              <td data-header="style">flex-&lt;number&gt;;</td>
+              <td data-header="class">auto-cols-auto</td>
+              <td data-header="style">grid-auto-columns: auto;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-&lt;fraction&gt;
-              </td>
-              <td data-header="style">flex: calc(&lt;fraction&gt; * 100%);</td>
+              <td data-header="class">auto-cols-min</td>
+              <td data-header="style">grid-auto-columns: min-content;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-auto</td>
-              <td data-header="style">flex: auto;</td>
+              <td data-header="class">auto-cols-max</td>
+              <td data-header="style">grid-auto-columns: max-content;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-initial</td>
-              <td data-header="style">flex: 0 auto;</td>
+              <td data-header="class">auto-cols-fr</td>
+              <td data-header="style">grid-auto-columns: minmax(0, 1fr);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-none</td>
-              <td data-header="style">flex: none;</td>
+              <td data-header="class">auto-cols-(&lt;custom-property&gt;)</td>
+              <td data-header="style">grid-auto-columns: var(&lt;custom-property&gt;);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-(&lt;custom-property&gt;)</td>
-              <td data-header="style">flex: var(&lt;custom-property&gt;);</td>
-            </tr>
-            <tr>
-              <td data-header="class">flex-[&lt;value&gt;]</td>
-              <td data-header="style">flex: &lt;value&gt;;</td>
+              <td data-header="class">auto-cols-[&lt;value&gt;]</td>
+              <td data-header="style">grid-auto-columns: &lt;value&gt;;</td>
             </tr>
           </tbody>
         </table>
@@ -205,30 +203,30 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(` <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-1">Item 2</div>
-  <div class="w-32 flex-1">Item 3</div>
+const value01 = ref(`<div class="grid auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-initial">Item 2</div>
-  <div class="w-32 flex-initial">Item 3</div>
+const value02 = ref(`<div class="grid auto-cols-min grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
 </div>`);
-const value03 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-auto">Item 2</div>
-  <div class="w-32 flex-auto">Item 3</div>
+const value03 = ref(`<div class="grid auto-cols-auto grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
 </div>`);
-const value04 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-32 flex-none">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value04 = ref(`<div class="grid auto-cols-fr grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
 </div>`);
-const value05 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-14 flex-none md:flex-1">Item 1</div>
-  <div class="box-border w-32 flex-none md:flex-1">Item 2</div>
-  <div class="box-border w-64 flex-none md:flex-1">Item 3</div>
+const value05 = ref(`<div class="grid auto-cols-auto md:auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사

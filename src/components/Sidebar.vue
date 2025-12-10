@@ -17,6 +17,12 @@
           <li><router-link to="/flexGrowGuide" class="">Flex Grow</router-link></li>
           <li><router-link to="/flexShrinkGuide" class="">Flex Shrink</router-link></li>
           <li><router-link to="/orderGuide" class="">Order</router-link></li>
+          <li><router-link to="/gridTempColGuide" class="">grid-template-columns</router-link></li>
+          <li><router-link to="/gridColGuide" class="">grid-columns</router-link></li>
+          <li><router-link to="/gridTempRowGuide" class="">grid-template-rows</router-link></li>
+          <li><router-link to="/gridRowGuide" class="">grid-row</router-link></li>
+          <li><router-link to="/gridAutoFlowGuide" class="">grid-auto-flow</router-link></li>
+          <li><router-link to="/gridAutoColGuide" class="">grid-auto-columns</router-link></li>
         </ul>
       </details>
       <!-- <details open="">

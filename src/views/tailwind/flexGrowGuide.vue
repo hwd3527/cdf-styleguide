@@ -19,7 +19,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-16 flex-none">Item 1</div>
                 <div class="box-border w-16 grow">Item 2</div>
                 <div class="box-border w-16 flex-none">Item 3</div>
@@ -48,7 +48,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-16 grow-3">Item 1</div>
                 <div class="box-border w-16 grow-7">Item 2</div>
                 <div class="box-border w-16 grow-4">Item 3</div>
@@ -76,7 +76,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-16 grow">Item 1</div>
                 <div class="box-border w-16 grow-0">Item 2</div>
                 <div class="box-border w-16 grow">Item 3</div>
@@ -105,7 +105,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-16 grow md:grow-0">Item 1</div>
                 <div class="box-border w-16 grow md:grow-0">Item 2</div>
                 <div class="box-border w-16 grow md:grow-0">Item 3</div>

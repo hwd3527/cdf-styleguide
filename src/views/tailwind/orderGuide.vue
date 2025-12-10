@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex-shrink</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex-shrink" target="_blank">
+    <h2 class="cdf-h1">order</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/order" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">아이템 축소 허용</h3>
-      <p class="cdf-information-text mt-5">'shrink' 필요한 경우 플렉스 아이템을 축소하도록 허용합니다.</p>
+      <h3 class="cdf-h3">정렬 순서를 설정</h3>
+      <p class="cdf-information-text mt-5">'order-&lt;number&gt;'를 사용하여 문서에 나타나는 순서를 flex 및 grid 아이템의 정렬 순서를 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -19,10 +19,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-                <div class="box-border w-16 flex-none">Item 1</div>
-                <div class="box-border w-64 shrink">Item 2</div>
-                <div class="box-border w-16 flex-none">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border w-16 order-3">Item 1</div>
+                <div class="box-border w-16 order-1">Item 2</div>
+                <div class="box-border w-16 order-2">Item 3</div>
               </div>
             </div>
           </div>
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">아이템 축소 방지</h3>
-      <p class="cdf-information-text mt-5">'shrink-0' 플렉스 아이템이 줄어드는 것을 방지합니다.</p>
+      <h3 class="cdf-h3">아이템을 처음 또는 마지막으로 정렬</h3>
+      <p class="cdf-information-text mt-5">'order-first' 또는 'order-last'를 사용하여 flex 및 grid 아이템을 처음 또는 마지막으로 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -47,10 +47,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border w-86 shrink-0">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border w-16 order-last">Item 1</div>
+                <div class="box-border w-16">Item 2</div>
+                <div class="box-border w-16 order-first">Item 3</div>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
 
     <div class="conts-area">
       <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 축소를 설정합니다.</p>
+      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 순서를 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -75,10 +75,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-                <div class="box-border w-48 shrink md:shrink-0">Item 1</div>
-                <div class="box-border w-48 shrink md:shrink-0">Item 2</div>
-                <div class="box-border w-48 shrink md:shrink-0">Item 3</div>
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border w-16 order-3 md:order-1">Item 1</div>
+                <div class="box-border w-16 order-1 md:order-2">Item 2</div>
+                <div class="box-border w-16 order-2 md:order-3">Item 3</div>
               </div>
             </div>
           </div>
@@ -107,22 +107,32 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">shrink
-              </td>
-              <td data-header="style">flex-shrink: 1;</td>
+              <td data-header="class">order-&lt;number&gt;</td>
+              <td data-header="style">order: &lt;number&gt;;</td>
             </tr>
             <tr>
-              <td data-header="class">shrink-&lt;number&gt;
-              </td>
-              <td data-header="style">flex-shrink: &lt;number&gt;;</td>
+              <td data-header="class">-order-&lt;number&gt;</td>
+              <td data-header="style">order: calc(&lt;number&gt; * -1);</td>
             </tr>
             <tr>
-              <td data-header="class">shrink-[&lt;value&gt;]</td>
-              <td data-header="style">flex-shrink: &lt;value&gt;;</td>
+              <td data-header="class">order-first</td>
+              <td data-header="style">order: -9999;</td>
             </tr>
             <tr>
-              <td data-header="class">shrink-(&lt;custom-property&gt;)</td>
-              <td data-header="style">flex-shrink: var(&lt;custom-property&gt;);</td>
+              <td data-header="class">order-last</td>
+              <td data-header="style">order: 9999;</td>
+            </tr>
+            <tr>
+              <td data-header="class">order-none</td>
+              <td data-header="style">order: 0;</td>
+            </tr>
+            <tr>
+              <td data-header="class">order-(&lt;custom-property&gt;)</td>
+              <td data-header="style">order: var(&lt;custom-property&gt;);</td>
+            </tr>
+            <tr>
+              <td data-header="class">order-[&lt;value&gt;]</td>
+              <td data-header="style">order: &lt;value&gt;;</td>
             </tr>
           </tbody>
         </table>
@@ -137,19 +147,19 @@ import { ref, onMounted } from 'vue'
 import CodeMirror from "vue-codemirror6";
 
 const value01 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-16 flex-none">Item 1</div>
-  <div class="box-border w-64 shrink">Item 2</div>
-  <div class="box-border w-16 flex-none">Item 3</div>
+  <div class="w-16 order-3">Item 1</div>
+  <div class="w-16 order-1">Item 2</div>
+  <div class="w-16 order-2">Item 3</div>
 </div>`);
 const value02 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border flex-1">Item 1</div>
-  <div class="box-border w-86 shrink-0">Item 2</div>
-  <div class="box-border flex-1">Item 3</div>
+  <div class="w-16 order-last">Item 1</div>
+  <div class="w-16">Item 2</div>
+  <div class="w-16 order-first">Item 3</div>
 </div>`);
 const value03 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-48 shrink md:shrink-0">Item 1</div>
-  <div class="box-border w-48 shrink md:shrink-0">Item 2</div>
-  <div class="box-border w-48 shrink md:shrink-0">Item 3</div>
+  <div class="box-border w-16 order-3 md:order-1">Item 1</div>
+  <div class="box-border w-16 order-1 md:order-2">Item 2</div>
+  <div class="box-border w-16 order-2 md:order-3">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사

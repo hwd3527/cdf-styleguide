@@ -19,7 +19,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-16 flex-none">Item 1</div>
                 <div class="box-border w-64 shrink">Item 2</div>
                 <div class="box-border w-16 flex-none">Item 3</div>
@@ -47,7 +47,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border flex-1">Item 1</div>
                 <div class="box-border w-86 shrink-0">Item 2</div>
                 <div class="box-border flex-1">Item 3</div>
@@ -75,7 +75,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border w-48 shrink md:shrink-0">Item 1</div>
                 <div class="box-border w-48 shrink md:shrink-0">Item 2</div>
                 <div class="box-border w-48 shrink md:shrink-0">Item 3</div>

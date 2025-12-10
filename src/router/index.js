@@ -104,6 +104,41 @@ const router = createRouter({
       name: 'orderGuide',
       component: () => import('../views/tailwind/orderGuide.vue'),
     },
+    {
+      path: '/gridTempColGuide',
+      name: 'gridTempColGuide',
+      component: () => import('../views/tailwind/gridTempColGuide.vue'),
+    },
+    {
+      path: '/gridColGuide',
+      name: 'gridColGuide',
+      component: () => import('../views/tailwind/gridColGuide.vue'),
+    },
+    {
+      path: '/gridTempRowGuide',
+      name: 'gridTempRowGuide',
+      component: () => import('../views/tailwind/gridTempRowGuide.vue'),
+    },
+    {
+      path: '/gridRowGuide',
+      name: 'gridRowGuide',
+      component: () => import('../views/tailwind/gridRowGuide.vue'),
+    },
+    {
+      path: '/gridRowGuide',
+      name: 'gridRowGuide',
+      component: () => import('../views/tailwind/gridRowGuide.vue'),
+    },
+    {
+      path: '/gridAutoFlowGuide',
+      name: 'gridAutoFlowGuide',
+      component: () => import('../views/tailwind/gridAutoFlowGuide.vue'),
+    },
+    {
+      path: '/gridAutoColGuide',
+      name: 'gridAutoColGuide',
+      component: () => import('../views/tailwind/gridAutoColGuide.vue'),
+    },
   ],
 })
 
