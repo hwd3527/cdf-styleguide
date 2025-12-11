@@ -158,22 +158,22 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex flex-nowrap gap-2 p-3 bg-gray-100 w-full md:w-3xl overflow-x-auto">
+const value01 = ref(`<div class="flex flex-nowrap gap-2">
   <div class="w-2/5 flex-none">Item 1</div>
   <div class="w-2/5 flex-none">Item 2</div>
   <div class="w-2/5 flex-none">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex flex-wrap gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value02 = ref(`<div class="flex flex-wrap gap-2">
   <div class="w-2/5 flex-none">Item 1</div>
   <div class="w-2/5 flex-none">Item 2</div>
   <div class="w-2/5 flex-none">Item 3</div>
 </div>`);
-const value03 = ref(`<div class="flex flex-wrap-reverse gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value03 = ref(`<div class="flex flex-wrap-reverse gap-2">
   <div class="w-2/5 flex-none">Item 1</div>
   <div class="w-2/5 flex-none">Item 2</div>
   <div class="w-2/5 flex-none">Item 3</div>
 </div>`);
-const value04 = ref(`<div class="flex flex-wrap md:flex-wrap-reverse gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value04 = ref(`<div class="flex flex-wrap md:flex-wrap-reverse gap-2">
   <div class="w-2/5 flex-none">Item 1</div>
   <div class="w-2/5 flex-none">Item 2</div>
   <div class="w-2/5 flex-none">Item 3</div>

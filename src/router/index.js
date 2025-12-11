@@ -139,6 +139,41 @@ const router = createRouter({
       name: 'gridAutoColGuide',
       component: () => import('../views/tailwind/gridAutoColGuide.vue'),
     },
+    {
+      path: '/gridAutoRowGuide',
+      name: 'gridAutoRowGuide',
+      component: () => import('../views/tailwind/gridAutoRowGuide.vue'),
+    },
+    {
+      path: '/gapGuide',
+      name: 'gapGuide',
+      component: () => import('../views/tailwind/gapGuide.vue'),
+    },
+    {
+      path: '/justifyContentGuide',
+      name: 'justifyContentGuide',
+      component: () => import('../views/tailwind/justifyContentGuide.vue'),
+    },
+    {
+      path: '/justifyItemsGuide',
+      name: 'justifyItemsGuide',
+      component: () => import('../views/tailwind/justifyItemsGuide.vue'),
+    },
+    {
+      path: '/justifySelfGuide',
+      name: 'justifySelfGuide',
+      component: () => import('../views/tailwind/justifySelfGuide.vue'),
+    },
+    {
+      path: '/alignContentGuide',
+      name: 'alignContentGuide',
+      component: () => import('../views/tailwind/alignContentGuide.vue'),
+    },
+    {
+      path: '/alignItemsGuide',
+      name: 'alignItemsGuide',
+      component: () => import('../views/tailwind/alignItemsGuide.vue'),
+    },
   ],
 })
 

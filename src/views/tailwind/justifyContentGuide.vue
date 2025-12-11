@@ -1,15 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">grid-auto-columns</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/grid-auto-columns" target="_blank">
+    <h2 class="cdf-h1">justify-content</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/justify-content" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">auto-cols-max</h3>
-      <p class="cdf-information-text mt-5">'auto-cols-max'를 사용하여 암묵적으로 생성되는 그리드 열의 최대 크기를 제어합니다.
-      </p>
+      <h3 class="cdf-h3">Start</h3>
+      <p class="cdf-information-text mt-5">'justify-start'는 컨테이너의 시작 부분에 아이템을 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -20,7 +19,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+              <div class="flex justify-start gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border">Item 1</div>
                 <div class="box-border">Item 2</div>
                 <div class="box-border">Item 3</div>
@@ -36,9 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">auto-cols-min</h3>
-      <p class="cdf-information-text mt-5">'auto-cols-min'를 사용하여 암묵적으로 생성되는 그리드 열의 최소 크기를 제어합니다.
-      </p>
+      <h3 class="cdf-h3">Center</h3>
+      <p class="cdf-information-text mt-5">'justify-center'는 컨테이너의 중앙에 아이템을 정렬합니다. 'justify-center-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 중앙이 아닌 시작 부분을 맞춥니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -49,10 +47,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid auto-cols-min grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+              <div class="flex justify-center gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border">Item 1</div>
                 <div class="box-border">Item 2</div>
                 <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -65,9 +64,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">auto-cols-auto</h3>
-      <p class="cdf-information-text mt-5">'auto-cols-auto'를 사용하여 암묵적으로 생성되는 그리드 열의 자동 크기를 제어합니다.
-      </p>
+      <h3 class="cdf-h3">justify-end</h3>
+      <p class="cdf-information-text mt-5">'justify-end'는 컨테이너의 끝 부분에 아이템을 정렬합니다. 'justify-end-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 끝 부분이 아닌 시작 부분을 맞춥니다.'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -78,10 +76,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid auto-cols-auto grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+              <div class="flex justify-end gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border">Item 1</div>
                 <div class="box-border">Item 2</div>
                 <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -94,9 +93,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">auto-cols-fr</h3>
-      <p class="cdf-information-text mt-5">'auto-cols-fr'를 사용하여 암묵적으로 생성되는 그리드 열의 자동 크기를 제어합니다.
-      </p>
+      <h3 class="cdf-h3">justify-between</h3>
+      <p class="cdf-information-text mt-5">'justify-between'는 컨테이너의 시작 부분과 끝 부분 사이에 아이템을 정렬합니다</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -107,7 +105,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid auto-cols-fr grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+              <div class="flex justify-between gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border">Item 1</div>
                 <div class="box-border">Item 2</div>
                 <div class="box-border">Item 3</div>
@@ -122,10 +120,9 @@
       </div>
     </div>
 
-
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 그리드 자동 흐름을 설정합니다.</p>
+      <h3 class="cdf-h3">justify-around</h3>
+      <p class="cdf-information-text mt-5">'justify-around'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹치지 않습니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -136,7 +133,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid auto-cols-auto md:auto-cols-max grid-flow-col gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+              <div class="flex justify-around gap-2 p-3 bg-gray-200 w-full md:w-3xl">
                 <div class="box-border">Item 1</div>
                 <div class="box-border">Item 2</div>
                 <div class="box-border">Item 3</div>
@@ -146,6 +143,118 @@
           <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
             <code-mirror v-model="value05" :dark="true" basic />
             <button type="button" class="clipboard" @click="copyCode('value05')">코드 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="cdf-h3">justify-evenly</h3>
+      <p class="cdf-information-text mt-5">'justify-evenly'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹칩니다.</p>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container normal">
+              <div class="flex justify-evenly gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
+            <code-mirror v-model="value06" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value06')">코드 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="cdf-h3">justify-stretch</h3>
+      <p class="cdf-information-text mt-5">'justify-stretch'는 컨테이너의 아이템 중에 자동 크기롤 설정된 항목을 컨테이너의 주축에 따라 공간을 채웁니다.</p>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container normal">
+              <div class="grid grid-cols-[6rem_auto_6rem] justify-stretch gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
+            <code-mirror v-model="value07" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value07')">코드 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="cdf-h3">justify-normal</h3>
+      <p class="cdf-information-text mt-5">'justify-normal'는 아무것도 설정되지 않은 상태입니다.</p>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container normal">
+              <div class="flex justify-normal gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
+            <code-mirror v-model="value08" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value08')">코드 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="cdf-h3">반응형</h3>
+      <p class="cdf-information-text mt-5">중단점으로 정한 크기에서 설정한 형식으로 변환 됩니다.</p>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container normal">
+              <div class="flex justify-start md:justify-between gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
+            <code-mirror v-model="value09" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value09')">코드 복사</button>
           </div>
         </div>
       </div>
@@ -168,28 +277,48 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">auto-cols-auto</td>
-              <td data-header="style">grid-auto-columns: auto;</td>
+              <td data-header="class">justify-start</td>
+              <td data-header="style">justify-content: flex-start;</td>
             </tr>
             <tr>
-              <td data-header="class">auto-cols-min</td>
-              <td data-header="style">grid-auto-columns: min-content;</td>
+              <td data-header="class">justify-end</td>
+              <td data-header="style">justify-content: flex-end;</td>
             </tr>
             <tr>
-              <td data-header="class">auto-cols-max</td>
-              <td data-header="style">grid-auto-columns: max-content;</td>
+              <td data-header="class">justify-end-safe</td>
+              <td data-header="style">justify-content: safe flex-end;</td>
             </tr>
             <tr>
-              <td data-header="class">auto-cols-fr</td>
-              <td data-header="style">grid-auto-columns: minmax(0, 1fr);</td>
+              <td data-header="class">justify-center</td>
+              <td data-header="style">justify-content: center;</td>
             </tr>
             <tr>
-              <td data-header="class">auto-cols-(&lt;custom-property&gt;)</td>
-              <td data-header="style">grid-auto-columns: var(&lt;custom-property&gt;);</td>
+              <td data-header="class">justify-center-safe</td>
+              <td data-header="style">justify-content: safe center;</td>
             </tr>
             <tr>
-              <td data-header="class">auto-cols-[&lt;value&gt;]</td>
-              <td data-header="style">grid-auto-columns: &lt;value&gt;;</td>
+              <td data-header="class">justify-between</td>
+              <td data-header="style">justify-content: space-between;</td>
+            </tr>
+            <tr>
+              <td data-header="class">justify-around</td>
+              <td data-header="style">justify-content: space-around;</td>
+            </tr>
+            <tr>
+              <td data-header="class">justify-evenly</td>
+              <td data-header="style">justify-content: space-evenly;</td>
+            </tr>
+            <tr>
+              <td data-header="class">justify-stretch</td>
+              <td data-header="style">justify-content: stretch;</td>
+            </tr>
+            <tr>
+              <td data-header="class">justify-baseline</td>
+              <td data-header="style">justify-content: baseline;</td>
+            </tr>
+            <tr>
+              <td data-header="class">justify-normal</td>
+              <td data-header="style">justify-content: normal;</td>
             </tr>
           </tbody>
         </table>
@@ -203,31 +332,55 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="grid auto-cols-max grid-flow-col gap-2">
+const value01 = ref(`<div class="flex justify-start gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
 </div>`);
-const value02 = ref(`<div class="grid auto-cols-min grid-flow-col gap-2">
+const value02 = ref(`<div class="flex justify-center gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+</div>`);
+const value03 = ref(`<div class="flex justify-end gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+</div>`);
+const value04 = ref(`<div class="flex justify-between gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
 </div>`);
-const value03 = ref(`<div class="grid auto-cols-auto grid-flow-col gap-2">
+const value05 = ref(`<div class="flex justify-around gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
 </div>`);
-const value04 = ref(`<div class="grid auto-cols-fr grid-flow-col gap-2">
+const value06 = ref(`<div class="flex justify-evenly gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
 </div>`);
-const value05 = ref(`<div class="grid auto-cols-auto md:auto-cols-max grid-flow-col gap-2">
+const value07 = ref(`<div class="grid grid-cols-[6rem_auto_6rem] justify-stretch gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
 </div>`);
+const value08 = ref(`<div class="flex justify-normal gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>`)
+const value09 = ref(`<div class="flex justify-start md:justify-between gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>`)
+
+
 
 // copyCode를 클릭하면 코드 복사
 function copyCode(value) {

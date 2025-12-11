@@ -1,15 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex" target="_blank">
+    <h2 class="cdf-h1">gap</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/order" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
       <h3 class="cdf-h3">기본</h3>
-      <p class="cdf-information-text mt-5">'flex'안의 자식 엘리먼트가 가지고 있는 크기를 무시하고 부모 컨테이너의 크기에 맞게 배치됩니다.
-        'flex&lt;number&gt;', 'flex-1'</p>
+      <p class="cdf-information-text mt-5">'gap-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -20,10 +19,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-1">Item 2</div>
-                <div class="box-border w-32 flex-1">Item 3</div>
+              <div class="grid grid-cols-2 gap-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Initial</h3>
-      <p class="cdf-information-text mt-5">'flex-initial' 플렉스 아이템의 크기가 줄어들지만 초기 크기보다 늘어나지는 않습니다.</p>
+      <h3 class="cdf-h3">행과 열 간격을 독립적으로 설정</h3>
+      <p class="cdf-information-text mt-5">'gap-x-&lt;number&gt;' 'gap-y-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 독립적으로 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -48,10 +48,13 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-initial">Item 2</div>
-                <div class="box-border w-32 flex-initial">Item 3</div>
+              <div class="grid grid-cols-3 gap-x-8 gap-y-4 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
+                <div class="box-border">Item 5</div>
+                <div class="box-border">Item 6</div>
               </div>
             </div>
           </div>
@@ -64,8 +67,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Auto</h3>
-      <p class="cdf-information-text mt-5">'flex-auto' 플렉스 아이템의 초기 크기에 비례하여 커지거나 작아집니다.</p>
+      <h3 class="cdf-h3">반응형 디자인</h3>
+      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 간격을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -76,72 +79,19 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-64 flex-auto">Item 2</div>
-                <div class="box-border w-32 flex-auto">Item 3</div>
+              <div class="grid gap-4 md:gap-6 grid-cols-2 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
+                <div class="box-border">Item 5</div>
+                <div class="box-border">Item 6</div>
               </div>
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
             <code-mirror v-model="value03" :dark="true" basic />
             <button type="button" class="clipboard" @click="copyCode('value03')">코드 복사</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="conts-area">
-      <h3 class="cdf-h3">none</h3>
-      <p class="cdf-information-text mt-5">'flex-none' 플렉스 아이템의 크기가 고정됩니다.</p>
-      <div class="tabs">
-        <div role="tablist" class="tab-list">
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
-            aria-selected="true" tabindex="0"><span>Preview</span></a>
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
-            aria-selected="false" tabindex="-1"><span>Code</span></a>
-        </div>
-        <div class="tab-conts">
-          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
-            <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none">Item 1</div>
-                <div class="box-border w-32 flex-none">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
-              </div>
-            </div>
-          </div>
-          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value04" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value04')">코드 복사</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 플렉스의 방향을 설정합니다.</p>
-      <div class="tabs">
-        <div role="tablist" class="tab-list">
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
-            aria-selected="true" tabindex="0"><span>Preview</span></a>
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
-            aria-selected="false" tabindex="-1"><span>Code</span></a>
-        </div>
-        <div class="tab-conts">
-          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
-            <div class="container normal">
-              <div class="flex gap-2 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border w-14 flex-none md:flex-1">Item 1</div>
-                <div class="box-border w-32 flex-none md:flex-1">Item 2</div>
-                <div class="box-border w-64 flex-none md:flex-1">Item 3</div>
-              </div>
-            </div>
-          </div>
-          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value05" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value05')">코드 복사</button>
           </div>
         </div>
       </div>
@@ -164,34 +114,40 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">flex-&lt;number&gt;
-              </td>
-              <td data-header="style">flex-&lt;number&gt;;</td>
+              <td data-header="class">gap-&lt;number&gt;</td>
+              <td data-header="style">gap: calc(var(--spacing) * &lt;value&gt;);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-&lt;fraction&gt;
-              </td>
-              <td data-header="style">flex: calc(&lt;fraction&gt; * 100%);</td>
+              <td data-header="class">gap-(&lt;custom-property&gt;)</td>
+              <td data-header="style">gap: var(&lt;custom-property&gt;);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-auto</td>
-              <td data-header="style">flex: auto;</td>
+              <td data-header="class">gap-[&lt;value&gt;]</td>
+              <td data-header="style">gap: &lt;value&gt;;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-initial</td>
-              <td data-header="style">flex: 0 auto;</td>
+              <td data-header="class">gap-x-&lt;number&gt;</td>
+              <td data-header="style">column-gap: calc(var(--spacing) * &lt;value&gt;);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-none</td>
-              <td data-header="style">flex: none;</td>
+              <td data-header="class">gap-x-(&lt;custom-property&gt;)</td>
+              <td data-header="style">column-gap: var(&lt;custom-property&gt;);</td>
             </tr>
             <tr>
-              <td data-header="class">flex-(&lt;custom-property&gt;)</td>
-              <td data-header="style">flex: var(&lt;custom-property&gt;);</td>
+              <td data-header="class">gap-x-[&lt;value&gt;]</td>
+              <td data-header="style">column-gap: &lt;value&gt;;</td>
             </tr>
             <tr>
-              <td data-header="class">flex-[&lt;value&gt;]</td>
-              <td data-header="style">flex: &lt;value&gt;;</td>
+              <td data-header="class">gap-y-&lt;number&gt;</td>
+              <td data-header="style">row-gap: calc(var(--spacing) * &lt;value&gt;);</td>
+            </tr>
+            <tr>
+              <td data-header="class">gap-y-(&lt;custom-property&gt;)</td>
+              <td data-header="style">row-gap: var(&lt;custom-property&gt;);</td>
+            </tr>
+            <tr>
+              <td data-header="class">gap-y-[&lt;value&gt;]</td>
+              <td data-header="style">row-gap: &lt;value&gt;;</td>
             </tr>
           </tbody>
         </table>
@@ -205,30 +161,24 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(` <div class="flex gap-2">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-1">Item 2</div>
-  <div class="w-32 flex-1">Item 3</div>
+const value01 = ref(`<div class="grid grid-cols-2 gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value02 = ref(`<div class="flex gap-2">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-initial">Item 2</div>
-  <div class="w-32 flex-initial">Item 3</div>
+const value02 = ref(`<div class="grid grid-cols-3 gap-x-8 gap-y-4">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+  <div>Item 6</div>
 </div>`);
 const value03 = ref(`<div class="flex gap-2">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-64 flex-auto">Item 2</div>
-  <div class="w-32 flex-auto">Item 3</div>
-</div>`);
-const value04 = ref(`<div class="flex gap-2">
-  <div class="w-14 flex-none">Item 1</div>
-  <div class="w-32 flex-none">Item 2</div>
-  <div class="flex-1">Item 3</div>
-</div>`);
-const value05 = ref(`<div class="flex gap-2">
-  <div class="w-14 flex-none md:flex-1">Item 1</div>
-  <div class="w-32 flex-none md:flex-1">Item 2</div>
-  <div class="w-64 flex-none md:flex-1">Item 3</div>
+  <div class="w-16 order-3 md:order-1">Item 1</div>
+  <div class="w-16 order-1 md:order-2">Item 2</div>
+  <div class="w-16 order-2 md:order-3">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사

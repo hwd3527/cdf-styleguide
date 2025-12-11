@@ -152,7 +152,7 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="grid grid-cols-4 gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value01 = ref(`<div class="grid grid-cols-4 gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
@@ -163,7 +163,7 @@ const value01 = ref(`<div class="grid grid-cols-4 gap-2 p-3 bg-gray-100 w-full m
   <div>Item 8</div>
   <div>Item 9</div>
 </div>`);
-const value02 = ref(`<div class="grid grid-cols-4 gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value02 = ref(`<div class="grid grid-cols-4 gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
@@ -173,7 +173,7 @@ const value02 = ref(`<div class="grid grid-cols-4 gap-2 p-3 bg-gray-100 w-full m
     <div class="col-start-2">Item 6</div>
   </div>
 </div>`);
-const value03 = ref(`<div class="grid grid-cols-1 md:grid-cols-6 gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value03 = ref(`<div class="grid grid-cols-1 md:grid-cols-6 gap-2">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>

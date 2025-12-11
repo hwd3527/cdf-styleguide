@@ -146,20 +146,20 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value01 = ref(`<div class="flex gap-2">
   <div class="w-16 order-3">Item 1</div>
   <div class="w-16 order-1">Item 2</div>
   <div class="w-16 order-2">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
+const value02 = ref(`<div class="flex gap-2">
   <div class="w-16 order-last">Item 1</div>
   <div class="w-16">Item 2</div>
   <div class="w-16 order-first">Item 3</div>
 </div>`);
-const value03 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-16 order-3 md:order-1">Item 1</div>
-  <div class="box-border w-16 order-1 md:order-2">Item 2</div>
-  <div class="box-border w-16 order-2 md:order-3">Item 3</div>
+const value03 = ref(`<div class="flex gap-2">
+  <div class="w-16 order-3 md:order-1">Item 1</div>
+  <div class="w-16 order-1 md:order-2">Item 2</div>
+  <div class="w-16 order-2 md:order-3">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사

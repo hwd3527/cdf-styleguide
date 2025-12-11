@@ -136,20 +136,20 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-16 flex-none">Item 1</div>
-  <div class="box-border w-64 shrink">Item 2</div>
-  <div class="box-border w-16 flex-none">Item 3</div>
+const value01 = ref(`<div class="flex gap-2">
+  <div class="w-16 flex-none">Item 1</div>
+  <div class="w-64 shrink">Item 2</div>
+  <div class="w-16 flex-none">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border flex-1">Item 1</div>
-  <div class="box-border w-86 shrink-0">Item 2</div>
-  <div class="box-border flex-1">Item 3</div>
+const value02 = ref(`<div class="flex gap-2">
+  <div class="flex-1">Item 1</div>
+  <div class="w-86 shrink-0">Item 2</div>
+  <div class="flex-1">Item 3</div>
 </div>`);
-const value03 = ref(`<div class="flex gap-2 p-3 bg-gray-100 w-full md:w-3xl">
-  <div class="box-border w-48 shrink md:shrink-0">Item 1</div>
-  <div class="box-border w-48 shrink md:shrink-0">Item 2</div>
-  <div class="box-border w-48 shrink md:shrink-0">Item 3</div>
+const value03 = ref(`<div class="flex gap-2">
+  <div class="w-48 shrink md:shrink-0">Item 1</div>
+  <div class="w-48 shrink md:shrink-0">Item 2</div>
+  <div class="w-48 shrink md:shrink-0">Item 3</div>
 </div>`);
 
 // copyCode를 클릭하면 코드 복사
