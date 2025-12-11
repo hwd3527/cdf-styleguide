@@ -7,31 +7,7 @@
       </button>
     </div>
     <nav class="cdf-scrollbar">
-      <details open="">
-        <summary class="group">Flexbox & Grid</summary>
-        <ul>
-          <li><router-link to="/flexBasisGuide" class="">Flex Basis</router-link></li>
-          <li><router-link to="/flexDirectionGuide" class="">Flex Direction</router-link></li>
-          <li><router-link to="/flexWrapGuide" class="">Flex Wrap</router-link></li>
-          <li><router-link to="/flexGuide" class="">Flex</router-link></li>
-          <li><router-link to="/flexGrowGuide" class="">Flex Grow</router-link></li>
-          <li><router-link to="/flexShrinkGuide" class="">Flex Shrink</router-link></li>
-          <li><router-link to="/orderGuide" class="">Order</router-link></li>
-          <li><router-link to="/gridTempColGuide" class="">grid-template-columns</router-link></li>
-          <li><router-link to="/gridColGuide" class="">grid-columns</router-link></li>
-          <li><router-link to="/gridTempRowGuide" class="">grid-template-rows</router-link></li>
-          <li><router-link to="/gridRowGuide" class="">grid-row</router-link></li>
-          <li><router-link to="/gridAutoFlowGuide" class="">grid-auto-flow</router-link></li>
-          <li><router-link to="/gridAutoColGuide" class="">grid-auto-columns</router-link></li>
-          <li><router-link to="/gridAutoRowGuide" class="">grid-auto-rows</router-link></li>
-          <li><router-link to="/gapGuide" class="">gap</router-link></li>
-          <li><router-link to="/justifyContentGuide" class="">justify-content</router-link></li>
-          <li><router-link to="/justifyItemsGuide" class="">justify-items</router-link></li>
-          <li><router-link to="/justifySelfGuide" class="">justify-self</router-link></li>
-          <li><router-link to="/alignContentGuide" class="">align-content</router-link></li>
-          <li><router-link to="/alignItemsGuide" class="">align-items</router-link></li>
-        </ul>
-      </details>
+      
       <!-- <details open="">
         <summary class="group">Layout</summary>
         <ul>
@@ -85,6 +61,32 @@
           <li>
             <router-link to="/textGuide" class="">Text</router-link>
           </li>
+        </ul>
+      </details>
+
+      <details open="">
+        <summary class="group">Flexbox & Grid</summary>
+        <ul>
+          <li><router-link to="/flexBasisGuide" class="">Flex Basis</router-link></li>
+          <li><router-link to="/flexDirectionGuide" class="">Flex Direction</router-link></li>
+          <li><router-link to="/flexWrapGuide" class="">Flex Wrap</router-link></li>
+          <li><router-link to="/flexGuide" class="">Flex</router-link></li>
+          <li><router-link to="/flexGrowGuide" class="">Flex Grow</router-link></li>
+          <li><router-link to="/flexShrinkGuide" class="">Flex Shrink</router-link></li>
+          <li><router-link to="/orderGuide" class="">Order</router-link></li>
+          <li><router-link to="/gridTempColGuide" class="">grid-template-columns</router-link></li>
+          <li><router-link to="/gridColGuide" class="">grid-columns</router-link></li>
+          <li><router-link to="/gridTempRowGuide" class="">grid-template-rows</router-link></li>
+          <li><router-link to="/gridRowGuide" class="">grid-row</router-link></li>
+          <li><router-link to="/gridAutoFlowGuide" class="">grid-auto-flow</router-link></li>
+          <li><router-link to="/gridAutoColGuide" class="">grid-auto-columns</router-link></li>
+          <li><router-link to="/gridAutoRowGuide" class="">grid-auto-rows</router-link></li>
+          <li><router-link to="/gapGuide" class="">gap</router-link></li>
+          <li><router-link to="/justifyContentGuide" class="">justify-content</router-link></li>
+          <li><router-link to="/justifyItemsGuide" class="">justify-items</router-link></li>
+          <li><router-link to="/justifySelfGuide" class="">justify-self</router-link></li>
+          <li><router-link to="/alignContentGuide" class="">align-content</router-link></li>
+          <li><router-link to="/alignItemsGuide" class="">align-items</router-link></li>
         </ul>
       </details>
 
