@@ -87,6 +87,7 @@
           <li><router-link to="/justifySelfGuide" class="">justify-self</router-link></li>
           <li><router-link to="/alignContentGuide" class="">align-content</router-link></li>
           <li><router-link to="/alignItemsGuide" class="">align-items</router-link></li>
+          <li><router-link to="/alignSelfGuide" class="">align-self</router-link></li>
         </ul>
       </details>
 

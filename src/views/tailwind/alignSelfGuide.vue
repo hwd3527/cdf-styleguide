@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">align-items</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/align-items" target="_blank">
+    <h2 class="cdf-h1">align-self</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/align-self" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Stretch</h3>
-      <p class="cdf-information-text mt-5">'items-stretch'는 컨테이너에 가로축을 기준으로 늘어나서 채웁니다.</p>
+      <h3 class="cdf-h3">Auto</h3>
+      <p class="cdf-information-text mt-5">'self-auto'는 컨테이너의 속성에 따라 아이템의 정렬을 자동으로 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -20,9 +20,9 @@
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
               <div class="flex items-stretch gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border py-4 flex-1">Item 1</div>
-                <div class="box-border py-12 flex-1">Item 2</div>
-                <div class="box-border py-8 flex-1">Item 3</div>
+                <div class="box-border flex-1">Item 1</div>
+                <div class="box-border self-auto flex-1 !bg-cyan-300">Item 2</div>
+                <div class="box-border flex-1">Item 3</div>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
 
     <div class="conts-area">
       <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'items-start'는 컨테이너에 가로축을 기준으로 시작 부분에 정렬합니다.</p>
+      <p class="cdf-information-text mt-5">'self-start'는 컨테이너의 값과 관계없이 아이템을 시작 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -47,10 +47,10 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-start gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border !py-4 flex-1">Item 1</div>
-                <div class="box-border !py-12 flex-1">Item 2</div>
-                <div class="box-border !py-8 flex-1">Item 3</div>
+              <div class="flex items-stretch gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border flex-1">Item 1</div>
+                <div class="box-border self-start flex-1 !bg-cyan-300">Item 2</div>
+                <div class="box-border flex-1">Item 3</div>
               </div>
             </div>
           </div>
@@ -273,15 +273,15 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex items-stretch gap-2 h-56">
-  <div class="py-4 flex-1">Item 1</div>
-  <div class="py-12 flex-1">Item 2</div>
-  <div class="py-8 flex-1">Item 3</div>
+const value01 = ref(`<div class="flex items-stretch gap-2 p-3 h-56">
+  <div class="flex-1">Item 1</div>
+  <div class="self-auto flex-1">Item 2</div>
+  <div class="flex-1">Item 3</div>
 </div>`);
-const value02 = ref(`<div class="flex items-start gap-2 h-56">
-  <div class="!py-4 flex-1">Item 1</div>
-  <div class="!py-12 flex-1">Item 2</div>
-  <div class="!py-8 flex-1">Item 3</div>
+const value02 = ref(`<div class="flex items-stretch gap-2 p-3 h-56">
+  <div class="flex-1">Item 1</div>
+  <div class="self-start flex-1">Item 2</div>
+  <div class="flex-1">Item 3</div>
 </div>`);
 const value03 = ref(`<div class="flex items-center gap-2 h-56">
   <div class="!py-4 flex-1">Item 1</div>

@@ -174,6 +174,11 @@ const router = createRouter({
       name: 'alignItemsGuide',
       component: () => import('../views/tailwind/alignItemsGuide.vue'),
     },
+    {
+      path: '/alignSelfGuide',
+      name: 'alignSelfGuide',
+      component: () => import('../views/tailwind/alignSelfGuide.vue'),
+    },
   ],
 })
 
