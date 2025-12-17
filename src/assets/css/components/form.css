@@ -1,3 +1,6 @@
+@import 'tailwindcss';
+
+@layer components {
 /*
 **************************************
 form
@@ -82,40 +85,6 @@ form
   border-radius: var(--radius-max);
 }
 
-.vortal .cdf-form-group .cdf-form-tit label:before,
-.vortal .cdf-form-group .cdf-form-label:before {
-  background-color: var(--tertiary-600-color);
-}
-
-.myicube .cdf-form-group .cdf-form-tit label:before,
-.myicube .cdf-form-group .cdf-form-label:before {
-  background-color: var(--primary-600-color);
-}
-
-.myistation .cdf-form-group .cdf-form-tit label:before,
-.myistation .cdf-form-group .cdf-form-label:before {
-  background-color: var(--secondary-600-color);
-}
-
-.pad .cdf-form-group .cdf-form-tit label:before,
-.pad .cdf-form-group .cdf-form-label:before {
-  background-color: var(--pad-600-color);
-}
-
-.pad .cdf-form-group .cdf-form-tit label.none:before,
-.pad .cdf-form-group .cdf-form-label.none:before {
-  display: none;
-}
-
-.dp .cdf-form-group .cdf-form-tit label:before,
-.dp .cdf-form-group .cdf-form-label:before {
-  background-color: var(--secondary-600-color);
-}
-
-.dp .cdf-form-group .cdf-form-tit label.none:before,
-.dp .cdf-form-group .cdf-form-label.none:before {
-  display: none;
-}
 
 .cdf-form-group .cdf-form-label.required,
 .cdf-form-group .cdf-form-tit label.required {
@@ -194,15 +163,9 @@ form
   width: auto;
 }
 
-.dp .cdf-form-group .cdf-form-conts .cdf-form-conts-inner.inline input {
-  width: 34rem !important;
-}
+
 
 @media (max-width: 640px) {
-  .dp .cdf-form-group .cdf-form-conts .cdf-form-conts-inner.inline input {
-    width: 100% !important;
-  }
-
   .cdf-form-box input,
   .cdf-form-box select,
   .cdf-form-box button,
@@ -349,30 +312,7 @@ form
   pointer-events: none;
 }
 
-.myicube .cdf-btn-icon-wrap input[type="date"]::after,
-.myicube .cdf-btn-icon-wrap input[type="month"]::after {
-  color: var(--primary-700-color);
-}
 
-.myistation .cdf-btn-icon-wrap input[type="date"]::after,
-.myistation .cdf-btn-icon-wrap input[type="month"]::after {
-  color: var(--secondary-700-color);
-}
-
-.icube .cdf-btn-icon-wrap input[type="date"]::after,
-.icube .cdf-btn-icon-wrap input[type="month"]::after {
-  color: var(--tertiary-900-color);
-}
-
-.pad .cdf-btn-icon-wrap input[type="date"]::after,
-.pad .cdf-btn-icon-wrap input[type="month"]::after {
-  color: var(--pad-700-color);
-}
-
-.dp .cdf-btn-icon-wrap input[type="date"]::after,
-.dp .cdf-btn-icon-wrap input[type="month"]::after {
-  color: var(--secondary-700-color);
-}
 
 .cdf-btn-icon-wrap input[type="date"].size-xl,
 .cdf-btn-icon-wrap input[type="month"].size-xl {
@@ -466,26 +406,6 @@ form
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.vortal .cdf-file-input-wrap label i {
-  color: var(--tertiary-600-color)
-}
-
-.myicube .cdf-file-input-wrap label i {
-  color: var(--primary-600-color)
-}
-
-.myistation .cdf-file-input-wrap label i {
-  color: var(--secondary-600-color)
-}
-
-.pad .cdf-file-input-wrap label i {
-  color: var(--pad-600-color)
-}
-
-.dp .cdf-file-input-wrap label i {
-  color: var(--secondary-600-color)
 }
 
 .cdf-file-input-wrap input+label {
@@ -929,28 +849,6 @@ form
   flex-shrink: 0;
 }
 
-.vortal .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--tertiary-500-color);
-}
-
-.myicube .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--primary-500-color);
-}
-
-.myistation .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--secondary-500-color);
-}
-
-.myistation .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--secondary-500-color);
-}
-
-.pad .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--pad-500-color);
-}
-.dp .cdf-form-group [class^=cdf-form-hint]::before {
-  background-color: var(--secondary-500-color);
-}
 @media (max-width: 1024px) {
   .cdf-form-group.horizontal .cdf-form-conts .cdf-form-conts-inner input,
   .cdf-form-group.horizontal .cdf-form-conts .cdf-form-conts-inner select,
@@ -1006,4 +904,5 @@ form
   .cdf-form-group.horizontal .cdf-form-conts .cdf-form-conts-inner .cdf-btn-icon-wrap .cdf-btn.size-xs {
     width: 3.2rem !important;
   }
+}
 }

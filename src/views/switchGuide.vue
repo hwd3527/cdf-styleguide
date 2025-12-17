@@ -52,6 +52,56 @@
         </div>
       </div>
     </div>
+
+    <div class="conts-area">
+      <h3 class="cdf-h3">사이즈</h3>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container column">
+              <div class="cdf-form-toggle-switch size-s">
+                <input type="checkbox" id="switch11">
+                <label for="switch11">
+                  <span class="cdf-switch-toggle">
+                    <i></i>
+                  </span>
+                  switch : default
+                </label>
+              </div>
+              <div class="cdf-form-toggle-switch size-m">
+                <input type="checkbox" id="switch12" checked>
+                <label for="switch12">
+                  <span class="cdf-switch-toggle">
+                    <i></i>
+                  </span>
+                  switch : checked
+                </label>
+              </div>
+              <div class="cdf-form-toggle-switch size-l">
+                <input type="checkbox" id="switch13">
+                <label for="switch13">
+                  <span class="cdf-switch-toggle">
+                    <i></i>
+                  </span>
+                  switch : disabled
+                </label>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
+            <code-mirror v-model="value02" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value02')">코드 복사</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -81,6 +131,33 @@ const value01 = ref(`<div class="cdf-form-toggle-switch">
 <div class="cdf-form-toggle-switch">
   <input type="checkbox" id="switch3" disabled>
   <label for="switch3">
+    <span class="cdf-switch-toggle">
+      <i></i>
+    </span>
+    switch : disabled
+  </label>
+</div>`);
+const value02 = ref(`<div class="cdf-form-toggle-switch size-s">
+  <input type="checkbox" id="switch11">
+  <label for="switch11">
+    <span class="cdf-switch-toggle">
+      <i></i>
+    </span>
+    switch : default
+  </label>
+</div>
+<div class="cdf-form-toggle-switch size-m">
+  <input type="checkbox" id="switch12" checked>
+  <label for="switch12">
+    <span class="cdf-switch-toggle">
+      <i></i>
+    </span>
+    switch : checked
+  </label>
+</div>
+<div class="cdf-form-toggle-switch size-l">
+  <input type="checkbox" id="switch13">
+  <label for="switch13">
     <span class="cdf-switch-toggle">
       <i></i>
     </span>

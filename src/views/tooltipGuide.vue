@@ -16,9 +16,10 @@
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container justify-around">
               <button type="button" class="cdf-btn size-s text cdf-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-                <span class="txt">tooltip-horizontal</span> <i class="material-symbols-rounded">chevron_right</i>
+                <span class="txt">tooltip-horizontal</span> 
+                <i class="material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
                 <i class="material-symbols-rounded">help</i>
               </button>
               <button type="button" class="cdf-btn size-s cdf-tooltip" data-tooltip="버튼에 제공되는 툴팁">
@@ -48,9 +49,10 @@
             <div class="container justify-around pt-7">
               <button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-vertical"
                 data-tooltip="tooltip-vertical 옵션입니다">
-                <span class="txt">tooltip-vertical</span> <i class="material-symbols-rounded">chevron_right</i>
+                <span class="txt">tooltip-vertical</span> 
+                <i class="material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s rounded cdf-tooltip cdf-tooltip-vertical "
+              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-vertical "
                 data-tooltip="아이콘 버튼에 제공되는 툴팁">
                 <span class="sr-only">도움말</span>
                 <i class="material-symbols-rounded">help</i>
@@ -84,7 +86,7 @@
                 data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
                 <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s rounded cdf-tooltip cdf-tooltip-box"
+              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-box"
                 data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
                 <span class="sr-only">도움말</span>
                 <i class="material-symbols-rounded">help</i>
@@ -116,9 +118,10 @@ import CodeMirror from "vue-codemirror6";
 
 
 const value01 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-  <span class="txt">tooltip-horizontal</span> <i class="material-symbols-rounded">chevron_right</i>
+  <span class="txt">tooltip-horizontal</span> 
+  <i class="material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
   <i class="material-symbols-rounded">help</i>
 </button>
 <button type="button" class="cdf-btn size-s cdf-tooltip" data-tooltip="버튼에 제공되는 툴팁">
@@ -126,9 +129,10 @@ const value01 = ref(`<button type="button" class="cdf-btn size-s text cdf-toolti
 </button>`);
 const value02 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-vertical"
   data-tooltip="tooltip-vertical 옵션입니다">
-  <span class="txt">tooltip-vertical</span> <i class="material-symbols-rounded">chevron_right</i>
+  <span class="txt">tooltip-vertical</span> 
+  <i class="material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s rounded cdf-tooltip cdf-tooltip-vertical "
+<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-vertical "
   data-tooltip="아이콘 버튼에 제공되는 툴팁">
   <span class="sr-only">도움말</span>
   <i class="material-symbols-rounded">help</i>
@@ -138,9 +142,10 @@ const value02 = ref(`<button type="button" class="cdf-btn size-s text cdf-toolti
 </button>`);
 const value03 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-box"
   data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-  <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
+  <span class="txt">tooltip-box</span>
+  <i class="material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s rounded cdf-tooltip cdf-tooltip-box"
+<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-box"
   data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="sr-only">도움말</span>
   <i class="material-symbols-rounded">help</i>

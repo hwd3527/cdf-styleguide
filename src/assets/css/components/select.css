@@ -1,110 +1,124 @@
-/*
-**************************************
-select box
-**************************************
-*/
-.cdf-select {
-  position: relative;
-  width: 100%;
-  background-image: url(../../images/common/select_arrow_myicube.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: var(--surface-color);
-  border-width: .1rem;
-  border-style: solid;
-  border-color: var(--primary-400-color);
-  font-family: inherit;
-  color: var(--text-900-color);
-  transition: .3s ease-in-out;
-  height: 4.4rem;
-  padding: 0 3.6rem 0 1rem;
-  background-position: center right 1rem;
-  background-size: auto;
-  border-radius: .8rem;
-  font-size: 1.5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  min-width: 16.4rem;
-  border-radius: 1rem;
-}
-[data-theme="vortal"] .cdf-select {
-  background-color: var(--white-color);
-  border-color: var(--tertiary-400-color);
-  background-image: url(../../images/common/select_arrow_vortal.svg);
-}
-[data-theme="istation"] .cdf-select {
-  background-color: var(--white-color);
-  border-color: var(--secondary-400-color);
-  background-image: url(../../images/common/select_arrow_myistation.svg);
-}
-[data-theme="pad"] .cdf-select {
-  background-color: var(--white-color);
-  border-color: var(--pad-400-color);
-  background-image: url(../../images/common/select_arrow_pad.svg);
-}
+@import 'tailwindcss';
+
+@layer components {
+  /*
+  **************************************
+  select box
+  **************************************
+  */
+  .cdf-select {
+    position: relative;
+    width: 100%;
+    background-image: url(../../images/common/select_arrow_myicube.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--surface-color);
+    border-width: .1rem;
+    border-style: solid;
+    border-color: var(--primary-400-color);
+    font-family: inherit;
+    color: var(--text-900-color);
+    transition: .3s ease-in-out;
+    height: var(--select-height-md);
+    padding: 0 var(--select-padding-right-md) 0 var(--select-padding-left-md);
+    background-position: center right 1rem;
+    background-size: var(--select-arrow-size-md);
+    border-radius: var(--select-radius-md);
+    font-size: var(--select-font-size-md);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--select-radius-md);
+  }
+
+  [data-theme="vortal"] .cdf-select {
+    background-color: var(--white-color);
+    border-color: var(--tertiary-400-color);
+    background-image: url(../../images/common/select_arrow_vortal.svg);
+  }
+
+  [data-theme="istation"] .cdf-select {
+    background-color: var(--white-color);
+    border-color: var(--secondary-400-color);
+    background-image: url(../../images/common/select_arrow_myistation.svg);
+  }
+
+  [data-theme="pad"] .cdf-select {
+    background-color: var(--white-color);
+    border-color: var(--pad-400-color);
+    background-image: url(../../images/common/select_arrow_pad.svg);
+  }
+
+  .cdf-select:focus {
+    outline: 0;
+    border-color: var(--primary-500-color);
+    box-shadow: 0 4px 4px 0px rgba(180, 161, 223, 0.2);
+  }
 
 
-.cdf-select:focus {
-  outline: 0;
-  border-color: var(--primary-500-color);
-  box-shadow: 0 4px 4px 0px rgba(180, 161, 223, 0.2);
+  .cdf-select[readonly] {
+    background-color: var(--tertiary-100-color);
+    border-color: var(--tertiary-200-color);
+    color: var(--text-300-color);
+    background-image: url(../../images/common/select_arrow_disabled.svg);
+    background-size: var(--selelct-arrow-size-md);
+  }
+
+  .cdf-select[disabled] {
+    background-color: var(--tertiary-50-color);
+    border-color: var(--tertiary-200-color);
+    color: var(--text-300-color);
+    cursor: not-allowed;
+    background-image: url(../../images/common/select_arrow_disabled.svg);
+    background-size: var(--select-arrow-size-md);
+    opacity: 1;
+  }
+
+  .is-error .cdf-select {
+    border-color: var(--warning-600-color);
+    border-width: 2px;
+  }
+
+  .cdf-select.size-xl {
+    height: var(--select-height-xl);
+    font-size: var(--select-font-size-xl);
+    padding: 0 var(--select-padding-right-xl) 0 var(--select-padding-left-xl);
+    border-radius: var(--select-radius-xl);
+    font-weight: 500;
+    background-size: var(--select-arrow-size-xl);
+  }
+
+  .cdf-select.size-l {
+    height: var(--select-height-lg);
+    font-size: var(--select-font-size-lg);
+    padding: 0 var(--select-padding-right-lg) 0 var(--select-padding-left-lg);
+    border-radius: var(--select-radius-lg);
+    background-size: var(--select-arrow-size-lg);
+  }
+
+  .cdf-select.size-m {
+    height: var(--select-height-md);
+    font-size: var(--select-font-size-md);
+    padding: 0 var(--select-padding-right-md) 0 var(--select-padding-left-md);
+    border-radius: var(--select-radius-md);
+    background-size: var(--select-arrow-size-md);
+  }
+
+  .cdf-select.size-s {
+    height: var(--select-height-sm);
+    font-size: var(--select-font-size-sm);
+    padding: 0 var(--select-padding-right-sm) 0 var(--select-padding-left-sm);
+    border-radius: var(--select-radius-sm);
+    background-size: var(--select-arrow-size-sm);
+  }
+
+  .cdf-select.size-xs {
+    height: var(--select-height-xs);
+    font-size: var(--select-font-size-xs);
+    padding: 0 var(--select-padding-right-xs) 0 var(--select-padding-left-xs);
+    border-radius: var(--select-radius-xs);
+    background-size: var(--select-arrow-size-xs);
+  }
+
 }
 
-
-.cdf-select[readonly] {
-  background-color: var(--tertiary-100-color);
-  border-color: var(--primary-200-color);
-  color: var(--text-300-color);
-  background-image: url(../../images/common/select_arrow_disabled.svg);
-  background-size: auto;
-}
-.cdf-select[disabled] {
-  background-color: var(--tertiary-50-color);
-  border-color: var(--primary-200-color);
-  color: var(--text-300-color);
-  cursor: not-allowed;
-  background-image: url(../../images/common/select_arrow_disabled.svg);
-  background-size: auto;
-  opacity: 1;
-}
-.is-error .cdf-select {
-  border-color: var(--warning-600-color);
-  border-width: 2px;
-}
-.cdf-select.size-xl {
-  height: 6rem;
-  font-size: 1.6rem;
-  padding: 0 3.6rem 0 1.2rem;
-  border-radius: .8rem;
-  font-weight: 500;
-  background-size: 4rem;
-  border-radius: 1.2rem;
-}
-.cdf-select.size-l {
-  height: 5.2rem;
-  font-size: 1.6rem;
-  padding: 0 3.6rem 0 1rem;
-  border-radius: 1rem;
-  background-size: 3.2rem;
-}
-.cdf-select.size-m {
-  height: 4.4rem;
-  font-size: 1.4rem;
-  padding: 0 3.6rem 0 1rem;
-  border-radius: 1rem;
-}
-.cdf-select.size-s {
-  height: 3.6rem;
-  font-size: 1.4rem;
-  padding: 0 3.6rem 0 1rem;
-  border-radius: .8rem;
-  background-size: 2rem;
-}
-.cdf-select.size-xs {
-  height: 3.2rem;
-  font-size: 1.2rem;
-  padding: 0 3.6rem 0 .8rem;
-  border-radius: .6rem;
-  background-size: 1.62rem;
-}

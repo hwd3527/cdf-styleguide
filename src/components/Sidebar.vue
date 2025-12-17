@@ -88,6 +88,24 @@
           <li><router-link to="/alignContentGuide" class="">align-content</router-link></li>
           <li><router-link to="/alignItemsGuide" class="">align-items</router-link></li>
           <li><router-link to="/alignSelfGuide" class="">align-self</router-link></li>
+          <li><router-link to="/placeContentGuide" class="">place-content</router-link></li>
+          <li><router-link to="/placeItemsGuide" class="">place-items</router-link></li>
+          <li><router-link to="/placeSelfGuide" class="">place-self</router-link></li>
+        </ul>
+      </details>
+
+      <details open="">
+        <summary class="group">Spacing</summary>
+        <ul>
+          <li><router-link to="/paddingGuide" class="">Padding</router-link></li>
+          <li><router-link to="/marginGuide" class="">Margin</router-link></li>
+        </ul>
+      </details>
+
+      <details open="">
+        <summary class="group">Sizing</summary>
+        <ul>
+          <li><router-link to="/widthGuide" class="">Width</router-link></li>
         </ul>
       </details>
 

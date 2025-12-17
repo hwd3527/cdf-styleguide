@@ -1,31 +1,5 @@
 @import 'tailwindcss';
 
-@theme {
-  --container-3xs: 25.6rem;
-  --container-2xs: 28.8rem;
-  --container-xs: 32rem;
-  --container-sm: 38.4rem;
-  --container-md: 44.8rem;
-  --container-lg: 51.2rem;
-  --container-xl: 57.6rem;
-  --container-2xl: 67.2rem;
-  --container-3xl: 76.8rem;
-  --container-4xl: 86.6rem;
-  --container-5xl: 102.4rem;
-  --container-6xl: 115.2rem;
-  --container-7xl: 128rem;
-
-  --radius-xs: 0.2rem;
-  --radius-sm: 0.4rem;
-  --radius-md: 0.6rem;
-  --radius-lg: 0.8rem;
-  --radius-xl: 1.2rem;
-  --radius-2xl: 1.6rem;
-  --radius-3xl: 2.4rem;
-  --radius-4xl: 3.2rem;
-  
-}
-
 @layer base {
   html {
     font-size:10px;
@@ -268,6 +242,201 @@
 
     --background-color: #f5f5f5;
     --surface-color: #ffffff;
+
+    --container-3xs: 25.6rem;
+    --container-2xs: 28.8rem;
+    --container-xs: 32rem;
+    --container-sm: 38.4rem;
+    --container-md: 44.8rem;
+    --container-lg: 51.2rem;
+    --container-xl: 57.6rem;
+    --container-2xl: 67.2rem;
+    --container-3xl: 76.8rem;
+    --container-4xl: 86.6rem;
+    --container-5xl: 102.4rem;
+    --container-6xl: 115.2rem;
+    --container-7xl: 128rem;
+
+    --radius-xs: 0.2rem;
+    --radius-sm: 0.4rem;
+    --radius-md: 0.6rem;
+    --radius-lg: 0.8rem;
+    --radius-xl: 1.2rem;
+    --radius-2xl: 1.6rem;
+    --radius-3xl: 2.4rem;
+    --radius-4xl: 3.2rem;
+
+    /*button variable*/
+    --btn-height-xs: 3.2rem;
+    --btn-height-sm: 3.6rem;
+    --btn-height-md: 4.4rem;
+    --btn-height-lg: 5.2rem;
+    --btn-height-xl: 6rem;
+
+    --btn-radius-xs: .8rem;
+    --btn-radius-sm: .8rem;
+    --btn-radius-md: 1rem;
+    --btn-radius-lg: 1rem;
+    --btn-radius-xl: 1rem;
+
+    --btn-font-size-xs: 1.2rem;
+    --btn-font-size-sm: 1.2rem;
+    --btn-font-size-md: 1.4rem;
+    --btn-font-size-lg: 1.6rem;
+    --btn-font-size-xl: 1.6rem;
+
+    --btn-padding-block-xs: .9rem;
+    --btn-padding-inline-xs: 1.4rem;
+    --btn-padding-block-sm: .8rem;
+    --btn-padding-inline-sm: 1.8rem;
+    --btn-padding-block-md: 1.2rem;
+    --btn-padding-inline-md: 2.2rem;
+    --btn-padding-block-lg: 1.2rem;
+    --btn-padding-inline-lg: 2.4rem;
+    --btn-padding-block-xl: 1.6rem;
+    --btn-padding-inline-xl: 2.8rem;
+
+    --btn-icon-size-xs: 1.4rem;
+    --btn-icon-size-sm: 1.6rem;
+    --btn-icon-size-md: 1.8rem;
+    --btn-icon-size-lg: 2.2rem;
+    --btn-icon-size-xl: 2.6rem;
+
+    --btn-not-txt-width-xs: 3.2rem;
+    --btn-not-txt-width-sm: 3.6rem;
+    --btn-not-txt-width-md: 4.4rem;
+    --btn-not-txt-width-lg: 5.2rem;
+    --btn-not-txt-width-xl: 6rem;
+
+    --btn-not-txt-icon-size-xs: 2rem;
+    --btn-not-txt-icon-size-sm: 2.4rem;
+    --btn-not-txt-icon-size-md: 2.8rem;
+    --btn-not-txt-icon-size-lg: 3.2rem;
+    --btn-not-txt-icon-size-xl: 3.6rem;
+
+
+    /*input variable*/
+    --input-height-xs: 3.2rem;
+    --input-height-sm: 3.6rem;
+    --input-height-md: 4.4rem;
+    --input-height-lg: 5.2rem;
+    --input-height-xl: 6rem;
+
+    --input-radius-xs: .6rem;
+    --input-radius-sm: .8rem;
+    --input-radius-md: 1rem;
+    --input-radius-lg: 1rem;
+    --input-radius-xl: 1.2rem;
+
+    --input-font-size-xs: 1.2rem;
+    --input-font-size-sm: 1.4rem;
+    --input-font-size-md: 1.5rem;
+    --input-font-size-lg: 1.6rem;
+    --input-font-size-xl: 1.8rem;
+
+    --input-padding-inline-xs: .8rem;
+    --input-padding-inline-sm: 1rem;
+    --input-padding-inline-md: 1.2rem;
+    --input-padding-inline-lg: 1.6rem;
+    --input-padding-inline-xl: 2rem;
+
+    /*selectbox variable*/
+    --select-height-xs: 3.2rem;
+    --select-height-sm: 3.6rem;
+    --select-height-md: 4.4rem;
+    --select-height-lg: 5.2rem;
+    --select-height-xl: 6rem;
+
+    --select-radius-xs: .6rem;
+    --select-radius-sm: .8rem;
+    --select-radius-md: 1rem;
+    --select-radius-lg: 1rem;
+    --select-radius-xl: 1.2rem;
+
+    --select-font-size-xs: 1.2rem;
+    --select-font-size-sm: 1.4rem;
+    --select-font-size-md: 1.5rem;
+    --select-font-size-lg: 1.6rem;
+    --select-font-size-xl: 1.8rem;
+
+    --select-padding-left-xs: 1.2rem;
+    --select-padding-right-xs: 3.2rem;
+    --select-padding-left-sm: 1.2rem;
+    --select-padding-right-sm: 3.6rem;
+    --select-padding-left-md: 1.2rem;
+    --select-padding-right-md: 4.4rem;
+    --select-padding-left-lg: 1.2rem;
+    --select-padding-right-lg: 5.2rem;
+    --select-padding-left-xl: 1.2rem;
+    --select-padding-right-xl: 6rem;
+
+    --select-arrow-size-xs: 2rem;
+    --select-arrow-size-sm: 2.4rem;
+    --select-arrow-size-md: 2.8rem;
+    --select-arrow-size-lg: 3.2rem;
+    --select-arrow-size-xl: 4rem;
+
+    /*paging variable*/
+    --paging-height: 3.2rem;
+    --paging-width: 3.2rem;
+    --paging-font-size: 1.5rem;
+    --paging-radius: .8rem;
+    --paging-icon-size: 2.4rem;
+
+    --paging2-btn-height: 4rem;
+    --paging2-btn-width: 4rem;
+    --paging2-height: 3.2rem;
+    --paging2-width: 3.2rem;
+    --paging2-font-size: 1.5rem;
+    --paging2-radius: 1.2rem;
+    --paging2-icon-size: 2rem;
+
+    /*radio, checkbox variable*/
+    --checkbox-width-sm: 1.6rem;
+    --checkbox-height-sm: 1.6rem;
+    --checkbox-width-md: 2.2rem;
+    --checkbox-height-md: 2.2rem;
+    --checkbox-width-lg: 2.4rem;
+    --checkbox-height-lg: 2.4rem;
+    --checkbox-label-font-size-sm: 1.3rem;
+    --checkbox-label-font-size-md: 1.5rem;
+    --checkbox-label-font-size-lg: 1.8rem;
+    --radio-check-width-sm: .8rem;
+    --radio-check-height-sm: .8rem;
+    --radio-check-width-md: 1.2rem;
+    --radio-check-height-md: 1.2rem;
+    --radio-check-width-lg: 1.4rem;
+    --radio-check-height-lg: 1.4rem;
+
+    /*switch variable*/
+    --switch-width-sm: 4rem;
+    --switch-height-sm: 2.2rem;
+    --switch-width-md: 4.8rem;
+    --switch-height-md: 2.6rem;
+    --switch-width-lg: 5.8rem;
+    --switch-height-lg: 3.2rem;
+    --switch-toggle-size-lg: 3.2rem;
+    --switch-toggle-size-md: 2.6rem;
+    --switch-toggle-size-sm: 2.2rem;
+    --switch-font-size-lg: 1.7rem;
+    --switch-font-size-md: 1.5rem;
+    --switch-font-size-sm: 1.3rem;
+    --switch-move-distance-lg: 2.6rem;
+    --switch-move-distance-md: 2.2rem;
+    --switch-move-distance-sm: 1.8rem;
+    
+    /*label variable*/
+    --label-font-size-sm: 1rem;
+    --label-font-size-md: 1rem;
+    --label-font-size-lg: 1.2rem;
+    --label-padding-sm: .4rem;
+    --label-padding-md: .5rem;
+    --label-padding-lg: .6rem;
+    --label-height-sm: 1.8rem;
+    --label-height-md: 2rem;
+    --label-height-lg: 2.2rem;
+    --label-radius:.4rem;
+
 
     /*primary*/
     --primary-950-color: #2f1e4d;

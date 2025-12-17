@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">align-self</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/align-self" target="_blank">
+    <h2 class="cdf-h1">place-content</h2>
+    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/place-content" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Auto</h3>
-      <p class="cdf-information-text mt-5">'self-auto'는 컨테이너의 속성에 따라 아이템의 정렬을 자동으로 설정합니다.</p>
+      <h3 class="cdf-h3">Center</h3>
+      <p class="cdf-information-text mt-5">'place-content-center'는 인라인 축과 블록 축 모두에서 컨텐츠를 중앙에 배치합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -19,10 +19,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-stretch gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border self-auto flex-1 !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-center gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>  
               </div>
             </div>
           </div>
@@ -36,7 +37,7 @@
 
     <div class="conts-area">
       <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'self-start'는 컨테이너의 값과 관계없이 아이템을 시작 부분에 정렬합니다.</p>
+      <p class="cdf-information-text mt-5">'place-content-start'는 인라인 축과 블록 축의 시작 부분에 항목을 배치하는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -47,10 +48,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-stretch gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border self-start flex-1 !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-start gap-2 p-3 h-56 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -63,8 +65,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Center</h3>
-      <p class="cdf-information-text mt-5">'self-center'는 컨테이너의 값과 관계없이 아이템을 중앙 부분에 정렬합니다.</p>
+      <h3 class="cdf-h3">End</h3>
+      <p class="cdf-information-text mt-5">'place-content-end'는 인라인 및 블록 축의 끝 부분에 항목을 배치하는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -75,10 +77,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-stretch gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border self-center flex-1 !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-end gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -91,8 +94,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">End</h3>
-      <p class="cdf-information-text mt-5">'self-end'는 컨테이너의 값과 관계없이 아이템을 끝 부분에 정렬합니다.</p>
+      <h3 class="cdf-h3">Space between</h3>
+      <p class="cdf-information-text mt-5">'place-content-between'는 인라인 축과 블록 축을 따라 그리드 항목을 배치하여 각 축에서 행과 열 사이의 간격이 동일하도록 합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -103,10 +106,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-stretch gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border self-end flex-1 !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-between gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -119,7 +123,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">stretch</h3>
+      <h3 class="cdf-h3">Space around</h3>
       <p class="cdf-information-text mt-5">'self-stretch'는 컨테이너의 값과 관계없이 아이템을 늘려서 컨테이너를 채웁니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -131,10 +135,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex items-stretch gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border flex-1 self-stretch !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-around gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -147,8 +152,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">baseline</h3>
-      <p class="cdf-information-text mt-5">'self-baseline'는 항목의 기준선이 플렉스 컨테이너의 교차축 기준선과 일치하도록 정렬합니다.</p>
+      <h3 class="cdf-h3">space-evenly</h3>
+      <p class="cdf-information-text mt-5">'place-content-evenly'는 그리드 항목을 인라인 축과 블록 축에 균등하게 배치하는데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -159,10 +164,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border self-baseline flex-1 !pt-2 !pb-6">Item 1</div>
-                <div class="box-border self-baseline flex-1 !pt-8 !pb-12">Item 2</div>
-                <div class="box-border self-baseline flex-1 !pt-12 !pb-4">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-evenly gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -175,8 +181,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">last baseline</h3>
-      <p class="cdf-information-text mt-5">'self-baseline-last'는 컨테이너의 가로축을 따라 항목을 정렬하여 모든 항목의 마지막 기준선을 맞춥니다.</p>
+      <h3 class="cdf-h3">Stretch</h3>
+      <p class="cdf-information-text mt-5">'place-content-stretch'는 그리드 항목을 인라인 축과 블록 축을 따라 그리드 영역에 맞춰 늘리는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -187,17 +193,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="grid grid-cols-[1fr_auto] gap-8 h-56 p-3 bg-gray-200 w-full md:w-3xl">                
-                <p class="self-baseline-last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, modi quos cum quas ullam doloremque 
-                commodi beatae veritatis dolore aperiam eaque similique quam provident minus hic et quidem veniam esse?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum dolor cupiditate tenetur maxime,
-                 est repellendus? Quia earum culpa quas, tempore optio mollitia adipisci dolor, quaerat tenetur repellat dolores architecto.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda et quia modi eligendi fugit minus alias totam numquam deleniti? 
-                Harum distinctio voluptatum nulla obcaecati provident nobis minima totam magnam illum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Officia, laboriosam,
-                 possimus magnam reiciendis cumque dicta aperiam ab harum modi nesciunt dolores repellat! Quisquam, quidem. Officia, laboriosam,
-                </p>                
-                <span class="self-baseline-last">스페이스리크루트닷컴</span>                
+              <div class="grid grid-cols-2 place-content-stretch gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">                
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -224,10 +224,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="flex gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
-                <div class="box-border flex-1">Item 1</div>
-                <div class="box-border self-start md:self-end flex-1 !bg-cyan-300">Item 2</div>
-                <div class="box-border flex-1">Item 3</div>
+              <div class="grid grid-cols-[repeat(2,64px)] place-content-start md:place-content-end gap-2 h-56 p-3 bg-gray-200 w-full md:w-3xl">
+                <div class="box-border">Item 1</div>
+                <div class="box-border">Item 2</div>
+                <div class="box-border">Item 3</div>
+                <div class="box-border">Item 4</div>
               </div>
             </div>
           </div>
@@ -258,40 +259,44 @@
           </thead>
           <tbody>
             <tr>
-              <td data-header="class">self-auto</td>
-              <td data-header="style">align-self: auto;</td>
+              <td data-header="class">place-content-center</td>
+              <td data-header="style">place-content: center;</td>
             </tr>
             <tr>
-              <td data-header="class">self-start</td>
-              <td data-header="style">align-self: flex-start;</td>
+              <td data-header="class">place-content-center-safe</td>
+              <td data-header="style">place-content: safe center;</td>
             </tr>
             <tr>
-              <td data-header="class">self-end</td>
-              <td data-header="style">align-self: flex-end;</td>
+              <td data-header="class">place-content-start</td>
+              <td data-header="style">place-content: start;</td>
             </tr>
             <tr>
-              <td data-header="class">self-end-safe</td>
-              <td data-header="style">align-self: safe flex-end;</td>
+              <td data-header="class">place-content-end</td>
+              <td data-header="style">place-content: end;</td>
             </tr>
             <tr>
-              <td data-header="class">self-center</td>
-              <td data-header="style">align-self: center;</td>
+              <td data-header="class">place-content-end-safe</td>
+              <td data-header="style">place-content: safe end;</td>
             </tr>
             <tr>
-              <td data-header="class">self-center-safe</td>
-              <td data-header="style">align-self: safe center;</td>
+              <td data-header="class">place-content-between</td>
+              <td data-header="style">place-content: space-between;</td>
             </tr>
             <tr>
-              <td data-header="class">self-stretch</td>
-              <td data-header="style">align-self: stretch;</td>
+              <td data-header="class">place-content-around</td>
+              <td data-header="style">place-content: space-around;</td>
             </tr>
             <tr>
-              <td data-header="class">self-baseline</td>
-              <td data-header="style">align-self: baseline;</td>
+              <td data-header="class">place-content-evenly</td>
+              <td data-header="style">place-content: space-evenly;</td>
             </tr>
             <tr>
-              <td data-header="class">self-baseline-last</td>
-              <td data-header="style">align-self: last baseline;</td>
+              <td data-header="class">place-content-baseline</td>
+              <td data-header="style">place-content: baseline;</td>
+            </tr>
+            <tr>
+              <td data-header="class">place-content-stretch</td>
+              <td data-header="style">place-content: stretch;</td>
             </tr>
           </tbody>
         </table>
@@ -305,52 +310,53 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="flex items-stretch gap-2 p-3 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="self-auto flex-1">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value01 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-center gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>  
 </div>`);
-const value02 = ref(`<div class="flex items-stretch gap-2 p-3 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="self-start flex-1">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value02 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-start gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value03 = ref(`<div class="flex items-stretch gap-2 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="self-center flex-1">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value03 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-end gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value04 = ref(`<div class="flex items-stretch gap-2 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="self-end flex-1">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value04 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-between gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value05 = ref(`<div class="flex items-stretch gap-2 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="flex-1 self-stretch">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value05 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-around gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value06 = ref(`<div class="flex gap-2 h-56">
-  <div class="self-baseline flex-1">Item 1</div>
-  <div class="self-baseline flex-1">Item 2</div>
-  <div class="self-baseline flex-1">Item 3</div>
+const value06 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-evenly gap-2 h-56">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
 </div>`);
-const value07 = ref(`<div class="grid grid-cols-[1fr_auto] gap-8 h-56">                
-  <p class="self-baseline-last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, modi quos cum quas ullam doloremque 
-  commodi beatae veritatis dolore aperiam eaque similique quam provident minus hic et quidem veniam esse?
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum dolor cupiditate tenetur maxime,
-    est repellendus? Quia earum culpa quas, tempore optio mollitia adipisci dolor, quaerat tenetur repellat dolores architecto.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda et quia modi eligendi fugit minus alias totam numquam deleniti? 
-  Harum distinctio voluptatum nulla obcaecati provident nobis minima totam magnam illum.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Officia, laboriosam,
-    possimus magnam reiciendis cumque dicta aperiam ab harum modi nesciunt dolores repellat! Quisquam, quidem. Officia, laboriosam,
-  </p>                
-  <span class="self-baseline-last">스페이스리크루트닷컴</span>                
+const value07 = ref(`<div class="grid grid-cols-2 place-content-stretch gap-2 h-56">                
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
+  <div class="box-border">Item 4</div>
 </div>`);
-const value08 = ref(`<div class="flex gap-2 h-56">
-  <div class="flex-1">Item 1</div>
-  <div class="self-start md:self-end flex-1">Item 2</div>
-  <div class="flex-1">Item 3</div>
+const value08 = ref(`<div class="grid grid-cols-[repeat(2,64px)] place-content-start md:place-content-end gap-2 h-56">
+  <div class="box-border">Item 1</div>
+  <div class="box-border">Item 2</div>
+  <div class="box-border">Item 3</div>
+  <div class="box-border">Item 4</div>
 </div>`);
 
 

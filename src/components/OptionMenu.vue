@@ -13,15 +13,19 @@
         </div>
         <div class="cdf-form-chip vortal" @click="onThemeChange('vortal')">
           <input type="radio" class="radio" name="theme" id="theme_0102" :checked="theme === 'vortal'">
-          <label class="cdf-form-chip-outline" for="theme_0102">vortal</label>
+          <label class="cdf-form-chip-outline" for="theme_0102">theme01</label>
         </div>
         <div class="cdf-form-chip istation" @click="onThemeChange('istation')">
           <input type="radio" class="radio" name="theme" id="theme_0103" :checked="theme === 'istation'">
-          <label class="cdf-form-chip-outline" for="theme_0103">istation</label>
+          <label class="cdf-form-chip-outline" for="theme_0103">theme02</label>
         </div>
         <div class="cdf-form-chip pad" @click="onThemeChange('pad')">
           <input type="radio" class="radio" name="theme" id="theme_0104" :checked="theme === 'pad'">
-          <label class="cdf-form-chip-outline" for="theme_0104">pad</label>
+          <label class="cdf-form-chip-outline" for="theme_0104">theme03</label>
+        </div>
+        <div class="cdf-form-chip pad" @click="onThemeChange('dark')">
+          <input type="radio" class="radio" name="theme" id="theme_0105" :checked="theme === 'dark'">
+          <label class="cdf-form-chip-outline" for="theme_0105">dark</label>
         </div>
       </div>
       <h4 class="cdf-h4 mt-8">레이아웃 선택</h4>

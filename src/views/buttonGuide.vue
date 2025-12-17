@@ -45,7 +45,7 @@
                   <i class="material-symbols-rounded">arrow_back</i>
                   <span class="txt">button</span>
                 </button>
-                <button type="button" class="cdf-btn white outline">
+                <button type="button" class="cdf-btn white btn-outline">
                   <i class="material-symbols-rounded">arrow_back</i>
                   <span class="txt">outline</span>
                 </button>
@@ -57,7 +57,7 @@
                   <i class="material-symbols-rounded">arrow_back</i>
                   <span class="txt">disabled</span>
                 </button>
-                <button type="button" class="cdf-btn white outline" disabled>
+                <button type="button" class="cdf-btn white btn-outline" disabled>
                   <i class="material-symbols-rounded">arrow_back</i>
                   <span class="txt">outline disabled</span>
                 </button>
@@ -115,7 +115,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn  outline"><span class="txt">button</span></button>
+              <button type="button" class="cdf-btn btn-outline"><span class="txt">button</span></button>
               <button type="button" class="cdf-btn text"><span class="txt">button</span></button>
             </div>
           </div>
@@ -168,7 +168,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn rounded">
+              <button type="button" class="cdf-btn btn-rounded">
                 <i class="material-symbols-rounded">arrow_back</i>
                 <span class="txt">button</span>
               </button>
@@ -198,7 +198,7 @@
                 <i class="material-symbols-rounded">arrow_back</i>
                 <span class="txt">button</span>
               </button>
-              <button type="button" class="cdf-btn outline" disabled>
+              <button type="button" class="cdf-btn btn-outline" disabled>
                 <i class="material-symbols-rounded">arrow_back</i>
                 <span class="txt">button</span>
               </button>
@@ -231,7 +231,7 @@
             <div class="container">
               <div class="cdf-btn-line center">
                 <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn outline">button</button>
+                <button type="button" class="cdf-btn btn-outline">button</button>
               </div>
             </div>
           </div>
@@ -255,7 +255,7 @@
             <div class="container">
               <div class="cdf-btn-line left">
                 <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn outline">button</button>
+                <button type="button" class="cdf-btn btn-outline">button</button>
               </div>
             </div>
           </div>
@@ -279,7 +279,7 @@
             <div class="container">
               <div class="cdf-btn-line right">
                 <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn outline">button</button>
+                <button type="button" class="cdf-btn btn-outline">button</button>
               </div>
             </div>
           </div>
@@ -303,7 +303,7 @@
             <div class="container">
               <div class="cdf-btn-line space-between">
                 <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn outline">button</button>
+                <button type="button" class="cdf-btn btn-outline">button</button>
               </div>
             </div>
           </div>
@@ -331,7 +331,7 @@ const value03 = ref(`<button type="button" class="cdf-btn size-xs"><span class="
 <button type="button" class="cdf-btn size-m"><span class="txt">button</span></button>
 <button type="button" class="cdf-btn size-l"><span class="txt">button</span></button>
 <button type="button" class="cdf-btn size-xl"><span class="txt">button</span></button>`);
-const value04 = ref(`<button type="button" class="cdf-btn outline"><span class="txt">button</span></button>
+const value04 = ref(`<button type="button" class="cdf-btn btn-outline"><span class="txt">button</span></button>
 <button type="button" class="cdf-btn text"><span class="txt">button</span></button>`);
 const value05 = ref(`<button type="button" class="cdf-btn">
   <i class="material-symbols-rounded">arrow_back</i>
@@ -340,7 +340,7 @@ const value05 = ref(`<button type="button" class="cdf-btn">
 <button type="button" class="cdf-btn">
   <i class="material-symbols-rounded">arrow_back</i>
 </button>`);
-const value06 = ref(`<button type="button" class="cdf-btn rounded">
+const value06 = ref(`<button type="button" class="cdf-btn btn-rounded">
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">button</span>
 </button>`);
@@ -348,7 +348,7 @@ const value07 = ref(`<button type="button" class="cdf-btn" disabled>
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">button</span>
 </button>
-<button type="button" class="cdf-btn outline" disabled>
+<button type="button" class="cdf-btn btn-outline" disabled>
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">button</span>
 </button>
@@ -358,17 +358,17 @@ const value07 = ref(`<button type="button" class="cdf-btn" disabled>
 </button>`);
 const value0801 = ref(`<div class="cdf-btn-line center">
   <button type="button" class="cdf-btn">button</button>
-  <button type="button" class="cdf-btn outline">button</button>
+  <button type="button" class="cdf-btn btn-outline">button</button>
 </div>`);
 const value0802 = ref(`<div class="cdf-btn-line left">
   <button type="button" class="cdf-btn">button</button>
-  <button type="button" class="cdf-btn outline">button</button>
+  <button type="button" class="cdf-btn btn-outline">button</button>
 </div>`);
 const value0803 = ref(`<div class="cdf-btn-line right">
 	<button type="button" class="cdf-btn">
 		<span class="txt">button</span>
 	</button>
-	<button type="button" class="cdf-btn outline">
+	<button type="button" class="cdf-btn btn-outline">
 		<span class="txt">button</span>
 	</button>
 </div>`);
@@ -376,7 +376,7 @@ const value0804 = ref(`<div class="cdf-btn-line space-between">
 	<button type="button" class="cdf-btn">
 		<span class="txt">button</span>
 	</button>
-	<button type="button" class="cdf-btn outline">
+	<button type="button" class="cdf-btn btn-outline">
 		<span class="txt">button</span>
 	</button>
 </div>`);
@@ -384,7 +384,7 @@ const value09 = ref(`<button type="button" class="cdf-btn white">
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">button</span>
 </button>
-<button type="button" class="cdf-btn white outline">
+<button type="button" class="cdf-btn white btn-outline">
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">outline</span>
 </button>
@@ -396,7 +396,7 @@ const value09 = ref(`<button type="button" class="cdf-btn white">
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">disabled</span>
 </button>
-<button type="button" class="cdf-btn white outline" disabled>
+<button type="button" class="cdf-btn white btn-outline" disabled>
   <i class="material-symbols-rounded">arrow_back</i>
   <span class="txt">outline disabled</span>
 </button>

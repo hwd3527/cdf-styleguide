@@ -371,7 +371,7 @@
 }
 .style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip input[type="radio"]:checked + .cdf-form-chip-outline::before {
 	content: '\e5ca';
-	color: var(--surface-color);
+	color: var(--white-color);
 	font-size: 1.6rem;
 	font-family: 'Material Symbols Rounded';
 }

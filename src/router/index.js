@@ -179,6 +179,36 @@ const router = createRouter({
       name: 'alignSelfGuide',
       component: () => import('../views/tailwind/alignSelfGuide.vue'),
     },
+    {
+      path: '/placeContentGuide',
+      name: 'placeContentGuide',
+      component: () => import('../views/tailwind/placeContentGuide.vue'),
+    },
+    {
+      path: '/placeItemsGuide',
+      name: 'placeItemsGuide',
+      component: () => import('../views/tailwind/placeItemsGuide.vue'),
+    },
+    {
+      path: '/placeSelfGuide',
+      name: 'placeSelfGuide',
+      component: () => import('../views/tailwind/placeSelfGuide.vue'),
+    },
+    {
+      path: '/paddingGuide',
+      name: 'paddingGuide',
+      component: () => import('../views/tailwind/paddingGuide.vue'),
+    },
+    {
+      path: '/marginGuide',
+      name: 'marginGuide',
+      component: () => import('../views/tailwind/marginGuide.vue'),
+    },
+    {
+      path: '/widthGuide',
+      name: 'widthGuide',
+      component: () => import('../views/tailwind/widthGuide.vue'),
+    },
   ],
 })
 
