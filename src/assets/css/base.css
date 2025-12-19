@@ -437,6 +437,29 @@
     --label-height-lg: 2.2rem;
     --label-radius:.4rem;
 
+    /*tooltip*/
+    --tooltip-font-size: 1.4rem;
+    --tooltip-padding-block: .8rem;
+    --tooltip-padding-inline: 1.2rem;
+    --tooltipbox-padding-block: 1.6rem;
+    --tooltipbox-padding-inline: 2rem;
+    --tooltip-radius: .6rem;
+    --tooltip-arrow-size: .8rem;
+    --tooltipbox-arrow-size: 1.2rem;
+    --tooltip-arrow-gap: calc((var(--tooltip-arrow-size) / 2) * -1);
+    --tooltipbox-arrow-gap: calc((var(--tooltipbox-arrow-size) / 2) * -1);
+
+    /*collapse*/
+    --collapse-gap: .8rem;
+    --collapse-radius: .6rem;
+    --collapse-min-height: 5.2rem;
+    --collapse-padding: 1.6rem;
+    --collapse-padding-right: 4.8rem;
+    --collapse-title-font-size: 1.6rem;
+    --collapse-content-font-size: 1.4rem;
+    --collapse-content-padding-right: 1.6rem;
+    --collapse-content-padding-left: 1.6rem;
+    --collapse-content-padding-bottom: 1.6rem;
 
     /*primary*/
     --primary-950-color: #2f1e4d;
@@ -568,13 +591,6 @@
     /*white*/
     --white-color: #ffffff;
 
-    /*border radius*/
-    --radius-circle: 50%;
-    --radius-xl: 20px;
-    --radius-lg: 16px;
-    --radius-md: 12px;
-    --radius-xs: 10px;
-
     /*box shadow*/
     --shadow-xl: 4px 4px 20px 0 rgba(0, 0, 0, 0.12);
     --shadow-lg: 4px 4px 16px 0 rgba(0, 0, 0, 0.16);
@@ -582,61 +598,9 @@
     --shadow-xs: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
 
     /*border radius*/
-    --radius-0: 0;
-    --radius-1: 0.4rem;
-    --radius-2: 0.6rem;
-    --radius-3: 0.8rem;
-    --radius-4: 1.6rem;
-    --radius-5: 3.2rem;
-    --radius-max: 100rem;
-    --radius-pill: 50rem;
+    --radius-max: calc(infinity * 1px);
+    --radius-pill: calc(infinity * 1px);
 
-    /*gap*/
-    --cdf-gap-1: 0.2rem;
-    --cdf-gap-2: 0.4rem;
-    --cdf-gap-3: 0.8rem;
-    --cdf-gap-4: 1.2rem;
-    --cdf-gap-5: 1.6rem;
-    --cdf-gap-6: 2.0rem;
-    --cdf-gap-7: 2.4rem;
-    --cdf-gap-8: 2.8rem;
-    --cdf-gap-9: 3.2rem;
-    --cdf-gap-10: 3.6rem;
-    --cdf-gap-11: 4.0rem;
-    --cdf-gap-12: 4.4rem;
-    --cdf-gap-13: 4.8rem;
-    --cdf-gap-14: 5.2rem;
-    --cdf-gap-15: 5.6rem;
-    --cdf-gap-16: 6rem;
-    --cdf-gap-17: 6.4rem;
-    --cdf-gap-18: 6.8rem;
-    --cdf-gap-19: 7.2rem;
-    --cdf-gap-20: 7.6rem;
-    --cdf-gap-21: 8rem;
-    /*number*/
-    --cdf-number-0: 0rem;
-    --cdf-number-1: 0.1rem;
-    --cdf-number-2: 0.2rem;
-    --cdf-number-3: 0.4rem;
-    --cdf-number-4: 0.6rem;
-    --cdf-number-5: 0.8rem;
-    --cdf-number-6: 1rem;
-    --cdf-number-7: 1.2rem;
-    --cdf-number-8: 1.6rem;
-    --cdf-number-9: 2rem;
-    --cdf-number-10: 2.4rem;
-    --cdf-number-11: 2.8rem;
-    --cdf-number-12: 3.2rem;
-    --cdf-number-13: 3.6rem;
-    --cdf-number-14: 4rem;
-    --cdf-number-15: 4.4rem;
-    --cdf-number-16: 4.8rem;
-    --cdf-number-17: 5.6rem;
-    --cdf-number-18: 6.4rem;
-    --cdf-number-19: 7.2rem;
-    --cdf-number-20: 8rem;
-    --cdf-number-21: 9.6rem;
-    --cdf-number-max: 100rem;
   }
 
   /*vortal 테마*/
@@ -769,13 +733,8 @@
     .style-guide-wrap .btn-menu {
       display: block !important;
     }
-  }
-  
+  }  
 }
-
-
-
-
 
 @import './components/form.css';
 @import './components/text.css';
@@ -789,4 +748,9 @@
 @import './components/tooltip.css';
 @import './components/accordion.css';
 @import './components/table.css';
+@import './components/modal.css';
+@import './components/etc.css';
+
+
+
 

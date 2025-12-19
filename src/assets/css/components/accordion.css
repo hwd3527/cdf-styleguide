@@ -1,125 +1,127 @@
-/*
-***************************************
-Accordion
-***************************************
-*/
-.cdf-collapse-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: var(--cdf-gap-3);
-  width: 100%;
-}
+@layer components {
+  /*
+  ***************************************
+  Accordion
+  ***************************************
+  */
+  .cdf-collapse-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--collapse-gap);
+    width: 100%;
+  }
 
-.cdf-collapse-wrap.join {
-  gap: 0;
-}
+  .cdf-collapse-wrap.join {
+    gap: 0;
+  }
 
-.cdf-collapse-wrap .cdf-collapse-item {
-  border-radius: .6rem;
-  border: .1rem solid var(--tertiary-300-color);
-  background-color: var(--surface-color);
-  width: 100%;
-  transition: .3s ease-in-out;
-  display: grid;
-  grid-template-rows: max-content 0fr;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
+  .cdf-collapse-wrap .cdf-collapse-item {
+    border-radius: var(--collapse-radius);
+    border: .1rem solid var(--tertiary-300-color);
+    background-color: var(--surface-color);
+    width: 100%;
+    transition: .3s ease-in-out;
+    display: grid;
+    grid-template-rows: max-content 0fr;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
 
-.cdf-collapse-wrap.join .cdf-collapse-item {
-  border-radius: 0;
-  margin-top: -1px;
-}
-
-
-.cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title {
-  background-color: var(--primary-300-color);
-}
-
-.cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
-  background-color: var(--primary-300-color);
-}
+  .cdf-collapse-wrap.join .cdf-collapse-item {
+    border-radius: 0;
+    margin-top: -1px;
+  }
 
 
-.cdf-collapse-wrap .cdf-collapse-item>input:is([type=checkbox], [type=radio]) {
-  appearance: none;
-  opacity: 0;
-  z-index: 1;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  width: 100%;
-  min-height: 5.2rem;
-  padding: 1.6rem;
-  padding-right: 4.8rem;
-  transition: background-color .2s ease-out;
-  cursor: pointer;
-}
+  .cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title {
+    background-color: var(--primary-200-color);
+  }
 
-.cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-title {
-  position: relative;
-  min-height: 5.2rem;
-  padding: 1.6rem;
-  padding-right: 4.8rem;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  transition: background-color .2s ease-out;
-  position: relative;
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: var(--text-900-color);
-  width: 100%;
-}
+  .cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
+    background-color: var(--primary-200-color);
+  }
 
-.cdf-collapse-wrap .cdf-collapse-item.collapse-arrow .cdf-collapse-title::after {
-  content: '\e313';
-  display: block;
-  position: absolute;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: 'Material Symbols Rounded';
-  color: var(--cdf-light-color-text-basic);
-  transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-  font-size: 2.0rem;
-}
 
-.cdf-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
-  content: '\e316';
-}
+  .cdf-collapse-wrap .cdf-collapse-item>input:is([type=checkbox], [type=radio]) {
+    appearance: none;
+    opacity: 0;
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 100%;
+    min-height: var(--collapse-min-height);
+    padding: var(--collapse-padding);
+    padding-right: var(--collapse-padding-right);
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+  }
 
-.cdf-collapse-wrap .cdf-collapse-item.collapse-plus .cdf-collapse-title::after {
-  content: '\e145';
-  display: block;
-  position: absolute;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: 'Material Symbols Rounded';
-  color: var(--cdf-light-color-text-basic);
-  transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-  font-size: 2.0rem;
-}
+  .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-title {
+    position: relative;
+    min-height: var(--collapse-min-height);
+    padding: var(--collapse-padding);
+    padding-right: var(--collapse-padding-right);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transition: background-color .2s ease-out;
+    position: relative;
+    font-weight: 600;
+    font-size: var(--collapse-title-font-size);
+    color: var(--text-900-color);
+    width: 100%;
+  }
 
-.cdf-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
-  content: '\e15b';
-}
+  .cdf-collapse-wrap .cdf-collapse-item.collapse-arrow .cdf-collapse-title::after {
+    content: '\e313';
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Material Symbols Rounded';
+    color: var(--text-900-color);
+    transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
+    font-size: 2.0rem;
+  }
 
-.cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-content {
-  position: relative;
-  visibility: hidden;
-  height: 0;
-  cursor: unset;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  transition: padding .2s, background-color .2s ease-out;
-  color: var(--text-900-color);
-  font-size: 1.4rem;
-}
+  .cdf-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
+    content: '\e316';
+  }
 
-.cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
-  padding-bottom: 1.6rem;
-  transition: padding .2s, background-color .2s ease-out !important;
-  visibility: visible !important;
-  min-height: fit-content !important;
+  .cdf-collapse-wrap .cdf-collapse-item.collapse-plus .cdf-collapse-title::after {
+    content: '\e145';
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Material Symbols Rounded';
+    color: var(--text-900-color);
+    transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
+    font-size: 2.0rem;
+  }
+
+  .cdf-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
+    content: '\e15b';
+  }
+
+  .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-content {
+    position: relative;
+    visibility: hidden;
+    height: 0;
+    cursor: unset;
+    padding-left: var(--collapse-content-padding-left);
+    padding-right: var(--collapse-content-padding-right);
+    transition: padding .2s, background-color .2s ease-out;
+    color: var(--text-900-color);
+    font-size: var(--collapse-content-font-size);
+  }
+
+  .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
+    padding-bottom: var(--collapse-content-padding-bottom);
+    transition: padding .2s, background-color .2s ease-out !important;
+    visibility: visible !important;
+    min-height: fit-content !important;
+  }
 }

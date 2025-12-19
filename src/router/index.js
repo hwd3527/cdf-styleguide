@@ -70,6 +70,11 @@ const router = createRouter({
       component: () => import('../views/tableGuide.vue'),
     },
     {
+      path: '/modalGuide',
+      name: 'modalGuide',
+      component: () => import('../views/modalGuide.vue'),
+    },
+    {
       path: '/flexBasisGuide',
       name: 'flexBasisGuide',
       component: () => import('../views/tailwind/flexBasisGuide.vue'),

@@ -49,12 +49,14 @@
           <li>
             <router-link to="/tableGuide" class="">Table</router-link>
           </li>
-          <li><a href="/styleGuide/tab" class="">Tab</a></li>
-          <li><a href="/styleGuide/modal" class="">Modal</a></li>
+          <!-- <li><a href="/styleGuide/tab" class="">Tab</a></li> -->
+          <li>
+            <router-link to="/modalGuide" class="">Modal</router-link>
+          </li>
           <li>
             <router-link to="/tooltipGuide" class="">Tooltip</router-link>
           </li>
-          <li><a href="/styleGuide/spinner" class="">Spinner</a></li>
+          <!-- <li><a href="/styleGuide/spinner" class="">Spinner</a></li> -->
           <li>
             <router-link to="/accordionGuide" class="">Accordion</router-link>
           </li>
