@@ -1,0 +1,503 @@
+@theme {
+  --spacing: 0.4rem;
+
+  --background-color: #f5f5f5;
+  --surface-color: #ffffff;
+
+  --container-3xs: 25.6rem;
+  --container-2xs: 28.8rem;
+  --container-xs: 32rem;
+  --container-sm: 38.4rem;
+  --container-md: 44.8rem;
+  --container-lg: 51.2rem;
+  --container-xl: 57.6rem;
+  --container-2xl: 67.2rem;
+  --container-3xl: 76.8rem;
+  --container-4xl: 86.6rem;
+  --container-5xl: 102.4rem;
+  --container-6xl: 115.2rem;
+  --container-7xl: 128rem;
+
+  --radius-xs: 0.2rem;
+  --radius-sm: 0.4rem;
+  --radius-md: 0.6rem;
+  --radius-lg: 0.8rem;
+  --radius-xl: 1.2rem;
+  --radius-2xl: 1.6rem;
+  --radius-3xl: 2.4rem;
+  --radius-4xl: 3.2rem;
+
+  /*button variable*/
+  --btn-height-xs: 3.2rem;
+  --btn-height-sm: 3.6rem;
+  --btn-height-md: 4.4rem;
+  --btn-height-lg: 5.2rem;
+  --btn-height-xl: 6rem;
+
+  --btn-radius-xs: .8rem;
+  --btn-radius-sm: .8rem;
+  --btn-radius-md: 1rem;
+  --btn-radius-lg: 1rem;
+  --btn-radius-xl: 1rem;
+
+  --btn-font-size-xs: 1.2rem;
+  --btn-font-size-sm: 1.2rem;
+  --btn-font-size-md: 1.4rem;
+  --btn-font-size-lg: 1.6rem;
+  --btn-font-size-xl: 1.6rem;
+
+  --btn-padding-block-xs: .9rem;
+  --btn-padding-inline-xs: 1.4rem;
+  --btn-padding-block-sm: .8rem;
+  --btn-padding-inline-sm: 1.8rem;
+  --btn-padding-block-md: 1.2rem;
+  --btn-padding-inline-md: 2.2rem;
+  --btn-padding-block-lg: 1.2rem;
+  --btn-padding-inline-lg: 2.4rem;
+  --btn-padding-block-xl: 1.6rem;
+  --btn-padding-inline-xl: 2.8rem;
+
+  --btn-icon-size-xs: 1.4rem;
+  --btn-icon-size-sm: 1.6rem;
+  --btn-icon-size-md: 1.8rem;
+  --btn-icon-size-lg: 2.2rem;
+  --btn-icon-size-xl: 2.6rem;
+
+  --btn-not-txt-width-xs: 3.2rem;
+  --btn-not-txt-width-sm: 3.6rem;
+  --btn-not-txt-width-md: 4.4rem;
+  --btn-not-txt-width-lg: 5.2rem;
+  --btn-not-txt-width-xl: 6rem;
+
+  --btn-not-txt-icon-size-xs: 2rem;
+  --btn-not-txt-icon-size-sm: 2.4rem;
+  --btn-not-txt-icon-size-md: 2.8rem;
+  --btn-not-txt-icon-size-lg: 3.2rem;
+  --btn-not-txt-icon-size-xl: 3.6rem;
+
+
+  /*input variable*/
+  --input-height-xs: 3.2rem;
+  --input-height-sm: 3.6rem;
+  --input-height-md: 4.4rem;
+  --input-height-lg: 5.2rem;
+  --input-height-xl: 6rem;
+
+  --input-radius-xs: .6rem;
+  --input-radius-sm: .8rem;
+  --input-radius-md: 1rem;
+  --input-radius-lg: 1rem;
+  --input-radius-xl: 1.2rem;
+
+  --input-font-size-xs: 1.2rem;
+  --input-font-size-sm: 1.4rem;
+  --input-font-size-md: 1.5rem;
+  --input-font-size-lg: 1.6rem;
+  --input-font-size-xl: 1.8rem;
+
+  --input-padding-inline-xs: .8rem;
+  --input-padding-inline-sm: 1rem;
+  --input-padding-inline-md: 1.2rem;
+  --input-padding-inline-lg: 1.6rem;
+  --input-padding-inline-xl: 2rem;
+
+  /*selectbox variable*/
+  --select-height-xs: 3.2rem;
+  --select-height-sm: 3.6rem;
+  --select-height-md: 4.4rem;
+  --select-height-lg: 5.2rem;
+  --select-height-xl: 6rem;
+
+  --select-radius-xs: .6rem;
+  --select-radius-sm: .8rem;
+  --select-radius-md: 1rem;
+  --select-radius-lg: 1rem;
+  --select-radius-xl: 1.2rem;
+
+  --select-font-size-xs: 1.2rem;
+  --select-font-size-sm: 1.4rem;
+  --select-font-size-md: 1.5rem;
+  --select-font-size-lg: 1.6rem;
+  --select-font-size-xl: 1.8rem;
+
+  --select-padding-left-xs: 1.2rem;
+  --select-padding-right-xs: 3.2rem;
+  --select-padding-left-sm: 1.2rem;
+  --select-padding-right-sm: 3.6rem;
+  --select-padding-left-md: 1.2rem;
+  --select-padding-right-md: 4.4rem;
+  --select-padding-left-lg: 1.2rem;
+  --select-padding-right-lg: 5.2rem;
+  --select-padding-left-xl: 1.2rem;
+  --select-padding-right-xl: 6rem;
+
+  --select-arrow-size-xs: 2rem;
+  --select-arrow-size-sm: 2.4rem;
+  --select-arrow-size-md: 2.8rem;
+  --select-arrow-size-lg: 3.2rem;
+  --select-arrow-size-xl: 4rem;
+
+  /*paging variable*/
+  --paging-height: 3.2rem;
+  --paging-width: 3.2rem;
+  --paging-font-size: 1.5rem;
+  --paging-radius: .8rem;
+  --paging-icon-size: 2.4rem;
+
+  --paging2-btn-height: 4rem;
+  --paging2-btn-width: 4rem;
+  --paging2-height: 3.2rem;
+  --paging2-width: 3.2rem;
+  --paging2-font-size: 1.5rem;
+  --paging2-radius: 1.2rem;
+  --paging2-icon-size: 2rem;
+
+  /*radio, checkbox variable*/
+  --checkbox-width-sm: 1.6rem;
+  --checkbox-height-sm: 1.6rem;
+  --checkbox-width-md: 2.2rem;
+  --checkbox-height-md: 2.2rem;
+  --checkbox-width-lg: 2.4rem;
+  --checkbox-height-lg: 2.4rem;
+  --checkbox-label-font-size-sm: 1.3rem;
+  --checkbox-label-font-size-md: 1.5rem;
+  --checkbox-label-font-size-lg: 1.8rem;
+  --radio-check-width-sm: .8rem;
+  --radio-check-height-sm: .8rem;
+  --radio-check-width-md: 1.2rem;
+  --radio-check-height-md: 1.2rem;
+  --radio-check-width-lg: 1.4rem;
+  --radio-check-height-lg: 1.4rem;
+
+  /*switch variable*/
+  --switch-width-sm: 4rem;
+  --switch-height-sm: 2.2rem;
+  --switch-width-md: 4.8rem;
+  --switch-height-md: 2.6rem;
+  --switch-width-lg: 5.8rem;
+  --switch-height-lg: 3.2rem;
+  --switch-toggle-size-lg: 3.2rem;
+  --switch-toggle-size-md: 2.6rem;
+  --switch-toggle-size-sm: 2.2rem;
+  --switch-font-size-lg: 1.7rem;
+  --switch-font-size-md: 1.5rem;
+  --switch-font-size-sm: 1.3rem;
+  --switch-move-distance-lg: 2.6rem;
+  --switch-move-distance-md: 2.2rem;
+  --switch-move-distance-sm: 1.8rem;
+
+  /*label variable*/
+  --label-font-size-sm: 1rem;
+  --label-font-size-md: 1rem;
+  --label-font-size-lg: 1.2rem;
+  --label-padding-sm: .4rem;
+  --label-padding-md: .5rem;
+  --label-padding-lg: .6rem;
+  --label-height-sm: 1.8rem;
+  --label-height-md: 2rem;
+  --label-height-lg: 2.2rem;
+  --label-radius:.4rem;
+
+  /*tooltip*/
+  --tooltip-font-size: 1.4rem;
+  --tooltip-padding-block: .8rem;
+  --tooltip-padding-inline: 1.2rem;
+  --tooltipbox-padding-block: 1.6rem;
+  --tooltipbox-padding-inline: 2rem;
+  --tooltip-radius: .6rem;
+  --tooltip-arrow-size: .8rem;
+  --tooltipbox-arrow-size: 1.2rem;
+  --tooltip-arrow-gap: calc((var(--tooltip-arrow-size) / 2) * -1);
+  --tooltipbox-arrow-gap: calc((var(--tooltipbox-arrow-size) / 2) * -1);
+
+  /*collapse*/
+  --collapse-gap: .8rem;
+  --collapse-radius: .6rem;
+  --collapse-min-height: 5.2rem;
+  --collapse-padding: 1.6rem;
+  --collapse-padding-right: 4.8rem;
+  --collapse-title-font-size: 1.6rem;
+  --collapse-content-font-size: 1.4rem;
+  --collapse-content-padding-right: 1.6rem;
+  --collapse-content-padding-left: 1.6rem;
+  --collapse-content-padding-bottom: 1.6rem;
+
+  /*primary*/
+  --primary-950-color: #2f1e4d;
+  --primary-900-color: #4a366d;
+  --primary-800-color: #563C87;
+  --primary-700-color: #694ca4;
+  --primary-600-color: #7e60bd;
+  --primary-500-color: #967dcf;
+  --primary-400-color: #b4a1df;
+  --primary-300-color: #d0c6ec;
+  --primary-200-color: #e5dff5;
+  --primary-100-color: #f1eef9;
+  --primary-50-color: #f9f7fd;
+
+  /*secondary*/
+  --secondary-950-color: #232145;
+  --secondary-900-color: #3b3877;
+  --secondary-800-color: #423c90;
+  --secondary-700-color: #534ab8;
+  --secondary-600-color: #6B64D3;
+  --secondary-500-color: #8082E7;
+  --secondary-400-color: #9FA5EB;
+  --secondary-300-color: #BEC6F3;
+  --secondary-200-color: #D9DFF9;
+  --secondary-100-color: #EBEFFD;
+  --secondary-50-color: #F3F6FF;
+
+  /*tertiary, gray*/
+  --tertiary-950-color: #38363f;
+  --tertiary-900-color: #565260;
+  --tertiary-800-color: #686374;
+  --tertiary-700-color: #7b778a;
+  --tertiary-600-color: #9793a5;
+  --tertiary-500-color: #a4a1b1;
+  --tertiary-400-color: #bdbcc9;
+  --tertiary-300-color: #d6d5dd;
+  --tertiary-200-color: #e8e8ec;
+  --tertiary-100-color: #f3f2f5;
+  --tertiary-50-color: #f9f8fa;
+
+  /*text*/
+  --text-950-color: #161617;
+  --text-900-color: #2F2F31;
+  --text-800-color: #3C3C3F;
+  --text-700-color: #4F4F53;
+  --text-600-color: #69696D;
+  --text-500-color: #7E7F84;
+  --text-400-color: #97989D;
+  --text-300-color: #b9b9c0;
+  --text-200-color: #dadadd;
+  --text-100-color: #eeeef0;
+  --text-50-color: #f7f7f8;
+
+  /*pad+*/
+  --pad-950-color: #141250;
+  --pad-900-color: #27247A;
+  --pad-800-color: #3733AA;
+  --pad-700-color: #4B45E0;
+  --pad-600-color: #5A67FA;
+  --pad-500-color: #738DFD;
+  --pad-400-color: #9CAFFF;
+  --pad-300-color: #BDCDFF;
+  --pad-200-color: #D7E1FF;
+  --pad-100-color: #ECF3FF;
+  --pad-50-color: #F4F8FF;
+
+  /*경고*/
+  --warning-950-color: #420d0d;
+  --warning-900-color: #7a2222;
+  --warning-800-color: #932121;
+  --warning-700-color: #b12424;
+  --warning-600-color: #d53939;
+  --warning-500-color: #e64d4d;
+  --warning-400-color: #f17878;
+  --warning-300-color: #f8a9a9;
+  --warning-200-color: #fbcdcd;
+  --warning-100-color: #fde3e3;
+  --warning-50-color: #fdf3f3;
+
+  /*주의*/
+  --caution-950-color: #441904;
+  --caution-900-color: #763411;
+  --caution-800-color: #903e10;
+  --caution-700-color: #b1500c;
+  --caution-600-color: #d5730a;
+  --caution-500-color: #f1980f;
+  --caution-400-color: #f7b928;
+  --caution-300-color: #f9ce50;
+  --caution-200-color: #fbe38e;
+  --caution-100-color: #fdf1c8;
+  --caution-50-color: #fffbeb;
+
+  /*성공*/
+  --success-950-color: #0b281a;
+  --success-900-color: #1d4a34;
+  --success-800-color: #215a3e;
+  --success-700-color: #24714a;
+  --success-600-color: #278655;
+  --success-500-color: #39ae72;
+  --success-400-color: #5fc992;
+  --success-300-color: #95e0b9;
+  --success-200-color: #c3efd8;
+  --success-100-color: #e0f8eb;
+  --success-50-color: #f2fbf6;
+
+  /*안내*/
+  --info-950-color: #0f2a42;
+  --info-900-color: #174163;
+  --info-800-color: #154e77;
+  --info-700-color: #155b8f;
+  --info-600-color: #1872b1;
+  --info-500-color: #2791d3;
+  --info-400-color: #4eaae2;
+  --info-300-color: #8bc7ee;
+  --info-200-color: #c2e0f5;
+  --info-100-color: #e3effb;
+  --info-50-color: #f2f8fd;
+
+  /*idea color*/
+  --eureca-color: #E54848;
+  --simulator-color: #FBC42F;
+  --pad-color: #3733AA;
+  --gaia-color: #7BC717;
+  --cairos-color: #1FAE70;
+
+  /*bkack*/
+  --black-color: #000;
+
+  /*white*/
+  --white-color: #ffffff;
+
+  /*box shadow*/
+  --shadow-xl: 4px 4px 20px 0 rgba(0, 0, 0, 0.12);
+  --shadow-lg: 4px 4px 16px 0 rgba(0, 0, 0, 0.16);
+  --shadow-md: 4px 4px 12px 0 rgba(0, 0, 0, 0.16);
+  --shadow-xs: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+  /*border radius*/
+  --radius-max: calc(infinity * 1px);
+  --radius-pill: calc(infinity * 1px);
+  
+}
+
+/*vortal 테마*/
+html[data-theme='vortal'] {
+  --primary-950-color: #38363f;
+  --primary-900-color: #565260;
+  --primary-800-color: #686374;
+  --primary-700-color: #7b778a;
+  --primary-600-color: #9793a5;
+  --primary-500-color: #a4a1b1;
+  --primary-400-color: #bdbcc9;
+  --primary-300-color: #d6d5dd;
+  --primary-200-color: #e8e8ec;
+  --primary-100-color: #f3f2f5;
+  --primary-50-color: #f9f8fa;
+}
+
+/*istation 테마*/
+html[data-theme='istation'] {
+  --primary-950-color: #232145;
+  --primary-900-color: #3b3877;
+  --primary-800-color: #423c90;
+  --primary-700-color: #534ab8;
+  --primary-600-color: #6B64D3;
+  --primary-500-color: #8082E7;
+  --primary-400-color: #9FA5EB;
+  --primary-300-color: #BEC6F3;
+  --primary-200-color: #D9DFF9;
+  --primary-100-color: #EBEFFD;
+  --primary-50-color: #F3F6FF;
+}
+
+/*pad 테마*/
+html[data-theme='pad'] {
+  --primary-950-color: #141250;
+  --primary-900-color: #27247A;
+  --primary-800-color: #3733AA;
+  --primary-700-color: #4B45E0;
+  --primary-600-color: #5A67FA;
+  --primary-500-color: #738DFD;
+  --primary-400-color: #9CAFFF;
+  --primary-300-color: #BDCDFF;
+  --primary-200-color: #D7E1FF;
+  --primary-100-color: #ECF3FF;
+  --primary-50-color: #F4F8FF;
+}
+
+/*dark 테마*/
+html[data-theme='dark'] {
+  --primary-950-color: #3d3d3d;
+  --primary-900-color: #4a4a4a;
+  --primary-800-color: #575757;
+  --primary-700-color: #646464;
+  --primary-600-color: #717171;
+  --primary-500-color: #7e7e7e;
+  --primary-400-color: #8b8b8b;
+  --primary-300-color: #989898;
+  --primary-200-color: #a5a5a5;
+  --primary-100-color: #b2b2b2;
+  --primary-50-color: #bfbfbf;
+
+  --text-950-color: #f0f0f0;
+  --text-900-color: #d9d9d9;
+  --text-800-color: #c4c4c4;
+  --text-700-color: #ababab;
+  --text-600-color: #929292;
+  --text-500-color: #7a7a7a;
+  --text-400-color: #626262;
+  --text-300-color: #4b4b4b;
+  --text-200-color: #333333;
+  --text-100-color: #1a1a1a;
+  --text-50-color: #0d0d0d;
+
+  --tertiary-950-color: #d9d9d9;
+  --tertiary-900-color: #bfbfbf;
+  --tertiary-800-color: #a6a6a6;
+  --tertiary-700-color: #8c8c8c;
+  --tertiary-600-color: #737373;
+  --tertiary-500-color: #5c5c5c;
+  --tertiary-400-color: #4b4b4b;
+  --tertiary-300-color: #363636;
+  --tertiary-200-color: #2a2a2a;
+  --tertiary-100-color: #1e1e1e;
+  --tertiary-50-color: #121212;
+
+  --caution-950-color: #fffbeb;
+  --caution-900-color: #fdf1c8;
+  --caution-800-color: #fbe38e;
+  --caution-700-color: #f9ce50;
+  --caution-600-color: #f7b928;
+  --caution-500-color: #f1980f;
+  --caution-400-color: #d5730a;
+  --caution-300-color: #b1500c;
+  --caution-200-color: #903e10;
+  --caution-100-color: #763411;
+  --caution-50-color: #441904;
+
+  --background-color: #333333;
+  --surface-color: #1e1e1e;
+}
+
+html[data-layout='center'] {
+  .style-guide-wrap {
+    position: relative;
+    max-width: 160rem;
+    margin: 0 auto;
+  }
+
+  .style-guide-wrap .left-menu-zone .logo {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 160rem !important;
+  }
+
+  .style-guide-wrap .left-menu-zone {
+    left: -28rem !important;
+    z-index: 10;
+    transition: .3s;
+  }
+
+  .style-guide-wrap .left-menu-zone.on {
+    left: 0 !important;
+  }
+
+  .style-guide-wrap .right-cont-zone {
+    margin-left: 0 !important;
+  }
+
+  .style-guide-wrap .btn-setting {
+    top: .8rem !important;
+    left: 50% !important;
+    transform: translateX(1680%) !important;
+  }
+
+  .style-guide-wrap .btn-menu {
+    display: block !important;
+  }
+}

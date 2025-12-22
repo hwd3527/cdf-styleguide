@@ -4,141 +4,146 @@
 	Button Size
 	*************************************
 	*/
-	.cdf-btn.size-xl {
-		height: var(--btn-height-xl);
-		border-radius: var(--btn-radius-xl);
-		padding: var(--btn-padding-block-xl) var(--btn-padding-inline-xl);
-		font-size: var(--btn-font-size-xl);
-		font-weight: 600;
+	.c-btn.c-btn--xl {
+		@apply font-semibold h-[var(--btn-height-xl)] 
+		rounded-[var(--btn-radius-xl)]
+		px-[var(--btn-padding-inline-xl)] 
+		py-[var(--btn-padding-block-xl)] 
+		text-[length:var(--btn-font-size-xl)];
 	} 
-	.cdf-btn.size-xl:not(:has(i)) {
+	.c-btn.c-btn--xl:not(:has(i)) {
 		padding-inline: calc(var(--btn-padding-inline-xl) + 1rem);
 	}
-	.cdf-btn.size-xl i {
-		font-size: var(--btn-icon-size-xl) !important;
+	.c-btn.c-btn--xl i {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-xl)];
 	}
-	.cdf-btn.size-l {
-		height: var(--btn-height-lg);
-		border-radius: var(--btn-radius-lg);
-		padding: var(--btn-padding-block-lg) var(--btn-padding-inline-lg);
-		font-size: var(--btn-font-size-lg);
+	.c-btn.c-btn--lg {
+		@apply h-[var(--btn-height-lg)] 
+		rounded-[var(--btn-radius-lg)]
+		px-[var(--btn-padding-inline-lg)] 
+		py-[var(--btn-padding-block-lg)] 
+		text-[length:var(--btn-font-size-lg)];
 	}
-	.cdf-btn.size-l:not(:has(i)) {
+	.c-btn.c-btn--lg:not(:has(.c-btn__icon,i)) {
 		padding-inline: calc(var(--btn-padding-inline-lg) + 1rem);
 	}
-	.cdf-btn.size-l i {
-		font-size: var(--btn-icon-size-lg) !important;
+	.c-btn.c-btn--lg i {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-lg)];
 	}
-	.cdf-btn.size-m {
-		height: var(--btn-height-md);
-		border-radius: var(--btn-radius-md);
-		padding: var(--btn-padding-block-md) var(--btn-padding-inline-md);
-		font-size: var(--btn-font-size-md);
+	.c-btn.c-btn--md {
+		@apply h-[var(--btn-height-md)] 
+		rounded-[var(--btn-radius-md)]
+		px-[var(--btn-padding-inline-md)] 
+		py-[var(--btn-padding-block-md)] 
+		text-[length:var(--btn-font-size-md)];
 	}
-	.cdf-btn.size-m:not(:has(i)) {
+	.c-btn.c-btn--md:not(:has(.c-btn__icon,i)) {
 		padding-inline: calc(var(--btn-padding-inline-md) + 1rem);
 	}
-	.cdf-btn.size-m i {
-		font-size: var(--btn-icon-size-md) !important;
+	.c-btn.c-btn--md .c-btn__icon,
+	.c-btn.c-btn--md i {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-md)];
 	}
-	.cdf-btn.size-s {
-		height: var(--btn-height-sm);
-		border-radius: var(--btn-radius-sm);
-		padding: var(--btn-padding-block-sm) var(--btn-padding-inline-sm);
-		font-size: var(--btn-font-size-sm);
+	.c-btn.c-btn--sm {
+		@apply h-[var(--btn-height-sm)] 
+		rounded-[var(--btn-radius-sm)]
+		px-[var(--btn-padding-inline-sm)] 
+		py-[var(--btn-padding-block-sm)] 
+		text-[length:var(--btn-font-size-sm)];
 	}
-	.cdf-btn.size-s:not(:has(i)) {
+	.c-btn.c-btn--sm:not(:has(.c-btn__icon,i)) {
 		padding-inline: calc(var(--btn-padding-inline-sm) + 1rem);
 	}
-	.cdf-btn.size-s i {
-		font-size: var(--btn-icon-size-sm) !important;
+	.c-btn.c-btn--sm .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-sm)];
 	}
-	.cdf-btn.size-xs {
-		height: var(--btn-height-xs);
-		border-radius: var(--btn-radius-xs);
-		padding: var(--btn-padding-block-xs) var(--btn-padding-inline-xs);
-		font-size: var(--btn-font-size-xs);
+	.c-btn.c-btn--xs {
+		@apply h-[var(--btn-height-xs)] 
+		rounded-[var(--btn-radius-xs)]
+		px-[var(--btn-padding-inline-xs)] 
+		py-[var(--btn-padding-block-xs)] 
+		text-[length:var(--btn-font-size-xs)];
 	}
-	.cdf-btn.size-xs:not(:has(i)) {
+	.c-btn.c-btn--xs:not(:has(.c-btn__icon,i)) {
 		padding-inline: calc(var(--btn-padding-inline-xs) + 1rem);
 	}
-	.cdf-btn.size-xs i {
-		font-size: var(--btn-icon-size-xs) !important;
+	.c-btn.c-btn--xs .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-xs)];
 	}
-	.cdf-btn.size-xl:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-xl);
+	.c-btn.c-btn--xl:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-xl)];
 	}
-	.cdf-btn.size-xl:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-xl) !important;
+	.c-btn.c-btn--xl:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-xl)];
 	}
-	.cdf-btn.size-l:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-lg);
+	.c-btn.c-btn--lg:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-lg)];
 	}
-	.cdf-btn.size-l:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-lg) !important;
+	.c-btn.c-btn--lg:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-lg)];
 	}
-	.cdf-btn.size-m:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-md);
+	.c-btn.c-btn--md:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-md)];
 	}
-	.cdf-btn.size-m:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-md) !important;
+	.c-btn.c-btn--md:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-md)];
 	}
-	.cdf-btn.size-s:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-sm);
+	.c-btn.c-btn--sm:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-sm)];
 	}
-	.cdf-btn.size-s:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-sm) !important;
+	.c-btn.c-btn--sm:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-sm)];
 	}
-	.cdf-btn.size-xs:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-xs);
+	.c-btn.c-btn--xs:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-xs)];
 	}
-	.cdf-btn.size-xs:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-xs) !important;
+	.c-btn.c-btn--xs:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-xs)];
 	}
 
 	/*
@@ -146,359 +151,321 @@
 	button
 	*************************************
 	*/
-	.cdf-btn {
-		position: relative;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: 6px;
-		cursor: pointer;
-		text-decoration: none;
-		line-height: 1em;
-		transition: all .2s;
-		white-space: nowrap;
-		border-radius: var(--btn-radius-md);
-		background-color: var(--primary-700-color);
-		border: 1px solid transparent;
-		color: var(--white-color);
-		font-weight: 600;
-		width: max-content;
-		height: var(--btn-height-md);
-		padding: var(--btn-padding-block-md) var(--btn-padding-inline-md);
-		font-size: var(--btn-font-size-md);
+	.c-btn {
+		@apply relative 
+		inline-flex 
+		items-center 
+		justify-center 
+		gap-[.6rem] 
+		cursor-pointer 
+		no-underline 
+		leading-[1em] 
+		transition-all 
+		duration-200
+		whitespace-nowrap 
+		border-1 
+		border-solid 
+		border-transparent 
+		font-semibold 
+		w-max
+		rounded-[var(--btn-radius-md)] 
+		bg-[var(--primary-700-color)] 
+		text-white
+		h-[var(--btn-height-md)] 
+		px-[var(--btn-padding-inline-md)] 
+		py-[var(--btn-padding-block-md)] 
+		text-[length:var(--btn-font-size-md)];
 	}
-	.cdf-btn i {
-		font-size: var(--btn-icon-size-md) !important;
+	.c-btn .c-btn__icon,
+	.c-btn i {
 		font-variation-settings: 'FILL'0,
 			'wght'400,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-icon-size-md)];
 	}
-	.cdf-btn:has(.material-symbols-rounded):not(:has(.txt)) {
-		padding: 0;
-		width: var(--btn-not-txt-width-md);
+	.c-btn:has(.c-btn__icon):not(:has(.c-btn__text)) {
+		@apply p-0 
+		w-[var(--btn-not-txt-width-md)];
 	}
-	.cdf-btn:has(.material-symbols-rounded):not(:has(.txt)) i {
-		font-size: var(--btn-not-txt-icon-size-md) !important;
+	.c-btn:has(.c-btn__icon):not(:has(.c-btn__text)) .c-btn__icon {
 		font-variation-settings: 'FILL'0,
 			'wght'300,
 			'GRAD'0,
 			'opsz'24;
+		@apply !text-[length:var(--btn-not-txt-icon-size-md)];
 	}
-	.cdf-btn.full {
-		width: 100%;
+	.c-btn.c-btn--full {
+		@apply w-full;
 	}
-	.cdf-btn .txt {
-		color: var(--white-color);
-		line-height: 1em;
+	.c-btn .c-btn__text {
+		@apply leading-[1em] text-white;
 	}
-	.cdf-btn:hover,
-	.cdf-btn:focus {
-		background-color: var(--primary-800-color);
+	.c-btn:hover,
+	.c-btn:focus {
+		@apply bg-[var(--primary-800-color)];
 	}
-	.cdf-btn:disabled,
-	.cdf-btn:disabled:hover,
-	.cdf-btn:disabled:focus {
-		background-color: var(--tertiary-300-color);
-		color: var(--white-color);
-		cursor: not-allowed;
+	.c-btn:disabled,
+	.c-btn:disabled:hover,
+	.c-btn:disabled:focus {
+		@apply cursor-not-allowed 
+		text-white
+		bg-[var(--tertiary-300-color)];
 	}
-	.cdf-btn:disabled .txt,
-	.cdf-btn:disabled:hover .txt,
-	.cdf-btn:disabled:focus .txt {
-		color: var(--white-color);
+	.c-btn:disabled .txt,
+	.c-btn:disabled:hover .txt,
+	.c-btn:disabled:focus .txt {
+		@apply text-white;
 	}
-	.cdf-btn.btn-outline {
-		border: 1px solid var(--primary-500-color);
-		background-color: transparent;
-		color: var(--primary-700-color);
+	.c-btn.c-btn--outline {
+		@apply bg-transparent 
+		border-1 
+		border-solid 
+		border-[var(--primary-500-color)] 
+		text-[var(--primary-700-color)];
 	}
-	.cdf-btn.btn-outline .txt {
-		color: var(--primary-700-color);
+	.c-btn.c-btn--outline .c-btn__text {
+		@apply text-[var(--primary-700-color)];
 	}
-	.cdf-btn.btn-outline:hover,
-	.cdf-btn.btn-outline:focus {
+	.c-btn.c-btn--outline:hover,
+	.c-btn.c-btn--outline:focus {
 		background-color: var(--primary-100-color);
 		border: 1px solid var(--primary-600-color);
 		color: var(--primary-800-color);
+		@apply bg-[var(--primary-100-color)] 
+		border-1 
+		border-solid 
+		border-[var(--primary-600-color)] 
+		text-[var(--primary-800-color)];
 	}
-	.cdf-btn.btn-outline:hover .txt,
-	.cdf-btn.btn-outline:focus .txt {
-		color: var(--primary-800-color);
+	.c-btn.c-btn--outline:hover .c-btn__text,
+	.c-btn.c-btn--outline:focus .c-btn__text {
+		@apply text-[length:var(--primary-800-color)];
 	}
-	.cdf-btn.btn-outline:disabled,
-	.cdf-btn.btn-outline:disabled:hover,
-	.cdf-btn.btn-outline:disabled:focus {
-		background-color: var(--surface-color);
-		border: 1px solid var(--tertiary-300-color);
-		color: var(--tertiary-400-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--outline:disabled,
+	.c-btn.c-btn--outline:disabled:hover,
+	.c-btn.c-btn--outline:disabled:focus {
+		@apply cursor-not-allowed
+		bg-[var(--surface-color)]
+		border-1
+		border-solid
+		border-[var(--tertiary-300-color)]
+		text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.btn-outline:disabled .txt,
-	.cdf-btn.btn-outline:disabled:hover .txt,
-	.cdf-btn.btn-outline:disabled:focus .txt {
-		color: var(--tertiary-400-color);
+	.c-btn.c-btn--outline:disabled .c-btn__text,
+	.c-btn.c-btn--outline:disabled:hover .c-btn__text,
+	.c-btn.c-btn--outline:disabled:focus .c-btn__text {
+		@apply text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.text {
-		border: 1px solid transparent;
-		background-color: transparent;
-		color: var(--primary-700-color);
-		font-weight: 600;
+	.c-btn.c-btn--text {
+		@apply border-1 
+		border-solid 
+		border-transparent 
+		bg-transparent 
+		font-semibold
+		text-[var(--primary-700-color)];
 	}
-	.cdf-btn.text .txt {
-		color: var(--primary-700-color);
+	.c-btn.c-btn--text .c-btn__text {
+		@apply text-[var(--primary-700-color)];
 	}
-	.cdf-btn.text:hover,
-	.cdf-btn.text:focus {
-		background-color: var(--primary-50-color);
-		color: var(--primary-800-color);
+	.c-btn.c-btn--text:hover,
+	.c-btn.c-btn--text:focus {
+		@apply bg-[var(--primary-50-color)] 
+		text-[var(--primary-800-color)];
 	}
-	.cdf-btn.text:hover .txt,
-	.cdf-btn.text:focus .txt {
-		color: var(--primary-800-color);
+	.c-btn.c-btn--text:hover .c-btn__text,
+	.c-btn.c-btn--text:focus .c-btn__text {
+		@apply text-[var(--primary-800-color)];
 	}
-	.cdf-btn.text:disabled,
-	.cdf-btn.text:disabled:hover,
-	.cdf-btn.text:disabled:focus {
-		background-color: transparent;
-		color: var(--tertiary-400-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--text:disabled,
+	.c-btn.c-btn--text:disabled:hover,
+	.c-btn.c-btn--text:disabled:focus {
+		@apply bg-transparent 
+		cursor-not-allowed
+		text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.text:disabled .txt,
-	.cdf-btn.text:disabled:hover .txt,
-	.cdf-btn.text:disabled:focus .txt {
-		color: var(--tertiary-400-color);
+	.c-btn.c-btn--text:disabled .c-btn__text,
+	.c-btn.c-btn--text:disabled:hover .c-btn__text,
+	.c-btn.c-btn--text:disabled:focus .c-btn__text {
+		@apply text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.warning {
-		background-color: var(--warning-500-color);
-		color: var(--white-color);
-		border: 1px solid var(--warning-500-color);
+	.c-btn.c-btn--warning {
+		@apply bg-[var(--warning-500-color)]
+		text-white
+		border-1
+		border-solid
+		border-[var(--warning-500-color)];
 	}
-	.cdf-btn.warning .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--warning .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.warning:hover,
-	.cdf-btn.warning:focus {
-		background-color: var(--warning-600-color);
-		color: var(--white-color);
+	.c-btn.c-btn--warning:hover,
+	.c-btn.c-btn--warning:focus {
+		@apply bg-[var(--warning-600-color)]
+		text-white;
 	}
-	.cdf-btn.warning:hover .txt,
-	.cdf-btn.warning:focus .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--warning:hover .c-btn__text,
+	.c-btn.c-btn--warning:focus .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.warning:disabled {
-		background-color: var(--tartiary-300-color);
-		color: var(--white-color);
+	.c-btn.c-btn--warning:disabled {
+		@apply bg-[var(--tertiary-300-color)]
+		text-white;
 	}
-	.cdf-btn.warning:disabled .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--warning:disabled .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.btn-outline.warning {
-		border: 1px solid var(--warning-500-color);
-		background-color: var(--white-color);
-		color: var(--warning-600-color);
+	.c-btn.c-btn--outline.c-btn--warning {
+		@apply border-1 
+		border-solid
+		border-[var(--warning-500-color)]
+		bg-white
+		text-[var(--warning-600-color)];
 	}
-	.cdf-btn.btn-outline.warning .txt {
-		color: var(--warning-600-color);
+	.c-btn.c-btn--outline.c-btn--warning .c-btn__text {
+		@apply text-[var(--warning-600-color)];
 	}
-	.cdf-btn.btn-outline.warning:hover,
-	.cdf-btn.btn-outline.warning:focus {
-		background-color: var(--warning-50-color);
-		border: 1px solid var(--warning-500-color);
-		color: var(--warning-600-color);
+	.c-btn.c-btn--outline.c-btn--warning:hover,
+	.c-btn.c-btn--outline.c-btn--warning:focus {
+		@apply bg-[var(--warning-50-color)]
+		border-1
+		border-solid
+		border-[var(--warning-500-color)]
+		text-[var(--warning-600-color)];
 	}
-	.cdf-btn.btn-outline.warning:hover .txt,
-	.cdf-btn.btn-outline.warning:focus .txt {
-		color: var(--tertiary-600-color);
+	.c-btn.c-btn--outline.c-btn--warning:hover .c-btn__text,
+	.c-btn.c-btn--outline.c-btn--warning:focus .c-btn__text {
+		@apply text-[var(--warning-600-color)];
 	}
-	.cdf-btn.btn-outline.warning:disabled {
-		background-color: var(--white-color);
-		border: 1px solid var(--tertiary-300-color);
-		color: var(--tertiary-400-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--outline.c-btn--warning:disabled {
+		@apply cursor-not-allowed
+		bg-white
+		border-1
+		border-solid
+		border-[var(--tertiary-300-color)]
+		text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.btn-outline.warning:disabled .txt {
-		color: var(--tertiary-400-color);
+	.c-btn.c-btn--outline.c-btn--warning:disabled .c-btn__text {
+		@apply text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.text.warning {
-		border: 0;
-		background-color: transparent;
-		color: var(--warning-500-color);
-		font-weight: 600;
+	.c-btn.c-btn--text.c-btn--warning {
+		@apply border-0 
+		bg-transparent 
+		font-semibold
+		text-[var(--warning-500-color)];
 	}
-	.cdf-btn.text.warning .txt {
-		color: var(--tertiary-500-color);
+	.c-btn.c-btn--text.c-btn--warning .c-btn__text {
+		@apply text-[var(--warning-500-color)];
 	}
-	.cdf-btn.text.warning:hover,
-	.cdf-btn.text.warning:focus {
-		background-color: var(--warning-50-color);
-		color: var(--warning-500-color);
+	.c-btn.c-btn--text.c-btn--warning:hover,
+	.c-btn.c-btn--text.c-btn--warning:focus {
+		@apply bg-[var(--warning-50-color)]
+		text-[var(--warning-600-color)];
 	}
-	.cdf-btn.text.warning:hover .txt,
-	.cdf-btn.text.warning:focus .txt {
-		color: var(--warning-600-color);
+	.c-btn.c-btn--text.c-btn--warning:hover .c-btn__text,
+	.c-btn.c-btn--text.c-btn--warning:focus .c-btn__text {
+		@apply text-[var(--warning-600-color)];
 	}
-	.cdf-btn.text.warning:disabled {
-		background-color: transparent;
-		color: var(--tertiary-400-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--text.c-btn--warning:disabled {
+		@apply bg-transparent 
+		cursor-not-allowed
+		text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.text.warning:disabled .txt {
-		color: var(--tertiary-400-color);
+	.c-btn.c-btn--text.c-btn--warning:disabled .c-btn__text {
+		@apply text-[var(--tertiary-400-color)];
 	}
-	.cdf-btn.white {
-		background-color: var(--white-color);
-		color: var(--text-500-color);
+	.c-btn.c-btn--white {
+		@apply bg-white
+		text-[var(--text-700-color)];
 	}
-	.cdf-btn.white .txt {
-		color: var(--text-500-color);
+	.c-btn.c-btn--white .c-btn__text {
+		@apply text-[var(--text-700-color)];
 	}
-	.cdf-btn.white:hover,
-	.cdf-btn.white:focus {
-		background-color: var(--text-50-color);
-		color: var(--text-900-color);
+	.c-btn.c-btn--white:hover,
+	.c-btn.c-btn--white:focus {
+		@apply bg-[var(--text-50-color)]
+		text-[var(--text-800-color)];
 	}
-	.cdf-btn.white:hover .txt,
-	.cdf-btn.white:focus .txt {
-		color: var(--text-900-color);
+	.c-btn.c-btn--white:hover .c-btn__text,
+	.c-btn.c-btn--white:focus .c-btn__text {
+		@apply text-[var(--text-800-color)];
 	}
-	.cdf-btn.white:disabled {
-		background-color: var(--text-700-color);
-		color: var(--text-500-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--white:disabled {
+		@apply cursor-not-allowed
+		bg-[var(--text-700-color)]
+		text-[var(--text-500-color)];
 	}
-	.cdf-btn.white:disabled .txt,
-	.cdf-btn.white:disabled i {
-		color: var(--text-500-color);
+	.c-btn.c-btn--white:disabled .c-btn__text,
+	.c-btn.white:disabled i {
+		@apply text-[var(--text-500-color)];
 	}
-	.cdf-btn.btn-outline.white {
-		border: 1px solid var(--text-500-color);
-		background-color: transparent;
-		color: var(--text-100-color);
+	.c-btn.c-btn--outline.c-btn--white {
+		@apply bg-transparent
+		border-1 
+		border-solid
+		border-[var(--text-200-color)]
+		text-[var(--text-100-color)];
 	}
-	.cdf-btn.btn-outline.white .txt,
-	.cdf-btn.btn-outline.white i {
-		color: var(--text-500-color);
+	.c-btn.c-btn--outline.c-btn--white .c-btn__text,
+	.c-btn.c-btn--outline.c-btn--white .c-btn__icon {
+		@apply text-[var(--text-100-color)];
 	}
-	.cdf-btn.btn-outline.white:hover,
-	.cdf-btn.btn-outline.white:focus {
-		background-color: transparent;
-		border: 1px solid var(--white-color);
-		color: var(--white-color);
+	.c-btn.c-btn--outline.c-btn--white:hover,
+	.c-btn.c-btn--outline.c-btn--white:focus {
+		@apply bg-transparent
+		border-1
+		border-solid
+		border-white
+		text-white;
 	}
-	.cdf-btn.btn-outline.white:hover .txt,
-	.cdf-btn.btn-outline.white:focus .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--outline.c-btn--white:hover .c-btn__text,
+	.c-btn.c-btn--outline.c-btn--white:focus .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.btn-outline.white:hover i,
-	.cdf-btn.btn-outline.white:focus i {
-		color: var(--white-color);
+	.c-btn.c-btn--outline.c-btn--white:hover .c-btn__icon,
+	.c-btn.c-btn--outline.c-btn--white:focus .c-btn__icon {
+		@apply text-white;
 	}
-	.cdf-btn.btn-outline.white:disabled {
-		background-color: transparent;
-		border: 1px solid var(--text-600-color);
-		color: var(--text-600-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--outline.c-btn--white:disabled {
+		@apply bg-transparent 
+		cursor-not-allowed
+		border-1
+		border-solid
+		border-[var(--text-600-color)]
+		text-[var(--text-600-color)];
 	}
-	.cdf-btn.btn-outline.white:disabled .txt,
-	.cdf-btn.btn-outline.white:disabled i {
-		color: var(--text-600-color);
+	.c-btn.c-btn--outline.c-btn--white:disabled .c-btn__text,
+	.c-btn.c-btn--outline.c-btn--white:disabled .c-btn__icon {
+		@apply text-[var(--text-600-color)];
 	}
-	.cdf-btn.text.white {
-		border: 0;
-		background-color: transparent;
-		color: var(--white-color);
-		font-weight: 600;
+	.c-btn.c-btn--text.c-btn--white {
+		@apply border-0 
+		bg-transparent 
+		font-semibold
+		text-white;
 	}
-	.cdf-btn.text.white .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--text.c-btn--white .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.text.white:hover,
-	.cdf-btn.text.white:focus {
-		background-color: rgba(0, 0, 0, .3);
-		color: var(--white-color);
+	.c-btn.c-btn--text.c-btn--white:hover,
+	.c-btn.c-btn--text.c-btn--white:focus {
+		@apply bg-[rgba(0,0,0,0.3)]
+		text-white;
 	}
-	.cdf-btn.text.white:hover .txt,
-	.cdf-btn.text.white:focus .txt {
-		color: var(--white-color);
+	.c-btn.c-btn--text.c-btn--white:hover .c-btn__text,
+	.c-btn.c-btn--text.c-btn--white:focus .c-btn__text {
+		@apply text-white;
 	}
-	.cdf-btn.text.white:disabled {
-		background-color: transparent;
-		color: var(--text-600-color);
-		cursor: not-allowed;
+	.c-btn.c-btn--text.c-btn--white:disabled {
+		@apply bg-transparent 
+		cursor-not-allowed
+		text-[var(--text-600-color)];
 	}
-	.cdf-btn.text.white:disabled .txt,
-	.cdf-btn.text.white:disabled i {
-		color: var(--text-600-color);
+	.c-btn.c-btn--text.c-btn--white:disabled .c-btn__text,
+	.c-btn.c-btn--text.c-btn--white:disabled .c-btn__icon {
+		@apply text-[var(--text-600-color)];
 	}
-	.cdf-btn.btn-rounded {
-		border-radius: var(--radius-pill);
-	}
-
-	/*
-	************************************
-	btn-line
-	************************************
-	*/
-	.cdf-btn-line {
-		display: flex;
-		align-items: center;
-		gap: .6rem;
-		width: 100%;
-		padding: 2rem 0;
-	}
-
-	.cdf-btn-line:last-child {
-		padding: 2rem 0 0;
-	}
-
-	.cdf-btn-line.space-line {
-		border-top: .1rem dashed var(--tertiary-300-color);
-	}
-
-	.cdf-btn-line .cdf-btn-line-inner {
-		display: flex;
-		align-items: center;
-		gap: .6rem;
-	}
-
-	.cdf-btn-line.top-border {
-		padding-top: 2rem;
-		border-top: 1px solid var(--tertiary-500-color);
-	}
-
-	.cdf-btn-line.center {
-		justify-content: center;
-	}
-
-	.cdf-btn-line.right {
-		justify-content: flex-end;
-	}
-
-	.cdf-btn-line.left {
-		justify-content: flex-start;
-	}
-
-	.cdf-btn-line.space-between {
-		justify-content: space-between;
-	}
-
-	.cdf-btn-line.space-around {
-		justify-content: space-around;
-	}
-
-	.cdf-btn-line.space-evenly {
-		justify-content: space-evenly;
-	}
-
-	.cdf-btn-line.full button {
-		flex: 1 1 0;
+	.c-btn.c-btn--rounded {
+		@apply rounded-full;
 	}
 }
-
-
-
-
-
-
-

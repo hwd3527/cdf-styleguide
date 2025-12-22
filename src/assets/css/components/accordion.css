@@ -5,32 +5,24 @@
   ***************************************
   */
   .cdf-collapse-wrap {
-    display: flex;
-    flex-direction: column;
     gap: var(--collapse-gap);
-    width: 100%;
+    @apply flex flex-col w-full;
   }
 
   .cdf-collapse-wrap.join {
-    gap: 0;
+    @apply gap-0;
   }
 
   .cdf-collapse-wrap .cdf-collapse-item {
     border-radius: var(--collapse-radius);
     border: .1rem solid var(--tertiary-300-color);
     background-color: var(--surface-color);
-    width: 100%;
-    transition: .3s ease-in-out;
-    display: grid;
-    grid-template-rows: max-content 0fr;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    @apply w-full transition-all duration-300 ease-in-out grid grid-rows-[max-content_0fr]
+          flex-col relative overflow-hidden;
   }
 
   .cdf-collapse-wrap.join .cdf-collapse-item {
-    border-radius: 0;
-    margin-top: -1px;
+    @apply rounded-none -mt-px;
   }
 
 
@@ -44,45 +36,29 @@
 
 
   .cdf-collapse-wrap .cdf-collapse-item>input:is([type=checkbox], [type=radio]) {
-    appearance: none;
-    opacity: 0;
-    z-index: 1;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    width: 100%;
     min-height: var(--collapse-min-height);
     padding: var(--collapse-padding);
     padding-right: var(--collapse-padding-right);
-    transition: background-color .2s ease-out;
-    cursor: pointer;
+    @apply appearance-none opacity-0 z-1 row-start-1 col-start-1 w-full 
+           transition-colors duration-200 ease-out cursor-pointer;
   }
 
   .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-title {
-    position: relative;
     min-height: var(--collapse-min-height);
     padding: var(--collapse-padding);
     padding-right: var(--collapse-padding-right);
-    grid-row-start: 1;
-    grid-column-start: 1;
-    transition: background-color .2s ease-out;
-    position: relative;
-    font-weight: 600;
     font-size: var(--collapse-title-font-size);
     color: var(--text-900-color);
-    width: 100%;
+    @apply relative row-start-1 col-start-1 transition-colors duration-200 ease-out
+           font-semibold w-full;
   }
 
   .cdf-collapse-wrap .cdf-collapse-item.collapse-arrow .cdf-collapse-title::after {
     content: '\e313';
-    display: block;
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
     font-family: 'Material Symbols Rounded';
     color: var(--text-900-color);
     transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-    font-size: 2.0rem;
+    @apply block absolute right-5 top-1/2 -translate-y-1/2 text-[2rem] ;
   }
 
   .cdf-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
@@ -91,15 +67,10 @@
 
   .cdf-collapse-wrap .cdf-collapse-item.collapse-plus .cdf-collapse-title::after {
     content: '\e145';
-    display: block;
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
     font-family: 'Material Symbols Rounded';
     color: var(--text-900-color);
     transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-    font-size: 2.0rem;
+    @apply block absolute right-5 top-1/2 -translate-y-1/2 text-[2rem];
   }
 
   .cdf-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
@@ -107,21 +78,16 @@
   }
 
   .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-content {
-    position: relative;
-    visibility: hidden;
-    height: 0;
-    cursor: unset;
     padding-left: var(--collapse-content-padding-left);
     padding-right: var(--collapse-content-padding-right);
-    transition: padding .2s, background-color .2s ease-out;
     color: var(--text-900-color);
     font-size: var(--collapse-content-font-size);
+    @apply relative invisible h-0 cursor-default transition-all duration-200 ease-out;
   }
 
   .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
     padding-bottom: var(--collapse-content-padding-bottom);
-    transition: padding .2s, background-color .2s ease-out !important;
-    visibility: visible !important;
-    min-height: fit-content !important;
+
+    @apply transition-all duration-200 ease-out visible min-h-fit;
   }
 }

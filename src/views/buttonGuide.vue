@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Button</h2>
+    <h2 class="c-h1">Button</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,8 +15,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn">
-                <span class="txt">button</span>
+              <button type="button" class="c-btn">
+                <span class="c-btn__txt">button</span>
               </button>
             </div>
           </div>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">White(배경이 어두울때)</h3>
+      <h3 class="c-h3">White(배경이 어두울때)</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -41,29 +41,29 @@
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
               <div class="btn-wrap">
-                <button type="button" class="cdf-btn white">
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">button</span>
+                <button type="button" class="c-btn c-btn--white">
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">button</span>
                 </button>
-                <button type="button" class="cdf-btn white btn-outline">
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">outline</span>
+                <button type="button" class="c-btn c-btn--white c-btn--outline">
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">outline</span>
                 </button>
-                <button type="button" class="cdf-btn white text">
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">text</span>
+                <button type="button" class="c-btn c-btn--white c-btn--text">
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">text</span>
                 </button>
-                <button type="button" class="cdf-btn white" disabled>
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">disabled</span>
+                <button type="button" class="c-btn c-btn--white" disabled>
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">disabled</span>
                 </button>
-                <button type="button" class="cdf-btn white btn-outline" disabled>
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">outline disabled</span>
+                <button type="button" class="c-btn c-btn--white c-btn--outline" disabled>
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">outline disabled</span>
                 </button>
-                <button type="button" class="cdf-btn white text" disabled>
-                  <i class="material-symbols-rounded">arrow_back</i>
-                  <span class="txt">text disabled</span>
+                <button type="button" class="c-btn c-btn--white c-btn--text" disabled>
+                  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                  <span class="c-btn__text">text disabled</span>
                 </button>
               </div>
             </div>
@@ -77,7 +77,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">크기</h3>
+      <h3 class="c-h3">크기</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -88,11 +88,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn size-xs"><span class="txt">button</span></button>
-              <button type="button" class="cdf-btn size-s"><span class="txt">button</span></button>
-              <button type="button" class="cdf-btn size-m"><span class="txt">button</span></button>
-              <button type="button" class="cdf-btn size-l"><span class="txt">button</span></button>
-              <button type="button" class="cdf-btn size-xl"><span class="txt">button</span></button>
+              <button type="button" class="c-btn c-btn--xs"><span class="c-btn__text">button</span></button>
+              <button type="button" class="c-btn c-btn--sm"><span class="c-btn__text">button</span></button>
+              <button type="button" class="c-btn c-btn--md"><span class="c-btn__text">button</span></button>
+              <button type="button" class="c-btn c-btn--lg"><span class="c-btn__text">button</span></button>
+              <button type="button" class="c-btn c-btn--xl"><span class="c-btn__text">button</span></button>
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0202" id="tabPanel0202" class="tab-panel">
@@ -104,7 +104,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">스타일</h3>
+      <h3 class="c-h3">스타일</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -115,8 +115,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn btn-outline"><span class="txt">button</span></button>
-              <button type="button" class="cdf-btn text"><span class="txt">button</span></button>
+              <button type="button" class="c-btn c-btn--outline"><span class="c-btn__text">button</span></button>
+              <button type="button" class="c-btn c-btn--text"><span class="c-btn__text">button</span></button>
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0202" id="tabPanel0202" class="tab-panel">
@@ -128,7 +128,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">아이콘</h3>
+      <h3 class="c-h3">아이콘</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -139,12 +139,12 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn">
-                <i class="material-symbols-rounded">arrow_back</i>
-                <span class="txt">button</span>
+              <button type="button" class="c-btn">
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                <span class="c-btn__text">button</span>
               </button>
-              <button type="button" class="cdf-btn">
-                <i class="material-symbols-rounded">arrow_back</i>
+              <button type="button" class="c-btn">
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
               </button>
             </div>
           </div>
@@ -157,7 +157,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">라운드</h3>
+      <h3 class="c-h3">라운드</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -168,9 +168,9 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn btn-rounded">
-                <i class="material-symbols-rounded">arrow_back</i>
-                <span class="txt">button</span>
+              <button type="button" class="c-btn c-btn--rounded">
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                <span class="c-btn__text">button</span>
               </button>
             </div>
           </div>
@@ -183,7 +183,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">disabled</h3>
+      <h3 class="c-h3">disabled</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -194,17 +194,17 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <button type="button" class="cdf-btn" disabled>
-                <i class="material-symbols-rounded">arrow_back</i>
-                <span class="txt">button</span>
+              <button type="button" class="c-btn" disabled>
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                <span class="c-btn__text">button</span>
               </button>
-              <button type="button" class="cdf-btn btn-outline" disabled>
-                <i class="material-symbols-rounded">arrow_back</i>
-                <span class="txt">button</span>
+              <button type="button" class="c-btn c-btn--outline" disabled>
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                <span class="c-btn__text">button</span>
               </button>
-              <button type="button" class="cdf-btn text" disabled>
-                <i class="material-symbols-rounded">arrow_back</i>
-                <span class="txt">button</span>
+              <button type="button" class="c-btn c-btn--text" disabled>
+                <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+                <span class="c-btn__text">button</span>
               </button>
             </div>
           </div>
@@ -217,8 +217,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">버튼 정렬</h3>
-      <p class="cdf-information-text mt-5">가운데 정렬</p>
+      <h3 class="c-h3">버튼 정렬</h3>
+      <p class="c-information-text">가운데 정렬</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -229,9 +229,9 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-btn-line center">
-                <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn btn-outline">button</button>
+              <div class="c-btn-line center">
+                <button type="button" class="c-btn">button</button>
+                <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
             </div>
           </div>
@@ -242,7 +242,7 @@
         </div>
       </div>
 
-      <p class="cdf-information-text mt-5">왼쪽 정렬</p>
+      <p class="c-information-text">왼쪽 정렬</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -253,9 +253,9 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-btn-line left">
-                <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn btn-outline">button</button>
+              <div class="c-btn-line left">
+                <button type="button" class="c-btn">button</button>
+                <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
             </div>
           </div>
@@ -266,7 +266,7 @@
         </div>
       </div>
 
-      <p class="cdf-information-text mt-5">오른쪽 정렬</p>
+      <p class="c-information-text">오른쪽 정렬</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -277,9 +277,9 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-btn-line right">
-                <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn btn-outline">button</button>
+              <div class="c-btn-line right">
+                <button type="button" class="c-btn">button</button>
+                <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@
         </div>
       </div>
 
-      <p class="cdf-information-text mt-5">양쪽 사이드 정렬</p>
+      <p class="c-information-text">양쪽 사이드 정렬</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -301,9 +301,9 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-btn-line space-between">
-                <button type="button" class="cdf-btn">button</button>
-                <button type="button" class="cdf-btn btn-outline">button</button>
+              <div class="c-btn-line space-between">
+                <button type="button" class="c-btn">button</button>
+                <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
             </div>
           </div>
@@ -322,87 +322,78 @@
 import { ref, onMounted } from 'vue'
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<button type="button" class="cdf-btn">
-  <span class="txt">button</span>
+const value01 = ref(`<button type="button" class="c-btn">
+  <span class="c-btn__txt">button</span>
 </button>`);
-
-const value03 = ref(`<button type="button" class="cdf-btn size-xs"><span class="txt">button</span></button>
-<button type="button" class="cdf-btn size-s"><span class="txt">button</span></button>
-<button type="button" class="cdf-btn size-m"><span class="txt">button</span></button>
-<button type="button" class="cdf-btn size-l"><span class="txt">button</span></button>
-<button type="button" class="cdf-btn size-xl"><span class="txt">button</span></button>`);
-const value04 = ref(`<button type="button" class="cdf-btn btn-outline"><span class="txt">button</span></button>
-<button type="button" class="cdf-btn text"><span class="txt">button</span></button>`);
-const value05 = ref(`<button type="button" class="cdf-btn">
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+const value03 = ref(`<button type="button" class="c-btn c-btn--xs"><span class="c-btn__text">button</span></button>
+<button type="button" class="c-btn c-btn--sm"><span class="c-btn__text">button</span></button>
+<button type="button" class="c-btn c-btn--md"><span class="c-btn__text">button</span></button>
+<button type="button" class="c-btn c-btn--lg"><span class="c-btn__text">button</span></button>
+<button type="button" class="c-btn c-btn--xl"><span class="c-btn__text">button</span></button>`);
+const value04 = ref(`<button type="button" class="c-btn c-btn--outline"><span class="c-btn__text">button</span></button>
+<button type="button" class="c-btn c-btn--text"><span class="c-btn__text">button</span></button>`);
+const value05 = ref(`<button type="button" class="c-btn">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>
-<button type="button" class="cdf-btn">
-  <i class="material-symbols-rounded">arrow_back</i>
+<button type="button" class="c-btn">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
 </button>`);
-const value06 = ref(`<button type="button" class="cdf-btn btn-rounded">
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+const value06 = ref(`<button type="button" class="c-btn c-btn--rounded">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>`);
-const value07 = ref(`<button type="button" class="cdf-btn" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+const value07 = ref(`<button type="button" class="c-btn" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>
-<button type="button" class="cdf-btn btn-outline" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+<button type="button" class="c-btn c-btn--outline" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>
-<button type="button" class="cdf-btn text" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+<button type="button" class="c-btn c-btn--text" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>`);
-const value0801 = ref(`<div class="cdf-btn-line center">
-  <button type="button" class="cdf-btn">button</button>
-  <button type="button" class="cdf-btn btn-outline">button</button>
+const value0801 = ref(`<div class="c-btn-line center">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0802 = ref(`<div class="cdf-btn-line left">
-  <button type="button" class="cdf-btn">button</button>
-  <button type="button" class="cdf-btn btn-outline">button</button>
+const value0802 = ref(`<div class="c-btn-line left">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0803 = ref(`<div class="cdf-btn-line right">
-	<button type="button" class="cdf-btn">
-		<span class="txt">button</span>
-	</button>
-	<button type="button" class="cdf-btn btn-outline">
-		<span class="txt">button</span>
-	</button>
+const value0803 = ref(`<div class="c-btn-line right">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0804 = ref(`<div class="cdf-btn-line space-between">
-	<button type="button" class="cdf-btn">
-		<span class="txt">button</span>
-	</button>
-	<button type="button" class="cdf-btn btn-outline">
-		<span class="txt">button</span>
-	</button>
+const value0804 = ref(`<div class="c-btn-line space-between">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value09 = ref(`<button type="button" class="cdf-btn white">
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">button</span>
+const value09 = ref(`<button type="button" class="c-btn c-btn--white">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
 </button>
-<button type="button" class="cdf-btn white btn-outline">
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">outline</span>
+<button type="button" class="c-btn c-btn--white c-btn--outline">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">outline</span>
 </button>
-<button type="button" class="cdf-btn white text">
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">text</span>
+<button type="button" class="c-btn c-btn--white c-btn--text">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">text</span>
 </button>
-<button type="button" class="cdf-btn white" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">disabled</span>
+<button type="button" class="c-btn c-btn--white" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">disabled</span>
 </button>
-<button type="button" class="cdf-btn white btn-outline" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">outline disabled</span>
+<button type="button" class="c-btn c-btn--white c-btn--outline" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">outline disabled</span>
 </button>
-<button type="button" class="cdf-btn white text" disabled>
-  <i class="material-symbols-rounded">arrow_back</i>
-  <span class="txt">text disabled</span>
+<button type="button" class="c-btn c-btn--white c-btn--text" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">text disabled</span>
 </button>`);
 
 // copyCode를 클릭하면 코드 복사
