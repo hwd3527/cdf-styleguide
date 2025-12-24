@@ -5,71 +5,47 @@
 	***************************************
 	*/
 	.c-h1 {
-		font-size:3.2rem;
-		font-weight: 700;
-		color:var(--text-950-color);
-	}
-	@media (max-width: 768px) {
-		.c-h1 {
-			font-size: 2.4rem;
-			font-weight: 800;
-		}
-	}
+		@apply text-[length:var(--h1-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h1-font-size)] 
+		md:font-bold;
+	}	
 	.c-h2 {
-		font-size: 2.4rem;
-		font-weight: 700;
-		color: var(--text-950-color);
-	}
-	@media (max-width: 768px) {
-		.c-h2 {
-			font-size: 2.0rem;
-			font-weight: 800;
-		}
+		@apply text-[length:var(--h2-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h2-font-size)]
+		md:font-bold;
 	}
 	.c-h3 {
-		font-size: 2.0rem;
-		font-weight: 700;
-		color: var(--text-950-color);
-	}
-	@media (max-width: 768px) {
-		.c-h3 {
-			font-size: 1.8rem;
-			font-weight: 800;
-		}
+		@apply text-[length:var(--h3-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h3-font-size)]
+		md:font-bold;
 	}
 	.c-h4 {
-		font-size: 1.6rem;
-		font-weight: 700;
-		color: var(--text-900-color);
-	}
-	@media (max-width: 768px) {
-		.c-h4 {
-			font-size: 1.4rem;
-			font-weight: 800;
-		}
+		@apply text-[length:var(--h4-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h4-font-size)] 
+		md:font-bold;
 	}
 	.c-h5 {
-		font-size: 1.4rem;
-		font-weight: 700;
-		color: var(--text-900-color);
-	}
-	@media (max-width: 768px) {
-		.c-h5 {
-			font-size: 1.2rem;
-			font-weight: 800;
-		}
-	}
+		@apply text-[length:var(--h5-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h5-font-size)] 
+		md:font-bold;
+	}	
 	.c-h6 {
-		font-size: 1.2rem;
-		font-weight: 700;
-		color: var(--text-900-color);
-	}
-	@media (max-width: 768px) {
-		.c-h6 {
-			font-size: 1.1rem;
-			font-weight: 800;
-		}
-	}
+		@apply text-[length:var(--h6-font-size-mobile)] 
+		font-extrabold 
+		text-[var(--text-950-color)]
+		md:text-[length:var(--h6-font-size)] 
+		md:font-bold;
+	}	
 
 
 	/*
@@ -78,40 +54,41 @@
 	***************************************
 	*/	
 	.c-list-title {
-		font-size: 2rem;
-		font-weight: 800;
-		color: var(--text-900-color);
-		line-height: 1.2em;
+		@apply text-[length:2rem] 
+		font-extrabold 
+		text-[var(--text-900-color)] 
+		leading-[1.2em];
 	}
 
 	.c-list-style {
-		display: flex;
-		flex-direction: column;
-		gap: .8rem;
-		align-items: flex-start;
-		width: 100%;
-		margin-top: 1.6rem;
+		@apply flex 
+		flex-col 
+		gap-2 
+		items-start 
+		w-full 
+		mt-[1.6rem];
 	}
 
 	.c-list-style li {
-		display: flex;
-		align-items: flex-start;
-		gap: .6rem;
-		width: 100%;
-		font-size: 1.6rem;
-		color: var(--text-800-color);
-		line-height: 1.4em;
+		@apply flex 
+		items-start 
+		gap-[.6rem] 
+		w-full 
+		text-[length:1.6rem] 
+		text-[var(--text-800-color)] 
+		leading-[1.4em]		
 	}
 
 	.c-list-style li::before {
-		content: '';
-		display: inline-block;
-		width: .4rem;
-		height: .4rem;
-		border-radius: var(--radius-max);
-		background-color: var(--primary-400-color);
-		margin-top: .8rem;
+		@apply content-[''] 
+		inline-block 
+		w-1 
+		h-1 
+		rounded-[var(--radius-max)] 
+		bg-[var(--primary-400-color)] 
+		mt-2;
 	}
+
 
 	/*
 	**************************************
@@ -119,34 +96,34 @@
 	**************************************
 	*/
 	.c-information-text {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-		flex-direction: row;
-		gap: .4rem;
-		width: 100%;
-		font-size: 1.4rem;
-		color: var(--tertiary-900-color);
-		margin-top: 2rem;
-		line-height: 1.4em;
+		@apply flex 
+		items-start 
+		justify-start
+		flex-row
+		gap-1 
+		w-full 
+		text-[length:1.4rem] 
+		text-[var(--tertiary-900-color)]
+		leading-[1.4em]
+		mt-5;
 	}
 
-	.c-information-text::before {
-		content: '!';
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.3rem;
-		color: var(--white-color);
-		font-weight: 700;
-		background-color: var(--primary-500-color);
-		width: 2rem;
-		height: 2rem;
-		border-radius: var(--radius-max);
-		flex-shrink: 0;
+	.c-information-text::before {		
+		@apply content-['!'] 
+		inline-flex 
+		items-center 
+		justify-center 
+		text-[length:1.3rem]
+		text-[var(--white-color)]
+		font-bold
+		bg-[var(--primary-500-color)]
+		w-5 
+		h-5 
+		rounded-[var(--radius-max)]
+		shrink-0;
 	}
 
 	.c-information-text.center {
-		justify-content: center;
+		@apply justify-center;
 	}
 }

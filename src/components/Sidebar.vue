@@ -2,11 +2,11 @@
   <header class="left-menu-zone" :class="{ on: isMenuOpen === true }">
     <div class="logo">
       <h1>Style Guide</h1>
-      <button type="button" class="cdf-btn size-m rounded btn-menu" @click="isMenuOpen = !isMenuOpen">
+      <button type="button" class="c-btn size-m rounded btn-menu" @click="isMenuOpen = !isMenuOpen">
         <i class="material-symbols-rounded">menu</i>
       </button>
     </div>
-    <nav class="cdf-scrollbar">
+    <nav class="c-scrollbar">
       
       <!-- <details open="">
         <summary class="group">Layout</summary>

@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Text</h2>
+    <h2 class="c-h1">Text</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Heading</h3>
+      <h3 class="c-h3">Heading</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,11 +15,11 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container flex-col !items-start !gap-4">
-              <h1 class="cdf-h1">Heading 1</h1>
-              <h2 class="cdf-h2">Heading 2</h2>
-              <h3 class="cdf-h3">Heading 3</h3>
-              <h4 class="cdf-h4">Heading 4</h4>
-              <h5 class="cdf-h5">Heading 5</h5>
+              <h1 class="c-h1">Heading 1</h1>
+              <h2 class="c-h2">Heading 2</h2>
+              <h3 class="c-h3">Heading 3</h3>
+              <h4 class="c-h4">Heading 4</h4>
+              <h5 class="c-h5">Heading 5</h5>
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
@@ -31,7 +31,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">List</h3>
+      <h3 class="c-h3">List</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -42,8 +42,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container !block">
-              <span class="cdf-list-title">List Title</span>
-              <ul class="cdf-list-style">
+              <span class="c-list-title">List Title</span>
+              <ul class="c-list-style">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laborum vitae, eos exercitationem
                   modi illum? Non vel doloremque aliquid unde magnam. Temporibus officia odit inventore doloribus dolore
                   voluptatem nulla!</li>
@@ -77,16 +77,22 @@ import CodeMirror from "vue-codemirror6";
 
 
 
-const value01 = ref(`<h1 class="h1">Heading 1</h1>
-<h2 class="h2">Heading 2</h2>
-<h3 class="h3">Heading 3</h3>
-<h4 class="h4">Heading 4</h4>
-<h5 class="h5">Heading 5</h5>`);
-const value02 = ref(`<span class="list-title">List Title</span>
-<ul class="list-style">
-	<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laborum vitae, eos exercitationem modi illum? Non vel doloremque aliquid unde magnam. Temporibus officia odit inventore doloribus dolore voluptatem nulla!</li>
-	<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat assumenda, dignissimos fuga adipisci, soluta enim quos aliquam commodi incidunt aliquid? Cum eius sunt accusantium blanditiis iusto? Aperiam, perferendis asperiores?</li>
-	<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam alias, quae repellendus, quibusdam quasi laudantium impedit expedita autem ad rerum doloremque itaque cupiditate nemo, dolor modi accusantium illo dignissimos!</li>
+const value01 = ref(`<h1 class="c-h1">Heading 1</h1>
+<h2 class="c-h2">Heading 2</h2>
+<h3 class="c-h3">Heading 3</h3>
+<h4 class="c-h4">Heading 4</h4>
+<h5 class="c-h5">Heading 5</h5>`);
+const value02 = ref(`<span class="c-list-title">List Title</span>
+<ul class="c-list-style">
+  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius laborum vitae, eos exercitationem
+    modi illum? Non vel doloremque aliquid unde magnam. Temporibus officia odit inventore doloribus dolore
+    voluptatem nulla!</li>
+  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat assumenda, dignissimos
+    fuga adipisci, soluta enim quos aliquam commodi incidunt aliquid? Cum eius sunt accusantium blanditiis
+    iusto? Aperiam, perferendis asperiores?</li>
+  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsam alias, quae repellendus,
+    quibusdam quasi laudantium impedit expedita autem ad rerum doloremque itaque cupiditate nemo, dolor
+    modi accusantium illo dignissimos!</li>
 </ul>`);
 
 

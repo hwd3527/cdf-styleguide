@@ -4,21 +4,24 @@
   box types
   ******************************************
   */
-  .cdf-box-type01 {
-    background-color: var(--tertiary-100-color);
-    border: .1rem solid var(--tertiary-200-color);
-    @apply rounded-[1.6rem] p-7;
+  .c-box-type01 {
+    @apply rounded-[1.6rem] 
+    p-7 
+    bg-[var(--tertiary-100-color)] 
+    border-1 
+    border-solid 
+    border-[var(--tertiary-200-color)];
   }
   @media (max-width: 580px) {
-    .cdf-box-type01 {
+    .c-box-type01 {
       @apply p-4;
     }
   }
-  .cdf-box-type02 {
+  .c-box-type02 {
     @apply bg-[#6A70B9] rounded-[1.6rem] py-6 px-12;
   }
   @media (max-width: 640px) {
-    .cdf-box-type02 {
+    .c-box-type02 {
       @apply p-7
     }
   }

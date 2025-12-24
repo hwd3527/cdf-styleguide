@@ -4,90 +4,139 @@
   Accordion
   ***************************************
   */
-  .cdf-collapse-wrap {
-    gap: var(--collapse-gap);
-    @apply flex flex-col w-full;
+  .c-collapse-wrap {
+    @apply flex 
+    flex-col 
+    w-full 
+    gap-2;
   }
 
-  .cdf-collapse-wrap.join {
+  .c-collapse-wrap.join {
     @apply gap-0;
   }
 
-  .cdf-collapse-wrap .cdf-collapse-item {
-    border-radius: var(--collapse-radius);
-    border: .1rem solid var(--tertiary-300-color);
-    background-color: var(--surface-color);
-    @apply w-full transition-all duration-300 ease-in-out grid grid-rows-[max-content_0fr]
-          flex-col relative overflow-hidden;
+  .c-collapse-wrap .c-collapse-item {
+    @apply w-full 
+    transition-all 
+    duration-300 
+    ease-in-out 
+    grid 
+    grid-rows-[max-content_0fr]
+    flex-col 
+    relative 
+    overflow-hidden
+    rounded-[var(--collapse-radius)]
+    border-1 
+    border-solid 
+    border-[var(--tertiary-300-color)] 
+    bg-[var(--surface-color)];
   }
 
-  .cdf-collapse-wrap.join .cdf-collapse-item {
-    @apply rounded-none -mt-px;
+  .c-collapse-wrap.join .c-collapse-item {
+    @apply rounded-none 
+    -mt-px;
   }
 
 
-  .cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title {
-    background-color: var(--primary-200-color);
+  .c-collapse-wrap.highlight .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title {
+    @apply bg-[var(--primary-200-color)];
   }
 
-  .cdf-collapse-wrap.highlight .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
-    background-color: var(--primary-200-color);
+  .c-collapse-wrap.highlight .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-content {
+    @apply bg-[var(--primary-200-color)];
   }
 
 
-  .cdf-collapse-wrap .cdf-collapse-item>input:is([type=checkbox], [type=radio]) {
-    min-height: var(--collapse-min-height);
-    padding: var(--collapse-padding);
-    padding-right: var(--collapse-padding-right);
-    @apply appearance-none opacity-0 z-1 row-start-1 col-start-1 w-full 
-           transition-colors duration-200 ease-out cursor-pointer;
+  .c-collapse-wrap .c-collapse-item>input:is([type=checkbox], [type=radio]) {
+    @apply appearance-none 
+    opacity-0 
+    z-1 
+    row-start-1 
+    col-start-1 
+    w-full 
+    transition-colors 
+    duration-200 
+    ease-out 
+    cursor-pointer 
+    min-h-[var(--collapse-min-height)] 
+    p-[var(--collapse-padding)] 
+    pr-[var(--collapse-padding-right)];
   }
 
-  .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-title {
-    min-height: var(--collapse-min-height);
-    padding: var(--collapse-padding);
-    padding-right: var(--collapse-padding-right);
-    font-size: var(--collapse-title-font-size);
-    color: var(--text-900-color);
-    @apply relative row-start-1 col-start-1 transition-colors duration-200 ease-out
-           font-semibold w-full;
+  .c-collapse-wrap .c-collapse-item .c-collapse-title {
+    @apply relative 
+    row-start-1 
+    col-start-1 
+    transition-colors 
+    duration-200 
+    ease-out
+    font-semibold 
+    w-full 
+    min-h-[var(--collapse-min-height)] 
+    p-[var(--collapse-padding)] 
+    pr-[var(--collapse-padding-right)] 
+    text-[length:var(--collapse-title-font-size)] 
+    text-[var(--text-900-color)];
   }
 
-  .cdf-collapse-wrap .cdf-collapse-item.collapse-arrow .cdf-collapse-title::after {
-    content: '\e313';
-    font-family: 'Material Symbols Rounded';
-    color: var(--text-900-color);
-    transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-    @apply block absolute right-5 top-1/2 -translate-y-1/2 text-[2rem] ;
+  .c-collapse-wrap .c-collapse-item.collapse-arrow .c-collapse-title::after {
+    @apply content-['\e313'] 
+    font-[Material_Symbols_Rounded] 
+    block 
+    absolute 
+    right-5 
+    top-1/2 
+    -translate-y-1/2 
+    text-[2rem] 
+    text-[var(--text-900-color)] 
+    transition-all 
+    duration-200 
+    ease-in-out;
   }
 
-  .cdf-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
-    content: '\e316';
+  .c-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title::after {
+    @apply content-['\e316'];
   }
 
-  .cdf-collapse-wrap .cdf-collapse-item.collapse-plus .cdf-collapse-title::after {
-    content: '\e145';
-    font-family: 'Material Symbols Rounded';
-    color: var(--text-900-color);
-    transition: all .2s cubic-bezier(0.4, 0, 0.23, 1);
-    @apply block absolute right-5 top-1/2 -translate-y-1/2 text-[2rem];
+  .c-collapse-wrap .c-collapse-item.collapse-plus .c-collapse-title::after {
+    @apply block 
+    absolute 
+    right-5 
+    top-1/2 
+    -translate-y-1/2 
+    text-[2rem]
+    content-['\e145'] 
+    font-[Material_Symbols_Rounded] 
+    text-[var(--text-900-color)] 
+    transition-all 
+    duration-200 
+    ease-in-out;
   }
 
-  .cdf-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-title::after {
-    content: '\e15b';
+  .c-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title::after {
+    @apply content-['\e15b'];
   }
 
-  .cdf-collapse-wrap .cdf-collapse-item .cdf-collapse-content {
-    padding-left: var(--collapse-content-padding-left);
-    padding-right: var(--collapse-content-padding-right);
-    color: var(--text-900-color);
-    font-size: var(--collapse-content-font-size);
-    @apply relative invisible h-0 cursor-default transition-all duration-200 ease-out;
+  .c-collapse-wrap .c-collapse-item .c-collapse-content {
+    @apply relative 
+    invisible 
+    h-0 
+    cursor-default 
+    transition-all 
+    duration-200 
+    ease-out
+    pl-[var(--collapse-content-padding-left)] 
+    pr-[var(--collapse-content-padding-right)]
+    text-[length:var(--collapse-content-font-size)] 
+    text-[var(--text-900-color)];
   }
 
-  .cdf-collapse-item>input:is([type=checkbox], [type=radio]):checked~.cdf-collapse-content {
-    padding-bottom: var(--collapse-content-padding-bottom);
-
-    @apply transition-all duration-200 ease-out visible min-h-fit;
+  .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-content {
+    @apply transition-all 
+    duration-200 
+    ease-out 
+    visible 
+    min-h-fit 
+    pb-[var(--collapse-content-padding-bottom)];
   }
 }

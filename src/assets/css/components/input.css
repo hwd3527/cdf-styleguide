@@ -4,7 +4,7 @@
   input
   **************************************
   */
-  .cdf-input {
+  .c-input {
     position: relative;
     width: 100%;
     padding: 0 var(--input-padding-inline-md);
@@ -16,91 +16,91 @@
     font-size: var(--input-font-size-md);
     border-radius: var(--input-radius-md);
   }
-  .cdf-input.right {
+  .c-input.right {
     text-align: right;
   }
-  .cdf-input.under-line {
+  .c-input.under-line {
     border-width: 0 0 .1rem 0;
     border-radius: 0;
     background-color: transparent;
   }
-  .cdf-input::placeholder {
+  .c-input::placeholder {
     color: var(--text-400-color)
   }
-  .cdf-input.half {
+  .c-input.half {
     width: 50%
   }
-  .cdf-input.size-xl {
+  .c-input.size-xl {
     height: var(--input-height-xl);
     font-size: var(--input-font-size-xl);
     padding: 0 var(--input-padding-inline-xl);
     border-radius: var(--input-radius-xl);
     font-weight: 500;
   }
-  .cdf-input.size-l {
+  .c-input.size-l {
     height: var(--input-height-lg);
     font-size: var(--input-font-size-lg);
     padding: 0 var(--input-padding-inline-lg);
     border-radius: var(--input-radius-lg);
   }
-  .cdf-input.size-m {
+  .c-input.size-m {
     height: var(--input-height-md);
     font-size: var(--input-font-size-md);
     padding: 0 var(--input-padding-inline-md);
     border-radius: var(--input-radius-md);
   }
-  .cdf-input.size-s {
+  .c-input.size-s {
     height: var(--input-height-sm);
     font-size: var(--input-font-size-sm);
     padding: 0 var(--input-padding-inline-sm);
     border-radius: var(--input-radius-sm);
   }
-  .cdf-input.size-xs {
+  .c-input.size-xs {
     height: var(--input-height-xs);
     font-size: var(--input-font-size-xs);
     padding: 0 var(--input-padding-inline-xs);
     border-radius: var(--input-radius-xs);
   }
-  .cdf-input[readonly] {
+  .c-input[readonly] {
     background-color: var(--tertiary-100-color);
     border-color: var(--tertiary-200-color);
     color: var(--text-300-color);
   }
-  .cdf-input.under-line[readonly] {
+  .c-input.under-line[readonly] {
     background-color: transparent;
   }
-  .cdf-input[disabled] {
+  .c-input[disabled] {
     background-color: var(--tertiary-100-color);
     border-color: var(--tertiary-200-color);
     color: var(--text-300-color);
     cursor: not-allowed;
   }
-  .cdf-input.under-line[disabled] {
+  .c-input.under-line[disabled] {
     background-color: transparent;
   }
-  .cdf-input:focus {
+  .c-input:focus {
     outline: 0;
     border-color: var(--primary-500-color);
     box-shadow: 0 4px 4px 0px rgba(180, 161, 223, 0.2);
   }
-  .cdf-input.under-line:focus {
+  .c-input.under-line:focus {
     box-shadow: 0 2px 0px 0 rgba(180, 161, 223, 0.2);
   }
-  .is-error .cdf-input {
+  .is-error .c-input {
     border-color: var(--warning-600-color);
     border-width: .2rem;
   }
-  .is-error .cdf-form-hint {
+  .is-error .c-form-hint {
     color: var(--warning-600-color);
   }
-  .is-error .cdf-form-hint::before {
+  .is-error .c-form-hint::before {
     content: 'x';
     background-color: var(--warning-600-color);
   }
-  .is-success .cdf-form-hint {
+  .is-success .c-form-hint {
     color: var(--success-500-color);
   }
-  .is-success .cdf-form-hint::before {
+  .is-success .c-form-hint::before {
     content: '\e5ca';
     font-family: 'Material Symbols Rounded';
     background-color: var(--success-500-color);
@@ -111,7 +111,7 @@
   textarea
   ****************************************
   */
-  .cdf-textarea {
+  .c-textarea {
     position: relative;
     width: 100%;
     padding: 1.2rem;
@@ -124,23 +124,23 @@
     border-radius: .8rem;
     resize: none;
   }
-  .cdf-textarea:focus {
+  .c-textarea:focus {
     outline: 0;
     border-color: var(--primary-500-color);
     box-shadow: 0 4px 4px 0px rgba(180, 161, 223, .2);
   }
-  .cdf-textarea[readonly] {
+  .c-textarea[readonly] {
     background-color: var(--tertiary-50-color);
     border-color: var(--primary-200-color);
     color: var(--text-300-color);
   }
-  .cdf-textarea[disabled] {
+  .c-textarea[disabled] {
     background-color: var(--tertiary-50-color);
     border-color: var(--primary-200-color);
     color: var(--text-300-color);
     cursor: not-allowed;
   }
-  .cdf-textarea::placeholder {
+  .c-textarea::placeholder {
     color: var(--text-400-color);
   }
 }

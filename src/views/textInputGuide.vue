@@ -1,11 +1,11 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Text Input</h2>
+    <h2 class="c-h1">Text Input</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
-      <p class="cdf-information-text mt-5">form 안의 label의 경우 기본 가로 막대 모양이고, bullet을 사용할 경우 label에 .bullet을 추가하면 됩니다.<br>
+      <h3 class="c-h3">기본</h3>
+      <p class="c-information-text mt-5">form 안의 label의 경우 기본 가로 막대 모양이고, bullet을 사용할 경우 label에 .bullet을 추가하면 됩니다.<br>
         필수 항목일때는 label에 .required를 추가하면 됩니다.
       </p>
       <div class="tabs">
@@ -18,39 +18,39 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0101" class="bullet required">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0101" class="cdf-input" placeholder="input text">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0101" class="c-input" placeholder="input text">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0102" class="bullet required">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0102" class="cdf-input" placeholder="readonly" value="readonly"
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0102" class="c-input" placeholder="readonly" value="readonly"
                       readonly>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0103" class="bullet">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0103" class="cdf-input" placeholder="disabled" value="disabled"
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0103" class="c-input" placeholder="disabled" value="disabled"
                       disabled>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">언더 라인</h3>
+      <h3 class="c-h3">언더 라인</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -76,39 +76,39 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0101" class="bullet required">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0101" class="cdf-input under-line" placeholder="input text">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0101" class="c-input under-line" placeholder="input text">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0102" class="bullet required">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0102" class="cdf-input under-line" placeholder="readonly"
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0102" class="c-input under-line" placeholder="readonly"
                       value="readonly" readonly>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0103" class="bullet">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0103" class="cdf-input under-line" placeholder="disabled"
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0103" class="c-input under-line" placeholder="disabled"
                       value="disabled" disabled>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">상태</h3>
+      <h3 class="c-h3">상태</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -134,37 +134,37 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0201">레이블</label>
                 </div>
-                <div class="cdf-form-conts is-error">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0201" class="cdf-input" value="에러">
+                <div class="c-form-conts is-error">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0201" class="c-input" value="에러">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0202">레이블</label>
                 </div>
-                <div class="cdf-form-conts is-success">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0202" class="cdf-input" value="성공">
+                <div class="c-form-conts is-success">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0202" class="c-input" value="성공">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0203">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0203" class="cdf-input" value="정보">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0203" class="c-input" value="정보">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">크기</h3>
+      <h3 class="c-h3">크기</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -189,59 +189,59 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0301">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0301" class="cdf-input size-xs" placeholder="size-xs">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0301" class="c-input size-xs" placeholder="size-xs">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0302">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0302" class="cdf-input size-s" placeholder="size-s">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0302" class="c-input size-s" placeholder="size-s">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0303">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0303" class="cdf-input size-m" placeholder="size-m">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0303" class="c-input size-m" placeholder="size-m">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0304">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0304" class="cdf-input size-l" placeholder="size-l">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0304" class="c-input size-l" placeholder="size-l">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0305">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0305" class="cdf-input size-xl" placeholder="size-xl">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0305" class="c-input size-xl" placeholder="size-xl">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -255,7 +255,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">가로형</h3>
+      <h3 class="c-h3">가로형</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -266,15 +266,15 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group horizontal">
-                <div class="cdf-form-tit">
+              <div class="c-form-group horizontal">
+                <div class="c-form-tit">
                   <label for="input0401">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input0401" class="cdf-input">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input0401" class="c-input">
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -288,7 +288,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">폼이 여러개 일때</h3>
+      <h3 class="c-h3">폼이 여러개 일때</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -299,17 +299,17 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-group horizontal">
-                <div class="cdf-form-tit">
+              <div class="c-form-group horizontal">
+                <div class="c-form-tit">
                   <label for="input050101">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <input type="text" id="input050101" class="cdf-input">
-                    <select name="input050101" id="input050101" class="cdf-select">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <input type="text" id="input050101" class="c-input">
+                    <select name="input050101" id="input050101" class="c-select">
                       <option value="">선택</option>
                     </select>
-                    <button type="button" class="cdf-btn">button</button>
+                    <button type="button" class="c-btn">button</button>
                   </div>
                   <p class="form-hint">도움말</p>
                 </div>
@@ -325,7 +325,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">폼이 여러개일때 인라인으로 처리하면 폼 자체 크기로 정렬</h3>
+      <h3 class="c-h3">폼이 여러개일때 인라인으로 처리하면 폼 자체 크기로 정렬</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -336,20 +336,20 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-group horizontal">
-                <div class="cdf-form-tit">
+              <div class="c-form-group horizontal">
+                <div class="c-form-tit">
                   <label for="input0601">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner inline">
-                    <input type="text" id="input0601" class="cdf-input">
-                    <select name="input050101" id="input0602" class="cdf-select">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner inline">
+                    <input type="text" id="input0601" class="c-input">
+                    <select name="input050101" id="input0602" class="c-select">
                       <option value="">선택</option>
                       <option value="1">옵션123456789</option>
                     </select>
-                    <button type="button" class="cdf-btn">button</button>
+                    <button type="button" class="c-btn">button</button>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -363,7 +363,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">아이콘 버튼이 있는 input</h3>
+      <h3 class="c-h3">아이콘 버튼이 있는 input</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -374,44 +374,44 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0601">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <div class="cdf-btn-icon-wrap">
-                      <input type="password" id="input0601" class="cdf-input" value="1234">
-                      <button type="button" class="cdf-btn text passview">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <div class="c-btn-icon-wrap">
+                      <input type="password" id="input0601" class="c-input" value="1234">
+                      <button type="button" class="c-btn text passview">
                         <span class="sr-only">입력한 비밀번호 보기</span>
                         <i class="material-symbols-rounded">visibility_off</i>
                       </button>
                     </div>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0601">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <div class="cdf-btn-icon-wrap">
-                      <input type="password" id="input0601" class="cdf-input" value="1234">
-                      <button type="button" class="cdf-btn text delete">
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <div class="c-btn-icon-wrap">
+                      <input type="password" id="input0601" class="c-input" value="1234">
+                      <button type="button" class="c-btn text delete">
                         <span class="sr-only">입력한 내용 삭제</span>
                         <i class="material-symbols-rounded fill">
                           cancel
                         </i>
                       </button>
-                      <button type="button" class="cdf-btn text passview">
+                      <button type="button" class="c-btn text passview">
                         <span class="sr-only">입력한 비밀번호 보기</span>
                         <i class="material-symbols-rounded">visibility_off</i>
                       </button>
                     </div>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
             </div>
@@ -425,7 +425,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">textarea</h3>
+      <h3 class="c-h3">textarea</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -436,15 +436,15 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
+              <div class="c-form-group">
+                <div class="c-form-tit">
                   <label for="input0601">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <div class="cdf-form-conts-inner">
-                    <textarea name="" id="" class="cdf-textarea" placeholder="textarea"></textarea>
+                <div class="c-form-conts">
+                  <div class="c-form-conts-inner">
+                    <textarea name="" id="" class="c-textarea" placeholder="textarea"></textarea>
                   </div>
-                  <p class="cdf-form-hint">도움말</p>
+                  <p class="c-form-hint">도움말</p>
                 </div>
               </div>
 
@@ -466,255 +466,255 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value01 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0101" class="bullet required">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0101" class="cdf-input" placeholder="input text">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0101" class="c-input" placeholder="input text">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0102" class="bullet required">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0102" class="cdf-input" placeholder="readonly" value="readonly"
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0102" class="c-input" placeholder="readonly" value="readonly"
         readonly>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0103" class="bullet">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0103" class="cdf-input" placeholder="disabled" value="disabled"
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0103" class="c-input" placeholder="disabled" value="disabled"
         disabled>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value02 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value02 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0201">레이블</label>
   </div>
-  <div class="cdf-form-conts is-error">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0201" class="cdf-input" value="에러">
+  <div class="c-form-conts is-error">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0201" class="c-input" value="에러">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0202">레이블</label>
   </div>
-  <div class="cdf-form-conts is-success">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0202" class="cdf-input" value="성공">
+  <div class="c-form-conts is-success">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0202" class="c-input" value="성공">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0203">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0203" class="cdf-input" value="정보">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0203" class="c-input" value="정보">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value03 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value03 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0301">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0301" class="cdf-input size-xs" placeholder="size-xs">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0301" class="c-input size-xs" placeholder="size-xs">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0302">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0302" class="cdf-input size-s" placeholder="size-s">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0302" class="c-input size-s" placeholder="size-s">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0303">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0303" class="cdf-input size-m" placeholder="size-m">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0303" class="c-input size-m" placeholder="size-m">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0304">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0304" class="cdf-input size-l" placeholder="size-l">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0304" class="c-input size-l" placeholder="size-l">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0305">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0305" class="cdf-input size-xl" placeholder="size-xl">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0305" class="c-input size-xl" placeholder="size-xl">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value04 = ref(`<div class="cdf-form-group horizontal">
-  <div class="cdf-form-tit">
+const value04 = ref(`<div class="c-form-group horizontal">
+  <div class="c-form-tit">
     <label for="input0401">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0401" class="cdf-input">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0401" class="c-input">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value05 = ref(`<div class="cdf-form-group horizontal">
-  <div class="cdf-form-tit">
+const value05 = ref(`<div class="c-form-group horizontal">
+  <div class="c-form-tit">
     <label for="input050101">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input050101" class="cdf-input">
-      <select name="input050101" id="input050101" class="cdf-select">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input050101" class="c-input">
+      <select name="input050101" id="input050101" class="c-select">
         <option value="">선택</option>
       </select>
-      <button type="button" class="cdf-btn">button</button>
+      <button type="button" class="c-btn">button</button>
     </div>
     <p class="form-hint">도움말</p>
   </div>
 </div>`);
-const value06 = ref(`<div class="cdf-form-group horizontal">
-  <div class="cdf-form-tit">
+const value06 = ref(`<div class="c-form-group horizontal">
+  <div class="c-form-tit">
     <label for="input0601">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner inline">
-      <input type="text" id="input0601" class="cdf-input">
-      <select name="input050101" id="input0602" class="cdf-select">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner inline">
+      <input type="text" id="input0601" class="c-input">
+      <select name="input050101" id="input0602" class="c-select">
         <option value="">선택</option>
         <option value="1">옵션123456789</option>
       </select>
-      <button type="button" class="cdf-btn">button</button>
+      <button type="button" class="c-btn">button</button>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value07 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value07 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0601">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <div class="cdf-btn-icon-wrap">
-        <input type="password" id="input0601" class="cdf-input" value="1234">
-        <button type="button" class="cdf-btn text passview">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <div class="c-btn-icon-wrap">
+        <input type="password" id="input0601" class="c-input" value="1234">
+        <button type="button" class="c-btn text passview">
           <span class="sr-only">입력한 비밀번호 보기</span>
           <i class="material-symbols-rounded">visibility_off</i>
         </button>
       </div>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0601">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <div class="cdf-btn-icon-wrap">
-        <input type="password" id="input0601" class="cdf-input" value="1234">
-        <button type="button" class="cdf-btn text delete">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <div class="c-btn-icon-wrap">
+        <input type="password" id="input0601" class="c-input" value="1234">
+        <button type="button" class="c-btn text delete">
           <span class="sr-only">입력한 내용 삭제</span>
           <i class="material-symbols-rounded fill">
             cancel
           </i>
         </button>
-        <button type="button" class="cdf-btn text passview">
+        <button type="button" class="c-btn text passview">
           <span class="sr-only">입력한 비밀번호 보기</span>
           <i class="material-symbols-rounded">visibility_off</i>
         </button>
       </div>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value08 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value08 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0101" class="bullet required">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0101" class="cdf-input under-line" placeholder="input text">
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0101" class="c-input under-line" placeholder="input text">
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0102" class="bullet required">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0102" class="cdf-input under-line" placeholder="readonly"
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0102" class="c-input under-line" placeholder="readonly"
         value="readonly" readonly>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0103" class="bullet">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <input type="text" id="input0103" class="cdf-input under-line" placeholder="disabled"
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <input type="text" id="input0103" class="c-input under-line" placeholder="disabled"
         value="disabled" disabled>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
-const value09 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
+const value09 = ref(`<div class="c-form-group">
+  <div class="c-form-tit">
     <label for="input0601">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <div class="cdf-form-conts-inner">
-      <textarea name="" id="" class="cdf-textarea" placeholder="textarea"></textarea>
+  <div class="c-form-conts">
+    <div class="c-form-conts-inner">
+      <textarea name="" id="" class="c-textarea" placeholder="textarea"></textarea>
     </div>
-    <p class="cdf-form-hint">도움말</p>
+    <p class="c-form-hint">도움말</p>
   </div>
 </div>`);
 

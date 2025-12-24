@@ -3,11 +3,11 @@
 		<div class="style-guide-wrap">
 			<Sidebar />
 			<OptionMenu :isActive="isOptionMenuActive" @close="closeOptionMenu" />
-			<div class="right-cont-zone cdf-scrollbar">
+			<div class="right-cont-zone c-scrollbar">
 				<router-view />
 			</div>
-			<button type="button" class="cdf-btn c-btn--md cdf-btn--rounded btn-setting" :class="isOptionMenuActive ? 'close' : ''" @click="toggleOptionMenu">
-				<i class="cdf-btn__icon material-symbols-rounded">settings</i>
+			<button type="button" class="c-btn c-btn--md c-btn--rounded btn-setting" :class="isOptionMenuActive ? 'close' : ''" @click="toggleOptionMenu">
+				<i class="c-btn__icon material-symbols-rounded">settings</i>
 			</button>
 		</div>
 	</div>

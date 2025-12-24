@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Accordion</h2>
+    <h2 class="c-h1">Accordion</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,26 +15,26 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-collapse-wrap">
-                <div class="cdf-collapse-item">
+              <div class="c-collapse-wrap">
+                <div class="c-collapse-item">
                   <input type="radio" name="my-accordion-1" checked>
-                  <div class="cdf-collapse-title">How do I create an account?</div>
-                  <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+                  <div class="c-collapse-title">How do I create an account?</div>
+                  <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
                     registration
                     process.</div>
                 </div>
-                <div class="cdf-collapse-item">
+                <div class="c-collapse-item">
                   <input type="radio" name="my-accordion-1">
-                  <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-                  <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+                  <div class="c-collapse-title">I forgot my password. What should I do?</div>
+                  <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
                     sent to your
                     email.
                   </div>
                 </div>
-                <div class="cdf-collapse-item">
+                <div class="c-collapse-item">
                   <input type="radio" name="my-accordion-1">
-                  <div class="cdf-collapse-title">How do I update my profile information?</div>
-                  <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+                  <div class="c-collapse-title">How do I update my profile information?</div>
+                  <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
                     email.
                   </div>
                 </div>
@@ -51,7 +51,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">화살표 아이콘이 있는 아코디언</h3>
+      <h3 class="c-h3">화살표 아이콘이 있는 아코디언</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -62,26 +62,26 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-collapse-wrap">
-                <div class="cdf-collapse-item collapse-arrow">
+              <div class="c-collapse-wrap">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-2" checked>
-                  <div class="cdf-collapse-title">How do I create an account?</div>
-                  <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+                  <div class="c-collapse-title">How do I create an account?</div>
+                  <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
                     registration
                     process.</div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-2">
-                  <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-                  <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+                  <div class="c-collapse-title">I forgot my password. What should I do?</div>
+                  <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
                     sent to your
                     email.
                   </div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-2">
-                  <div class="cdf-collapse-title">How do I update my profile information?</div>
-                  <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+                  <div class="c-collapse-title">How do I update my profile information?</div>
+                  <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
                     email.
                   </div>
                 </div>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">plus, minus가 있는 아코디언</h3>
+      <h3 class="c-h3">plus, minus가 있는 아코디언</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -109,25 +109,25 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-collapse-wrap">
-                <div class="cdf-collapse-item collapse-plus">
+              <div class="c-collapse-wrap">
+                <div class="c-collapse-item collapse-plus">
                   <input type="radio" name="my-accordion-3" checked>
-                  <div class="cdf-collapse-title">How do I create an account?</div>
-                  <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+                  <div class="c-collapse-title">How do I create an account?</div>
+                  <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
                     registration
                     process.</div>
                 </div>
-                <div class="cdf-collapse-item collapse-plus">
+                <div class="c-collapse-item collapse-plus">
                   <input type="radio" name="my-accordion-3">
-                  <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-                  <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+                  <div class="c-collapse-title">I forgot my password. What should I do?</div>
+                  <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
                     sent to your email.
                   </div>
                 </div>
-                <div class="cdf-collapse-item collapse-plus">
+                <div class="c-collapse-item collapse-plus">
                   <input type="radio" name="my-accordion-3">
-                  <div class="cdf-collapse-title">How do I update my profile information?</div>
-                  <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+                  <div class="c-collapse-title">How do I update my profile information?</div>
+                  <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
                     email.
                   </div>
                 </div>
@@ -143,7 +143,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">그룹 아코디언</h3>
+      <h3 class="c-h3">그룹 아코디언</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -154,26 +154,26 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-collapse-wrap join">
-                <div class="cdf-collapse-item collapse-arrow">
+              <div class="c-collapse-wrap join">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-4" checked>
-                  <div class="cdf-collapse-title">How do I create an account?</div>
-                  <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+                  <div class="c-collapse-title">How do I create an account?</div>
+                  <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
                     registration
                     process.</div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-4">
-                  <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-                  <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+                  <div class="c-collapse-title">I forgot my password. What should I do?</div>
+                  <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
                     sent to your
                     email.
                   </div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-4">
-                  <div class="cdf-collapse-title">How do I update my profile information?</div>
-                  <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+                  <div class="c-collapse-title">How do I update my profile information?</div>
+                  <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
                     email.
                   </div>
                 </div>
@@ -189,7 +189,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">highlight 아코디언</h3>
+      <h3 class="c-h3">highlight 아코디언</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -200,26 +200,26 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-collapse-wrap highlight">
-                <div class="cdf-collapse-item collapse-arrow">
+              <div class="c-collapse-wrap highlight">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-5" checked>
-                  <div class="cdf-collapse-title">How do I create an account?</div>
-                  <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+                  <div class="c-collapse-title">How do I create an account?</div>
+                  <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
                     registration
                     process.</div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-5">
-                  <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-                  <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+                  <div class="c-collapse-title">I forgot my password. What should I do?</div>
+                  <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
                     sent to your
                     email.
                   </div>
                 </div>
-                <div class="cdf-collapse-item collapse-arrow">
+                <div class="c-collapse-item collapse-arrow">
                   <input type="radio" name="my-accordion-5">
-                  <div class="cdf-collapse-title">How do I update my profile information?</div>
-                  <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+                  <div class="c-collapse-title">How do I update my profile information?</div>
+                  <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
                     email.
                   </div>
                 </div>
@@ -244,121 +244,121 @@ import CodeMirror from "vue-codemirror6";
 
 
 
-const value01 = ref(`<div class="cdf-collapse-wrap">
-  <div class="cdf-collapse-item">
+const value01 = ref(`<div class="c-collapse-wrap">
+  <div class="c-collapse-item">
     <input type="radio" name="my-accordion-1" checked>
-    <div class="cdf-collapse-title">How do I create an account?</div>
-    <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+    <div class="c-collapse-title">How do I create an account?</div>
+    <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
       registration
       process.</div>
   </div>
-  <div class="cdf-collapse-item">
+  <div class="c-collapse-item">
     <input type="radio" name="my-accordion-1">
-    <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-    <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+    <div class="c-collapse-title">I forgot my password. What should I do?</div>
+    <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
       sent to your
       email.
     </div>
   </div>
-  <div class="cdf-collapse-item">
+  <div class="c-collapse-item">
     <input type="radio" name="my-accordion-1">
-    <div class="cdf-collapse-title">How do I update my profile information?</div>
-    <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+    <div class="c-collapse-title">How do I update my profile information?</div>
+    <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
       email.
     </div>
   </div>
 </div>`);
-const value02 = ref(`<div class="cdf-collapse-wrap">
-  <div class="cdf-collapse-item collapse-arrow">
+const value02 = ref(`<div class="c-collapse-wrap">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-2" checked>
-    <div class="cdf-collapse-title">How do I create an account?</div>
-    <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+    <div class="c-collapse-title">How do I create an account?</div>
+    <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
       registration
       process.</div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-2">
-    <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-    <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+    <div class="c-collapse-title">I forgot my password. What should I do?</div>
+    <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
       sent to your
       email.
     </div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-2">
-    <div class="cdf-collapse-title">How do I update my profile information?</div>
-    <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+    <div class="c-collapse-title">How do I update my profile information?</div>
+    <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
       email.
     </div>
   </div>
 </div>`);
-const value03 = ref(`<div class="cdf-collapse-wrap">
-  <div class="cdf-collapse-item collapse-plus">
+const value03 = ref(`<div class="c-collapse-wrap">
+  <div class="c-collapse-item collapse-plus">
     <input type="radio" name="my-accordion-3" checked>
-    <div class="cdf-collapse-title">How do I create an account?</div>
-    <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+    <div class="c-collapse-title">How do I create an account?</div>
+    <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
       registration
       process.</div>
   </div>
-  <div class="cdf-collapse-item collapse-plus">
+  <div class="c-collapse-item collapse-plus">
     <input type="radio" name="my-accordion-3">
-    <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-    <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+    <div class="c-collapse-title">I forgot my password. What should I do?</div>
+    <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
       sent to your email.
     </div>
   </div>
-  <div class="cdf-collapse-item collapse-plus">
+  <div class="c-collapse-item collapse-plus">
     <input type="radio" name="my-accordion-3">
-    <div class="cdf-collapse-title">How do I update my profile information?</div>
-    <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+    <div class="c-collapse-title">How do I update my profile information?</div>
+    <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
       email.
     </div>
   </div>
 </div>`);
-const value04 = ref(`<div class="cdf-collapse-wrap join">
-  <div class="cdf-collapse-item collapse-arrow">
+const value04 = ref(`<div class="c-collapse-wrap join">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-4" checked>
-    <div class="cdf-collapse-title">How do I create an account?</div>
-    <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+    <div class="c-collapse-title">How do I create an account?</div>
+    <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
       registration
       process.</div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-4">
-    <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-    <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+    <div class="c-collapse-title">I forgot my password. What should I do?</div>
+    <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
       sent to your
       email.
     </div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-4">
-    <div class="cdf-collapse-title">How do I update my profile information?</div>
-    <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+    <div class="c-collapse-title">How do I update my profile information?</div>
+    <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
       email.
     </div>
   </div>
 </div>`);
-const value05 = ref(`<div class="cdf-collapse-wrap highlight">
-  <div class="cdf-collapse-item collapse-arrow">
+const value05 = ref(`<div class="c-collapse-wrap highlight">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-5" checked>
-    <div class="cdf-collapse-title">How do I create an account?</div>
-    <div class="cdf-collapse-content">Click the "Sign Up" button in the top right corner and follow the
+    <div class="c-collapse-title">How do I create an account?</div>
+    <div class="c-collapse-content">Click the "Sign Up" button in the top right corner and follow the
       registration
       process.</div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-5">
-    <div class="cdf-collapse-title">I forgot my password. What should I do?</div>
-    <div class="cdf-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
+    <div class="c-collapse-title">I forgot my password. What should I do?</div>
+    <div class="c-collapse-content">Click on "Forgot Password" on the login page and follow the instructions
       sent to your
       email.
     </div>
   </div>
-  <div class="cdf-collapse-item collapse-arrow">
+  <div class="c-collapse-item collapse-arrow">
     <input type="radio" name="my-accordion-5">
-    <div class="cdf-collapse-title">How do I update my profile information?</div>
-    <div class="cdf-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
+    <div class="c-collapse-title">How do I update my profile information?</div>
+    <div class="c-collapse-content">Go to "My Account" settings and select "Edit Profile" to make changes.
       email.
     </div>
   </div>
