@@ -73,89 +73,91 @@ form
 
 .c-form-group .c-form-tit label.bullet:before,
 .c-form-group .c-form-label.bullet:before {
-  display: inline-block;
-  content: '';
-  width: .5rem;
-  height: .5rem;
-  background-color: var(--primary-600-color);
-  border-radius: var(--radius-max);
+  @apply inline-block 
+  content-['']
+  w-[.5rem] 
+  h-[.5rem]
+  bg-[var(--primary-600-color)] 
+  rounded-full;
 }
-
 
 .c-form-group .c-form-label.required,
 .c-form-group .c-form-tit label.required {
-  display: inline-flex;
-  gap: .6rem;
+  @apply inline-flex 
+  gap-[0.6rem];
 }
 
 .c-form-group .c-form-label.required::after,
 .c-form-group .c-form-tit label.required::after {
-  content: '*';
-  display: inline-block;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #FA6B6B;
+  @apply content-['*'] 
+  inline-block 
+  text-[length:1.6rem]
+  font-semibold
+  text-[#FA6B6B];
 }
 
 .c-form-group .c-form-conts {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: .8rem;
-  width: 100%;
+  @apply 
+  flex 
+  items-start 
+  justify-center 
+  flex-col 
+  gap-2 
+  w-full;
 }
 
 .c-form-group .c-form-conts .length {
-  font-size: 1.3rem;
-  color: var(--text-600-color);
-  font-weight: 500;
-  align-self: flex-end;
+  @apply 
+  text-[length:1.3rem] 
+  text-[var(--text-600-color)] 
+  font-medium 
+  self-end;
 }
 
 .c-form-group .c-form-conts .c-form-conts-inner {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: .6rem;
-  width: 100%;
+  @apply 
+  flex 
+  items-center 
+  justify-start 
+  flex-row 
+  gap-1.5 
+  w-full;
 }
 
 @media (max-width: 640px) {
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline {
-    flex-direction: column;
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline {
+    @apply flex-col;
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline button {
-    width: 100% !important;
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline button {
+    @apply !w-full
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap .c-btn.size-xl {
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap .c-btn.size-xl {
     width: 6rem !important;
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap .c-btn.size-l {
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap .c-btn.size-l {
     width: 5.2rem !important;
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap .c-btn.size-m {
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap .c-btn.size-m {
     width: 4.4rem !important;
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap .c-btn.size-s {
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap .c-btn.size-s {
     width: 3.6rem !important;
   }
 
-  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap .c-btn.size-xs {
+  .c-form-box .c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap .c-btn.size-xs {
     width: 3.2rem !important;
   }
 }
 
-.c-form-group .c-form-conts .c-form-conts-inner.inline input,
-.c-form-group .c-form-conts .c-form-conts-inner.inline select,
-.c-form-group .c-form-conts .c-form-conts-inner.inline button,
-.c-form-group .c-form-conts .c-form-conts-inner.inline .c-btn-icon-wrap {
+.c-form-group .c-form-conts .c-form-conts-inner.c-inline input,
+.c-form-group .c-form-conts .c-form-conts-inner.c-inline select,
+.c-form-group .c-form-conts .c-form-conts-inner.c-inline button,
+.c-form-group .c-form-conts .c-form-conts-inner.c-inline .c-btn-icon-wrap {
   width: auto;
 }
 
@@ -817,7 +819,7 @@ form
   gap: 3rem;
 }
 
-.c-form-group [class^=cdf-form-hint] {
+.c-form-group [class^=c-form-hint] {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -830,7 +832,7 @@ form
   line-height: 1.4em;
 }
 
-.c-form-group [class^=cdf-form-hint]::before {
+.c-form-group [class^=c-form-hint]::before {
   content: '!';
   display: inline-flex;
   align-items: center;

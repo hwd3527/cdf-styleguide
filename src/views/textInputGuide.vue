@@ -341,7 +341,7 @@
                   <label for="input0601">레이블</label>
                 </div>
                 <div class="c-form-conts">
-                  <div class="c-form-conts-inner inline">
+                  <div class="c-form-conts-inner c-inline">
                     <input type="text" id="input0601" class="c-input">
                     <select name="input050101" id="input0602" class="c-select">
                       <option value="">선택</option>
