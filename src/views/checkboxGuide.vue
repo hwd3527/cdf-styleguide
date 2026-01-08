@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Checkbox</h2>
+    <h2 class="c-h1">Checkbox</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,23 +15,23 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_01" id="rdo_01">
                     <label for="rdo_01">체크박스</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rdo_02" id="rdo_02">
                     <label for="rdo_02">체크박스</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rdo_03" id="rdo_03">
                     <label for="rdo_03">체크박스</label>
                     <i></i>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">세로형</h3>
+      <h3 class="c-h3">세로형</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -61,23 +61,23 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area horizontal">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check c-check--vertical">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_0201" id="rdo_0201">
                     <label for="rdo_0201">체크박스</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_0201" id="rdo_0202">
                     <label for="rdo_0202">체크박스</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_0201" id="rdo_0203">
                     <label for="rdo_0203">체크박스</label>
                     <i></i>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">비활성화</h3>
+      <h3 class="c-h3">비활성화</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -106,16 +106,16 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_0301" id="rdo_0301" disabled>
                     <label for="rdo_0301">비활성화</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="checkbox" name="rao_0301" id="rdo_0302" checked disabled>
                     <label for="rdo_0302">선택된 비활성화</label>
                     <i></i>
@@ -133,7 +133,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Chip Checkbox</h3>
+      <h3 class="c-h3">Chip Checkbox</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -144,26 +144,26 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area chip">
-                <div class="cdf-form-chip">
+              <div class="c-check c-check--chip">
+                <div class="c-check__chip">
                   <input type="checkbox" class="checkbox" id="chk_chip_0101">
-                  <label class="cdf-form-chip-outline" for="chk_chip_0101">최저가</label>
+                  <label for="chk_chip_0101">최저가</label>
                 </div>
-                <div class="cdf-form-chip">
+                <div class="c-check__chip">
                   <input type="checkbox" class="checkbox" id="chk_chip_0102">
-                  <label class="cdf-form-chip-outline" for="chk_chip_0102">현장인접</label>
+                  <label for="chk_chip_0102">현장인접</label>
                 </div>
-                <div class="cdf-form-chip">
+                <div class="c-check__chip">
                   <input type="checkbox" class="checkbox" id="chk_chip_0103">
-                  <label class="cdf-form-chip-outline" for="chk_chip_0103">평균가</label>
+                  <label for="chk_chip_0103">평균가</label>
                 </div>
-                <div class="cdf-form-chip">
+                <div class="c-check__chip">
                   <input type="checkbox" class="checkbox" id="chk_chip_0104">
-                  <label class="cdf-form-chip-outline" for="chk_chip_0104">신용평가 최고점</label>
+                  <label for="chk_chip_0104">신용평가 최고점</label>
                 </div>
-                <div class="cdf-form-chip">
+                <div class="c-check__chip">
                   <input type="checkbox" class="checkbox" id="chk_chip_0105">
-                  <label class="cdf-form-chip-outline" for="chk_chip_0105">최다거래 실적</label>
+                  <label for="chk_chip_0105">최다거래 실적</label>
                 </div>
               </div>
             </div>
@@ -186,88 +186,88 @@ import CodeMirror from "vue-codemirror6";
 
 
 
-const value01 = ref(`<div class="cdf-form-check-area">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+const value01 = ref(`<div class="c-check">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="checkbox" name="rao_01" id="rdo_01">
       <label for="rdo_01">체크박스</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="checkbox" name="rdo_02" id="rdo_02">
       <label for="rdo_02">체크박스</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="checkbox" name="rdo_03" id="rdo_03">
       <label for="rdo_03">체크박스</label>
       <i></i>
     </div>
   </div>
 </div>`);
-const value02 = ref(`<div class="cdf-form-check-area horizontal">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
-      <input type="checkbox" name="rao_0201" id="rdo_0201">
-      <label for="rdo_0201">체크박스</label>
-      <i></i>
-    </div>
+const value02 = ref(`<div class="c-check c-check--vertical">
+<div class="c-check__conts">
+  <div class="c-check__inner">
+    <input type="checkbox" name="rao_0201" id="rdo_0201">
+    <label for="rdo_0201">체크박스</label>
+    <i></i>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
-      <input type="checkbox" name="rao_0201" id="rdo_0202">
-      <label for="rdo_0202">체크박스</label>
-      <i></i>
-    </div>
+</div>
+<div class="c-check__conts">
+  <div class="c-check__inner">
+    <input type="checkbox" name="rao_0201" id="rdo_0202">
+    <label for="rdo_0202">체크박스</label>
+    <i></i>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
-      <input type="checkbox" name="rao_0201" id="rdo_0203">
-      <label for="rdo_0203">체크박스</label>
-      <i></i>
-    </div>
+</div>
+<div class="c-check__conts">
+  <div class="c-check__inner">
+    <input type="checkbox" name="rao_0201" id="rdo_0203">
+    <label for="rdo_0203">체크박스</label>
+    <i></i>
   </div>
+</div>
 </div>`);
-const value03 = ref(`<div class="cdf-form-check-area">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
-      <input type="checkbox" name="rao_0301" id="rdo_0301" disabled>
-      <label for="rdo_0301">비활성화</label>
-      <i></i>
-    </div>
+const value03 = ref(`<div class="c-check">
+<div class="c-check__conts">
+  <div class="c-check__inner">
+    <input type="checkbox" name="rao_0301" id="rdo_0301" disabled>
+    <label for="rdo_0301">비활성화</label>
+    <i></i>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
-      <input type="checkbox" name="rao_0301" id="rdo_0302" checked disabled>
-      <label for="rdo_0302">선택된 비활성화</label>
-      <i></i>
-    </div>
+</div>
+<div class="c-check__conts">
+  <div class="c-check__inner">
+    <input type="checkbox" name="rao_0301" id="rdo_0302" checked disabled>
+    <label for="rdo_0302">선택된 비활성화</label>
+    <i></i>
   </div>
+</div>
 </div>`);
-const value04 = ref(`<div class="cdf-form-check-area chip">
-  <div class="cdf-form-chip">
+const value04 = ref(`<div class="c-check c-check--chip">
+  <div class="c-check__chip">
     <input type="checkbox" class="checkbox" id="chk_chip_0101">
-    <label class="cdf-form-chip-outline" for="chk_chip_0101">최저가</label>
+    <label for="chk_chip_0101">최저가</label>
   </div>
-  <div class="cdf-form-chip">
+  <div class="c-check__chip">
     <input type="checkbox" class="checkbox" id="chk_chip_0102">
-    <label class="cdf-form-chip-outline" for="chk_chip_0102">현장인접</label>
+    <label for="chk_chip_0102">현장인접</label>
   </div>
-  <div class="cdf-form-chip">
+  <div class="c-check__chip">
     <input type="checkbox" class="checkbox" id="chk_chip_0103">
-    <label class="cdf-form-chip-outline" for="chk_chip_0103">평균가</label>
+    <label for="chk_chip_0103">평균가</label>
   </div>
-  <div class="cdf-form-chip">
+  <div class="c-check__chip">
     <input type="checkbox" class="checkbox" id="chk_chip_0104">
-    <label class="cdf-form-chip-outline" for="chk_chip_0104">신용평가 최고점</label>
+    <label for="chk_chip_0104">신용평가 최고점</label>
   </div>
-  <div class="cdf-form-chip">
+  <div class="c-check__chip">
     <input type="checkbox" class="checkbox" id="chk_chip_0105">
-    <label class="cdf-form-chip-outline" for="chk_chip_0105">최다거래 실적</label>
+    <label for="chk_chip_0105">최다거래 실적</label>
   </div>
 </div>`);
 

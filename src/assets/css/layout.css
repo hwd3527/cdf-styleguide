@@ -1,0 +1,62 @@
+@layer layout {
+  	/*
+	************************************
+	btn-line
+	************************************
+	*/
+  .l-btn {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    width: 100%;
+    padding-block: 2rem;
+    padding-inline: 0;
+  }
+
+  .l-btn:last-child {
+    padding: 2rem 0 0 0;
+  }
+
+  .l-btn.l-btn--topline {
+    border-top: 1px dashed var(--tertiary-300-color);
+  }
+
+  .l-btn .l-btn__inner {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+
+  .l-btn.l-btn--topborder {
+    padding-top: 2rem;
+    border-top: .1rem solid var(--tertiary-500-color);
+  }
+
+  .l-btn.l-btn--center {
+    justify-content: center
+  }
+
+  .l-btn.l-btn--right {
+    justify-content: flex-end
+  }
+
+  .l-btn.l-btn--left {
+    justify-content: flex-start
+  }
+
+  .l-btn.l-btn--between {
+    justify-content: space-between;
+  }
+
+  .l-btn.l-btn--around {
+    justify-content: space-around;
+  }
+
+  .l-btn.l-btn--evenly {
+    justify-content: space-evenly;
+  }
+
+  .l-btn.l-btn--full button {
+    flex: 1 1 0;
+  }
+}

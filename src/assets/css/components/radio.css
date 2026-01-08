@@ -4,23 +4,23 @@
   checkbox, radio
   ****************************************
   */
-  .cdf-form-check-area {
+  .c-check {
     display: flex;
     gap: 2rem;
     align-items: center;
   }
 
-  .cdf-form-check-area.chip {
+  .c-check.c-check--chip {
     gap: .6rem;
     flex-wrap: wrap;
   }
 
-  .cdf-form-check-area.horizontal {
+  .c-check.c-check--vertical {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .cdf-form-check {
+  .c-check__conts {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -28,15 +28,15 @@
     gap: .8rem;
   }
 
-  .cdf-form-check .cdf-form-check-inner {
+  .c-check__inner {
     position: relative;
     display: flex;
     align-items: center;
     gap: .8rem;
   }
 
-  .cdf-form-check input[type=radio],
-  .cdf-form-check input[type=checkbox] {
+  .c-check__conts input[type=radio],
+  .c-check__conts input[type=checkbox] {
     position: absolute;
     left: 0;
     opacity: 0;
@@ -48,26 +48,26 @@
     z-index: 1;
   }
 
-  .cdf-form-check.small input[type=radio],
-  .cdf-form-check.small input[type=checkbox] {
+  .c-check__conts--small input[type=radio],
+  .c-check__conts--small input[type=checkbox] {
     width: var(--checkbox-width-sm);
     height: var(--checkbox-height-sm);
   }
 
-  .cdf-form-check.medium input[type=radio],
-  .cdf-form-check.medium input[type=checkbox] {
+  .c-check__conts--medium input[type=radio],
+  .c-check__conts--medium input[type=checkbox] {
     width: var(--checkbox-width-md);
     height: var(--checkbox-height-md);
   }
 
-  .cdf-form-check.large input[type=radio],
-  .cdf-form-check.large input[type=checkbox] {
+  .c-check__conts--large input[type=radio],
+  .c-check__conts--large input[type=checkbox] {
     width: var(--checkbox-width-lg);
     height: var(--checkbox-height-lg);
   }
 
-  .cdf-form-check input[type=radio]~label,
-  .cdf-form-check input[type=checkbox]~label {
+  .c-check__conts input[type=radio]~label,
+  .c-check__conts input[type=checkbox]~label {
     position: relative;
     display: inline-flex;
     gap: .8rem;
@@ -81,31 +81,31 @@
     padding-top: .1rem;
   }
 
-  .cdf-form-check.required input[type=radio]~label,
-  .cdf-form-check.required input[type=checkbox]~label {
+  .c-check__conts.required input[type=radio]~label,
+  .c-check__conts.required input[type=checkbox]~label {
     font-weight: 700;
   }
 
-  .cdf-form-check.small input[type=radio]~label,
-  .cdf-form-check.small input[type=checkbox]~label {
+  .c-check__conts--small input[type=radio]~label,
+  .c-check__conts--small input[type=checkbox]~label {
     font-size: var(--checkbox-label-font-size-sm);
     height: var(--checkbox-height-sm);
   }
 
-  .cdf-form-check.medium input[type=radio]~label,
-  .cdf-form-check.medium input[type=checkbox]~label {
+  .c-check__conts--medium input[type=radio]~label,
+  .c-check__conts--medium input[type=checkbox]~label {
     font-size: var(--checkbox-label-font-size-md);
     height: var(--checkbox-height-md);
   }
 
-  .cdf-form-check.large input[type=radio]~label,
-  .cdf-form-check.large input[type=checkbox]~label {
+  .c-check__conts--large input[type=radio]~label,
+  .c-check__conts--large input[type=checkbox]~label {
     font-size: var(--checkbox-label-font-size-lg);
     height: var(--checkbox-height-lg);
   }
 
-  .cdf-form-check input[type=radio]~i,
-  .cdf-form-check input[type=checkbox]~i {
+  .c-check__conts input[type=radio]~i,
+  .c-check__conts input[type=checkbox]~i {
     position: relative;
     display: inline-flex;
     gap: .8rem;
@@ -113,36 +113,36 @@
     order: 1;
   }
 
-  .cdf-form-check input[type=checkbox]:checked~i:before {
+  .c-check__conts input[type=checkbox]:checked~i:before {
     background-color: var(--primary-700-color);
     border-color: var(--primary-700-color);
   }
 
-  .cdf-form-check input[type=checkbox]:checked~i:after {
+  .c-check__conts input[type=checkbox]:checked~i:after {
     content: '\e5ca';
     font-family: 'Material Symbols Rounded';
     color: var(--surface-color);
   }
 
-  .cdf-form-check input[type=checkbox]~i::before {
+  .c-check__conts input[type=checkbox]~i::before {
     border-radius: .6rem;
   }
 
-  .cdf-form-check input[type=radio]~i::before {
+  .c-check__conts input[type=radio]~i::before {
     border-radius: var(--radius-max);
   }
 
-  .cdf-form-check input[type=radio]~i:before,
-  .cdf-form-check input[type=radio]~i:after,
-  .cdf-form-check input[type=checkbox]~i:before,
-  .cdf-form-check input[type=checkbox]~i:after {
+  .c-check__conts input[type=radio]~i:before,
+  .c-check__conts input[type=radio]~i:after,
+  .c-check__conts input[type=checkbox]~i:before,
+  .c-check__conts input[type=checkbox]~i:after {
     display: flex;
     content: "";
     transition: 0.4s cubic-bezier(0.4, 0, 0.23, 1);
   }
 
-  .cdf-form-check input[type=radio]~i::before,
-  .cdf-form-check input[type=checkbox]~i::before {
+  .c-check__conts input[type=radio]~i::before,
+  .c-check__conts input[type=checkbox]~i::before {
     flex-shrink: 0;
     width: var(--checkbox-width-md);
     height: var(--checkbox-height-md);
@@ -152,7 +152,7 @@
     box-sizing: border-box;
   }
 
-  .cdf-form-check input[type=checkbox]~i:after {
+  .c-check__conts input[type=checkbox]~i:after {
     font-size: var(--checkbox-label-font-size-md);
     width: var(--checkbox-width-md);
     height: var(--checkbox-height-md);
@@ -161,58 +161,58 @@
     justify-content: center;
   }
 
-  .cdf-form-check input[type=radio]~i:after,
-  .cdf-form-check input[type=checkbox]~i:after {
+  .c-check__conts input[type=radio]~i:after,
+  .c-check__conts input[type=checkbox]~i:after {
     position: absolute;
     z-index: 4;
   }
 
-  .cdf-form-check input[type=radio]~i:before,
-  .cdf-form-check input[type=radio]~i:after,
-  .cdf-form-check input[type=checkbox]~i:before,
-  .cdf-form-check input[type=checkbox]~i:after {
+  .c-check__conts input[type=radio]~i:before,
+  .c-check__conts input[type=radio]~i:after,
+  .c-check__conts input[type=checkbox]~i:before,
+  .c-check__conts input[type=checkbox]~i:after {
     display: flex;
     content: "";
     transition: 0.4s cubic-bezier(0.4, 0, 0.23, 1);
   }
 
-  .cdf-form-check.small input[type=radio]~i::before,
-  .cdf-form-check.small input[type=checkbox]~i::before {
+  .c-check__conts--small input[type=radio]~i::before,
+  .c-check__conts--small input[type=checkbox]~i::before {
     width: var(--checkbox-width-sm);
     height: var(--checkbox-height-sm);
   }
 
-  .cdf-form-check.small input[type=checkbox]~i:after {
+  .c-check__conts--small input[type=checkbox]~i:after {
     font-size: var(--checkbox-label-font-size-sm);
     width: var(--checkbox-width-sm);
     height: var(--checkbox-height-sm);
   }
 
-  .cdf-form-check.medium input[type=radio]~i::before,
-  .cdf-form-check.medium input[type=checkbox]~i::before {
+  .c-check__conts--medium input[type=radio]~i::before,
+  .c-check__conts--medium input[type=checkbox]~i::before {
     width: var(--checkbox-width-md);
     height: var(--checkbox-height-md);
   }
 
-  .cdf-form-check.medium input[type=checkbox]~i:after {
+  .c-check__conts--medium input[type=checkbox]~i:after {
     font-size: var(--checkbox-label-font-size-md);
     width: var(--checkbox-width-md);
     height: var(--checkbox-height-md);
   }
 
-  .cdf-form-check.large input[type=radio]~i::before,
-  .cdf-form-check.large input[type=checkbox]~i::before {
+  .c-check__conts--large input[type=radio]~i::before,
+  .c-check__conts--large input[type=checkbox]~i::before {
     width: var(--checkbox-width-lg);
     height: var(--checkbox-height-lg);
   }
 
-  .cdf-form-check.large input[type=checkbox]~i:after {
+  .c-check__conts--large input[type=checkbox]~i:after {
     font-size: var(--checkbox-label-font-size-lg);
     width: var(--checkbox-width-lg);
     height: var(--checkbox-height-lg);
   }
 
-  .cdf-form-check input[type=radio]~i:after {
+  .c-check__conts input[type=radio]~i:after {
     top: calc((var(--checkbox-width-md) - var(--radio-check-width-md)) / 2);
     left: calc((var(--checkbox-width-md) - var(--radio-check-width-md)) / 2);
     width: var(--radio-check-width-md);
@@ -221,43 +221,43 @@
     border-radius: var(--radius-max);
   }
     
-  .cdf-form-check.small input[type=radio]~i:after {
+  .c-check__conts--small input[type=radio]~i:after {
     top: calc((var(--checkbox-width-sm) - var(--radio-check-width-sm)) / 2);
     left: calc((var(--checkbox-width-sm) - var(--radio-check-width-sm)) / 2);
     width: var(--radio-check-width-sm);
     height: var(--radio-check-height-sm);
   }
 
-  .cdf-form-check.medium input[type=radio]~i:after {
+  .c-check__conts--medium input[type=radio]~i:after {
     top: calc((var(--checkbox-width-md) - var(--radio-check-width-md)) / 2);
     left: calc((var(--checkbox-width-md) - var(--radio-check-width-md)) / 2);
     width: var(--radio-check-width-md);
     height: var(--radio-check-height-md);
   }
 
-  .cdf-form-check.large input[type=radio]~i:after {
+  .c-check__conts--large input[type=radio]~i:after {
     top: calc((var(--checkbox-width-lg) - var(--radio-check-width-lg)) / 2);
     left: calc((var(--checkbox-width-lg) - var(--radio-check-width-lg)) / 2);
     width: var(--radio-check-width-lg);
     height: var(--radio-check-height-lg);
   }
 
-  .cdf-form-check input[type=radio]:checked~i:after {
+  .c-check__conts input[type=radio]:checked~i:after {
     background-color: var(--primary-600-color);
   }
 
-  .cdf-form-check input[type=radio]:checked~i:before {
+  .c-check__conts input[type=radio]:checked~i:before {
     border-color: var(--primary-600-color);
   }
 
-  .cdf-form-check input[type=radio]~i:after,
-  .cdf-form-check input[type=checkbox]~i:after {
+  .c-check__conts input[type=radio]~i:after,
+  .c-check__conts input[type=checkbox]~i:after {
     position: absolute;
     z-index: 4;
   }
 
-  .cdf-form-chip input[type=radio]~label,
-  .cdf-form-chip input[type=checkbox]~label {
+  .c-check__chip input[type=radio]~label,
+  .c-check__chip input[type=checkbox]~label {
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -275,9 +275,8 @@
     user-select: none;
   }
 
-
-  .cdf-form-chip input[type=radio],
-  .cdf-form-chip input[type=checkbox] {
+  .c-check__chip input[type=radio],
+  .c-check__chip input[type=checkbox] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -289,42 +288,42 @@
     border: 0;
   }
 
-  .cdf-form-chip input[type=radio]:checked~label,
-  .cdf-form-chip input[type=checkbox]:checked~label {
+  .c-check__chip input[type=radio]:checked~label,
+  .c-check__chip input[type=checkbox]:checked~label {
     background-color: var(--primary-600-color);
     border-color: var(--primary-600-color);
     color: var(--surface-color);
   }
 
-  .cdf-form-chip input[type=radio]:checked~label::after,
-  .cdf-form-chip input[type=checkbox]:checked~label::after {
+  .c-check__chip input[type=radio]:checked~label::after,
+  .c-check__chip input[type=checkbox]:checked~label::after {
     content: '\e5ca';
     color: var(--surface-color);
     font-size: 1.6rem;
     font-family: 'Material Symbols Rounded';
   }
 
-  .cdf-form-check input[type=radio]:disabled~label,
-  .cdf-form-check input[type=checkbox]:disabled~label {
+  .c-check__conts input[type=radio]:disabled~label,
+  .c-check__conts input[type=checkbox]:disabled~label {
     color: var(--text-300-color);
     cursor: default;
   }
 
-  .cdf-form-check input[type=radio]:disabled~i::before,
-  .cdf-form-check input[type=checkbox]:disabled~i::before {
+  .c-check__conts input[type=radio]:disabled~i::before,
+  .c-check__conts input[type=checkbox]:disabled~i::before {
     background-color: var(--tertiary-200-color);
     border-color: var(--tertiary-300-color);
   }
 
-  .cdf-form-check input[type=radio]:checked:disabled~i::after {
+  .c-check__conts input[type=radio]:checked:disabled~i::after {
     background-color: var(--tertiary-300-color);
   }
 
-  .cdf-form-check input[type=radio]:checked:disabled~i::before {
+  .c-check__conts input[type=radio]:checked:disabled~i::before {
     border-color: var(--tertiary-300-color);
   }
 
-  .cdf-form-check input[type=checkbox]:checked:disabled~i::after {
+  .c-check__conts input[type=checkbox]:checked:disabled~i::after {
     background-color: var(--tertiary-300-color);
     border-radius: .6rem;
   }

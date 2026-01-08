@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/buttonGuide.vue'),
+      component: () => import('../views/mainGuide.vue'),
     },
     {
       path: '/buttonGuide',

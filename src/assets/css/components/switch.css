@@ -4,12 +4,12 @@
   toggle switch component styles
   ***************************************
   */
-  .cdf-form-toggle-switch {
+  .c-switch {
     position: relative;
     display: inline-flex;
   }
 
-  .cdf-form-toggle-switch input[type="checkbox"] {
+  .c-switch input[type="checkbox"] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -21,7 +21,7 @@
     border: 0;
   }
 
-  .cdf-form-toggle-switch [type=checkbox]~label {
+  .c-switch [type=checkbox]~label {
     display: inline-flex;
     align-items: center;
     gap: .8rem;
@@ -29,20 +29,20 @@
     line-height: 2.6rem;
     color: var(--text-900-color);
   }
-  .cdf-form-toggle-switch.size-s [type=checkbox]~label {
+  .c-switch.size-s [type=checkbox]~label {
     font-size: var(--switch-font-size-sm);
     line-height: 2.2rem;
   }
-  .cdf-form-toggle-switch.size-m [type=checkbox]~label {
+  .c-switch.size-m [type=checkbox]~label {
     font-size: var(--switch-font-size-md);
     line-height: 2.6rem;
   }
-  .cdf-form-toggle-switch.size-l [type=checkbox]~label {
+  .c-switch.size-l [type=checkbox]~label {
     font-size: var(--switch-font-size-lg);
     line-height: 3rem;
   }
 
-  .cdf-form-toggle-switch [type=checkbox]~label .cdf-switch-toggle {
+  .c-switch [type=checkbox]~label .c-switch__toggle {
     position: relative;
     width: var(--switch-width-md);
     height: var(--switch-height-md);
@@ -50,20 +50,20 @@
     background-color: var(--tertiary-400-color);
     transition: .4s cubic-bezier(0.4, 0, 0.23, 1);
   }
-  .cdf-form-toggle-switch.size-s [type=checkbox]~label .cdf-switch-toggle {
+  .c-switch.size-s [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-sm);
     height: var(--switch-height-sm);
   }
-  .cdf-form-toggle-switch.size-m [type=checkbox]~label .cdf-switch-toggle {
+  .c-switch.size-m [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-md);
     height: var(--switch-height-md);
   }
-  .cdf-form-toggle-switch.size-l [type=checkbox]~label .cdf-switch-toggle {
+  .c-switch.size-l [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-lg);
     height: var(--switch-height-lg);
   }
 
-  .cdf-form-toggle-switch [type=checkbox]~label .cdf-switch-toggle>i {
+  .c-switch [type=checkbox]~label .c-switch__toggle>i {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,62 +79,62 @@
     box-sizing: border-box;
     transition: .4s cubic-bezier(0.4, 0, 0.23, 1);
   }
-  .cdf-form-toggle-switch.size-s [type=checkbox]~label .cdf-switch-toggle>i {
+  .c-switch.size-s [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-sm);
     height: var(--switch-toggle-size-sm);
   }
-  .cdf-form-toggle-switch.size-m [type=checkbox]~label .cdf-switch-toggle>i {
+  .c-switch.size-m [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-md);
     height: var(--switch-toggle-size-md);
   }
-  .cdf-form-toggle-switch.size-l [type=checkbox]~label .cdf-switch-toggle>i {
+  .c-switch.size-l [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-lg);
     height: var(--switch-toggle-size-lg);
   }
 
-  .cdf-form-toggle-switch [type=checkbox]:checked~label .cdf-switch-toggle {
+  .c-switch [type=checkbox]:checked~label .c-switch__toggle {
     background-color: var(--primary-700-color);
   }
 
-  [data-theme="dark"] .cdf-form-toggle-switch [type=checkbox]:checked~label .cdf-switch-toggle {
+  [data-theme="dark"] .c-switch [type=checkbox]:checked~label .c-switch__toggle {
     background-color: var(--primary-300-color);
   }
 
-  .cdf-form-toggle-switch [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  .c-switch [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
     border-color: var(--primary-700-color);
   }
-  .cdf-form-toggle-switch.size-s [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  .c-switch.size-s [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-sm);
   }
-  .cdf-form-toggle-switch.size-m [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  .c-switch.size-m [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
   }
-  .cdf-form-toggle-switch.size-l [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  .c-switch.size-l [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-lg);
   }
 
-  [data-theme="dark"] .cdf-form-toggle-switch [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  [data-theme="dark"] .c-form-toggle-switch [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
     border-color: var(--primary-300-color);
   }
-  [data-theme="dark"] .cdf-form-toggle-switch.size-s [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  [data-theme="dark"] .c-form-toggle-switch.size-s [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-sm);
   }
-  [data-theme="dark"] .cdf-form-toggle-switch.size-m [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  [data-theme="dark"] .c-form-toggle-switch.size-m [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
   }
-  [data-theme="dark"] .cdf-form-toggle-switch.size-l [type=checkbox]:checked~label .cdf-switch-toggle>i {
+  [data-theme="dark"] .c-form-toggle-switch.size-l [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-lg);
   }
 
 
-  .cdf-form-toggle-switch [type=checkbox]:disabled~label .cdf-switch-toggle {
+  .c-form-toggle-switch [type=checkbox]:disabled~label .c-switch__toggle {
     background-color: #dcdcdc;
     cursor: not-allowed;
   }
 
-  .cdf-form-toggle-switch [type=checkbox]:disabled~label .cdf-switch-toggle>i {
+  .c-form-toggle-switch [type=checkbox]:disabled~label .c-switch__toggle>i {
     background-color: #f5f5f5;
     border-color: #dcdcdc;
   }

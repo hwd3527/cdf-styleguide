@@ -4,7 +4,7 @@
   tooltip
   ***************************************
   */
-  .cdf-tooltip-popover {
+  .c-tooltip-popover {
     display: none;
     position: fixed;
     z-index: 1;
@@ -18,11 +18,11 @@
     left: 0;
   }
 
-  .cdf-tooltip-popover.active {
+  .c-tooltip-popover.active {
     display: block;
   }
 
-  .cdf-tooltip-popover::before {
+  .c-tooltip-popover::before {
     content: '';
     width: var(--tooltip-arrow-size);
     height: var(--tooltip-arrow-size);
@@ -34,22 +34,22 @@
     transform: translateY(-50%) rotate(45deg);
   }
 
-  .cdf-tooltip-popover.right::before {
+  .c-tooltip-popover.right::before {
     left: calc(100% + var(--tooltip-arrow-gap));
   }
 
-  .cdf-tooltip-popover.bottom::before,
-  .cdf-tooltip-popover.top::before {
+  .c-tooltip-popover.bottom::before,
+  .c-tooltip-popover.top::before {
     top: calc(100% + var(--tooltip-arrow-gap));
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
   }
 
-  .cdf-tooltip-popover.bottom::before {
+  .c-tooltip-popover.bottom::before {
     top: var(--tooltip-arrow-gap);
   }
 
-  .cdf-tooltip-popover.cdf-tooltip-box {
+  .c-tooltip-popover.c-tooltip-box {
     white-space: normal;
     max-width: 36rem;
     border: .1rem solid var(--tertiary-500-color);
@@ -60,7 +60,7 @@
     background-color: var(--white-color);
   }
 
-  .cdf-tooltip-popover.cdf-tooltip-box::before {
+  .c-tooltip-popover.c-tooltip-box::before {
     width: var(--tooltipbox-arrow-size);
     height: var(--tooltipbox-arrow-size);
     border: .1rem solid var(--tertiary-500-color);
@@ -71,7 +71,7 @@
     transform: translateX(-50%) rotate(45deg);
   }
 
-  .cdf-tooltip-popover.cdf-tooltip-box.bottom::before {
+  .c-tooltip-popover.c-tooltip-box.bottom::before {
     transform: translateX(-50%) rotate(-135deg);
   }
 }

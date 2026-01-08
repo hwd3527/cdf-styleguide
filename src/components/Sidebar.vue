@@ -1,7 +1,7 @@
 <template>
   <header class="left-menu-zone" :class="{ on: isMenuOpen === true }">
     <div class="logo">
-      <h1>Style Guide</h1>
+      <router-link to="/"><h1>Style Guide</h1></router-link>
       <button type="button" class="c-btn size-m rounded btn-menu" @click="isMenuOpen = !isMenuOpen">
         <i class="material-symbols-rounded">menu</i>
       </button>

@@ -1,11 +1,11 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Table</h2>
+    <h2 class="c-h1">Table</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Type01</h3>
-      <p class="cdf-information-text mt-5">반응형 모바일에서 header를 표시하기 위해서 td에 'data-header'를 추가해야 합니다.<br> 그리고 모바일에서는 원칙적으로
+      <h3 class="c-h3">Type01</h3>
+      <p class="c-information-text mt-5">반응형 모바일에서 header를 표시하기 위해서 td에 'data-header'를 추가해야 합니다.<br> 그리고 모바일에서는 원칙적으로
         thead가 사라지는데 꼭 유지해야 하는 td에는 'mobile' 클래스를 붙여 주시기 바랍니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -17,12 +17,12 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="cdf-table-top-info-line">
-                <p class="info-txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
-                <span class="page"><span class="current">1</span> / 10</span>
+              <div class="c-table-top-info">
+                <p class="c-table-top-info__txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
+                <span class="c-table-top-info__page"><span class="c-table-top-info__current">1</span> / 10</span>
               </div>
-              <div class="cdf-table-wrap type01 cdf-scrollbar horizontal">
-                <table class="cdf-table-type01">
+              <div class="c-table-wrap type01 c-scrollbar horizontal">
+                <table class="c-table-type01">
                   <caption>자재리스트로 번호, 품목명, 규격, 단위, 서비스구독 항목별 순서대로 안내하는 표입니다</caption>
                   <thead>
                     <tr>
@@ -31,8 +31,8 @@
                       <th scope="col">규격</th>
                       <th scope="col">단위</th>
                       <th scope="col" class="mobile">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_all" id="rao_all">
                             <label for="rao_all">서비스구독</label>
                             <i></i>
@@ -48,8 +48,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_01" id="rao_01">
                             <i></i>
                           </div>
@@ -62,8 +62,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_02" id="rao_02">
                             <i></i>
                           </div>
@@ -76,8 +76,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_03" id="rao_03">
                             <i></i>
                           </div>
@@ -90,8 +90,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_04" id="rao_04">
                             <i></i>
                           </div>
@@ -104,8 +104,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_05" id="rao_05">
                             <i></i>
                           </div>
@@ -118,8 +118,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_06" id="rao_06">
                             <i></i>
                           </div>
@@ -132,8 +132,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_07" id="rao_07">
                             <i></i>
                           </div>
@@ -146,8 +146,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_08" id="rao_08">
                             <i></i>
                           </div>
@@ -160,8 +160,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_09" id="rao_09">
                             <i></i>
                           </div>
@@ -174,8 +174,8 @@
                       <td data-header="규격">250×1000×1000㎜</td>
                       <td data-header="단위">kg</td>
                       <td data-header="서비스구독">
-                        <div class="cdf-form-check">
-                          <div class="cdf-form-check-inner">
+                        <div class="c-form-check">
+                          <div class="c-form-check-inner">
                             <input type="checkbox" name="rao_10" id="rao_10">
                             <i></i>
                           </div>
@@ -197,7 +197,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type02</h3>
+      <h3 class="c-h3">Type02</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -208,8 +208,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type02">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type02">
                   <caption>등록자재리스트로 번호, 품목명, 규격, 단위, 단가(만원), 조사기관(KPRC,물가정보,거래가격) 항목별 순서대로 안내하는 표입니다</caption>
                   <thead>
                     <tr>
@@ -342,7 +342,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type02 gray</h3>
+      <h3 class="c-h3">Type02 gray</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -353,8 +353,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type02 gray mt-0">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type02 gray mt-0">
                   <caption>순위, 업체명, 보유면허, 본사지역, 시공능력평가, 시공실적(3년전), 등급, 현금흐름, 추천사유 항목별 순서대로 안내하는 표입니다</caption>
                   <colgroup>
                     <col style="width: 8%;">
@@ -523,7 +523,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type03</h3>
+      <h3 class="c-h3">Type03</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -534,8 +534,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type03 mt-0">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type03 mt-0">
                   <caption>순위, 업체명, 보유면허, 본사지역, 시공능력평가, 시공실적(3년전), 등급, 현금흐름, 추천사유 항목별 순서대로 안내하는 표입니다</caption>
                   <colgroup>
                     <col style="width: 8%;">
@@ -704,7 +704,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type04</h3>
+      <h3 class="c-h3">Type04</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -715,8 +715,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type04">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type04">
                   <colgroup>
                     <col style="width: 6%">
                     <col>
@@ -753,7 +753,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -768,7 +768,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -783,7 +783,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -798,7 +798,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -813,7 +813,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -828,7 +828,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -843,7 +843,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -858,7 +858,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -873,7 +873,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -888,7 +888,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -908,7 +908,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type05</h3>
+      <h3 class="c-h3">Type05</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -919,8 +919,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type05">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type05">
                   <colgroup>
                     <col style="width: 6%">
                     <col>
@@ -957,7 +957,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -972,7 +972,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -987,7 +987,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1002,7 +1002,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1017,7 +1017,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1032,7 +1032,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1047,7 +1047,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1062,7 +1062,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1077,7 +1077,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1092,7 +1092,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1112,7 +1112,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type06</h3>
+      <h3 class="c-h3">Type06</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -1123,8 +1123,8 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-table-wrap cdf-scrollbar horizontal">
-                <table class="cdf-table-type06">
+              <div class="c-table-wrap c-scrollbar horizontal">
+                <table class="c-table-type06">
                   <colgroup>
                     <col style="width: 6%">
                     <col>
@@ -1161,7 +1161,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1176,7 +1176,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1191,7 +1191,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1206,7 +1206,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1221,7 +1221,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1236,7 +1236,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1251,7 +1251,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1266,7 +1266,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1281,7 +1281,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1296,7 +1296,7 @@
                       <td data-header="시공능력평가">999,999,999,999</td>
                       <td data-header="시공실적">999,999,999,999</td>
                       <td data-header="삭제">
-                        <button type="button" class="cdf-btn size-xs text">
+                        <button type="button" class="c-btn c-btn--xs text">
                           <i class="material-symbols-rounded">delete</i>
                         </button>
                       </td>
@@ -1325,12 +1325,12 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-table-top-info-line">
+const value01 = ref(`<div class="c-table-top-info-line">
   <p class="info-txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
   <span class="page"><span class="current">1</span> / 10</span>
 </div>
-<div class="cdf-table-wrap type01 cdf-scrollbar horizontal">
-  <table class="cdf-table-type01">
+<div class="c-table-wrap type01 c-scrollbar horizontal">
+  <table class="c-table-type01">
     <caption>자재리스트로 번호, 품목명, 규격, 단위, 서비스구독 항목별 순서대로 안내하는 표입니다</caption>
     <thead>
       <tr>
@@ -1339,8 +1339,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <th scope="col">규격</th>
         <th scope="col">단위</th>
         <th scope="col" class="mobile">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_all" id="rao_all">
               <label for="rao_all">서비스구독</label>
               <i></i>
@@ -1356,8 +1356,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_01" id="rao_01">
               <i></i>
             </div>
@@ -1370,8 +1370,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_02" id="rao_02">
               <i></i>
             </div>
@@ -1384,8 +1384,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_03" id="rao_03">
               <i></i>
             </div>
@@ -1398,8 +1398,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_04" id="rao_04">
               <i></i>
             </div>
@@ -1412,8 +1412,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_05" id="rao_05">
               <i></i>
             </div>
@@ -1426,8 +1426,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_06" id="rao_06">
               <i></i>
             </div>
@@ -1440,8 +1440,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_07" id="rao_07">
               <i></i>
             </div>
@@ -1454,8 +1454,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_08" id="rao_08">
               <i></i>
             </div>
@@ -1468,8 +1468,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_09" id="rao_09">
               <i></i>
             </div>
@@ -1482,8 +1482,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
         <td data-header="규격">250×1000×1000㎜</td>
         <td data-header="단위">kg</td>
         <td data-header="서비스구독">
-          <div class="cdf-form-check">
-            <div class="cdf-form-check-inner">
+          <div class="c-form-check">
+            <div class="c-form-check-inner">
               <input type="checkbox" name="rao_10" id="rao_10">
               <i></i>
             </div>
@@ -1493,8 +1493,8 @@ const value01 = ref(`<div class="cdf-table-top-info-line">
     </tbody>
   </table>
 </div>`);
-const value02 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-  <table class="cdf-table-type02">
+const value02 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+  <table class="c-table-type02">
     <caption>등록자재리스트로 번호, 품목명, 규격, 단위, 단가(만원), 조사기관(KPRC,물가정보,거래가격) 항목별 순서대로 안내하는 표입니다</caption>
     <thead>
       <tr>
@@ -1615,8 +1615,8 @@ const value02 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
     </tbody>
   </table>
 </div>`);
-const value0202 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-<table class="cdf-table-type02 gray mt-0">
+const value0202 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+<table class="c-table-type02 gray mt-0">
   <caption>순위, 업체명, 보유면허, 본사지역, 시공능력평가, 시공실적(3년전), 등급, 현금흐름, 추천사유 항목별 순서대로 안내하는 표입니다</caption>
   <colgroup>
     <col style="width: 8%;">
@@ -1774,8 +1774,8 @@ const value0202 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
   </tbody>
 </table>
 </div>`);
-const value03 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-<table class="cdf-table-type03 mt-0">
+const value03 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+<table class="c-table-type03 mt-0">
   <caption>순위, 업체명, 보유면허, 본사지역, 시공능력평가, 시공실적(3년전), 등급, 현금흐름, 추천사유 항목별 순서대로 안내하는 표입니다</caption>
   <colgroup>
     <col style="width: 8%;">
@@ -1933,8 +1933,8 @@ const value03 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
   </tbody>
 </table>
 </div>`);
-const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-  <table class="cdf-table-type04">
+const value04 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+  <table class="c-table-type04">
     <colgroup>
       <col style="width: 6%">
       <col>
@@ -1971,7 +1971,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -1986,7 +1986,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2001,7 +2001,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2016,7 +2016,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2031,7 +2031,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2046,7 +2046,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2061,7 +2061,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2076,7 +2076,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2091,7 +2091,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2106,7 +2106,7 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
         <td data-header="시공능력평가">999,999,999,999</td>
         <td data-header="시공실적">999,999,999,999</td>
         <td data-header="삭제">
-          <button type="button" class="cdf-btn size-xs text">
+          <button type="button" class="c-btn c-btn--xs text">
             <i class="material-symbols-rounded">delete</i>
           </button>
         </td>
@@ -2114,8 +2114,8 @@ const value04 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
     </tbody>
   </table>
 </div>`);
-const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-<table class="cdf-table-type05">
+const value05 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+<table class="c-table-type05">
   <colgroup>
     <col style="width: 6%">
     <col>
@@ -2152,7 +2152,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2167,7 +2167,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2182,7 +2182,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2197,7 +2197,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2212,7 +2212,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2227,7 +2227,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2242,7 +2242,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2257,7 +2257,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2272,7 +2272,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2287,7 +2287,7 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2295,8 +2295,8 @@ const value05 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
   </tbody>
 </table>
 </div>`);
-const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
-<table class="cdf-table-type06">
+const value06 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
+<table class="c-table-type06">
   <colgroup>
     <col style="width: 6%">
     <col>
@@ -2333,7 +2333,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2348,7 +2348,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2363,7 +2363,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2378,7 +2378,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2393,7 +2393,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2408,7 +2408,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2423,7 +2423,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2438,7 +2438,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2453,7 +2453,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>
@@ -2468,7 +2468,7 @@ const value06 = ref(`<div class="cdf-table-wrap cdf-scrollbar horizontal">
       <td data-header="시공능력평가">999,999,999,999</td>
       <td data-header="시공실적">999,999,999,999</td>
       <td data-header="삭제">
-        <button type="button" class="cdf-btn size-xs text">
+        <button type="button" class="c-btn c-btn--xs text">
           <i class="material-symbols-rounded">delete</i>
         </button>
       </td>

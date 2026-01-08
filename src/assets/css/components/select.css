@@ -29,24 +29,6 @@
     border-radius: var(--select-radius-md);
   }
 
-  [data-theme="vortal"] .c-select {
-    background-color: var(--white-color);
-    border-color: var(--tertiary-400-color);
-    background-image: url(../../images/common/select_arrow_vortal.svg);
-  }
-
-  [data-theme="istation"] .c-select {
-    background-color: var(--white-color);
-    border-color: var(--secondary-400-color);
-    background-image: url(../../images/common/select_arrow_myistation.svg);
-  }
-
-  [data-theme="pad"] .c-select {
-    background-color: var(--white-color);
-    border-color: var(--pad-400-color);
-    background-image: url(../../images/common/select_arrow_pad.svg);
-  }
-
   .c-select:focus {
     outline: 0;
     border-color: var(--primary-500-color);
@@ -72,12 +54,16 @@
     opacity: 1;
   }
 
-  .is-error .c-select {
+  .c-form--error .c-select {
     border-color: var(--warning-600-color);
     border-width: 2px;
   }
+  .c-form--success .c-select {
+    border-color: var(--success-600-color);
+    border-width: 2px;
+  }
 
-  .c-select.size-xl {
+  .c-select--xl {
     height: var(--select-height-xl);
     font-size: var(--select-font-size-xl);
     padding: 0 var(--select-padding-right-xl) 0 var(--select-padding-left-xl);
@@ -86,7 +72,7 @@
     background-size: var(--select-arrow-size-xl);
   }
 
-  .c-select.size-l {
+  .c-select--lg {
     height: var(--select-height-lg);
     font-size: var(--select-font-size-lg);
     padding: 0 var(--select-padding-right-lg) 0 var(--select-padding-left-lg);
@@ -94,7 +80,7 @@
     background-size: var(--select-arrow-size-lg);
   }
 
-  .c-select.size-m {
+  .c-select--md {
     height: var(--select-height-md);
     font-size: var(--select-font-size-md);
     padding: 0 var(--select-padding-right-md) 0 var(--select-padding-left-md);
@@ -102,7 +88,7 @@
     background-size: var(--select-arrow-size-md);
   }
 
-  .c-select.size-s {
+  .c-select--sm {
     height: var(--select-height-sm);
     font-size: var(--select-font-size-sm);
     padding: 0 var(--select-padding-right-sm) 0 var(--select-padding-left-sm);
@@ -110,7 +96,7 @@
     background-size: var(--select-arrow-size-sm);
   }
 
-  .c-select.size-xs {
+  .c-select--xs {
     height: var(--select-height-xs);
     font-size: var(--select-font-size-xs);
     padding: 0 var(--select-padding-right-xs) 0 var(--select-padding-left-xs);

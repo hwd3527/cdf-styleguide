@@ -4,7 +4,7 @@
   label component styles
   *******************************
   */
-  .cdf-label {
+  .c-label {
     padding: .5rem;
     display: inline-flex;
     align-items: center;
@@ -20,174 +20,174 @@
     background-color: #777;
   }
 
-  .cdf-label.label-rounded {
+  .c-label.c-label--rounded {
     border-radius: var(--radius-pill);
     padding-inline:.8rem;
   }
 
-  .cdf-label.size-s {
+  .c-label--sm {
     padding: var(--label-padding-sm);
     height: var(--label-height-sm);
   }
 
-  .cdf-label.size-m {
+  .c-label--md {
     padding: var(--label-padding-md);
     height: var(--label-height-md);
   }
 
-  .cdf-label.size-l {
+  .c-label--lg {
     padding: var(--label-padding-lg);
     font-size: var(--label-font-size-lg);
     height: var(--label-height-lg);
   }
 
-  .cdf-label.hard.gray {
+  .c-label.c-label--hard.c-label--gray {
     background-color: #777;
   }
 
-  .cdf-label.hard.green {
+  .c-label.c-label--hard.c-label--green {
     background-color: #47A329;
   }
 
-  .cdf-label.hard.turquoise {
+  .c-label.c-label--hard.c-label--turquoise {
     background-color: #29A38F;
   }
 
-  .cdf-label.hard.cyan {
+  .c-label.c-label--hard.c-label--cyan {
     background-color: #0099CC;
   }
 
-  .cdf-label.hard.blue {
+  .c-label.c-label--hard.c-label--blue {
     background-color: #4141C7;
   }
 
-  .cdf-label.hard.purple {
+  .c-label.c-label--hard.c-label--purple {
     background-color: #741FAD;
   }
 
-  .cdf-label.hard.rose {
+  .c-label.c-label--hard.c-label--rose {
     background-color: #BD0F89;
   }
 
-  .cdf-label.hard.red {
+  .c-label.c-label--hard.c-label--red {
     background-color: #D02F2F;
   }
 
-  .cdf-label.hard.orange {
+  .c-label.c-label--hard.c-label--orange {
     background-color: #ED7D27;
   }
 
-  .cdf-label.hard.yellow {
+  .c-label.c-label--hard.c-label--yellow {
     background-color: #EEB600;
   }
 
-  .cdf-label.soft.gray {
+  .c-label.c-label--soft.c-label--gray {
     background-color: #E4E4E4;
     color: #666666;
   }
 
-  .cdf-label.soft.green {
+  .c-label.c-label--soft.c-label--green {
     background-color: #DEF5D6;
     color: #47A329;
   }
 
-  .cdf-label.soft.turquoise {
+  .c-label.c-label--soft.c-label--turquoise {
     background-color: #D6F5F0;
     color: #0B8E78;
   }
 
-  .cdf-label.soft.cyan {
+  .c-label.c-label--soft.c-label--cyan {
     background-color: #C4E6F8;
     color: #0E8CBD;
   }
 
-  .cdf-label.soft.blue {
+  .c-label.c-label--soft.c-label--blue {
     background-color: #D3DDFD;
     color: #3030A8;
   }
 
-  .cdf-label.soft.purple {
+  .c-label.c-label--soft.c-label--purple {
     background-color: #E9D4F7;
     color: #741FAD;
   }
 
-  .cdf-label.soft.rose {
+  .c-label.c-label--soft.c-label--rose {
     background-color: #FBD0EE;
     color: #BD0F89;
   }
 
-  .cdf-label.soft.red {
+  .c-label.c-label--soft.c-label--red {
     background-color: #FDCECE;
     color: #D02F2F;
   }
 
-  .cdf-label.soft.orange {
+  .c-label.c-label--soft.c-label--orange {
     background-color: #FFE7CC;
     color: #DD6210;
   }
 
-  .cdf-label.soft.yellow {
+  .c-label.c-label--soft.c-label--yellow {
     background-color: #FDF3CD;
     color: #D08E13;
   }
 
 
 
-  .cdf-label.border.gray {
+  .c-label.c-label--border.c-label--gray {
     background-color: #fff;
     border: .1rem solid #777777;
     color: #777777;
   }
 
-  .cdf-label.border.green {
+  .c-label.c-label--border.c-label--green {
     background-color: #fff;
     border: .1rem solid #47A329;
     color: #47A329;
   }
 
-  .cdf-label.border.turquoise {
+  .c-label.c-label--border.c-label--turquoise {
     background-color: #fff;
     border: .1rem solid #29A38F;
     color: #29A38F;
   }
 
-  .cdf-label.border.cyan {
+  .c-label.c-label--border.c-label--cyan {
     background-color: #fff;
     border: .1rem solid #c3c5c5;
     color: #0099CC;
   }
 
-  .cdf-label.border.blue {
+  .c-label.c-label--border.c-label--blue {
     background-color: #fff;
     border: .1rem solid #4141C7;
     color: #4141C7;
   }
 
-  .cdf-label.border.purple {
+  .c-label.c-label--border.c-label--purple {
     background-color: #fff;
     border: .1rem solid #741FAD;
     color: #741FAD;
   }
 
-  .cdf-label.border.rose {
+  .c-label.c-label--border.c-label--rose {
     background-color: #fff;
     border: .1rem solid #BD0F89;
     color: #BD0F89;
   }
 
-  .cdf-label.border.red {
+  .c-label.c-label--border.c-label--red {
     background-color: #fff;
     border: .1rem solid #D02F2F;
     color: #D02F2F;
   }
 
-  .cdf-label.border.orange {
+  .c-label.c-label--border.c-label--orange {
     background-color: #fff;
     border: .1rem solid #ED7D27;
     color: #ED7D27;
   }
 
-  .cdf-label.border.orange {
+  .c-label.c-label-border.c-label--orange {
     background-color: #fff;
     border: .1rem solid #EEB600;
     color: #EEB600;

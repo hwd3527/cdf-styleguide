@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Paging</h2>
+    <h2 class="c-h1">Paging</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Type01</h3>
+      <h3 class="c-h3">Type01</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,15 +15,15 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-paginate">
-                <a href="#" class="cdf-paginate-first" title="처음 페이지">
+              <div class="c-paginate">
+                <a href="#" class="c-paginate__first is-disabled" title="처음 페이지">
                   <i class="material-symbols-outlined">first_page</i>
                 </a>
-                <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+                <a href="#" class="c-paginate__prev is-disabled" title="이전 페이지">
                   <i class="material-symbols-outlined">chevron_left</i>
                 </a>
-                <div class="cdf-paginate-page">
-                  <a href="#" class="active" title="1페이지'">1</a>
+                <div class="c-paginate__page">
+                  <a href="#" class="is-active" title="1페이지'">1</a>
                   <a href="#" title="2페이지'">2</a>
                   <a href="#" title="3페이지'">3</a>
                   <a href="#" title="4페이지'">4</a>
@@ -34,10 +34,10 @@
                   <a href="#" title="9페이지'">9</a>
                   <a href="#" title="10페이지'">10</a>
                 </div>
-                <a href="#" class="cdf-paginate-next" title="다음페이지">
+                <a href="#" class="c-paginate__next" title="다음페이지">
                   <i class="material-symbols-outlined">chevron_right</i>
                 </a>
-                <a href="#" class="cdf-paginate-last" title="마지막페이지">
+                <a href="#" class="c-paginate__last" title="마지막페이지">
                   <i class="material-symbols-outlined">last_page</i>
                 </a>
               </div>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Type02</h3>
+      <h3 class="c-h3">Type02</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -64,15 +64,15 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-paginate type02">
-                <a href="#" class="cdf-paginate-first" title="처음 페이지">
+              <div class="c-paginate c-paginate--type02">
+                <a href="#" class="c-paginate__first is-disabled" title="처음 페이지">
                   <i class="material-symbols-outlined">first_page</i>
                 </a>
-                <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+                <a href="#" class="c-paginate__prev is-disabled" title="이전 페이지">
                   <i class="material-symbols-outlined">arrow_back</i>
                 </a>
-                <div class="cdf-paginate-page">
-                  <a href="#" class="active" title="1페이지'">1</a>
+                <div class="c-paginate__page">
+                  <a href="#" class="is-active" title="1페이지'">1</a>
                   <a href="#" title="2페이지'">2</a>
                   <a href="#" title="3페이지'">3</a>
                   <a href="#" title="4페이지'">4</a>
@@ -83,10 +83,10 @@
                   <a href="#" title="9페이지'">9</a>
                   <a href="#" title="10페이지'">10</a>
                 </div>
-                <a href="#" class="cdf-paginate-next" title="다음페이지">
+                <a href="#" class="c-paginate__next" title="다음페이지">
                   <i class="material-symbols-outlined">arrow_forward</i>
                 </a>
-                <a href="#" class="cdf-paginate-last" title="마지막페이지">
+                <a href="#" class="c-paginate__last" title="마지막페이지">
                   <i class="material-symbols-outlined">last_page</i>
                 </a>
               </div>
@@ -101,8 +101,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Mobile</h3>
-      <p class="cdf-information-text mt-5">mobile paging은 모바일 화면에서 자동으로 전환됩니다.</p>
+      <h3 class="c-h3">Mobile</h3>
+      <p class="c-information-text mt-5">mobile paging은 모바일 화면에서 자동으로 전환됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -113,22 +113,22 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-paginate mobile">
-                <a href="#" class="cdf-paginate-first" title="처음 페이지">
+              <div class="c-paginate c-paginate--mobile">
+                <a href="#" class="c-paginate__first" title="처음 페이지">
                   <i class="material-symbols-outlined">first_page</i>
                 </a>
-                <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+                <a href="#" class="c-paginate__prev" title="이전 페이지">
                   <i class="material-symbols-outlined">chevron_left</i>
                 </a>
-                <div class="cdf-paginate-page">
+                <div class="c-paginate__page">
                   <span class="current">1</span>
                   /
                   <span class="total">10</span>
                 </div>
-                <a href="#" class="cdf-paginate-next" title="다음페이지">
+                <a href="#" class="c-paginate__next" title="다음페이지">
                   <i class="material-symbols-outlined">chevron_right</i>
                 </a>
-                <a href="#" class="cdf-paginate-last" title="마지막페이지">
+                <a href="#" class="c-paginate__last" title="마지막페이지">
                   <i class="material-symbols-outlined">last_page</i>
                 </a>
               </div>
@@ -149,15 +149,15 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-paginate">
-  <a href="#" class="cdf-paginate-first" title="처음 페이지">
+const value01 = ref(`<div class="c-paginate">
+  <a href="#" class="c-paginate__first is-disabled" title="처음 페이지">
     <i class="material-symbols-outlined">first_page</i>
   </a>
-  <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+  <a href="#" class="c-paginate__prev is-disabled" title="이전 페이지">
     <i class="material-symbols-outlined">chevron_left</i>
   </a>
-  <div class="cdf-paginate-page">
-    <a href="#" class="active" title="1페이지'">1</a>
+  <div class="c-paginate__page">
+    <a href="#" class="is-active" title="1페이지'">1</a>
     <a href="#" title="2페이지'">2</a>
     <a href="#" title="3페이지'">3</a>
     <a href="#" title="4페이지'">4</a>
@@ -168,22 +168,22 @@ const value01 = ref(`<div class="cdf-paginate">
     <a href="#" title="9페이지'">9</a>
     <a href="#" title="10페이지'">10</a>
   </div>
-  <a href="#" class="cdf-paginate-next" title="다음페이지">
+  <a href="#" class="c-paginate__next" title="다음페이지">
     <i class="material-symbols-outlined">chevron_right</i>
   </a>
-  <a href="#" class="cdf-paginate-last" title="마지막페이지">
+  <a href="#" class="c-paginate__last" title="마지막페이지">
     <i class="material-symbols-outlined">last_page</i>
   </a>
 </div>`);
-const value02 = ref(`<div class="cdf-paginate type02">
-  <a href="#" class="cdf-paginate-first" title="처음 페이지">
+const value02 = ref(`<div class="c-paginate c-paginate--type02">
+  <a href="#" class="c-paginate__first is-disabled" title="처음 페이지">
     <i class="material-symbols-outlined">first_page</i>
   </a>
-  <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+  <a href="#" class="c-paginate__prev is-disabled" title="이전 페이지">
     <i class="material-symbols-outlined">arrow_back</i>
   </a>
-  <div class="cdf-paginate-page">
-    <a href="#" class="active" title="1페이지'">1</a>
+  <div class="c-paginate__page">
+    <a href="#" class="is-active" title="1페이지'">1</a>
     <a href="#" title="2페이지'">2</a>
     <a href="#" title="3페이지'">3</a>
     <a href="#" title="4페이지'">4</a>
@@ -194,29 +194,29 @@ const value02 = ref(`<div class="cdf-paginate type02">
     <a href="#" title="9페이지'">9</a>
     <a href="#" title="10페이지'">10</a>
   </div>
-  <a href="#" class="cdf-paginate-next" title="다음페이지">
+  <a href="#" class="c-paginate__next" title="다음페이지">
     <i class="material-symbols-outlined">arrow_forward</i>
   </a>
-  <a href="#" class="cdf-paginate-last" title="마지막페이지">
+  <a href="#" class="c-paginate__last" title="마지막페이지">
     <i class="material-symbols-outlined">last_page</i>
   </a>
 </div>`);
-const value03 = ref(`<div class="cdf-paginate mobile">
-  <a href="#" class="cdf-paginate-first" title="처음 페이지">
+const value03 = ref(`<div class="c-paginate c-paginate--mobile">
+  <a href="#" class="c-paginate__first" title="처음 페이지">
     <i class="material-symbols-outlined">first_page</i>
   </a>
-  <a href="#" class="cdf-paginate-prev" title="이전 페이지">
+  <a href="#" class="c-paginate__prev" title="이전 페이지">
     <i class="material-symbols-outlined">chevron_left</i>
   </a>
-  <div class="cdf-paginate-page">
+  <div class="c-paginate__page">
     <span class="current">1</span>
     /
     <span class="total">10</span>
   </div>
-  <a href="#" class="cdf-paginate-next" title="다음페이지">
+  <a href="#" class="c-paginate__next" title="다음페이지">
     <i class="material-symbols-outlined">chevron_right</i>
   </a>
-  <a href="#" class="cdf-paginate-last" title="마지막페이지">
+  <a href="#" class="c-paginate__last" title="마지막페이지">
     <i class="material-symbols-outlined">last_page</i>
   </a>
 </div>`);

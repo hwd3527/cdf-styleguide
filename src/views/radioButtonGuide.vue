@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Radio Button</h2>
+    <h2 class="c-h1">Radio Button</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,23 +15,23 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_01" id="rdo_01">
                     <label for="rdo_01">라디오버튼</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_01" id="rdo_02">
                     <label for="rdo_02">라디오버튼</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_01" id="rdo_03">
                     <label for="rdo_03">라디오버튼</label>
                     <i></i>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">세로형</h3>
+      <h3 class="c-h3">세로형</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -61,23 +61,23 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area horizontal">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check c-check--vertical">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_0201" id="rdo_0201">
                     <label for="rdo_0201">라디오버튼</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_0201" id="rdo_0202">
                     <label for="rdo_0202">라디오버튼</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_0201" id="rdo_0203">
                     <label for="rdo_0203">라디오버튼</label>
                     <i></i>
@@ -95,7 +95,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">비활성화</h3>
+      <h3 class="c-h3">비활성화</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -106,16 +106,16 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="cdf-form-check-area">
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+              <div class="c-check">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_0301" id="rdo_0301" disabled>
                     <label for="rdo_0301">비활성화</label>
                     <i></i>
                   </div>
                 </div>
-                <div class="cdf-form-check">
-                  <div class="cdf-form-check-inner">
+                <div class="c-check__conts">
+                  <div class="c-check__inner">
                     <input type="radio" name="rao_0301" id="rdo_0302" checked disabled>
                     <label for="rdo_0302">선택된 비활성화</label>
                     <i></i>
@@ -131,6 +131,51 @@
         </div>
       </div>
     </div>
+
+    <div class="conts-area">
+      <h3 class="c-h3">사이즈</h3>
+      <div class="tabs">
+        <div role="tablist" class="tab-list">
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
+            aria-selected="true" tabindex="0"><span>Preview</span></a>
+          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0202" id="tabList0202" class="tab-list-item"
+            aria-selected="false" tabindex="-1"><span>Code</span></a>
+        </div>
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
+            <div class="container">
+              <div class="c-check">
+                <div class="c-check__conts c-check__conts--small">
+                  <div class="c-check__inner">
+                    <input type="radio" name="rao_0401" id="rdo_0401">
+                    <label for="rdo_0401">small</label>
+                    <i></i>
+                  </div>
+                </div>
+                <div class="c-check__conts c-check__conts--medium">
+                  <div class="c-check__inner">
+                    <input type="radio" name="rao_0401" id="rdo_0402">
+                    <label for="rdo_0402">medium</label>
+                    <i></i>
+                  </div>
+                </div>
+                <div class="c-check__conts c-check__conts--large">
+                  <div class="c-check__inner">
+                    <input type="radio" name="rao_0401" id="rdo_0403">
+                    <label for="rdo_0403">large</label>
+                    <i></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" aria-labelledby="tabList0202" id="tabPanel0202" class="tab-panel">
+            <code-mirror v-model="value03" :dark="true" basic />
+            <button type="button" class="clipboard" @click="copyCode('value04')">코드 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -140,62 +185,62 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-form-check-area">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+const value01 = ref(`<div class="c-check">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_01" id="rdo_01">
       <label for="rdo_01">라디오버튼</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_01" id="rdo_02">
       <label for="rdo_02">라디오버튼</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_01" id="rdo_03">
       <label for="rdo_03">라디오버튼</label>
       <i></i>
     </div>
   </div>
 </div>`);
-const value02 = ref(`<div class="cdf-form-check-area horizontal">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+const value02 = ref(`<div class="c-check c-check--vertical">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_0201" id="rdo_0201">
       <label for="rdo_0201">라디오버튼</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_0201" id="rdo_0202">
       <label for="rdo_0202">라디오버튼</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_0201" id="rdo_0203">
       <label for="rdo_0203">라디오버튼</label>
       <i></i>
     </div>
   </div>
 </div>`);
-const value03 = ref(`<div class="cdf-form-check-area">
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+const value03 = ref(`<div class="c-check">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_0301" id="rdo_0301" disabled>
       <label for="rdo_0301">비활성화</label>
       <i></i>
     </div>
   </div>
-  <div class="cdf-form-check">
-    <div class="cdf-form-check-inner">
+  <div class="c-check__conts">
+    <div class="c-check__inner">
       <input type="radio" name="rao_0301" id="rdo_0302" checked disabled>
       <label for="rdo_0302">선택된 비활성화</label>
       <i></i>

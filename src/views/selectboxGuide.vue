@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Seletbox</h2>
+    <h2 class="c-h1">Seletbox</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,43 +15,28 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select" title="선택">
                     <option value="">항목1</option>
                     <option value="">항목2</option>
                     <option value="">항목3</option>
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select" readonly title="선택">
-                    <option selected readonly>readonly</option>
-                    <option value="">항목1</option>
-                    <option value="">항목2</option>
-                    <option value="">항목3</option>
-                    <option value="">항목4</option>
-                    <option value="">항목5</option>
-                  </select>
-                  <div class="cdf-form-hint">도움말</div>
-                </div>
-              </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
-                </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select" disabled title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select" disabled title="선택">
                     <option selected readonly>disabled</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -59,15 +44,15 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts is-error">
-                  <select id="select_name" class="cdf-select" title="선택">
+                <div class="c-form__conts c-form--error">
+                  <select id="select_name" class="c-select" title="선택">
                     <option selected readonly>error</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -75,7 +60,7 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
             </div>
@@ -84,7 +69,6 @@
             <code-mirror v-model="value01" :dark="true" basic />
             <button type="button" class="clipboard" @click="copyCode('value01')">코드 복사</button>
           </div>
-
         </div>
       </div>
     </div>
@@ -92,7 +76,7 @@
 
 
     <div class="conts-area">
-      <h3 class="cdf-h3">크기</h3>
+      <h3 class="c-h3">크기</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -103,12 +87,12 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select size-xs" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select c-select--xs" title="선택">
                     <option selected readonly>size-xs</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -116,15 +100,15 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select size-s" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select c-select--sm" title="선택">
                     <option selected readonly>size-s</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -132,15 +116,15 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select size-m" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select c-select--md" title="선택">
                     <option selected readonly>size-m</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -148,15 +132,15 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select size-l" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select c-select--lg" title="선택">
                     <option selected readonly>size-l</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -164,15 +148,15 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
-              <div class="cdf-form-group">
-                <div class="cdf-form-tit">
-                  <label for="select_name">레이블</label>
+              <div class="c-form">
+                <div class="c-form__tit">
+                  <label for="select_name" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select size-xl" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select c-select--xl" title="선택">
                     <option selected readonly>size-xl</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -180,7 +164,7 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
             </div>
@@ -194,7 +178,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">가로형</h3>
+      <h3 class="c-h3">가로형</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0201" id="tabList0201" class="tab-list-item on"
@@ -205,12 +189,12 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-group horizontal">
-                <div class="cdf-form-tit">
-                  <label for="input0401">레이블</label>
+              <div class="c-form c-form--horizontal">
+                <div class="c-form__tit">
+                  <label for="input0401" class="c-form__label">레이블</label>
                 </div>
-                <div class="cdf-form-conts">
-                  <select id="select_name" class="cdf-select" title="선택">
+                <div class="c-form__conts">
+                  <select id="select_name" class="c-select" title="선택">
                     <option selected readonly>가로형</option>
                     <option value="">항목1</option>
                     <option value="">항목2</option>
@@ -218,7 +202,7 @@
                     <option value="">항목4</option>
                     <option value="">항목5</option>
                   </select>
-                  <div class="cdf-form-hint">도움말</div>
+                  <div class="c-form__hint">도움말</div>
                 </div>
               </div>
             </div>
@@ -247,43 +231,28 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-form-group">
-  <div class="cdf-form-tit">
-    <label for="select_name">레이블</label>
+const value01 = ref(`<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <select id="select_name" class="cdf-select" title="선택">
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select" title="선택">
       <option value="">항목1</option>
       <option value="">항목2</option>
       <option value="">항목3</option>
       <option value="">항목4</option>
       <option value="">항목5</option>
     </select>
-    <div class="cdf-form-hint">도움말</div>
+    <div class="c-form__hint">도움말</div>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
-    <label for="select_name">레이블</label>
+
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <select id="select_name" class="cdf-select" readonly title="선택">
-      <option selected readonly>readonly</option>
-      <option value="">항목1</option>
-      <option value="">항목2</option>
-      <option value="">항목3</option>
-      <option value="">항목4</option>
-      <option value="">항목5</option>
-    </select>
-    <div class="cdf-form-hint">도움말</div>
-  </div>
-</div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
-    <label for="select_name">레이블</label>
-  </div>
-  <div class="cdf-form-conts">
-    <select id="select_name" class="cdf-select" disabled title="선택">
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select" disabled title="선택">
       <option selected readonly>disabled</option>
       <option value="">항목1</option>
       <option value="">항목2</option>
@@ -291,15 +260,15 @@ const value01 = ref(`<div class="cdf-form-group">
       <option value="">항목4</option>
       <option value="">항목5</option>
     </select>
-    <div class="cdf-form-hint">도움말</div>
+    <div class="c-form__hint">도움말</div>
   </div>
 </div>
-<div class="cdf-form-group">
-  <div class="cdf-form-tit">
-    <label for="select_name">레이블</label>
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
   </div>
-  <div class="cdf-form-conts is-error">
-    <select id="select_name" class="cdf-select" title="선택">
+  <div class="c-form__conts c-form--error">
+    <select id="select_name" class="c-select" title="선택">
       <option selected readonly>error</option>
       <option value="">항목1</option>
       <option value="">항목2</option>
@@ -307,95 +276,95 @@ const value01 = ref(`<div class="cdf-form-group">
       <option value="">항목4</option>
       <option value="">항목5</option>
     </select>
-    <div class="cdf-form-hint">도움말</div>
+    <div class="c-form__hint">도움말</div>
   </div>
 </div>`);
-const value02 = ref(`<div class="cdf-form-group">
-<div class="cdf-form-tit">
-  <label for="select_name">레이블</label>
+const value02 = ref(`<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
+  </div>
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select size-xs" title="선택">
+      <option selected readonly>size-xs</option>
+      <option value="">항목1</option>
+      <option value="">항목2</option>
+      <option value="">항목3</option>
+      <option value="">항목4</option>
+      <option value="">항목5</option>
+    </select>
+    <div class="c-form__hint">도움말</div>
+  </div>
 </div>
-<div class="cdf-form-conts">
-  <select id="select_name" class="cdf-select size-xs" title="선택">
-    <option selected readonly>size-xs</option>
-    <option value="">항목1</option>
-    <option value="">항목2</option>
-    <option value="">항목3</option>
-    <option value="">항목4</option>
-    <option value="">항목5</option>
-  </select>
-  <div class="cdf-form-hint">도움말</div>
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
+  </div>
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select size-s" title="선택">
+      <option selected readonly>size-s</option>
+      <option value="">항목1</option>
+      <option value="">항목2</option>
+      <option value="">항목3</option>
+      <option value="">항목4</option>
+      <option value="">항목5</option>
+    </select>
+    <div class="c-form__hint">도움말</div>
+  </div>
 </div>
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
+  </div>
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select size-m" title="선택">
+      <option selected readonly>size-m</option>
+      <option value="">항목1</option>
+      <option value="">항목2</option>
+      <option value="">항목3</option>
+      <option value="">항목4</option>
+      <option value="">항목5</option>
+    </select>
+    <div class="c-form__hint">도움말</div>
+  </div>
 </div>
-<div class="cdf-form-group">
-<div class="cdf-form-tit">
-  <label for="select_name">레이블</label>
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
+  </div>
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select size-l" title="선택">
+      <option selected readonly>size-l</option>
+      <option value="">항목1</option>
+      <option value="">항목2</option>
+      <option value="">항목3</option>
+      <option value="">항목4</option>
+      <option value="">항목5</option>
+    </select>
+    <div class="c-form__hint">도움말</div>
+  </div>
 </div>
-<div class="cdf-form-conts">
-  <select id="select_name" class="cdf-select size-s" title="선택">
-    <option selected readonly>size-s</option>
-    <option value="">항목1</option>
-    <option value="">항목2</option>
-    <option value="">항목3</option>
-    <option value="">항목4</option>
-    <option value="">항목5</option>
-  </select>
-  <div class="cdf-form-hint">도움말</div>
-</div>
-</div>
-<div class="cdf-form-group">
-<div class="cdf-form-tit">
-  <label for="select_name">레이블</label>
-</div>
-<div class="cdf-form-conts">
-  <select id="select_name" class="cdf-select size-m" title="선택">
-    <option selected readonly>size-m</option>
-    <option value="">항목1</option>
-    <option value="">항목2</option>
-    <option value="">항목3</option>
-    <option value="">항목4</option>
-    <option value="">항목5</option>
-  </select>
-  <div class="cdf-form-hint">도움말</div>
-</div>
-</div>
-<div class="cdf-form-group">
-<div class="cdf-form-tit">
-  <label for="select_name">레이블</label>
-</div>
-<div class="cdf-form-conts">
-  <select id="select_name" class="cdf-select size-l" title="선택">
-    <option selected readonly>size-l</option>
-    <option value="">항목1</option>
-    <option value="">항목2</option>
-    <option value="">항목3</option>
-    <option value="">항목4</option>
-    <option value="">항목5</option>
-  </select>
-  <div class="cdf-form-hint">도움말</div>
-</div>
-</div>
-<div class="cdf-form-group">
-<div class="cdf-form-tit">
-  <label for="select_name">레이블</label>
-</div>
-<div class="cdf-form-conts">
-  <select id="select_name" class="cdf-select size-xl" title="선택">
-    <option selected readonly>size-xl</option>
-    <option value="">항목1</option>
-    <option value="">항목2</option>
-    <option value="">항목3</option>
-    <option value="">항목4</option>
-    <option value="">항목5</option>
-  </select>
-  <div class="cdf-form-hint">도움말</div>
-</div>
+<div class="c-form">
+  <div class="c-form__tit">
+    <label for="select_name" class="c-form__label">레이블</label>
+  </div>
+  <div class="c-form__conts">
+    <select id="select_name" class="c-select size-xl" title="선택">
+      <option selected readonly>size-xl</option>
+      <option value="">항목1</option>
+      <option value="">항목2</option>
+      <option value="">항목3</option>
+      <option value="">항목4</option>
+      <option value="">항목5</option>
+    </select>
+    <div class="c-form__hint">도움말</div>
+  </div>
 </div>`);
-const value03 = ref(`<div class="cdf-form-group horizontal">
-  <div class="cdf-form-tit">
+const value03 = ref(`<div class="c-form-group horizontal">
+  <div class="c-form-tit">
     <label for="input0401">레이블</label>
   </div>
-  <div class="cdf-form-conts">
-    <select id="select_name" class="cdf-select" title="선택">
+  <div class="c-form-conts">
+    <select id="select_name" class="c-select" title="선택">
       <option selected readonly>가로형</option>
       <option value="">항목1</option>
       <option value="">항목2</option>
@@ -403,7 +372,7 @@ const value03 = ref(`<div class="cdf-form-group horizontal">
       <option value="">항목4</option>
       <option value="">항목5</option>
     </select>
-    <div class="cdf-form-hint">도움말</div>
+    <div class="c-form-hint">도움말</div>
   </div>
 </div>`);
 

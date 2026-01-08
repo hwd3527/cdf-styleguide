@@ -4,139 +4,123 @@
   Accordion
   ***************************************
   */
-  .c-collapse-wrap {
-    @apply flex 
-    flex-col 
-    w-full 
-    gap-2;
+  .c-collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .8rem;
   }
 
-  .c-collapse-wrap.join {
-    @apply gap-0;
+  .c-collapse.c-collapse--join {
+    gap:0;
   }
 
-  .c-collapse-wrap .c-collapse-item {
-    @apply w-full 
-    transition-all 
-    duration-300 
-    ease-in-out 
-    grid 
-    grid-rows-[max-content_0fr]
-    flex-col 
-    relative 
-    overflow-hidden
-    rounded-[var(--collapse-radius)]
-    border-1 
-    border-solid 
-    border-[var(--tertiary-300-color)] 
-    bg-[var(--surface-color)];
+  .c-collapse .c-collapse__item {
+    width:100%;
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    grid-template-rows: max-content 0fr;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--collapse-radius);
+    border:.1rem solid var(--tertiary-300-color);
+    background-color: var(--surface-color);
   }
 
-  .c-collapse-wrap.join .c-collapse-item {
-    @apply rounded-none 
-    -mt-px;
+  .c-collapse.c-collapse--join .c-collapse__item {
+    border-radius: 0;
+    margin-top:-.1rem;
   }
 
 
-  .c-collapse-wrap.highlight .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title {
-    @apply bg-[var(--primary-200-color)];
+  .c-collapse.c-collapse--highlight .c-collapse__item>input:is([type=checkbox], [type=radio]):checked~.c-collapse__title {
+    background-color: var(--primary-200-color);
   }
 
-  .c-collapse-wrap.highlight .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-content {
-    @apply bg-[var(--primary-200-color)];
+  .c-collapse.c-collapse--highlight .c-collapse__item>input:is([type=checkbox], [type=radio]):checked~.c-collapse__content {
+    background-color: var(--primary-200-color);
   }
 
 
-  .c-collapse-wrap .c-collapse-item>input:is([type=checkbox], [type=radio]) {
-    @apply appearance-none 
-    opacity-0 
-    z-1 
-    row-start-1 
-    col-start-1 
-    w-full 
-    transition-colors 
-    duration-200 
-    ease-out 
-    cursor-pointer 
-    min-h-[var(--collapse-min-height)] 
-    p-[var(--collapse-padding)] 
-    pr-[var(--collapse-padding-right)];
+  .c-collapse .c-collapse__item>input:is([type=checkbox], [type=radio]) {
+    appearance: none;
+    opacity: 0;
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 100%;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+    min-height: var(--collapse-min-height);
+    padding: var(--collapse-padding);
+    padding-right: var(--collapse-padding-right);
   }
 
-  .c-collapse-wrap .c-collapse-item .c-collapse-title {
-    @apply relative 
-    row-start-1 
-    col-start-1 
-    transition-colors 
-    duration-200 
-    ease-out
-    font-semibold 
-    w-full 
-    min-h-[var(--collapse-min-height)] 
-    p-[var(--collapse-padding)] 
-    pr-[var(--collapse-padding-right)] 
-    text-[length:var(--collapse-title-font-size)] 
-    text-[var(--text-900-color)];
+  .c-collapse .c-collapse__item .c-collapse__title {  
+    position: relative;
+    grid-row-start:1;
+    grid-column-start:1;
+    transition:background-color 0.2s ease-out;
+    font-weight: 600;
+    width: 100%;
+    min-height: var(--collapse-min-height);
+    padding: var(--collapse-padding);
+    padding-right: var(--collapse-padding-right);
+    font-size:var(--collapse-title-font-size);
+    color:var(--text-900-color);
   }
 
-  .c-collapse-wrap .c-collapse-item.collapse-arrow .c-collapse-title::after {
-    @apply content-['\e313'] 
-    font-[Material_Symbols_Rounded] 
-    block 
-    absolute 
-    right-5 
-    top-1/2 
-    -translate-y-1/2 
-    text-[2rem] 
-    text-[var(--text-900-color)] 
-    transition-all 
-    duration-200 
-    ease-in-out;
+  .c-collapse .c-collapse__item.c-collapse__item--arrow .c-collapse__title::after {
+    content:'\e313';
+    font-family: 'Material Symbols Rounded';
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--text-900-color);
+    transition: all 0.2s ease-in-out;
   }
 
-  .c-collapse-item.collapse-arrow>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title::after {
-    @apply content-['\e316'];
+  .c-collapse__item.c-collapse__item--arrow>input:is([type=checkbox], [type=radio]):checked~.c-collapse__title::after {
+    content:'\e316';
   }
 
-  .c-collapse-wrap .c-collapse-item.collapse-plus .c-collapse-title::after {
-    @apply block 
-    absolute 
-    right-5 
-    top-1/2 
-    -translate-y-1/2 
-    text-[2rem]
-    content-['\e145'] 
-    font-[Material_Symbols_Rounded] 
-    text-[var(--text-900-color)] 
-    transition-all 
-    duration-200 
-    ease-in-out;
+  .c-collapse .c-collapse__item.c-collapse__item--plus .c-collapse__title::after {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    content:'\e145';
+    font-family: 'Material Symbols Rounded';
+    color:var(--text-900-color);
+    transition: all 0.2s ease-in-out;
   }
 
-  .c-collapse-item.collapse-plus>input:is([type=checkbox], [type=radio]):checked~.c-collapse-title::after {
-    @apply content-['\e15b'];
+  .c-collapse__item.c-collapse__item--plus>input:is([type=checkbox], [type=radio]):checked~.c-collapse__title::after {
+    content:'\e15b';
   }
 
-  .c-collapse-wrap .c-collapse-item .c-collapse-content {
-    @apply relative 
-    invisible 
-    h-0 
-    cursor-default 
-    transition-all 
-    duration-200 
-    ease-out
-    pl-[var(--collapse-content-padding-left)] 
-    pr-[var(--collapse-content-padding-right)]
-    text-[length:var(--collapse-content-font-size)] 
-    text-[var(--text-900-color)];
+  .c-collapse .c-collapse__item .c-collapse__content { 
+    position:relative;
+    visibility: hidden;
+    height:0;
+    cursor:unset;
+    transition:padding .2s, background-color .2s ease-out;
+    padding-left: var(--collapse-content-padding-left);
+    padding-right: var(--collapse-content-padding-right);
+    font-size: var(--collapse-content-font-size);
+    color: var(--text-900-color);
   }
 
-  .c-collapse-item>input:is([type=checkbox], [type=radio]):checked~.c-collapse-content {
-    @apply transition-all 
-    duration-200 
-    ease-out 
-    visible 
-    min-h-fit 
-    pb-[var(--collapse-content-padding-bottom)];
+  .c-collapse__item>input:is([type=checkbox], [type=radio]):checked~.c-collapse__content {
+    transition: padding .2s, background-color .2s ease-out !important;
+    visibility: visible !important;
+    min-height: fit-content !important;
+    padding-bottom: var(--collapse-content-padding-bottom);
   }
 }

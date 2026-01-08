@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Tooltip</h2>
+    <h2 class="c-h1">Tooltip</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,15 +15,15 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container justify-around">
-              <button type="button" class="cdf-btn size-s text cdf-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-                <span class="txt">tooltip-horizontal</span> 
-                <i class="material-symbols-rounded">chevron_right</i>
+              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
+                <span class="c-btn__text">tooltip-horizontal</span> 
+                <i class="c-btn__icon material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
-                <i class="material-symbols-rounded">help</i>
+              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+                <i class="c-btn__icon material-symbols-rounded">help</i>
               </button>
-              <button type="button" class="cdf-btn size-s cdf-tooltip" data-tooltip="버튼에 제공되는 툴팁">
-                <span class="txt">도움말</span>
+              <button type="button" class="c-btn c-btn--sm c-tooltip" data-tooltip="버튼에 제공되는 툴팁">
+                <span class="c-btn__text">도움말</span>
               </button>
             </div>
           </div>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">vertical</h3>
+      <h3 class="c-h3">vertical</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -47,17 +47,17 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container justify-around pt-7">
-              <button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-vertical"
+              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
                 data-tooltip="tooltip-vertical 옵션입니다">
                 <span class="txt">tooltip-vertical</span> 
                 <i class="material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-vertical "
+              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
                 data-tooltip="아이콘 버튼에 제공되는 툴팁">
                 <span class="sr-only">도움말</span>
-                <i class="material-symbols-rounded">help</i>
+                <i class="c-btn__icon material-symbols-rounded">help</i>
               </button>
-              <button type="button" class="cdf-btn size-s cdf-tooltip cdf-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
+              <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
                 <span class="txt">도움말</span>
               </button>
             </div>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">tooltip box</h3>
+      <h3 class="c-h3">tooltip box</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -82,16 +82,16 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container justify-around pt-7">
-              <button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-box"
+              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
                 data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
                 <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
               </button>
-              <button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-box"
+              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
                 data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
                 <span class="sr-only">도움말</span>
-                <i class="material-symbols-rounded">help</i>
+                <i class="c-btn__icon material-symbols-rounded">help</i>
               </button>
-              <button type="button" class="cdf-btn size-s cdf-tooltip cdf-tooltip-box"
+              <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
                 data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
                 <span class="txt">도움말</span>
               </button>
@@ -117,40 +117,39 @@ import CodeMirror from "vue-codemirror6";
 
 
 
-const value01 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-  <span class="txt">tooltip-horizontal</span> 
-  <i class="material-symbols-rounded">chevron_right</i>
+const value01 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
+  <span class="c-btn__text">tooltip-horizontal</span> 
+  <i class="c-btn__icon material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
-  <i class="material-symbols-rounded">help</i>
+<button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+  <i class="c-btn__icon material-symbols-rounded">help</i>
 </button>
-<button type="button" class="cdf-btn size-s cdf-tooltip" data-tooltip="버튼에 제공되는 툴팁">
-  <span class="txt">도움말</span>
+<button type="button" class="c-btn c-btn--sm c-tooltip" data-tooltip="버튼에 제공되는 툴팁">
+  <span class="c-btn__text">도움말</span>
 </button>`);
-const value02 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-vertical"
+const value02 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
   data-tooltip="tooltip-vertical 옵션입니다">
   <span class="txt">tooltip-vertical</span> 
   <i class="material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-vertical "
+<button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
   data-tooltip="아이콘 버튼에 제공되는 툴팁">
   <span class="sr-only">도움말</span>
-  <i class="material-symbols-rounded">help</i>
+  <i class="c-btn__icon material-symbols-rounded">help</i>
 </button>
-<button type="button" class="cdf-btn size-s cdf-tooltip cdf-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
+<button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
   <span class="txt">도움말</span>
 </button>`);
-const value03 = ref(`<button type="button" class="cdf-btn size-s text cdf-tooltip cdf-tooltip-box"
+const value03 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
   data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-  <span class="txt">tooltip-box</span>
-  <i class="material-symbols-rounded">chevron_right</i>
+  <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
 </button>
-<button type="button" class="cdf-btn size-s btn-rounded cdf-tooltip cdf-tooltip-box"
+<button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
   data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="sr-only">도움말</span>
-  <i class="material-symbols-rounded">help</i>
+  <i class="c-btn__icon material-symbols-rounded">help</i>
 </button>
-<button type="button" class="cdf-btn size-s cdf-tooltip cdf-tooltip-box"
+<button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
   data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="txt">도움말</span>
 </button>`);
@@ -182,7 +181,7 @@ const cdf_tooltip = {
   tooltip: null,
   isMobile: null,
   init() {
-    this.tooltip = document.querySelectorAll(".cdf-tooltip");
+    this.tooltip = document.querySelectorAll(".c-tooltip");
     this.isMobile = windowSize.getWinSize() === "mob";
 
     if (!this.tooltip.length) return;
@@ -199,7 +198,7 @@ const cdf_tooltip = {
       if (!tooltipText || disabled) return;
 
       // ID 부여
-      const uniqueIdx = `cdf-tooltip-popover-${index}${Math.random().toString(36).substring(2, 9)}`;
+      const uniqueIdx = `c-tooltip-popover-${index}${Math.random().toString(36).substring(2, 9)}`;
       item.setAttribute("aria-labelledby", uniqueIdx);
 
       // TooltipPopover 생성
@@ -223,7 +222,7 @@ const cdf_tooltip = {
   },
   createTooltipPopover(uniqueIdx, tooltipBtnText, tooltipText) {
     const tooltipPopover = document.createElement("div");
-    tooltipPopover.classList.add("cdf-tooltip-popover");
+    tooltipPopover.classList.add("c-tooltip-popover");
     tooltipPopover.setAttribute("id", uniqueIdx);
     tooltipPopover.setAttribute("aria-hidden", "true");
     tooltipPopover.innerHTML = "";
@@ -242,12 +241,12 @@ const cdf_tooltip = {
   },
   showTooltip(item, tooltipPopover) {
     // tooltip-box
-    if (item.classList.contains("cdf-tooltip-box")) {
-      tooltipPopover.classList.add("cdf-tooltip-box");
+    if (item.classList.contains("c-tooltip-box")) {
+      tooltipPopover.classList.add("c-tooltip-box");
     }
     // tooltip-vertical
-    if (item.classList.contains("cdf-tooltip-vertical")) {
-      tooltipPopover.classList.add("cdf-tooltip-vertical");
+    if (item.classList.contains("c-tooltip-vertical")) {
+      tooltipPopover.classList.add("c-tooltip-vertical");
     }
 
     tooltipPopover.classList.add("active");
@@ -258,11 +257,11 @@ const cdf_tooltip = {
     tooltipPopover.style.left = mobileSmall ? "50%" : `${left}px`;
   },
   closeAllTooltips() {
-    const otherPopovers = document.querySelectorAll(".cdf-tooltip-popover");
+    const otherPopovers = document.querySelectorAll(".c-tooltip-popover");
     otherPopovers.forEach((popover) => {
       if (!popover.classList.contains("active")) return;
       popover.style = "";
-      popover.className = "cdf-tooltip-popover";
+      popover.className = "c-tooltip-popover";
     });
   },
   calculateTooltipPosition(item, tooltipPopover) {
@@ -276,7 +275,7 @@ const cdf_tooltip = {
     let tooltipTop;
     let tooltipLeft;
 
-    const isVertical = this.isMobile || item.classList.contains("cdf-tooltip-box") || item.classList.contains("cdf-tooltip-vertical");
+    const isVertical = this.isMobile || item.classList.contains("c-tooltip-box") || item.classList.contains("c-tooltip-vertical");
 
     if (isVertical) {
       if (itemTop + itemHeight > halfWindowHeight) {

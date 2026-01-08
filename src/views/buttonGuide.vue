@@ -229,7 +229,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="c-btn-line center">
+              <div class="l-btn l-btn--center">
                 <button type="button" class="c-btn">button</button>
                 <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
@@ -253,7 +253,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="c-btn-line left">
+              <div class="l-btn l-btn--left">
                 <button type="button" class="c-btn">button</button>
                 <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
@@ -277,7 +277,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="c-btn-line right">
+              <div class="l-btn l-btn--right">
                 <button type="button" class="c-btn">button</button>
                 <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
@@ -301,7 +301,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0201" id="tabPanel0201" class="tab-panel on">
             <div class="container">
-              <div class="c-btn-line space-between">
+              <div class="l-btn l-btn--between">
                 <button type="button" class="c-btn">button</button>
                 <button type="button" class="c-btn c-btn--outline">button</button>
               </div>
@@ -355,19 +355,19 @@ const value07 = ref(`<button type="button" class="c-btn" disabled>
   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
   <span class="c-btn__text">button</span>
 </button>`);
-const value0801 = ref(`<div class="c-btn-line center">
+const value0801 = ref(`<div class="l-btn l-btn--center">
   <button type="button" class="c-btn">button</button>
   <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0802 = ref(`<div class="c-btn-line left">
+const value0802 = ref(`<div class="l-btn l-btn--left">
   <button type="button" class="c-btn">button</button>
   <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0803 = ref(`<div class="c-btn-line right">
+const value0803 = ref(`<div class="l-btn l-btn--right">
   <button type="button" class="c-btn">button</button>
   <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);
-const value0804 = ref(`<div class="c-btn-line space-between">
+const value0804 = ref(`<div class="l-btn l-btn--between">
   <button type="button" class="c-btn">button</button>
   <button type="button" class="c-btn c-btn--outline">button</button>
 </div>`);

@@ -1,10 +1,10 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="cdf-h1">Toggle Switch</h2>
+    <h2 class="c-h1">Toggle Switch</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
+      <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -15,28 +15,28 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-toggle-switch">
+              <div class="c-switch">
                 <input type="checkbox" id="switch">
                 <label for="switch">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : default
                 </label>
               </div>
-              <div class="cdf-form-toggle-switch">
+              <div class="c-switch">
                 <input type="checkbox" id="switch2" checked>
                 <label for="switch2">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : checked
                 </label>
               </div>
-              <div class="cdf-form-toggle-switch">
+              <div class="c-switch">
                 <input type="checkbox" id="switch3" disabled>
                 <label for="switch3">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : disabled
@@ -54,7 +54,7 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사이즈</h3>
+      <h3 class="c-h3">사이즈</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -65,28 +65,28 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="cdf-form-toggle-switch size-s">
+              <div class="c-switch size-s">
                 <input type="checkbox" id="switch11">
                 <label for="switch11">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : default
                 </label>
               </div>
-              <div class="cdf-form-toggle-switch size-m">
+              <div class="c-switch size-m">
                 <input type="checkbox" id="switch12" checked>
                 <label for="switch12">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : checked
                 </label>
               </div>
-              <div class="cdf-form-toggle-switch size-l">
+              <div class="c-switch size-l">
                 <input type="checkbox" id="switch13">
                 <label for="switch13">
-                  <span class="cdf-switch-toggle">
+                  <span class="c-switch__toggle">
                     <i></i>
                   </span>
                   switch : disabled
@@ -110,55 +110,55 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="cdf-form-toggle-switch">
+const value01 = ref(`<div class="c-switch">
   <input type="checkbox" id="switch">
   <label for="switch">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : default
   </label>
 </div>
-<div class="cdf-form-toggle-switch">
+<div class="c-switch">
   <input type="checkbox" id="switch2" checked>
   <label for="switch2">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : checked
   </label>
 </div>
-<div class="cdf-form-toggle-switch">
+<div class="c-switch">
   <input type="checkbox" id="switch3" disabled>
   <label for="switch3">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : disabled
   </label>
 </div>`);
-const value02 = ref(`<div class="cdf-form-toggle-switch size-s">
+const value02 = ref(`<div class="c-switch size-s">
   <input type="checkbox" id="switch11">
   <label for="switch11">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : default
   </label>
 </div>
-<div class="cdf-form-toggle-switch size-m">
+<div class="c-switch size-m">
   <input type="checkbox" id="switch12" checked>
   <label for="switch12">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : checked
   </label>
 </div>
-<div class="cdf-form-toggle-switch size-l">
+<div class="c-switch size-l">
   <input type="checkbox" id="switch13">
   <label for="switch13">
-    <span class="cdf-switch-toggle">
+    <span class="c-switch__toggle">
       <i></i>
     </span>
     switch : disabled
