@@ -1,6 +1,6 @@
 <template>
   <div class="page-title-wrap">
-    <h2 class="c-h1">퍼블리싱 가이드</h2>
+    <h2 class="c-h1">퍼블리싱 규칙</h2>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
