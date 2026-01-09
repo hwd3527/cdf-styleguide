@@ -17,173 +17,175 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container normal">
-              <div class="c-table-top-info">
-                <p class="c-table-top-info__txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
-                <span class="c-table-top-info__page"><span class="c-table-top-info__current">1</span> / 10</span>
-              </div>
-              <div class="c-table-wrap type01 c-scrollbar horizontal">
-                <table class="c-table-type01">
-                  <caption>자재리스트로 번호, 품목명, 규격, 단위, 서비스구독 항목별 순서대로 안내하는 표입니다</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">번호</th>
-                      <th scope="col">품목명</th>
-                      <th scope="col">규격</th>
-                      <th scope="col">단위</th>
-                      <th scope="col" class="mobile">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_all" id="rao_all">
-                            <label for="rao_all">서비스구독</label>
-                            <i></i>
+              <div class="l-table">
+                <div class="c-table-top-info">
+                  <p class="c-table-top-info__txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
+                  <span class="c-table-top-info__page"><span class="c-table-top-info__current">1</span> / 10</span>
+                </div>
+                <div class="c-table-wrap type01 c-scrollbar horizontal">
+                  <table class="c-table-type01">
+                    <caption>자재리스트로 번호, 품목명, 규격, 단위, 서비스구독 항목별 순서대로 안내하는 표입니다</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">품목명</th>
+                        <th scope="col">규격</th>
+                        <th scope="col">단위</th>
+                        <th scope="col" class="mobile">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_all" id="rao_all">
+                              <label for="rao_all">서비스구독</label>
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-header="번호">10</td>
-                      <td class="title">초고장력철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_01" id="rao_01">
-                            <i></i>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-header="번호">10</td>
+                        <td class="title">초고장력철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_01" id="rao_01">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">9</td>
-                      <td class="title">초고장력철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_02" id="rao_02">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">9</td>
+                        <td class="title">초고장력철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_02" id="rao_02">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">8</td>
-                      <td class="title">콘크리트</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_03" id="rao_03">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">8</td>
+                        <td class="title">콘크리트</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_03" id="rao_03">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">7</td>
-                      <td class="title">콘크리트</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_04" id="rao_04">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">7</td>
+                        <td class="title">콘크리트</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_04" id="rao_04">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">6</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_05" id="rao_05">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">6</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_05" id="rao_05">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">5</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_06" id="rao_06">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">5</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_06" id="rao_06">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">4</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_07" id="rao_07">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">4</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_07" id="rao_07">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">3</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_08" id="rao_08">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">3</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_08" id="rao_08">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">2</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_09" id="rao_09">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">2</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_09" id="rao_09">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-header="번호">1</td>
-                      <td class="title">철근</td>
-                      <td data-header="규격">250×1000×1000㎜</td>
-                      <td data-header="단위">kg</td>
-                      <td data-header="서비스구독">
-                        <div class="c-form-check">
-                          <div class="c-form-check-inner">
-                            <input type="checkbox" name="rao_10" id="rao_10">
-                            <i></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-header="번호">1</td>
+                        <td class="title">철근</td>
+                        <td data-header="규격">250×1000×1000㎜</td>
+                        <td data-header="단위">kg</td>
+                        <td data-header="서비스구독">
+                          <div class="c-form-check">
+                            <div class="c-form-check-inner">
+                              <input type="checkbox" name="rao_10" id="rao_10">
+                              <i></i>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -1325,7 +1327,8 @@ import { ref, onMounted } from 'vue'
 
 import CodeMirror from "vue-codemirror6";
 
-const value01 = ref(`<div class="c-table-top-info-line">
+const value01 = ref(`<div class="l-table">
+<div class="c-table-top-info-line">
   <p class="info-txt">총 <strong>67개</strong>의 자재가 등록되어 있습니다.</p>
   <span class="page"><span class="current">1</span> / 10</span>
 </div>
@@ -1492,6 +1495,7 @@ const value01 = ref(`<div class="c-table-top-info-line">
       </tr>
     </tbody>
   </table>
+</div>
 </div>`);
 const value02 = ref(`<div class="c-table-wrap c-scrollbar horizontal">
   <table class="c-table-type02">

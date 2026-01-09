@@ -59,4 +59,15 @@
   .l-btn.l-btn--full button {
     flex: 1 1 0;
   }
+
+  /*
+  **************************************
+  table layout
+  **************************************
+  */
+  .l-table {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+  }
 }
