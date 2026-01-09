@@ -65,7 +65,7 @@
         <div class="tab-conts">
           <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
             <div class="container column">
-              <div class="c-switch size-s">
+              <div class="c-switch c-switch--sm">
                 <input type="checkbox" id="switch11">
                 <label for="switch11">
                   <span class="c-switch__toggle">
@@ -74,7 +74,7 @@
                   switch : default
                 </label>
               </div>
-              <div class="c-switch size-m">
+              <div class="c-switch c-switch--md">
                 <input type="checkbox" id="switch12" checked>
                 <label for="switch12">
                   <span class="c-switch__toggle">
@@ -83,7 +83,7 @@
                   switch : checked
                 </label>
               </div>
-              <div class="c-switch size-l">
+              <div class="c-switch c-switch--lg">
                 <input type="checkbox" id="switch13">
                 <label for="switch13">
                   <span class="c-switch__toggle">
@@ -137,7 +137,7 @@ const value01 = ref(`<div class="c-switch">
     switch : disabled
   </label>
 </div>`);
-const value02 = ref(`<div class="c-switch size-s">
+const value02 = ref(`<div class="c-switch c-switch--sm">
   <input type="checkbox" id="switch11">
   <label for="switch11">
     <span class="c-switch__toggle">
@@ -146,7 +146,7 @@ const value02 = ref(`<div class="c-switch size-s">
     switch : default
   </label>
 </div>
-<div class="c-switch size-m">
+<div class="c-switch c-switch--md">
   <input type="checkbox" id="switch12" checked>
   <label for="switch12">
     <span class="c-switch__toggle">
@@ -155,7 +155,7 @@ const value02 = ref(`<div class="c-switch size-s">
     switch : checked
   </label>
 </div>
-<div class="c-switch size-l">
+<div class="c-switch c-switch--lg">
   <input type="checkbox" id="switch13">
   <label for="switch13">
     <span class="c-switch__toggle">

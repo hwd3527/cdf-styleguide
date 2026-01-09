@@ -2,7 +2,7 @@
   <div class="c-modal" id="modal_pass" role="dialog" aria-labelledby="tit_modal_pass">
     <div class="c-modal__box" style="max-width:64rem">
       <div class="c-modal__header">
-        <h3 id="tit_modal_pass" class="modal-title" tabindex="0">게시글 수정</h3>
+        <h3 id="tit_modal_pass" class="c-modal__title" tabindex="0">게시글 수정</h3>
       </div>
       <div class="c-modal__cont">
         <div class="c-modal__inner">
@@ -27,7 +27,7 @@
             <p class="c-information-text center mt-3">
               게시물 작성시 입력했던 비밀번호가 있어야 글을 수정할 수 있습니다.
             </p>
-            <div class="c-btn-line center mt30">
+            <div class="l-btn l-btn--center mt30">
               <button type="button" class="c-btn size-m outline btn-rounded close-modal"><span class="txt">취소</span></button>
               <button type="button" class="c-btn size-m btn-rounded" @click="validatePassword"><span class="txt">확인</span></button>
             </div>

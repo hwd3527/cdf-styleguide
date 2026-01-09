@@ -4,39 +4,39 @@
     <div class="liquidGlass-tint"></div>
     <div class="liquidGlass-shine"></div>
     <div class="option-inner">
-      <h2 class="cdf-h2">Setting</h2>
-      <h4 class="cdf-h4 mt-8">테마 선택</h4>
-      <div class="cdf-form-check-area chip mt-3 flex-col">
-        <div class="cdf-form-chip basic" @click="onThemeChange('basic')">
+      <h2 class="c-h2">Setting</h2>
+      <h4 class="c-h4 mt-8">테마 선택</h4>
+      <div class="c-check c-check--chip mt-3 flex-col">
+        <div class="c-check__chip basic" @click="onThemeChange('basic')">
           <input type="radio" class="radio" name="theme" id="theme_0101" :checked="theme === 'basic'">
-          <label class="cdf-form-chip-outline" for="theme_0101">basic</label>
+          <label class="c-check__chip__outline" for="theme_0101">basic</label>
         </div>
-        <div class="cdf-form-chip vortal" @click="onThemeChange('vortal')">
+        <div class="c-check__chip vortal" @click="onThemeChange('vortal')">
           <input type="radio" class="radio" name="theme" id="theme_0102" :checked="theme === 'vortal'">
-          <label class="cdf-form-chip-outline" for="theme_0102">theme01</label>
+          <label class="c-check__chip__outline" for="theme_0102">theme01</label>
         </div>
-        <div class="cdf-form-chip istation" @click="onThemeChange('istation')">
+        <div class="c-check__chip istation" @click="onThemeChange('istation')">
           <input type="radio" class="radio" name="theme" id="theme_0103" :checked="theme === 'istation'">
-          <label class="cdf-form-chip-outline" for="theme_0103">theme02</label>
+          <label class="c-check__chip__outline" for="theme_0103">theme02</label>
         </div>
-        <div class="cdf-form-chip pad" @click="onThemeChange('pad')">
+        <div class="c-check__chip pad" @click="onThemeChange('pad')">
           <input type="radio" class="radio" name="theme" id="theme_0104" :checked="theme === 'pad'">
-          <label class="cdf-form-chip-outline" for="theme_0104">theme03</label>
+          <label class="c-check__chip__outline" for="theme_0104">theme03</label>
         </div>
-        <div class="cdf-form-chip pad" @click="onThemeChange('dark')">
+        <div class="c-check__chip vortal" @click="onThemeChange('dark')">
           <input type="radio" class="radio" name="theme" id="theme_0105" :checked="theme === 'dark'">
-          <label class="cdf-form-chip-outline" for="theme_0105">dark</label>
+          <label class="c-check__chip__outline" for="theme_0105">dark</label>
         </div>
       </div>
-      <h4 class="cdf-h4 mt-8">레이아웃 선택</h4>
-      <div class="cdf-form-check-area chip mt-3 flex-col">
-        <div class="cdf-form-chip vortal" @click="onLayoutChange('')">
+      <h4 class="c-h4 mt-8">레이아웃 선택</h4>
+      <div class="c-check c-check--chip mt-3 flex-col">
+        <div class="c-check__chip vortal" @click="onLayoutChange('')">
           <input type="radio" class="radio" name="layout" id="layout_0201" :checked="layout === ''">
-          <label class="cdf-form-chip-outline" for="layout_0201">normal</label>
+          <label class="c-check__chip__outline" for="layout_0201">normal</label>
         </div>
-        <div class="cdf-form-chip vortal" @click="onLayoutChange('center')">
+        <div class="c-check__chip vortal" @click="onLayoutChange('center')">
           <input type="radio" class="radio" name="layout" id="layout_0202" :checked="layout === 'center'">
-          <label class="cdf-form-chip-outline" for="layout_0202">center</label>
+          <label class="c-check__chip__outline" for="layout_0202">center</label>
         </div>
       </div>
     </div>

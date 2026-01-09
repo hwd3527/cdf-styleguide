@@ -360,42 +360,42 @@
 	z-index: 3;
 	padding: 4rem 2.6rem 2rem;
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip {
 	width: 100%;
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip__outline {
 	width: 100%;
 	justify-content: center;
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip-outline::after {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip__outline::after {
 	display: none;
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip input[type="radio"]:checked + .cdf-form-chip-outline::before {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip input[type="radio"]:checked + .c-check__chip__outline::before {
 	content: '\e5ca';
 	color: var(--white-color);
 	font-size: 1.6rem;
 	font-family: 'Material Symbols Rounded';
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip .cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip .c-check__chip__outline {
 	border:.1rem solid var(--tertiary-500-color);
 	color:var(--tertiary-500-color);	
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip.basic input[type="radio"]:checked+.cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip.basic input[type="radio"]:checked+.c-check__chip__outline {
 	border: .1rem solid var(--primary-600-color);
 	color: var(--white-color);
 	background-color: var(--primary-600-color);
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip.vortal input[type="radio"]:checked+.cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip.vortal input[type="radio"]:checked+.c-check__chip__outline {
 	border: .1rem solid var(--tertiary-600-color);
 	color: var(--white-color);
 	background-color: var(--tertiary-600-color);
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip.istation input[type="radio"]:checked+.cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip.istation input[type="radio"]:checked+.c-check__chip__outline {
 	border: .1rem solid var(--secondary-600-color);
 	color: var(--white-color);
 	background-color: var(--secondary-600-color);
 }
-.style-guide-wrap .option-menu-zone .option-inner .cdf-form-chip.pad input[type="radio"]:checked+.cdf-form-chip-outline {
+.style-guide-wrap .option-menu-zone .option-inner .c-check__chip.pad input[type="radio"]:checked+.c-check__chip__outline {
 	border: .1rem solid var(--pad-600-color);
 	color: var(--white-color);
 	background-color: var(--pad-600-color);

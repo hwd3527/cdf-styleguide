@@ -57,7 +57,7 @@ modal popup
   }
 
 
-  .c-modal__box.alert {
+  .c-modal__box--alert {
     position: relative;
     background-color: var(--white-color);
     border-radius: 2rem;
@@ -82,32 +82,33 @@ modal popup
     scale: 1;
   }
 
-  .c-modal__box .c-modal__header {
+  .c-modal__header {
     padding: 2.8rem 2rem 2.6rem;
   }
 
-  .c-modal__box .c-modal__header h3 {
+  .c-modal__header h3,
+  .c-modal__title {
     font-size: 2.5rem;
     font-weight: 500;
     font-family: 'GmarketSans';
     color: var(--white-color);
   }
 
-  .c-modal__box .c-modal__cont {
+  .c-modal__cont {
     font-size: 1.6rem;
     color: var(--text-700-color);
     padding: 2rem;
     padding: 0 1.6rem 1.6rem;
   }
 
-  .c-modal__box.alert .c-modal__cont {
+  .c-modal__box--alert .c-modal__cont {
     font-size: 1.6rem;
     color: var(--text-950-color);
     padding: 2.4rem 3.4rem;
     overflow-y: auto;
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner {
+  .c-modal__inner {
     background-color: var(--white-color);
     border-radius: 1.2rem;
     padding: 1.6rem;
@@ -115,50 +116,50 @@ modal popup
     max-height: calc(96vh - 10.8rem);
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar {
+  .c-modal__inner::-webkit-scrollbar {
     height: 6px;
   }
 
   /* 스크롤바의 폭 너비 */
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar {
+  .c-modal__inner::-webkit-scrollbar {
     width: 4px;
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar {
+  .c-modal__inner::-webkit-scrollbar {
     width: 4px;
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar-thumb {
+  .c-modal__inner::-webkit-scrollbar-thumb {
     background: rgba(216, 217, 213, 0.5);
     /* 스크롤바 색상 */
     border-radius: 10px;
     /* 스크롤바 둥근 테두리 */
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar-thumb {
+  .c-modal__inner::-webkit-scrollbar-thumb {
     background: rgba(216, 217, 213, 0.5);
     /* 스크롤바 색상 */
     border-radius: 10px;
     /* 스크롤바 둥근 테두리 */
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar-track {
+  .c-modal__inner::-webkit-scrollbar-track {
     background: rgba(220, 20, 60, 0.05);
     /*스크롤바 뒷 배경 색상*/
   }
 
-  .c-modal__box .c-modal__cont .c-modal__inner::-webkit-scrollbar-track {
+  .c-modal__inner::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.5);
     /*스크롤바 뒷 배경 색상*/
   }
 
-  .c-modal__box.alert .c-modal__cont .c-modal__inner {
+  .c-modal__box--alert .c-modal__inner {
     position: relative;
     padding: 3.8rem 0 0;
 
   }
 
-  .c-modal__box.alert .c-modal__cont .c-modal__inner::before {
+  .c-modal__box--alert .c-modal__inner::before {
     position: absolute;
     content: '';
     top: 0;
@@ -171,7 +172,7 @@ modal popup
   }
 
 
-  .c-modal__box.alert .c-modal__cont .c-modal__inner > .txt {
+  .c-modal__box--alert .c-modal__inner > .txt {
     font-size: 1.6rem;
     color: var(--text-950-color);
     font-weight: 600;

@@ -29,15 +29,15 @@
     line-height: 2.6rem;
     color: var(--text-900-color);
   }
-  .c-switch.size-s [type=checkbox]~label {
+  .c-switch--sm [type=checkbox]~label {
     font-size: var(--switch-font-size-sm);
     line-height: 2.2rem;
   }
-  .c-switch.size-m [type=checkbox]~label {
+  .c-switch--md [type=checkbox]~label {
     font-size: var(--switch-font-size-md);
     line-height: 2.6rem;
   }
-  .c-switch.size-l [type=checkbox]~label {
+  .c-switch--lg [type=checkbox]~label {
     font-size: var(--switch-font-size-lg);
     line-height: 3rem;
   }
@@ -50,15 +50,15 @@
     background-color: var(--tertiary-400-color);
     transition: .4s cubic-bezier(0.4, 0, 0.23, 1);
   }
-  .c-switch.size-s [type=checkbox]~label .c-switch__toggle {
+  .c-switch--sm [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-sm);
     height: var(--switch-height-sm);
   }
-  .c-switch.size-m [type=checkbox]~label .c-switch__toggle {
+  .c-switch--md [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-md);
     height: var(--switch-height-md);
   }
-  .c-switch.size-l [type=checkbox]~label .c-switch__toggle {
+  .c-switch--lg [type=checkbox]~label .c-switch__toggle {
     width: var(--switch-width-lg);
     height: var(--switch-height-lg);
   }
@@ -79,15 +79,15 @@
     box-sizing: border-box;
     transition: .4s cubic-bezier(0.4, 0, 0.23, 1);
   }
-  .c-switch.size-s [type=checkbox]~label .c-switch__toggle>i {
+  .c-switch--sm [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-sm);
     height: var(--switch-toggle-size-sm);
   }
-  .c-switch.size-m [type=checkbox]~label .c-switch__toggle>i {
+  .c-switch--md [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-md);
     height: var(--switch-toggle-size-md);
   }
-  .c-switch.size-l [type=checkbox]~label .c-switch__toggle>i {
+  .c-switch--lg [type=checkbox]~label .c-switch__toggle>i {
     width: var(--switch-toggle-size-lg);
     height: var(--switch-toggle-size-lg);
   }
@@ -104,37 +104,37 @@
     left: var(--switch-move-distance-md);
     border-color: var(--primary-700-color);
   }
-  .c-switch.size-s [type=checkbox]:checked~label .c-switch__toggle>i {
+  .c-switch--sm [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-sm);
   }
-  .c-switch.size-m [type=checkbox]:checked~label .c-switch__toggle>i {
+  .c-switch--md [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
   }
-  .c-switch.size-l [type=checkbox]:checked~label .c-switch__toggle>i {
+  .c-switch--lg [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-lg);
   }
 
-  [data-theme="dark"] .c-form-toggle-switch [type=checkbox]:checked~label .c-switch__toggle>i {
+  [data-theme="dark"] .c-switch [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
     border-color: var(--primary-300-color);
   }
-  [data-theme="dark"] .c-form-toggle-switch.size-s [type=checkbox]:checked~label .c-switch__toggle>i {
+  [data-theme="dark"] .c-switch--sm [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-sm);
   }
-  [data-theme="dark"] .c-form-toggle-switch.size-m [type=checkbox]:checked~label .c-switch__toggle>i {
+  [data-theme="dark"] .c-switch--md [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-md);
   }
-  [data-theme="dark"] .c-form-toggle-switch.size-l [type=checkbox]:checked~label .c-switch__toggle>i {
+  [data-theme="dark"] .c-switch--lg [type=checkbox]:checked~label .c-switch__toggle>i {
     left: var(--switch-move-distance-lg);
   }
 
 
-  .c-form-toggle-switch [type=checkbox]:disabled~label .c-switch__toggle {
+  .c-switch [type=checkbox]:disabled~label .c-switch__toggle {
     background-color: #dcdcdc;
     cursor: not-allowed;
   }
 
-  .c-form-toggle-switch [type=checkbox]:disabled~label .c-switch__toggle>i {
+  .c-switch [type=checkbox]:disabled~label .c-switch__toggle>i {
     background-color: #f5f5f5;
     border-color: #dcdcdc;
   }

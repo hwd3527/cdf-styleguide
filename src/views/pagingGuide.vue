@@ -44,7 +44,7 @@
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value01" :dark="true" basic />
+            <code-mirror v-model="value01" :dark="false" basic />
             <button type="button" class="clipboard" @click="copyCode('value01')">코드 복사</button>
           </div>
 
@@ -93,7 +93,7 @@
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0202" id="tabPanel0202" class="tab-panel">
-            <code-mirror v-model="value02" :dark="true" basic />
+            <code-mirror v-model="value02" :dark="false" basic />
             <button type="button" class="clipboard" @click="copyCode('value02')">코드 복사</button>
           </div>
         </div>
@@ -121,9 +121,9 @@
                   <i class="material-symbols-outlined">chevron_left</i>
                 </a>
                 <div class="c-paginate__page">
-                  <span class="current">1</span>
+                  <span class="c-paginate__current">1</span>
                   /
-                  <span class="total">10</span>
+                  <span class="c-paginate__total">10</span>
                 </div>
                 <a href="#" class="c-paginate__next" title="다음페이지">
                   <i class="material-symbols-outlined">chevron_right</i>
@@ -135,7 +135,8 @@
             </div>
           </div>
           <div role="tabpanel" aria-labelledby="tabList0202" id="tabPanel0202" class="tab-panel">
-            <code-mirror v-model="value03" :dark="true" basic />
+            <code-mirror v-model="value03" :dark="false" basic />
+            <button type="button" class="clipboard" @click="copyCode('value03')">코드 복사</button>
           </div>
         </div>
       </div>
@@ -209,9 +210,9 @@ const value03 = ref(`<div class="c-paginate c-paginate--mobile">
     <i class="material-symbols-outlined">chevron_left</i>
   </a>
   <div class="c-paginate__page">
-    <span class="current">1</span>
+    <span class="c-paginate__current">1</span>
     /
-    <span class="total">10</span>
+    <span class="c-paginate__total">10</span>
   </div>
   <a href="#" class="c-paginate__next" title="다음페이지">
     <i class="material-symbols-outlined">chevron_right</i>

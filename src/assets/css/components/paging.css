@@ -229,7 +229,7 @@
   }
 
 
-  .c-paginate--mobile .c-paginate__page .current {
+  .c-paginate--mobile .c-paginate__current {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +240,7 @@
     font-weight: 700;
   }
 
-  .c-paginate--mobile .c-paginate__page .total {
+  .c-paginate--mobile  .c-paginate__total {
     display: inline-flex;
     align-items: center;
     justify-content: center;
