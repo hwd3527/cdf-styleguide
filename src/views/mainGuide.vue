@@ -12,14 +12,16 @@
             <div class="container">
               <ul class="c-list-style">
                 <li>여러명이 content 영역을 동시에 작업해도 결과가 동일할 것.</li>
-                <li>Tailwind의 유틸리티 장점은 살리고, 디자인의 무질서를 차단할 것.</li>
-                <li>HTML 작성자는 디자인 결정을 하지 않는다.</li>
+                <li>여러명이 content 영역을 작업할때는 정해진 규칙에 따라 레이아웃과 컴포넌트 조합으로 작성하여 신속한 결과물을 얻는다.</li>
+                <li>Component와 Tailwind 유틸리티 장점은 살리고, 디자인의 무질서를 차단할 것.</li>
+                <li>Component 생성과 일반 디자인 페이지의 작성은 정해진 인원만 하여 결과물의 완성도를 높인다.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>      
     </div>
+    
 
     <div class="conts-area">
       <h3 class="c-h2">역할 분리 원칙</h3>
@@ -236,7 +238,26 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="c-h2">카드 리스트 공식 패턴</h3>
+      <h3 class="c-h2">Component 생성 기준</h3>
+      <p class="c-list-title">다음 3가지 모두 충족 시에만 component로 만든다.</p>
+      <div class="tabs">
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container flex-col !items-start !gap-5">
+              <ul class="c-list-style">
+                <li>구조가 반복된다</li>
+                <li>의미(역할)가 동일하다</li>
+                <li>디자인이 80% 이상 동일하다</li>
+              </ul>
+              <p class="c-text"><strong>하나라도 아니면 component 금지</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="c-h2">Component(카드 리스트) 공식 패턴</h3>
       <p class="c-list-title">권장</p>
       <div class="tabs">
         <div class="tab-conts">
@@ -256,7 +277,25 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="c-h2">Component 네이밍 규칙</h3>
+      <h3 class="c-h2">Component 아닌 일반 디자인 페이지 규칙</h3>
+      <div class="tabs">
+        <div class="tab-conts">
+          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
+            <div class="container flex-col !items-start !gap-5">
+              <ul class="c-list-style">
+                <li>일회성 디자인</li>
+                <li>이벤트 페이지</li>
+                <li>실험적 UI</li>
+              </ul>
+              <p class="c-text">BEM Class 네이밍 규칙에 따라 작성한다. 이때도 Tailwind로 작성하지 않는다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conts-area">
+      <h3 class="c-h2">Class 네이밍 규칙</h3>
       <p class="c-list-title">Block / Element / Modifier (BEM-lite)</p>
       <div class="tabs">
         <div class="tab-conts">

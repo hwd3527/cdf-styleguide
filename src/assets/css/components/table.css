@@ -1336,8 +1336,8 @@ table
   text-align: right;
 }
 
-
 /*table 상단 정보 */
+
 .c-table-top-info {
   display: flex;
   align-items: flex-start;

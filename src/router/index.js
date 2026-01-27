@@ -214,6 +214,11 @@ const router = createRouter({
       name: 'widthGuide',
       component: () => import('../views/tailwind/widthGuide.vue'),
     },
+    {
+      path: '/testGuide',
+      name: 'testGuide',
+      component: () => import('../views/testGuide.vue'),
+    },
   ],
 })
 
