@@ -4,7 +4,7 @@
   label component styles
   *******************************
   */
-  .c-label {
+  .c-badge {
     padding: .5rem;
     display: inline-flex;
     align-items: center;
@@ -20,174 +20,174 @@
     background-color: #777;
   }
 
-  .c-label.c-label--rounded {
+  .c-badge.c-badge--rounded {
     border-radius: var(--radius-pill);
     padding-inline:.8rem;
   }
 
-  .c-label--sm {
+  .c-badge--sm {
     padding: var(--label-padding-sm);
     height: var(--label-height-sm);
   }
 
-  .c-label--md {
+  .c-badge--md {
     padding: var(--label-padding-md);
     height: var(--label-height-md);
   }
 
-  .c-label--lg {
+  .c-badge--lg {
     padding: var(--label-padding-lg);
     font-size: var(--label-font-size-lg);
     height: var(--label-height-lg);
   }
 
-  .c-label.c-label--hard.c-label--gray {
+  .c-badge.c-badge--hard.c-badge--gray {
     background-color: #777;
   }
 
-  .c-label.c-label--hard.c-label--green {
+  .c-badge.c-badge--hard.c-badge--green {
     background-color: #47A329;
   }
 
-  .c-label.c-label--hard.c-label--turquoise {
+  .c-badge.c-badge--hard.c-badge--turquoise {
     background-color: #29A38F;
   }
 
-  .c-label.c-label--hard.c-label--cyan {
+  .c-badge.c-badge--hard.c-badge--cyan {
     background-color: #0099CC;
   }
 
-  .c-label.c-label--hard.c-label--blue {
+  .c-badge.c-badge--hard.c-badge--blue {
     background-color: #4141C7;
   }
 
-  .c-label.c-label--hard.c-label--purple {
+  .c-badge.c-badge--hard.c-badge--purple {
     background-color: #741FAD;
   }
 
-  .c-label.c-label--hard.c-label--rose {
+  .c-badge.c-badge--hard.c-badge--rose {
     background-color: #BD0F89;
   }
 
-  .c-label.c-label--hard.c-label--red {
+  .c-badge.c-badge--hard.c-badge--red {
     background-color: #D02F2F;
   }
 
-  .c-label.c-label--hard.c-label--orange {
+  .c-badge.c-badge--hard.c-badge--orange {
     background-color: #ED7D27;
   }
 
-  .c-label.c-label--hard.c-label--yellow {
+  .c-badge.c-badge--hard.c-badge--yellow {
     background-color: #EEB600;
   }
 
-  .c-label.c-label--soft.c-label--gray {
+  .c-badge.c-badge--soft.c-badge--gray {
     background-color: #E4E4E4;
     color: #666666;
   }
 
-  .c-label.c-label--soft.c-label--green {
+  .c-badge.c-badge--soft.c-badge--green {
     background-color: #DEF5D6;
     color: #47A329;
   }
 
-  .c-label.c-label--soft.c-label--turquoise {
+  .c-badge.c-badge--soft.c-badge--turquoise {
     background-color: #D6F5F0;
     color: #0B8E78;
   }
 
-  .c-label.c-label--soft.c-label--cyan {
+  .c-badge.c-badge--soft.c-badge--cyan {
     background-color: #C4E6F8;
     color: #0E8CBD;
   }
 
-  .c-label.c-label--soft.c-label--blue {
+  .c-badge.c-badge--soft.c-badge--blue {
     background-color: #D3DDFD;
     color: #3030A8;
   }
 
-  .c-label.c-label--soft.c-label--purple {
+  .c-badge.c-badge--soft.c-badge--purple {
     background-color: #E9D4F7;
     color: #741FAD;
   }
 
-  .c-label.c-label--soft.c-label--rose {
+  .c-badge.c-badge--soft.c-badge--rose {
     background-color: #FBD0EE;
     color: #BD0F89;
   }
 
-  .c-label.c-label--soft.c-label--red {
+  .c-badge.c-badge--soft.c-badge--red {
     background-color: #FDCECE;
     color: #D02F2F;
   }
 
-  .c-label.c-label--soft.c-label--orange {
+  .c-badge.c-badge--soft.c-badge--orange {
     background-color: #FFE7CC;
     color: #DD6210;
   }
 
-  .c-label.c-label--soft.c-label--yellow {
+  .c-badge.c-badge--soft.c-badge--yellow {
     background-color: #FDF3CD;
     color: #D08E13;
   }
 
 
 
-  .c-label.c-label--border.c-label--gray {
+  .c-badge.c-badge--border.c-badge--gray {
     background-color: #fff;
     border: .1rem solid #777777;
     color: #777777;
   }
 
-  .c-label.c-label--border.c-label--green {
+  .c-badge.c-badge--border.c-badge--green {
     background-color: #fff;
     border: .1rem solid #47A329;
     color: #47A329;
   }
 
-  .c-label.c-label--border.c-label--turquoise {
+  .c-badge.c-badge--border.c-badge--turquoise {
     background-color: #fff;
     border: .1rem solid #29A38F;
     color: #29A38F;
   }
 
-  .c-label.c-label--border.c-label--cyan {
+  .c-badge.c-badge--border.c-badge--cyan {
     background-color: #fff;
     border: .1rem solid #c3c5c5;
     color: #0099CC;
   }
 
-  .c-label.c-label--border.c-label--blue {
+  .c-badge.c-badge--border.c-badge--blue {
     background-color: #fff;
     border: .1rem solid #4141C7;
     color: #4141C7;
   }
 
-  .c-label.c-label--border.c-label--purple {
+  .c-badge.c-badge--border.c-badge--purple {
     background-color: #fff;
     border: .1rem solid #741FAD;
     color: #741FAD;
   }
 
-  .c-label.c-label--border.c-label--rose {
+  .c-badge.c-badge--border.c-badge--rose {
     background-color: #fff;
     border: .1rem solid #BD0F89;
     color: #BD0F89;
   }
 
-  .c-label.c-label--border.c-label--red {
+  .c-badge.c-badge--border.c-badge--red {
     background-color: #fff;
     border: .1rem solid #D02F2F;
     color: #D02F2F;
   }
 
-  .c-label.c-label--border.c-label--orange {
+  .c-badge.c-badge--border.c-badge--orange {
     background-color: #fff;
     border: .1rem solid #ED7D27;
     color: #ED7D27;
   }
 
-  .c-label.c-label-border.c-label--orange {
+  .c-badge.c-badge-border.c-badge--orange {
     background-color: #fff;
     border: .1rem solid #EEB600;
     color: #EEB600;

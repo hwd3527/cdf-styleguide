@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">gap</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/order" target="_blank">
+    <h2 class="c-h1">gap</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/order" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
-      <p class="cdf-information-text mt-5">'gap-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 설정합니다.</p>
+      <h3 class="c-h3">기본</h3>
+      <p class="c-information-text mt-5">'gap-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -36,8 +36,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">행과 열 간격을 독립적으로 설정</h3>
-      <p class="cdf-information-text mt-5">'gap-x-&lt;number&gt;' 'gap-y-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 독립적으로 설정합니다.</p>
+      <h3 class="c-h3">행과 열 간격을 독립적으로 설정</h3>
+      <p class="c-information-text mt-5">'gap-x-&lt;number&gt;' 'gap-y-&lt;number&gt;'를 사용하여 flex 및 grid 아이템 사이의 간격을 독립적으로 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -67,8 +67,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 간격을 설정합니다.</p>
+      <h3 class="c-h3">반응형 디자인</h3>
+      <p class="c-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 간격을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -98,9 +98,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

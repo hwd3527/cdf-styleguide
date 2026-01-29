@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex-basis</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex-basis" target="_blank">
+    <h2 class="c-h1">flex-basis</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/flex-basis" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">간격 규칙 사용</h3>
-      <p class="cdf-information-text mt-5">basis-&lt;number&gt;를 사용하여 flex 항목의 초기 크기를 설정합니다.</p>
+      <h3 class="c-h3">간격 규칙 사용</h3>
+      <p class="c-information-text mt-5">basis-&lt;number&gt;를 사용하여 flex 항목의 초기 크기를 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">컨테이너 크기 사용</h3>
-      <p class="cdf-information-text mt-5">컨테이너 크기에 따라 플렉스 항목의 초기 크기를 설정합니다. 'basis-xs'</p>
+      <h3 class="c-h3">컨테이너 크기 사용</h3>
+      <p class="c-information-text mt-5">컨테이너 크기에 따라 플렉스 항목의 초기 크기를 설정합니다. 'basis-xs'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -64,8 +64,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">백분율 사용</h3>
-      <p class="cdf-information-text mt-5">백분율을 사용하여 플렉스 항목의 초기 크기를 설정합니다. 'basis-&lt;fraction&gt;', 'basis-1/2',
+      <h3 class="c-h3">백분율 사용</h3>
+      <p class="c-information-text mt-5">백분율을 사용하여 플렉스 항목의 초기 크기를 설정합니다. 'basis-&lt;fraction&gt;', 'basis-1/2',
         'basis-2/3'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -92,8 +92,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용자 정의 값 사용</h3>
-      <p class="cdf-information-text mt-5">사용자가 정의한 값을 사용하여 플렉스 항목의 초기 크기를 설정합니다. 'basis-[value]'</p>
+      <h3 class="c-h3">사용자 정의 값 사용</h3>
+      <p class="c-information-text mt-5">사용자가 정의한 값을 사용하여 플렉스 항목의 초기 크기를 설정합니다. 'basis-[value]'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -119,8 +119,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점 접두사를 사용하여 각각의 화면 크기에서 플렉스 항목의 초기 크기를 설정합니다. 'md:', 'lg:' 등</p>
+      <h3 class="c-h3">반응형 디자인</h3>
+      <p class="c-information-text mt-5">중단점 접두사를 사용하여 각각의 화면 크기에서 플렉스 항목의 초기 크기를 설정합니다. 'md:', 'lg:' 등</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -147,9 +147,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

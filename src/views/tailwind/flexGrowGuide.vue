@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex-grow</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex" target="_blank">
+    <h2 class="c-h1">flex-grow</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/flex" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">아이템 성장 허용</h3>
-      <p class="cdf-information-text mt-5">'grow' 플렉스 아이템이 사용 가능한 공간을 채우기 위해 아이템이 커지도록 허용합니다.</p>
+      <h3 class="c-h3">아이템 성장 허용</h3>
+      <p class="c-information-text mt-5">'grow' 플렉스 아이템이 사용 가능한 공간을 채우기 위해 아이템이 커지도록 허용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">성장 요인에 따른 성장</h3>
-      <p class="cdf-information-text mt-5">성장 요인에 따라 플렉스 아이템이 비례적으로 커지도록 하는 유틸리티를 사용하면 각 아이템이 상대적으로 사용 가능한 공간을 채웁니다.
+      <h3 class="c-h3">성장 요인에 따른 성장</h3>
+      <p class="c-information-text mt-5">성장 요인에 따라 플렉스 아이템이 비례적으로 커지도록 하는 유틸리티를 사용하면 각 아이템이 상대적으로 사용 가능한 공간을 채웁니다.
         'grow-&lt;number&gt;', 'grow-3'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -64,8 +64,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">아이템 성장 방지</h3>
-      <p class="cdf-information-text mt-5">'grow-0' 플렉스 아이템이 커지는 것을 방지합니다.</p>
+      <h3 class="c-h3">아이템 성장 방지</h3>
+      <p class="c-information-text mt-5">'grow-0' 플렉스 아이템이 커지는 것을 방지합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -93,8 +93,8 @@
 
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 성장을 설정합니다.</p>
+      <h3 class="c-h3">반응형 디자인</h3>
+      <p class="c-information-text mt-5">중단점으로 원하는 화면 크기에서 아이템의 성장을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -121,9 +121,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

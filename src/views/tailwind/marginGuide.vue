@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">margin</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/margin" target="_blank">
+    <h2 class="c-h1">margin</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/margin" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">  
     <div class="conts-area">
-      <h3 class="cdf-h3">기본</h3>
-      <p class="cdf-information-text mt-5">'m-&lt;number&gt;' 유틸리티를 사용하여 요소의 바깥 여백을 설정할 수 있습니다.</p>
+      <h3 class="c-h3">기본</h3>
+      <p class="c-information-text mt-5">'m-&lt;number&gt;' 유틸리티를 사용하여 요소의 바깥 여백을 설정할 수 있습니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -33,8 +33,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">한쪽 면에 마진 추가하기</h3>
-      <p class="cdf-information-text mt-5">'mt-&lt;number&gt;', 'mr-&lt;number&gt;', 'mb-&lt;number&gt;', 'ml-&lt;number&gt;' 유틸리티를 사용하여 요소의 특정 한쪽에 바깥 여백을 설정할 수 있습니다.</p>
+      <h3 class="c-h3">한쪽 면에 마진 추가하기</h3>
+      <p class="c-information-text mt-5">'mt-&lt;number&gt;', 'mr-&lt;number&gt;', 'mb-&lt;number&gt;', 'ml-&lt;number&gt;' 유틸리티를 사용하여 요소의 특정 한쪽에 바깥 여백을 설정할 수 있습니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -68,8 +68,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">가로 마진 추가</h3>
-      <p class="cdf-information-text mt-5">'mx-&lt;number&gt;'는 요소의 가로 마진을 제어합니다.</p>
+      <h3 class="c-h3">가로 마진 추가</h3>
+      <p class="c-information-text mt-5">'mx-&lt;number&gt;'는 요소의 가로 마진을 제어합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -94,8 +94,8 @@
     </div>
     
     <div class="conts-area">
-      <h3 class="cdf-h3">세로 마진 추가</h3>
-      <p class="cdf-information-text mt-5">'my-&lt;number&gt;'는 요소의 세로 마진을 제어합니다.</p>
+      <h3 class="c-h3">세로 마진 추가</h3>
+      <p class="c-information-text mt-5">'my-&lt;number&gt;'는 요소의 세로 마진을 제어합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -120,8 +120,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">음수값 마진</h3>
-      <p class="cdf-information-text mt-5">'-m&lt;number&gt;'는 요소의 음수 마진을 제어합니다.</p>
+      <h3 class="c-h3">음수값 마진</h3>
+      <p class="c-information-text mt-5">'-m&lt;number&gt;'는 요소의 음수 마진을 제어합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -146,8 +146,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">자식들 사이에 마진 주기</h3>
-      <p class="cdf-information-text mt-5">'space-x-&lt;number&gt;', 'space-y-&lt;number&gt;'는 요소의 자식들 사이에 마진을 제어합니다.</p>
+      <h3 class="c-h3">자식들 사이에 마진 주기</h3>
+      <p class="c-information-text mt-5">'space-x-&lt;number&gt;', 'space-y-&lt;number&gt;'는 요소의 자식들 사이에 마진을 제어합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -174,8 +174,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형</h3>
-      <p class="cdf-information-text mt-5">중단점을 기준으로 마진값이 변경됩니다.</p>
+      <h3 class="c-h3">반응형</h3>
+      <p class="c-information-text mt-5">중단점을 기준으로 마진값이 변경됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -202,9 +202,9 @@
     
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

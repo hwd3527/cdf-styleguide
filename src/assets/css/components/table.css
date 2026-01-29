@@ -47,7 +47,7 @@ table
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 1rem;
-  min-width: 100rem;
+  min-width: 110rem;
 }
 
 .c-modal-cont .c-table-type01 {
@@ -211,6 +211,9 @@ table
   letter-spacing: -1px;
   border-bottom: 0
 }
+.c-table-type02 thead th label {
+  color: var(--white-color);
+}
 
 .c-table-type02.sticky thead th {
   position: sticky;
@@ -244,6 +247,9 @@ table
 .c-table-type02.gray thead th {
   color: var(--text-600-color);
   border-right: 0;
+}
+.c-table-type02.gray thead th label {
+  color: var(--text-600-color);
 }
 
 .c-table-type02.gray.sticky thead th {
@@ -365,6 +371,7 @@ table
   border-right: .1rem solid #dcdff1;
   background-color: #fff;
 }
+
 
 .c-table-type02 tbody tr:first-child td {
   border-top: 0;
@@ -792,6 +799,9 @@ table
   vertical-align: middle;
   letter-spacing: -1px;
 }
+.c-table-type03 thead th label {
+  color: var(--white-color);
+}
 
 @media (max-width: 768px) {
   .c-table-wrap colgroup {
@@ -1116,6 +1126,9 @@ table
   font-weight: 700;
   word-break: break-word;
   background-color: var(--primary-700-color);
+}
+.c-table-type05 thead th label {
+  color: var(--white-color);
 }
   
 .c-table-type05.dp thead th {

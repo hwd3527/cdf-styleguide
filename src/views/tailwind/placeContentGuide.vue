@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">place-content</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/place-content" target="_blank">
+    <h2 class="c-h1">place-content</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/place-content" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Center</h3>
-      <p class="cdf-information-text mt-5">'place-content-center'는 인라인 축과 블록 축 모두에서 컨텐츠를 중앙에 배치합니다.</p>
+      <h3 class="c-h3">Center</h3>
+      <p class="c-information-text mt-5">'place-content-center'는 인라인 축과 블록 축 모두에서 컨텐츠를 중앙에 배치합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -36,8 +36,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'place-content-start'는 인라인 축과 블록 축의 시작 부분에 항목을 배치하는 데 사용합니다.</p>
+      <h3 class="c-h3">Start</h3>
+      <p class="c-information-text mt-5">'place-content-start'는 인라인 축과 블록 축의 시작 부분에 항목을 배치하는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -65,8 +65,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">End</h3>
-      <p class="cdf-information-text mt-5">'place-content-end'는 인라인 및 블록 축의 끝 부분에 항목을 배치하는 데 사용합니다.</p>
+      <h3 class="c-h3">End</h3>
+      <p class="c-information-text mt-5">'place-content-end'는 인라인 및 블록 축의 끝 부분에 항목을 배치하는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -94,8 +94,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Space between</h3>
-      <p class="cdf-information-text mt-5">'place-content-between'는 인라인 축과 블록 축을 따라 그리드 항목을 배치하여 각 축에서 행과 열 사이의 간격이 동일하도록 합니다.</p>
+      <h3 class="c-h3">Space between</h3>
+      <p class="c-information-text mt-5">'place-content-between'는 인라인 축과 블록 축을 따라 그리드 항목을 배치하여 각 축에서 행과 열 사이의 간격이 동일하도록 합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -123,8 +123,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Space around</h3>
-      <p class="cdf-information-text mt-5">'self-stretch'는 컨테이너의 값과 관계없이 아이템을 늘려서 컨테이너를 채웁니다.</p>
+      <h3 class="c-h3">Space around</h3>
+      <p class="c-information-text mt-5">'self-stretch'는 컨테이너의 값과 관계없이 아이템을 늘려서 컨테이너를 채웁니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -152,8 +152,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">space-evenly</h3>
-      <p class="cdf-information-text mt-5">'place-content-evenly'는 그리드 항목을 인라인 축과 블록 축에 균등하게 배치하는데 사용합니다.</p>
+      <h3 class="c-h3">space-evenly</h3>
+      <p class="c-information-text mt-5">'place-content-evenly'는 그리드 항목을 인라인 축과 블록 축에 균등하게 배치하는데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -181,8 +181,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Stretch</h3>
-      <p class="cdf-information-text mt-5">'place-content-stretch'는 그리드 항목을 인라인 축과 블록 축을 따라 그리드 영역에 맞춰 늘리는 데 사용합니다.</p>
+      <h3 class="c-h3">Stretch</h3>
+      <p class="c-information-text mt-5">'place-content-stretch'는 그리드 항목을 인라인 축과 블록 축을 따라 그리드 영역에 맞춰 늘리는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -212,8 +212,8 @@
 
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형</h3>
-      <p class="cdf-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
+      <h3 class="c-h3">반응형</h3>
+      <p class="c-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -243,9 +243,9 @@
     
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

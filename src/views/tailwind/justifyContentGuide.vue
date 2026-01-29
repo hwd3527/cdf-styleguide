@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">justify-content</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/justify-content" target="_blank">
+    <h2 class="c-h1">justify-content</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/justify-content" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'justify-start'는 컨테이너의 시작 부분에 아이템을 정렬합니다.</p>
+      <h3 class="c-h3">Start</h3>
+      <p class="c-information-text mt-5">'justify-start'는 컨테이너의 시작 부분에 아이템을 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Center</h3>
-      <p class="cdf-information-text mt-5">'justify-center'는 컨테이너의 중앙에 아이템을 정렬합니다. 'justify-center-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 중앙이 아닌 시작 부분을 맞춥니다.</p>
+      <h3 class="c-h3">Center</h3>
+      <p class="c-information-text mt-5">'justify-center'는 컨테이너의 중앙에 아이템을 정렬합니다. 'justify-center-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 중앙이 아닌 시작 부분을 맞춥니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -64,8 +64,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-end</h3>
-      <p class="cdf-information-text mt-5">'justify-end'는 컨테이너의 끝 부분에 아이템을 정렬합니다. 'justify-end-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 끝 부분이 아닌 시작 부분을 맞춥니다.'</p>
+      <h3 class="c-h3">justify-end</h3>
+      <p class="c-information-text mt-5">'justify-end'는 컨테이너의 끝 부분에 아이템을 정렬합니다. 'justify-end-safe'는 컨테이너 넓이가 작아지면 item이 컨테이너의 끝 부분이 아닌 시작 부분을 맞춥니다.'</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -93,8 +93,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-between</h3>
-      <p class="cdf-information-text mt-5">'justify-between'는 컨테이너의 시작 부분과 끝 부분 사이에 아이템을 정렬합니다</p>
+      <h3 class="c-h3">justify-between</h3>
+      <p class="c-information-text mt-5">'justify-between'는 컨테이너의 시작 부분과 끝 부분 사이에 아이템을 정렬합니다</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -121,8 +121,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-around</h3>
-      <p class="cdf-information-text mt-5">'justify-around'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹치지 않습니다.</p>
+      <h3 class="c-h3">justify-around</h3>
+      <p class="c-information-text mt-5">'justify-around'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹치지 않습니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -149,8 +149,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-evenly</h3>
-      <p class="cdf-information-text mt-5">'justify-evenly'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹칩니다.</p>
+      <h3 class="c-h3">justify-evenly</h3>
+      <p class="c-information-text mt-5">'justify-evenly'는 컨테이너의 아이템 양쪽 공간을 동일하게 분배합니다. 아이템 양쪽 공간이 겹칩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -177,8 +177,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-stretch</h3>
-      <p class="cdf-information-text mt-5">'justify-stretch'는 컨테이너의 아이템 중에 자동 크기롤 설정된 항목을 컨테이너의 주축에 따라 공간을 채웁니다.</p>
+      <h3 class="c-h3">justify-stretch</h3>
+      <p class="c-information-text mt-5">'justify-stretch'는 컨테이너의 아이템 중에 자동 크기롤 설정된 항목을 컨테이너의 주축에 따라 공간을 채웁니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -205,8 +205,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">justify-normal</h3>
-      <p class="cdf-information-text mt-5">'justify-normal'는 아무것도 설정되지 않은 상태입니다.</p>
+      <h3 class="c-h3">justify-normal</h3>
+      <p class="c-information-text mt-5">'justify-normal'는 아무것도 설정되지 않은 상태입니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -233,8 +233,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형</h3>
-      <p class="cdf-information-text mt-5">중단점으로 정한 크기에서 설정한 형식으로 변환 됩니다.</p>
+      <h3 class="c-h3">반응형</h3>
+      <p class="c-information-text mt-5">중단점으로 정한 크기에서 설정한 형식으로 변환 됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -261,9 +261,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

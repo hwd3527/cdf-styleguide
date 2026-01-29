@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">align-items</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/align-items" target="_blank">
+    <h2 class="c-h1">align-items</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/align-items" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Stretch</h3>
-      <p class="cdf-information-text mt-5">'items-stretch'는 컨테이너에 가로축을 기준으로 늘어나서 채웁니다.</p>
+      <h3 class="c-h3">Stretch</h3>
+      <p class="c-information-text mt-5">'items-stretch'는 컨테이너에 가로축을 기준으로 늘어나서 채웁니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'items-start'는 컨테이너에 가로축을 기준으로 시작 부분에 정렬합니다.</p>
+      <h3 class="c-h3">Start</h3>
+      <p class="c-information-text mt-5">'items-start'는 컨테이너에 가로축을 기준으로 시작 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -63,8 +63,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Center</h3>
-      <p class="cdf-information-text mt-5">'items-center'는 컨테이너에 가로축을 기준으로 중앙 부분에 정렬합니다.</p>
+      <h3 class="c-h3">Center</h3>
+      <p class="c-information-text mt-5">'items-center'는 컨테이너에 가로축을 기준으로 중앙 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -91,8 +91,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">End</h3>
-      <p class="cdf-information-text mt-5">'items-end'는 컨테이너 내 아이템들을 가로축의 끝 부분에 정렬합니다.</p>
+      <h3 class="c-h3">End</h3>
+      <p class="c-information-text mt-5">'items-end'는 컨테이너 내 아이템들을 가로축의 끝 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -119,8 +119,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">baseline</h3>
-      <p class="cdf-information-text mt-5">'items-baseline'는 컨테이너 가로축을 따라 아이템들의 기준선을 정렬합니다.</p>
+      <h3 class="c-h3">baseline</h3>
+      <p class="c-information-text mt-5">'items-baseline'는 컨테이너 가로축을 따라 아이템들의 기준선을 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -147,8 +147,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">last baseline</h3>
-      <p class="cdf-information-text mt-5">'items-baseline-last'는 컨테이너의 가로축을 따라 항목을 정렬하여 모든 항목의 마지막 기준선을 맞춥니다.</p>
+      <h3 class="c-h3">last baseline</h3>
+      <p class="c-information-text mt-5">'items-baseline-last'는 컨테이너의 가로축을 따라 항목을 정렬하여 모든 항목의 마지막 기준선을 맞춥니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -184,8 +184,8 @@
 
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형</h3>
-      <p class="cdf-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
+      <h3 class="c-h3">반응형</h3>
+      <p class="c-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -214,9 +214,9 @@
     
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

@@ -44,7 +44,7 @@
             <router-link to="/switchGuide" class="">Toggle Switch</router-link>
           </li>
           <li>
-            <router-link to="/labelGuide" class="">Label</router-link>
+            <router-link to="/badgeGuide" class="">Badge</router-link>
           </li>
           <li>
             <router-link to="/tableGuide" class="">Table</router-link>

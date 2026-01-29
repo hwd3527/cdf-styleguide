@@ -177,7 +177,7 @@
 
 .style-guide-wrap .right-cont-zone {
 	margin-left:28rem;
-	padding:10rem 6rem 4rem;
+	padding:5rem 26rem 4rem;
 	max-height: 100vh;
 }
 @media (max-width: 1024px) {
@@ -417,4 +417,85 @@
 }
 .style-guide-wrap .btn-setting.close {
 	display: none;
+}
+
+.code-preview {
+	border-radius: 1.2rem;
+	overflow:hidden;
+	border:.1rem solid var(--tertiary-200-color);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	background-color: var(--white-color);
+	margin-top:8rem;
+}
+.code-preview__header {
+	border-bottom: .1rem solid var(--tertiary-200-color);
+	background-color: rgba(248, 250, 252, 0.5);
+	padding:1.6rem 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.code-preview__header > div {
+	display: flex;
+	flex-direction: column;
+	gap:.8rem;
+}
+.code-preview__header button i {
+	color:var(--tertiary-500-color);
+}
+.code-preview__header__desc-text {
+	font-size:1.4rem;
+	color: var(--text-500-color);
+	line-height: 1.4em;
+	
+}
+.code-preview__conts {
+	background-image: url(https://www.transparenttextures.com/patterns/cubes.png);
+	background-color: rgba(248, 250, 252, 0.3);
+	padding:3.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.code-preview__conts.dark {
+	background-color: var(--tertiary-500-color);
+}
+.code-preview__conts__cluster {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap:3rem 1rem;
+}
+.code-preview__container {
+	background-color: var(--black-color);
+	padding:2.4rem;
+	overflow-x:auto;
+	position: relative;
+	min-height: 7rem;
+}
+.code-preview__container .c-btn {
+	position:absolute;
+	top:1.6rem;
+	right:1.6rem;
+	border-color:var(--tertiary-700-color);
+	background-color: rgba(255,255,255,.2);
+}
+.code-preview__container .c-btn i {
+	color: var(--tertiary-700-color)
+}
+.code-preview__container .c-btn:hover {
+	border-color: var(--tertiary-500-color);
+	background-color: rgba(255, 255, 255, .3);
+}
+.code-preview__container .c-btn:hover i {
+	color: var(--tertiary-500-color)
+}
+.code-preview__container__code {
+	color: var(--white-color);
+	font-size: 1.4rem;
+}
+.code-preview__container__code code {
+	color: var(--white-color);
+	font-size: 1.4rem;
+	line-height: 1.2em;
 }

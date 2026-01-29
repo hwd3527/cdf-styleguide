@@ -45,9 +45,9 @@ const router = createRouter({
       component: () => import('../views/switchGuide.vue'),
     },
     {
-      path: '/labelGuide',
-      name: 'labelGuide',
-      component: () => import('../views/labelGuide.vue'),
+      path: '/badgeGuide',
+      name: 'badgeGuide',
+      component: () => import('../views/badgeGuide.vue'),
     },
     {
       path: '/tooltipGuide',

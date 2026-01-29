@@ -2,8 +2,195 @@
   <div class="page-title-wrap">
     <h2 class="c-h1">Button</h2>
   </div>
+
+  
+
   <div class="cont-zone-wrap">
-    <div class="conts-area">
+    <ComponentPreview 
+      title="기본"
+      description="기본 버튼 스타일입니다." 
+      :code="buttonCode1"
+      bg="light"
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn">
+          <span class="c-btn__txt">button</span>
+        </button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="White" 
+      description="배경이 어두울때 사용하는 버튼 스타일입니다." 
+      :code="buttonCode2" 
+      bg="dark">
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn c-btn--white">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+        <button type="button" class="c-btn c-btn--white c-btn--outline">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">outline</span>
+        </button>
+        <button type="button" class="c-btn c-btn--white c-btn--text">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">text</span>
+        </button>
+        <button type="button" class="c-btn c-btn--white" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">disabled</span>
+        </button>
+        <button type="button" class="c-btn c-btn--white c-btn--outline" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">outline disabled</span>
+        </button>
+        <button type="button" class="c-btn c-btn--white c-btn--text" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">text disabled</span>
+        </button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="크기" 
+      description="버튼의 크기를 조절할 수 있습니다." 
+      :code="buttonCode3" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn c-btn--xs"><span class="c-btn__text">size-xs</span></button>
+        <button type="button" class="c-btn c-btn--sm"><span class="c-btn__text">size-sm</span></button>
+        <button type="button" class="c-btn c-btn--md"><span class="c-btn__text">size-md</span></button>
+        <button type="button" class="c-btn c-btn--lg"><span class="c-btn__text">size-lg</span></button>
+        <button type="button" class="c-btn c-btn--xl"><span class="c-btn__text">size-xl</span></button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="스타일" 
+      description="버튼 스타일은 기본, outline, text 세가지가 있습니다." 
+      :code="buttonCode4" 
+      bg="">
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn"><span class="c-btn__text">button</span></button>
+        <button type="button" class="c-btn c-btn--outline"><span class="c-btn__text">button</span></button>
+        <button type="button" class="c-btn c-btn--text"><span class="c-btn__text">button</span></button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="아이콘" 
+      description="아이콘이 포함된 버튼 스타일입니다." 
+      :code="buttonCode5" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+        <button type="button" class="c-btn">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+        </button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="라운드" 
+      description="양쪽 끝이 라운드 처리된 버튼 스타일입니다." 
+      :code="buttonCode6" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn c-btn--rounded">
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="disabled" 
+      description="disabled 속성이 적용된 버튼 스타일입니다." 
+      :code="buttonCode7" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <button type="button" class="c-btn" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+        <button type="button" class="c-btn c-btn--outline" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+        <button type="button" class="c-btn c-btn--text" disabled>
+          <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+          <span class="c-btn__text">button</span>
+        </button>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="버튼 정렬" 
+      description="버튼 가운데 정렬 스타일입니다." 
+      :code="buttonCode8" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <div class="l-btn l-btn--center">
+          <button type="button" class="c-btn">button</button>
+          <button type="button" class="c-btn c-btn--outline">button</button>
+        </div>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="버튼 정렬" 
+      description="버튼 왼쪽 정렬 스타일입니다." 
+      :code="buttonCode9" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <div class="l-btn l-btn--left">
+          <button type="button" class="c-btn">button</button>
+          <button type="button" class="c-btn c-btn--outline">button</button>
+        </div>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="버튼 정렬" 
+      description="버튼 오른쪽 정렬 스타일입니다." 
+      :code="buttonCode10" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <div class="l-btn l-btn--right">
+          <button type="button" class="c-btn">button</button>
+          <button type="button" class="c-btn c-btn--outline">button</button>
+        </div>
+      </div>
+    </ComponentPreview>
+
+    <ComponentPreview 
+      title="버튼 정렬" 
+      description="버튼 양쪽 사이드 정렬 스타일입니다." 
+      :code="buttonCode11" 
+      bg=""
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl">
+        <div class="l-btn l-btn--between">
+          <button type="button" class="c-btn">button</button>
+          <button type="button" class="c-btn c-btn--outline">button</button>
+        </div>
+      </div>
+    </ComponentPreview>
+
+    
+
+    <!-- <div class="conts-area">
       <h3 class="c-h3">기본</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -26,9 +213,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">White(배경이 어두울때)</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -74,9 +261,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">크기</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -101,9 +288,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">스타일</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -125,9 +312,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">아이콘</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -154,9 +341,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">라운드</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -180,9 +367,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">disabled</h3>
       <div class="tabs">
         <div role="tablist" class="tab-list">
@@ -214,9 +401,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="conts-area">
+    <!-- <div class="conts-area">
       <h3 class="c-h3">버튼 정렬</h3>
       <p class="c-information-text">가운데 정렬</p>
       <div class="tabs">
@@ -313,65 +500,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import CodeMirror from "vue-codemirror6";
+import ComponentPreview from '../components/ComponentPreview.vue';
 
-const value01 = ref(`<button type="button" class="c-btn">
+const buttonCode1 = `<button type="button" class="c-btn">
   <span class="c-btn__txt">button</span>
-</button>`);
-const value03 = ref(`<button type="button" class="c-btn c-btn--xs"><span class="c-btn__text">button</span></button>
-<button type="button" class="c-btn c-btn--sm"><span class="c-btn__text">button</span></button>
-<button type="button" class="c-btn c-btn--md"><span class="c-btn__text">button</span></button>
-<button type="button" class="c-btn c-btn--lg"><span class="c-btn__text">button</span></button>
-<button type="button" class="c-btn c-btn--xl"><span class="c-btn__text">button</span></button>`);
-const value04 = ref(`<button type="button" class="c-btn c-btn--outline"><span class="c-btn__text">button</span></button>
-<button type="button" class="c-btn c-btn--text"><span class="c-btn__text">button</span></button>`);
-const value05 = ref(`<button type="button" class="c-btn">
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-  <span class="c-btn__text">button</span>
-</button>
-<button type="button" class="c-btn">
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-</button>`);
-const value06 = ref(`<button type="button" class="c-btn c-btn--rounded">
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-  <span class="c-btn__text">button</span>
-</button>`);
-const value07 = ref(`<button type="button" class="c-btn" disabled>
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-  <span class="c-btn__text">button</span>
-</button>
-<button type="button" class="c-btn c-btn--outline" disabled>
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-  <span class="c-btn__text">button</span>
-</button>
-<button type="button" class="c-btn c-btn--text" disabled>
-  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
-  <span class="c-btn__text">button</span>
-</button>`);
-const value0801 = ref(`<div class="l-btn l-btn--center">
-  <button type="button" class="c-btn">button</button>
-  <button type="button" class="c-btn c-btn--outline">button</button>
-</div>`);
-const value0802 = ref(`<div class="l-btn l-btn--left">
-  <button type="button" class="c-btn">button</button>
-  <button type="button" class="c-btn c-btn--outline">button</button>
-</div>`);
-const value0803 = ref(`<div class="l-btn l-btn--right">
-  <button type="button" class="c-btn">button</button>
-  <button type="button" class="c-btn c-btn--outline">button</button>
-</div>`);
-const value0804 = ref(`<div class="l-btn l-btn--between">
-  <button type="button" class="c-btn">button</button>
-  <button type="button" class="c-btn c-btn--outline">button</button>
-</div>`);
-const value09 = ref(`<button type="button" class="c-btn c-btn--white">
+</button>`;
+const buttonCode2 = `<button type="button" class="c-btn c-btn--white">
   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
   <span class="c-btn__text">button</span>
 </button>
@@ -394,70 +535,207 @@ const value09 = ref(`<button type="button" class="c-btn c-btn--white">
 <button type="button" class="c-btn c-btn--white c-btn--text" disabled>
   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
   <span class="c-btn__text">text disabled</span>
-</button>`);
+</button>`;
+const buttonCode3 = `<button type="button" class="c-btn c-btn--xs">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--sm">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--md">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--lg">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--xl">
+  <span class="c-btn__text">button</span>
+</button>`;
+const buttonCode4 = `<button type="button" class="c-btn">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--outline">
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--text">
+  <span class="c-btn__text">button</span>
+</button>`;
+const buttonCode5 = `<button type="button" class="c-btn">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+</button>`;
+const buttonCode6 = `<button type="button" class="c-btn c-btn--rounded">
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
+</button>`;
+const buttonCode7 = `<button type="button" class="c-btn" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--outline" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
+</button>
+<button type="button" class="c-btn c-btn--text" disabled>
+  <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+  <span class="c-btn__text">button</span>
+</button>`;
+const buttonCode8 = `<div class="l-btn l-btn--center">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
+</div>`;
+const buttonCode9 = `<div class="l-btn l-btn--left">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
+</div>`;
+const buttonCode10 = `<div class="l-btn l-btn--right">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
+</div>`;
+const buttonCode11 = `<div class="l-btn l-btn--between">
+  <button type="button" class="c-btn">button</button>
+  <button type="button" class="c-btn c-btn--outline">button</button>
+</div>`;
+
+// const value01 = ref(`<button type="button" class="c-btn">
+//   <span class="c-btn__txt">button</span>
+// </button>`);
+// const value03 = ref(`<button type="button" class="c-btn c-btn--xs"><span class="c-btn__text">button</span></button>
+// <button type="button" class="c-btn c-btn--sm"><span class="c-btn__text">button</span></button>
+// <button type="button" class="c-btn c-btn--md"><span class="c-btn__text">button</span></button>
+// <button type="button" class="c-btn c-btn--lg"><span class="c-btn__text">button</span></button>
+// <button type="button" class="c-btn c-btn--xl"><span class="c-btn__text">button</span></button>`);
+// const value04 = ref(`<button type="button" class="c-btn c-btn--outline"><span class="c-btn__text">button</span></button>
+// <button type="button" class="c-btn c-btn--text"><span class="c-btn__text">button</span></button>`);
+// const value05 = ref(`<button type="button" class="c-btn">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>
+// <button type="button" class="c-btn">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+// </button>`);
+// const value06 = ref(`<button type="button" class="c-btn c-btn--rounded">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>`);
+// const value07 = ref(`<button type="button" class="c-btn" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>
+// <button type="button" class="c-btn c-btn--outline" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>
+// <button type="button" class="c-btn c-btn--text" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>`);
+// const value0801 = ref(`<div class="l-btn l-btn--center">
+//   <button type="button" class="c-btn">button</button>
+//   <button type="button" class="c-btn c-btn--outline">button</button>
+// </div>`);
+// const value0802 = ref(`<div class="l-btn l-btn--left">
+//   <button type="button" class="c-btn">button</button>
+//   <button type="button" class="c-btn c-btn--outline">button</button>
+// </div>`);
+// const value0803 = ref(`<div class="l-btn l-btn--right">
+//   <button type="button" class="c-btn">button</button>
+//   <button type="button" class="c-btn c-btn--outline">button</button>
+// </div>`);
+// const value0804 = ref(`<div class="l-btn l-btn--between">
+//   <button type="button" class="c-btn">button</button>
+//   <button type="button" class="c-btn c-btn--outline">button</button>
+// </div>`);
+// const value09 = ref(`<button type="button" class="c-btn c-btn--white">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">button</span>
+// </button>
+// <button type="button" class="c-btn c-btn--white c-btn--outline">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">outline</span>
+// </button>
+// <button type="button" class="c-btn c-btn--white c-btn--text">
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">text</span>
+// </button>
+// <button type="button" class="c-btn c-btn--white" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">disabled</span>
+// </button>
+// <button type="button" class="c-btn c-btn--white c-btn--outline" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">outline disabled</span>
+// </button>
+// <button type="button" class="c-btn c-btn--white c-btn--text" disabled>
+//   <i class="c-btn__icon material-symbols-rounded">arrow_back</i>
+//   <span class="c-btn__text">text disabled</span>
+// </button>`);
 
 // copyCode를 클릭하면 코드 복사
-function copyCode(value) {
-  const code = eval(value);
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(code.value)
-      .then(() => {
-        alert('코드가 클립보드에 복사되었습니다.');
-      })
-      .catch(err => {
-        console.error('코드 복사 실패:', err);
-      });
-  } else {
-    alert('이 브라우저는 클립보드 API를 지원하지 않습니다.');
-  }
-}
+// function copyCode(value) {
+//   const code = eval(value);
+//   if (navigator.clipboard) {
+//     navigator.clipboard.writeText(code.value)
+//       .then(() => {
+//         alert('코드가 클립보드에 복사되었습니다.');
+//       })
+//       .catch(err => {
+//         console.error('코드 복사 실패:', err);
+//       });
+//   } else {
+//     alert('이 브라우저는 클립보드 API를 지원하지 않습니다.');
+//   }
+// }
 
 onMounted(() => {
-  tabContents()
+  // tabContents()
 });
 
 function tabContents() {
   //tab menu
-  document.querySelectorAll('.tabs').forEach(function (tabs) {
-    var tabList = tabs.querySelectorAll('.tab-list-item'),
-      tabPanels = tabs.querySelectorAll('.tab-panel');
+  // document.querySelectorAll('.tabs').forEach(function (tabs) {
+  //   var tabList = tabs.querySelectorAll('.tab-list-item'),
+  //     tabPanels = tabs.querySelectorAll('.tab-panel');
 
-    tabList.forEach(function (tab, index) {
-      tab.addEventListener('click', function () {
-        tabList.forEach(function (item) {
-          item.classList.remove('on');
-          item.setAttribute('aria-selected', 'false');
-          item.setAttribute('tabindex', '-1');
-        });
-        tabPanels.forEach(function (panel) {
-          panel.classList.remove('on');
-        });
-        tab.classList.add('on');
-        tab.setAttribute('aria-selected', 'true');
-        tab.setAttribute('tabindex', '0');
-        tabPanels[index].classList.add('on');
-        tabPanels[1].querySelector('.CodeMirror')?.CodeMirror?.refresh();
-      });
+  //   tabList.forEach(function (tab, index) {
+  //     tab.addEventListener('click', function () {
+  //       tabList.forEach(function (item) {
+  //         item.classList.remove('on');
+  //         item.setAttribute('aria-selected', 'false');
+  //         item.setAttribute('tabindex', '-1');
+  //       });
+  //       tabPanels.forEach(function (panel) {
+  //         panel.classList.remove('on');
+  //       });
+  //       tab.classList.add('on');
+  //       tab.setAttribute('aria-selected', 'true');
+  //       tab.setAttribute('tabindex', '0');
+  //       tabPanels[index].classList.add('on');
+  //       tabPanels[1].querySelector('.CodeMirror')?.CodeMirror?.refresh();
+  //     });
 
-      tab.addEventListener('keyup', function (e) {
-        var keycode = e.keyCode || e.which;
-        if (keycode === 39 || keycode === 40) { // Right or Down arrow
-          var nextTab = tabList[(index + 1) % tabList.length];
-          nextTab.focus();
-          nextTab.click();
-        } else if (keycode === 37 || keycode === 38) { // Left or Up arrow
-          var prevTab = tabList[(index - 1 + tabList.length) % tabList.length];
-          prevTab.focus();
-          prevTab.click();
-        }
-      });
-    });
-  });
+  //     tab.addEventListener('keyup', function (e) {
+  //       var keycode = e.keyCode || e.which;
+  //       if (keycode === 39 || keycode === 40) { // Right or Down arrow
+  //         var nextTab = tabList[(index + 1) % tabList.length];
+  //         nextTab.focus();
+  //         nextTab.click();
+  //       } else if (keycode === 37 || keycode === 38) { // Left or Up arrow
+  //         var prevTab = tabList[(index - 1 + tabList.length) % tabList.length];
+  //         prevTab.focus();
+  //         prevTab.click();
+  //       }
+  //     });
+  //   });
+  // });
 
   // Trigger click on the first tab to initialize	
-  document.querySelectorAll('.tabs').forEach(function (tabs) {
-    tabs.querySelectorAll('.tab-list-item')[0].click();
-  });
+  // document.querySelectorAll('.tabs').forEach(function (tabs) {
+  //   tabs.querySelectorAll('.tab-list-item')[0].click();
+  // });
 }
 </script>
 

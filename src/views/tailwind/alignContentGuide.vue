@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">align-content</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/align-content" target="_blank">
+    <h2 class="c-h1">align-content</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/align-content" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Start</h3>
-      <p class="cdf-information-text mt-5">'content-start'는 컨테이너에 가로축을 기준으로 시작 부분에 정렬합니다.</p>
+      <h3 class="c-h3">Start</h3>
+      <p class="c-information-text mt-5">'content-start'는 컨테이너에 가로축을 기준으로 시작 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -38,8 +38,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Center</h3>
-      <p class="cdf-information-text mt-5">'content-center'는 컨테이너에 가로축을 기준으로 중앙 부분에 정렬합니다.</p>
+      <h3 class="c-h3">Center</h3>
+      <p class="c-information-text mt-5">'content-center'는 컨테이너에 가로축을 기준으로 중앙 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -69,8 +69,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">End</h3>
-      <p class="cdf-information-text mt-5">'content-end'는 컨테이너에 가로축을 기준으로 끝 부분에 정렬합니다.</p>
+      <h3 class="c-h3">End</h3>
+      <p class="c-information-text mt-5">'content-end'는 컨테이너에 가로축을 기준으로 끝 부분에 정렬합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -100,8 +100,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Space between</h3>
-      <p class="cdf-information-text mt-5">'content-between'는 컨테이너 내 첫 행과 마지막 행 사이에 공간을 균등하게 배치합니다.</p>
+      <h3 class="c-h3">Space between</h3>
+      <p class="c-information-text mt-5">'content-between'는 컨테이너 내 첫 행과 마지막 행 사이에 공간을 균등하게 배치합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -131,8 +131,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">space around</h3>
-      <p class="cdf-information-text mt-5">'content-around'는 컨테이너 내 각 행 주위에 동일한 간격으로 행을 배치합니다.</p>
+      <h3 class="c-h3">space around</h3>
+      <p class="c-information-text mt-5">'content-around'는 컨테이너 내 각 행 주위에 동일한 간격으로 행을 배치합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -162,8 +162,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">space evenly</h3>
-      <p class="cdf-information-text mt-5">'content-evenly'는 컨테이너 내 각 행 주위에 동일한 간격으로 행을 배치하지만 행과 행 사이에도 동일한 간격을 둡니다.</p>
+      <h3 class="c-h3">space evenly</h3>
+      <p class="c-information-text mt-5">'content-evenly'는 컨테이너 내 각 행 주위에 동일한 간격으로 행을 배치하지만 행과 행 사이에도 동일한 간격을 둡니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -193,8 +193,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Stretch</h3>
-      <p class="cdf-information-text mt-5">'content-stretch'는 컨테이너 내 각 행 주위에 동일한 간격으로 공간을 채웁니다.</p>
+      <h3 class="c-h3">Stretch</h3>
+      <p class="c-information-text mt-5">'content-stretch'는 컨테이너 내 각 행 주위에 동일한 간격으로 공간을 채웁니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -224,8 +224,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Normal</h3>
-      <p class="cdf-information-text mt-5">'content-normal'는 기본 위치에 배치합니다.</p>
+      <h3 class="c-h3">Normal</h3>
+      <p class="c-information-text mt-5">'content-normal'는 기본 위치에 배치합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -255,8 +255,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형</h3>
-      <p class="cdf-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
+      <h3 class="c-h3">반응형</h3>
+      <p class="c-information-text mt-5">중단점을 기준으로 레이아웃이 변경됩니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -288,9 +288,9 @@
     
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

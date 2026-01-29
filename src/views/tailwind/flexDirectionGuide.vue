@@ -1,14 +1,14 @@
 <template>
   <div class="page-title-wrap gap-4 justify-between">
-    <h2 class="cdf-h1">flex-direction</h2>
-    <a class="cdf-btn size-xs outline" href="https://tailwindcss.com/docs/flex-direction" target="_blank">
+    <h2 class="c-h1">flex-direction</h2>
+    <a class="c-btn size-xs outline" href="https://tailwindcss.com/docs/flex-direction" target="_blank">
       <span class="txt">tailwind에서 더보기</span>
     </a>
   </div>
   <div class="cont-zone-wrap">
     <div class="conts-area">
-      <h3 class="cdf-h3">Row</h3>
-      <p class="cdf-information-text mt-5">'flex-row' 플렉스 항목을 수평으로 배치하는데 사용합니다.</p>
+      <h3 class="c-h3">Row</h3>
+      <p class="c-information-text mt-5">'flex-row' 플렉스 항목을 수평으로 배치하는데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -35,8 +35,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Row reversed</h3>
-      <p class="cdf-information-text mt-5">'flex-row-reverse' 플렉스 아이템을 수평으로 반전하여 배치하는데 사용합니다.</p>
+      <h3 class="c-h3">Row reversed</h3>
+      <p class="c-information-text mt-5">'flex-row-reverse' 플렉스 아이템을 수평으로 반전하여 배치하는데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -63,8 +63,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Column</h3>
-      <p class="cdf-information-text mt-5">'flex-col' 플렉스 항목을 수직으로 배치하는데 사용합니다.</p>
+      <h3 class="c-h3">Column</h3>
+      <p class="c-information-text mt-5">'flex-col' 플렉스 항목을 수직으로 배치하는데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -91,8 +91,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">Column reversed</h3>
-      <p class="cdf-information-text mt-5">플렉스 아이템을 수직 반대 방향으로 배치하는 데 사용합니다.</p>
+      <h3 class="c-h3">Column reversed</h3>
+      <p class="c-information-text mt-5">플렉스 아이템을 수직 반대 방향으로 배치하는 데 사용합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -119,8 +119,8 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">반응형 디자인</h3>
-      <p class="cdf-information-text mt-5">중단점으로 원하는 화면 크기에서 플렉스의 방향을 설정합니다.</p>
+      <h3 class="c-h3">반응형 디자인</h3>
+      <p class="c-information-text mt-5">중단점으로 원하는 화면 크기에서 플렉스의 방향을 설정합니다.</p>
       <div class="tabs">
         <div role="tablist" class="tab-list">
           <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
@@ -147,9 +147,9 @@
     </div>
 
     <div class="conts-area">
-      <h3 class="cdf-h3">사용할 수 있는 클래스</h3>
-      <div class="cdf-table-wrap cdf-scrollbar horizontal">
-        <table class="cdf-table-type03">
+      <h3 class="c-h3">사용할 수 있는 클래스</h3>
+      <div class="c-table-wrap c-scrollbar horizontal">
+        <table class="c-table-type03">
           <caption>class, style 항목별 순서대로 안내하는 표입니다</caption>
           <colgroup>
             <col style="width: 30%;">

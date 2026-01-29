@@ -3,122 +3,85 @@
     <h2 class="c-h1">Tooltip</h2>
   </div>
   <div class="cont-zone-wrap">
-    <div class="conts-area">
-      <h3 class="c-h3">기본</h3>
-      <div class="tabs">
-        <div role="tablist" class="tab-list">
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
-            aria-selected="true" tabindex="0"><span>Preview</span></a>
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
-            aria-selected="false" tabindex="-1"><span>Code</span></a>
-        </div>
-        <div class="tab-conts">
-          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
-            <div class="container justify-around">
-              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-                <span class="c-btn__text">tooltip-horizontal</span> 
-                <i class="c-btn__icon material-symbols-rounded">chevron_right</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
-                <i class="c-btn__icon material-symbols-rounded">help</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-tooltip" data-tooltip="버튼에 제공되는 툴팁">
-                <span class="c-btn__text">도움말</span>
-              </button>
-            </div>
-          </div>
-          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value01" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value01')">코드 복사</button>
-          </div>
-        </div>
+    <ComponentPreview 
+      title="기본" 
+      description="기본 tooltip 입니다." 
+      :code="tooltipCode1" 
+      bg="light"
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl !justify-around">
+        <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
+          <span class="c-btn__text">tooltip-horizontal</span>
+          <i class="c-btn__icon material-symbols-rounded">chevron_right</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+          <i class="c-btn__icon material-symbols-rounded">help</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-tooltip" data-tooltip="버튼에 제공되는 툴팁">
+          <span class="c-btn__text">도움말</span>
+        </button>
       </div>
-    </div>
+    </ComponentPreview>
 
-    <div class="conts-area">
-      <h3 class="c-h3">vertical</h3>
-      <div class="tabs">
-        <div role="tablist" class="tab-list">
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
-            aria-selected="true" tabindex="0"><span>Preview</span></a>
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
-            aria-selected="false" tabindex="-1"><span>Code</span></a>
-        </div>
-        <div class="tab-conts">
-          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
-            <div class="container justify-around pt-7">
-              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
-                data-tooltip="tooltip-vertical 옵션입니다">
-                <span class="txt">tooltip-vertical</span> 
-                <i class="material-symbols-rounded">chevron_right</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
-                data-tooltip="아이콘 버튼에 제공되는 툴팁">
-                <span class="sr-only">도움말</span>
-                <i class="c-btn__icon material-symbols-rounded">help</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
-                <span class="txt">도움말</span>
-              </button>
-            </div>
-          </div>
-          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value02" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value02')">코드 복사</button>
-          </div>
-        </div>
+    <ComponentPreview 
+      title="vertical" 
+      description="tooltip이 상단에 뜨는 형태입니다." 
+      :code="tooltipCode2" 
+      bg="light"
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl !justify-around">
+        <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
+          data-tooltip="tooltip-vertical 옵션입니다">
+          <span class="txt">tooltip-vertical</span>
+          <i class="material-symbols-rounded">chevron_right</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
+          data-tooltip="아이콘 버튼에 제공되는 툴팁">
+          <span class="sr-only">도움말</span>
+          <i class="c-btn__icon material-symbols-rounded">help</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
+          <span class="txt">도움말</span>
+        </button>
       </div>
-    </div>
+    </ComponentPreview>
 
-    <div class="conts-area">
-      <h3 class="c-h3">tooltip box</h3>
-      <div class="tabs">
-        <div role="tablist" class="tab-list">
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0101" id="tabList0101" class="tab-list-item on"
-            aria-selected="true" tabindex="0"><span>Preview</span></a>
-          <a href="javascript:void(0)" role="tab" aria-controls="tabPanel0102" id="tabList0102" class="tab-list-item"
-            aria-selected="false" tabindex="-1"><span>Code</span></a>
-        </div>
-        <div class="tab-conts">
-          <div role="tabpanel" aria-labelledby="tabList0101" id="tabPanel0101" class="tab-panel on">
-            <div class="container justify-around pt-7">
-              <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
-                data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-                <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
-                data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-                <span class="sr-only">도움말</span>
-                <i class="c-btn__icon material-symbols-rounded">help</i>
-              </button>
-              <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
-                data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-                <span class="txt">도움말</span>
-              </button>
-            </div>
-          </div>
-          <div role="tabpanel" aria-labelledby="tabList0102" id="tabPanel0102" class="tab-panel">
-            <code-mirror v-model="value03" :dark="true" basic />
-            <button type="button" class="clipboard" @click="copyCode('value03')">코드 복사</button>
-          </div>
-        </div>
+    <ComponentPreview 
+      title="tooltip box" 
+      description="tooltip이 box 형태로 나타나는 형태입니다." 
+      :code="tooltipCode3" 
+      bg="light"
+    >
+      <div class="code-preview__conts__cluster w-full max-w-7xl !justify-around">
+        <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
+          data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+          <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
+          data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+          <span class="sr-only">도움말</span>
+          <i class="c-btn__icon material-symbols-rounded">help</i>
+        </button>
+        <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
+          data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+          <span class="txt">도움말</span>
+        </button>
       </div>
-    </div>
+    </ComponentPreview>
+
+        
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
 
-import CodeMirror from "vue-codemirror6";
 
 
+import ComponentPreview from '../components/ComponentPreview.vue';
 
-
-
-
-const value01 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
-  <span class="c-btn__text">tooltip-horizontal</span> 
+const tooltipCode1 = `<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip" data-tooltip="툴팁의 기본 설정입니다">
+  <span class="c-btn__text">tooltip-horizontal</span>
   <i class="c-btn__icon material-symbols-rounded">chevron_right</i>
 </button>
 <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
@@ -126,10 +89,11 @@ const value01 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-
 </button>
 <button type="button" class="c-btn c-btn--sm c-tooltip" data-tooltip="버튼에 제공되는 툴팁">
   <span class="c-btn__text">도움말</span>
-</button>`);
-const value02 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
+</button>`;
+
+const tooltipCode2 = `<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
   data-tooltip="tooltip-vertical 옵션입니다">
-  <span class="txt">tooltip-vertical</span> 
+  <span class="txt">tooltip-vertical</span>
   <i class="material-symbols-rounded">chevron_right</i>
 </button>
 <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
@@ -139,40 +103,31 @@ const value02 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-
 </button>
 <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
   <span class="txt">도움말</span>
-</button>`);
-const value03 = ref(`<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
-  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+</button>`;
+
+const tooltipCode3 = `<button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
+  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 
+  대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
 </button>
 <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
-  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 
+  대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="sr-only">도움말</span>
   <i class="c-btn__icon material-symbols-rounded">help</i>
 </button>
 <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
-  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
+  data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 
+  대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
   <span class="txt">도움말</span>
-</button>`);
+</button>`;
 
 
-// copyCode를 클릭하면 코드 복사
-function copyCode(value) {
-  const code = eval(value);
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(code.value)
-      .then(() => {
-        alert('코드가 클립보드에 복사되었습니다.');
-      })
-      .catch(err => {
-        console.error('코드 복사 실패:', err);
-      });
-  } else {
-    alert('이 브라우저는 클립보드 API를 지원하지 않습니다.');
-  }
-}
+
+
+
 
 onMounted(() => {
-  tabContents()
   cdf_tooltip.init();
 });
 
@@ -342,70 +297,6 @@ const windowSize = {
   },
 };
 
-function tabContents() {
-  //tab menu
-  document.querySelectorAll('.tabs').forEach(function (tabs) {
-    var tabList = tabs.querySelectorAll('.tab-list-item'),
-      tabPanels = tabs.querySelectorAll('.tab-panel');
 
-    tabList.forEach(function (tab, index) {
-      tab.addEventListener('click', function () {
-        tabList.forEach(function (item) {
-          item.classList.remove('on');
-          item.setAttribute('aria-selected', 'false');
-          item.setAttribute('tabindex', '-1');
-        });
-        tabPanels.forEach(function (panel) {
-          panel.classList.remove('on');
-        });
-        tab.classList.add('on');
-        tab.setAttribute('aria-selected', 'true');
-        tab.setAttribute('tabindex', '0');
-        tabPanels[index].classList.add('on');
-        tabPanels[1].querySelector('.CodeMirror')?.CodeMirror?.refresh();
-      });
 
-      tab.addEventListener('keyup', function (e) {
-        var keycode = e.keyCode || e.which;
-        if (keycode === 39 || keycode === 40) { // Right or Down arrow
-          var nextTab = tabList[(index + 1) % tabList.length];
-          nextTab.focus();
-          nextTab.click();
-        } else if (keycode === 37 || keycode === 38) { // Left or Up arrow
-          var prevTab = tabList[(index - 1 + tabList.length) % tabList.length];
-          prevTab.focus();
-          prevTab.click();
-        }
-      });
-    });
-  });
-
-  // Trigger click on the first tab to initialize	
-  document.querySelectorAll('.tabs').forEach(function (tabs) {
-    tabs.querySelectorAll('.tab-list-item')[0].click();
-  });
-
-  //btn-icon-wrap 안의 passview 버튼을 클릭하면 btn-icon-wrap 안의 input type="password"의 type이 text로 변경되어 비밀번호가 보이게 됩니다.
-  document.querySelectorAll('.btn-icon-wrap .passview').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var input = btn.closest('.btn-icon-wrap').querySelector('input');
-      if (input.type === 'password') {
-        input.type = 'text';
-        btn.querySelector('i').textContent = 'visibility';
-      } else {
-        input.type = 'password';
-        btn.querySelector('i').textContent = 'visibility_off';
-      }
-    });
-  });
-
-  //btn-icon-wrap 안의 delete 버튼을 클릭하면 btn-icon-wrap 안의 input 내용이 삭제되는 코드
-  document.querySelectorAll('.btn-icon-wrap .delete').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var input = btn.closest('.btn-icon-wrap').querySelector('input');
-      input.value = '';
-      input.focus();
-    });
-  });
-}
 </script>
