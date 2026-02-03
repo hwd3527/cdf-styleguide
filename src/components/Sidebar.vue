@@ -82,7 +82,6 @@
           <li><router-link to="/gridRowGuide" class="">grid-row</router-link></li>
           <li><router-link to="/gridAutoFlowGuide" class="">grid-auto-flow</router-link></li>
           <li><router-link to="/gridAutoColGuide" class="">grid-auto-columns</router-link></li>
-          <li><router-link to="/gridAutoRowGuide" class="">grid-auto-rows</router-link></li>
           <li><router-link to="/gapGuide" class="">gap</router-link></li>
           <li><router-link to="/justifyContentGuide" class="">justify-content</router-link></li>
           <li><router-link to="/justifyItemsGuide" class="">justify-items</router-link></li>

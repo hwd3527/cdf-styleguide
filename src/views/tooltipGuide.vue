@@ -32,7 +32,7 @@
       <div class="code-preview__conts__cluster w-full max-w-7xl !justify-around">
         <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-vertical"
           data-tooltip="tooltip-vertical 옵션입니다">
-          <span class="txt">tooltip-vertical</span>
+          <span class="c-btn__text">tooltip-vertical</span>
           <i class="material-symbols-rounded">chevron_right</i>
         </button>
         <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-vertical "
@@ -41,7 +41,7 @@
           <i class="c-btn__icon material-symbols-rounded">help</i>
         </button>
         <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-vertical" data-tooltip="버튼에 제공되는 툴팁">
-          <span class="txt">도움말</span>
+          <span class="c-btn__text">도움말</span>
         </button>
       </div>
     </ComponentPreview>
@@ -55,7 +55,7 @@
       <div class="code-preview__conts__cluster w-full max-w-7xl !justify-around">
         <button type="button" class="c-btn c-btn--sm c-btn--text c-tooltip c-tooltip-box"
           data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-          <span class="txt">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
+          <span class="c-btn__text">tooltip-box</span><i class="material-symbols-rounded">chevron_right</i>
         </button>
         <button type="button" class="c-btn c-btn--sm c-btn--rounded c-tooltip c-tooltip-box"
           data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
@@ -64,7 +64,7 @@
         </button>
         <button type="button" class="c-btn c-btn--sm c-tooltip c-tooltip-box"
           data-tooltip="tooltip-box 툴팁은 150자 내외의 텍스트만 제공되어야 합니다. 내부에 닫기 버튼을 포함한 대화형 요소를 사용하지 않습니다. 본문을 가리지 않도록 주의합니다.">
-          <span class="txt">도움말</span>
+          <span class="c-btn__text">도움말</span>
         </button>
       </div>
     </ComponentPreview>

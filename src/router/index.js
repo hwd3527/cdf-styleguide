@@ -145,11 +145,6 @@ const router = createRouter({
       component: () => import('../views/tailwind/gridAutoColGuide.vue'),
     },
     {
-      path: '/gridAutoRowGuide',
-      name: 'gridAutoRowGuide',
-      component: () => import('../views/tailwind/gridAutoRowGuide.vue'),
-    },
-    {
       path: '/gapGuide',
       name: 'gapGuide',
       component: () => import('../views/tailwind/gapGuide.vue'),
